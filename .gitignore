@@ -1,0 +1,48 @@
+# Cachés regenerables de Unreal
+Binaries/
+Intermediate/
+Saved/
+DerivedDataCache/
+.vs/
+
+# Python
+__pycache__/
+*.pyc
+
+# Config local de agentes / secretos
+.claude/settings.local.json
+.gemini/
+.env
+*.env
+
+# Unreal Engine adicionales
+Binaries/
+Build/
+.vs/
+.idea/
+*.sln
+*.suo
+*.opensdf
+*.sdf
+*.VC.db
+*.VC.opendb
+*.xcodeproj
+*.code-workspace
+Saved/
+Content/**/*.tmp
+*.tmp
+*.bak
+*.log
+~$*
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# Secretos / credenciales
+.env*
+*.pem
+*.key
+*.pfx
+*token*
+*secret*
+credentials*
