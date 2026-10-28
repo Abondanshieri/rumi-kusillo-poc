@@ -1,0 +1,68 @@
+{
+ "CR_Student_Procedural_fix": {
+  "links_perdidos": [],
+  "links_nuevos_reales": [],
+  "links_antes": 62,
+  "links_despues": 64,
+  "reroutes": [
+   "Reroute_PelvisOffset_1",
+   "Reroute_PelvisOffset_2"
+  ],
+  "valores_cambiados": [],
+  "valores_nuevos": 2,
+  "fuera_rejilla": [],
+  "margen_min": 100,
+  "margen_menor60": [],
+  "nodos_sin_caja": [
+   "Reroute_PelvisOffset_1",
+   "Reroute_PelvisOffset_2"
+  ],
+  "solapes_cajas": [],
+  "fuentes": [
+   120
+  ],
+  "metricas_despues": {
+   "links": 62,
+   "back": 0,
+   "long": 1,
+   "cruces": 3,
+   "solapes": 0
+  },
+  "largos": [
+   [
+    "Get_PelvisOffset.Value",
+    "Sub_FootOffsetR.B",
+    3064
+   ]
+  ],
+  "retroceso": [],
+  "solapes_nodos": []
+ },
+ "CR_Student_IK_fix": {
+  "links_perdidos": [],
+  "links_nuevos_reales": [],
+  "links_antes": 14,
+  "links_despues": 14,
+  "reroutes": [],
+  "valores_cambiados": [],
+  "valores_nuevos": 0,
+  "fuera_rejilla": [],
+  "margen_min": 100,
+  "margen_menor60": [],
+  "nodos_sin_caja": [],
+  "solapes_cajas": [],
+  "fuentes": [
+   120
+  ],
+  "metricas_despues": {
+   "links": 14,
+   "back": 0,
+   "long": 0,
+   "cruces": 0,
+   "solapes": 0
+  },
+  "largos": [],
+  "retroceso": [],
+  "solapes_nodos": []
+ }
+}

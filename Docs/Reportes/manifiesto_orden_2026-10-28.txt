@@ -97,3 +97,5 @@ Comprobado en disco: 26 archivos en _Archive. Revertir: ver ese manifiesto.
 == Revertir todo (bash, desde la raiz) ==
 while IFS= read -r l; do o="${l%% -> *}"; d="${l##* -> }"; mkdir -p "$(dirname "$o")"; mv "$d" "$o"; done < <(sed -n "/^== Movimientos/,/^== Revertir/p" manifiesto_orden_2026-10-28.txt | grep " -> ")
 (Luego revertir las 2 rutas del mensaje a Docs/F-M1_... y Docs/F-M2_...)
+
+Actualizacion posterior (2026-10-28, tarea X): los scripts test_*.py y diag_scratch_inspect_nodes.py de Tools/ue_scripts se movieron a Archivo_No_Proyecto/2026-10-28/Scripts_de_prueba/ue_scripts/ (listados en Archivo_No_Proyecto/2026-10-28/MANIFIESTO.txt). Los demas nombres de este manifiesto siguen vigentes.

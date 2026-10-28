@@ -1,0 +1,1839 @@
+{
+ "AnimGraph": {
+  "nodes": {
+   "AnimGraphNode_Root_0": {
+    "x": 1300,
+    "y": 0,
+    "type": "Misc.|Posedesalida"
+   },
+   "AnimGraphNode_Slot_0": {
+    "x": -250,
+    "y": 0,
+    "type": "Animation|Montage|Slot'DefaultSlot'"
+   },
+   "AnimGraphNode_StateMachine_0": {
+    "x": -700,
+    "y": 0,
+    "type": "Animaci\u00f3n|Aut\u00f3matasfinitos|Main"
+   },
+   "AnimGraphNode_StateMachine_1": {
+    "x": -700,
+    "y": -450,
+    "type": "Animaci\u00f3n|Aut\u00f3matasfinitos|Locomotion"
+   },
+   "AnimGraphNode_SaveCachedPose_0": {
+    "x": -250,
+    "y": -450,
+    "type": "Animation|CachedPoses|Savecachedpose'Locomotion'"
+   },
+   "AnimGraphNode_Inertialization_0": {
+    "x": 150,
+    "y": 0,
+    "type": "Animaci\u00f3n.|Inercializaci\u00f3n"
+   },
+   "AnimGraphNode_ControlRig_1": {
+    "x": 600,
+    "y": 0,
+    "type": "Misc.|Equipodecontrol"
+   }
+  },
+  "edges": [
+   [
+    "AnimGraphNode_ControlRig_1#out0",
+    "AnimGraphNode_Root_0.Result"
+   ],
+   [
+    "AnimGraphNode_Inertialization_0#out0",
+    "AnimGraphNode_ControlRig_1.Source"
+   ],
+   [
+    "AnimGraphNode_Slot_0#out0",
+    "AnimGraphNode_Inertialization_0.Source"
+   ],
+   [
+    "AnimGraphNode_StateMachine_0#out0",
+    "AnimGraphNode_Slot_0.Source"
+   ],
+   [
+    "AnimGraphNode_StateMachine_1#out0",
+    "AnimGraphNode_SaveCachedPose_0.Pose"
+   ]
+  ]
+ },
+ "EventGraph": {
+  "nodes": {
+   "K2Node_Event_0": {
+    "x": 100,
+    "y": 4050,
+    "type": "A\u00f1adirevento|EventoBlueprintUpdateAnimation"
+   },
+   "K2Node_Event_1": {
+    "x": 100,
+    "y": 1750,
+    "type": "A\u00f1adirevento|EventoBlueprintInitializeAnimation"
+   },
+   "K2Node_DynamicCast_0": {
+    "x": 600,
+    "y": 1800,
+    "type": "Utilidades|Casting|CastToCharacter"
+   },
+   "K2Node_CallFunction_1": {
+    "x": 100,
+    "y": 1900,
+    "type": "Animaci\u00f3n|GetOwningActor"
+   },
+   "K2Node_VariableSet_0": {
+    "x": 950,
+    "y": 1800,
+    "type": "|SetCharacter"
+   },
+   "K2Node_VariableSet_1": {
+    "x": 1750,
+    "y": 1800,
+    "type": "|SetMovementComponent"
+   },
+   "K2Node_VariableGet_1": {
+    "x": 1350,
+    "y": 1850,
+    "type": "|GetCharacterMovement"
+   },
+   "K2Node_VariableGet_0": {
+    "x": 550,
+    "y": 4050,
+    "type": "|Obtener"
+   },
+   "K2Node_VariableGet_2": {
+    "x": 1500,
+    "y": 2550,
+    "type": "|GetMovementComponent"
+   },
+   "K2Node_VariableSet_2": {
+    "x": 2150,
+    "y": 2500,
+    "type": "|SetVelocity"
+   },
+   "K2Node_VariableGet_4": {
+    "x": 1850,
+    "y": 2550,
+    "type": "|GetVelocity"
+   },
+   "K2Node_VariableSet_3": {
+    "x": 2850,
+    "y": 2500,
+    "type": "|SetGroundSpeed"
+   },
+   "K2Node_VariableSet_4": {
+    "x": 5350,
+    "y": 2500,
+    "type": "|SetDirection"
+   },
+   "K2Node_VariableGet_5": {
+    "x": 3500,
+    "y": 2650,
+    "type": "|GetCharacter"
+   },
+   "K2Node_CallFunction_3": {
+    "x": 3800,
+    "y": 2650,
+    "type": "Transformaci\u00f3n|GetActorRotation"
+   },
+   "K2Node_VariableGet_6": {
+    "x": 3800,
+    "y": 2500,
+    "type": "|GetVelocity"
+   },
+   "K2Node_CallFunction_5": {
+    "x": 4150,
+    "y": 2500,
+    "type": "Animaci\u00f3n|CalculateDirection"
+   },
+   "K2Node_CallFunction_6": {
+    "x": 4550,
+    "y": 2500,
+    "type": "Matem\u00e1ticas|Float|Clamp(Float)"
+   },
+   "K2Node_VariableGet_7": {
+    "x": 4150,
+    "y": 2700,
+    "type": "|GetMovementComponent"
+   },
+   "K2Node_VariableGet_8": {
+    "x": 4550,
+    "y": 2700,
+    "type": "|GetbOrientRotationToMovement"
+   },
+   "K2Node_CallFunction_8": {
+    "x": 5000,
+    "y": 2550,
+    "type": "Matem\u00e1ticas|Float|SelectFloat"
+   },
+   "K2Node_ExecutionSequence_0": {
+    "x": 900,
+    "y": 4050,
+    "type": "Utilidades|ControlDeFlujo|Secuencia"
+   },
+   "K2Node_VariableGet_9": {
+    "x": 1500,
+    "y": 3500,
+    "type": "|GetMovementComponent"
+   },
+   "K2Node_CallFunction_9": {
+    "x": 1850,
+    "y": 3450,
+    "type": "Pawn|Componentes|CharacterMovement|GetCurrentAcceleration"
+   },
+   "K2Node_PromotableOperator_2": {
+    "x": 2400,
+    "y": 3500,
+    "type": "Matem\u00e1ticas|Vector|NotEqual(Vector)"
+   },
+   "K2Node_VariableGet_10": {
+    "x": 1850,
+    "y": 3300,
+    "type": "|GetGroundSpeed"
+   },
+   "K2Node_PromotableOperator_0": {
+    "x": 2400,
+    "y": 3300,
+    "type": "Matem\u00e1ticas|Float|float>float"
+   },
+   "K2Node_CommutativeAssociativeBinaryOperator_0": {
+    "x": 2800,
+    "y": 3350,
+    "type": "Matem\u00e1ticas|Booleano|ANDBoolean"
+   },
+   "K2Node_VariableSet_5": {
+    "x": 3150,
+    "y": 3350,
+    "type": "|SetShouldMove"
+   },
+   "K2Node_Knot_0": {
+    "x": 1500,
+    "y": 3350,
+    "type": "|Nododereenrutamiento"
+   },
+   "K2Node_VariableGet_11": {
+    "x": 1500,
+    "y": 4400,
+    "type": "|GetMovementComponent"
+   },
+   "K2Node_CallFunction_10": {
+    "x": 1850,
+    "y": 4400,
+    "type": "IA|Componentes|Movimientodenavegaci\u00f3n|IsFalling"
+   },
+   "K2Node_VariableSet_6": {
+    "x": 2250,
+    "y": 4500,
+    "type": "|SetIsFalling"
+   },
+   "K2Node_Knot_1": {
+    "x": 1500,
+    "y": 4550,
+    "type": "|Nododereenrutamiento"
+   },
+   "K2Node_VariableGet_3": {
+    "x": 1500,
+    "y": 4200,
+    "type": "|GetVelocity"
+   },
+   "K2Node_VariableGet_12": {
+    "x": 2250,
+    "y": 4200,
+    "type": "|GetPeakFallSpeed"
+   },
+   "K2Node_VariableSet_7": {
+    "x": 3000,
+    "y": 4300,
+    "type": "|SetPeakFallSpeed"
+   },
+   "K2Node_CallFunction_12": {
+    "x": 1850,
+    "y": 4200,
+    "type": "Matem\u00e1ticas|Vector|BreakVector"
+   },
+   "K2Node_CallFunction_13": {
+    "x": 2250,
+    "y": 4350,
+    "type": "Matem\u00e1ticas|Float|Absolute(Float)"
+   },
+   "K2Node_CallFunction_14": {
+    "x": 2650,
+    "y": 4300,
+    "type": "Matem\u00e1ticas|Float|SelectFloat"
+   },
+   "K2Node_CallFunction_7": {
+    "x": 2500,
+    "y": 2550,
+    "type": "Matem\u00e1ticas|Vector|VectorLengthXY"
+   },
+   "K2Node_DynamicCast_1": {
+    "x": 2200,
+    "y": 1800,
+    "type": "Utilidades|Casting|CastToBP_ThirdPersonCharacter"
+   },
+   "K2Node_VariableSet_10": {
+    "x": 2700,
+    "y": 1800,
+    "type": "|SetPlayerCharacter"
+   },
+   "K2Node_VariableGet_18": {
+    "x": 3400,
+    "y": 4350,
+    "type": "|GetPlayerCharacter"
+   },
+   "K2Node_VariableGet_19": {
+    "x": 3800,
+    "y": 4300,
+    "type": "|GetIsSwinging"
+   },
+   "K2Node_VariableSet_12": {
+    "x": 4200,
+    "y": 4100,
+    "type": "|SetIsSwinging"
+   },
+   "K2Node_VariableSet_13": {
+    "x": 3400,
+    "y": 4150,
+    "type": "|SetVerticalSpeed"
+   },
+   "K2Node_MacroInstance_0": {
+    "x": 3800,
+    "y": 4100,
+    "type": "Utilities|IsValid"
+   },
+   "K2Node_VariableGet_14": {
+    "x": 4200,
+    "y": 4300,
+    "type": "|GetDistanceToFloor"
+   },
+   "K2Node_VariableSet_9": {
+    "x": 4600,
+    "y": 4150,
+    "type": "|SetDistanceToFloor"
+   },
+   "K2Node_VariableGet_16": {
+    "x": 1500,
+    "y": 5200,
+    "type": "|GetVerticalSpeed"
+   },
+   "K2Node_PromotableOperator_3": {
+    "x": 1850,
+    "y": 5200,
+    "type": "Matem\u00e1ticas|Float|float*float"
+   },
+   "K2Node_CallFunction_2": {
+    "x": 2250,
+    "y": 5200,
+    "type": "Matem\u00e1ticas|Float|Clamp(Float)"
+   },
+   "K2Node_VariableSet_14": {
+    "x": 2650,
+    "y": 5150,
+    "type": "|SetFallSpeed"
+   },
+   "K2Node_IfThenElse_3": {
+    "x": 5300,
+    "y": 5150,
+    "type": "Utilidades|ControlDeFlujo|Rama"
+   },
+   "K2Node_VariableGet_15": {
+    "x": 5000,
+    "y": 5200,
+    "type": "|GetIsFalling"
+   },
+   "K2Node_VariableSet_11": {
+    "x": 5900,
+    "y": 6250,
+    "type": "|SetGroundHit"
+   },
+   "K2Node_VariableSet_15": {
+    "x": 6350,
+    "y": 6250,
+    "type": "|SetDistanceToGround"
+   },
+   "K2Node_VariableSet_16": {
+    "x": 6850,
+    "y": 6250,
+    "type": "|SetTimeToImpact"
+   },
+   "K2Node_VariableSet_17": {
+    "x": 7300,
+    "y": 6250,
+    "type": "|SetLandPrep"
+   },
+   "K2Node_VariableGet_17": {
+    "x": 3600,
+    "y": 5150,
+    "type": "|GetCharacter"
+   },
+   "K2Node_CallFunction_22": {
+    "x": 4000,
+    "y": 5150,
+    "type": "Transformaci\u00f3n|GetActorLocation"
+   },
+   "K2Node_VariableGet_20": {
+    "x": 3300,
+    "y": 5350,
+    "type": "|GetHalfHeight"
+   },
+   "K2Node_PromotableOperator_9": {
+    "x": 3600,
+    "y": 5350,
+    "type": "Matem\u00e1ticas|Float|float+float"
+   },
+   "K2Node_CallFunction_23": {
+    "x": 4000,
+    "y": 5300,
+    "type": "Matem\u00e1ticas|Vector|MakeVector"
+   },
+   "K2Node_PromotableOperator_10": {
+    "x": 4400,
+    "y": 5200,
+    "type": "Matem\u00e1ticas|Vector|vector-vector"
+   },
+   "K2Node_CallFunction_24": {
+    "x": 5900,
+    "y": 5150,
+    "type": "Colisi\u00f3n|LineTraceByChannel"
+   },
+   "K2Node_CallFunction_25": {
+    "x": 6650,
+    "y": 5200,
+    "type": "Colisi\u00f3n|BreakHitResult"
+   },
+   "K2Node_VariableSet_18": {
+    "x": 7000,
+    "y": 5150,
+    "type": "|SetGroundHit"
+   },
+   "K2Node_PromotableOperator_11": {
+    "x": 7000,
+    "y": 5350,
+    "type": "Matem\u00e1ticas|Float|float-float"
+   },
+   "K2Node_CommutativeAssociativeBinaryOperator_2": {
+    "x": 7400,
+    "y": 5250,
+    "type": "Matem\u00e1ticas|Float|Max(Float)"
+   },
+   "K2Node_CallFunction_26": {
+    "x": 7800,
+    "y": 5200,
+    "type": "Matem\u00e1ticas|Float|SelectFloat"
+   },
+   "K2Node_VariableSet_19": {
+    "x": 8250,
+    "y": 5150,
+    "type": "|SetDistanceToGround"
+   },
+   "K2Node_VariableGet_21": {
+    "x": 8950,
+    "y": 5200,
+    "type": "|GetFallSpeed"
+   },
+   "K2Node_CommutativeAssociativeBinaryOperator_3": {
+    "x": 9250,
+    "y": 5200,
+    "type": "Matem\u00e1ticas|Float|Max(Float)"
+   },
+   "K2Node_PromotableOperator_12": {
+    "x": 9650,
+    "y": 5200,
+    "type": "Matem\u00e1ticas|Float|float/float"
+   },
+   "K2Node_VariableGet_22": {
+    "x": 9250,
+    "y": 5400,
+    "type": "|GetVerticalSpeed"
+   },
+   "K2Node_PromotableOperator_13": {
+    "x": 9650,
+    "y": 5400,
+    "type": "Matem\u00e1ticas|Float|float>float"
+   },
+   "K2Node_CallFunction_27": {
+    "x": 10000,
+    "y": 5250,
+    "type": "Matem\u00e1ticas|Float|SelectFloat"
+   },
+   "K2Node_VariableSet_20": {
+    "x": 10450,
+    "y": 5150,
+    "type": "|SetTimeToImpact"
+   },
+   "K2Node_PromotableOperator_14": {
+    "x": 10450,
+    "y": 5350,
+    "type": "Matem\u00e1ticas|Float|float/float"
+   },
+   "K2Node_PromotableOperator_15": {
+    "x": 10850,
+    "y": 5300,
+    "type": "Matem\u00e1ticas|Float|float-float"
+   },
+   "K2Node_CallFunction_28": {
+    "x": 11250,
+    "y": 5300,
+    "type": "Matem\u00e1ticas|Float|Clamp(Float)"
+   },
+   "K2Node_CallFunction_29": {
+    "x": 11650,
+    "y": 5350,
+    "type": "Matem\u00e1ticas|Float|SelectFloat"
+   },
+   "K2Node_VariableGet_23": {
+    "x": 11650,
+    "y": 5200,
+    "type": "|GetLandPrep"
+   },
+   "K2Node_CallFunction_30": {
+    "x": 12100,
+    "y": 5250,
+    "type": "Matem\u00e1ticas|Interpolaci\u00f3n|FInterpTo"
+   },
+   "K2Node_VariableSet_21": {
+    "x": 12550,
+    "y": 5150,
+    "type": "|SetLandPrep"
+   },
+   "K2Node_CallFunction_0": {
+    "x": 1500,
+    "y": 6250,
+    "type": "|UpdateProceduralVariables"
+   }
+  },
+  "edges": [
+   [
+    "K2Node_CallFunction_1#out0",
+    "K2Node_DynamicCast_0.Object"
+   ],
+   [
+    "K2Node_CallFunction_1#out0",
+    "K2Node_DynamicCast_1.Object"
+   ],
+   [
+    "K2Node_CallFunction_10#out0",
+    "K2Node_CallFunction_14.bPickA"
+   ],
+   [
+    "K2Node_CallFunction_10#out0",
+    "K2Node_VariableSet_6.IsFalling"
+   ],
+   [
+    "K2Node_CallFunction_12#out2",
+    "K2Node_CallFunction_13.A"
+   ],
+   [
+    "K2Node_CallFunction_12#out2",
+    "K2Node_VariableSet_13.VerticalSpeed"
+   ],
+   [
+    "K2Node_CallFunction_13#out0",
+    "K2Node_CallFunction_14.A"
+   ],
+   [
+    "K2Node_CallFunction_14#out0",
+    "K2Node_VariableSet_7.PeakFallSpeed"
+   ],
+   [
+    "K2Node_CallFunction_2#out0",
+    "K2Node_VariableSet_14.FallSpeed"
+   ],
+   [
+    "K2Node_CallFunction_22#out0",
+    "K2Node_CallFunction_24.Start"
+   ],
+   [
+    "K2Node_CallFunction_22#out0",
+    "K2Node_PromotableOperator_10.A"
+   ],
+   [
+    "K2Node_CallFunction_23#out0",
+    "K2Node_PromotableOperator_10.B"
+   ],
+   [
+    "K2Node_CallFunction_24#out0",
+    "K2Node_VariableSet_18.execute"
+   ],
+   [
+    "K2Node_CallFunction_24#out1",
+    "K2Node_CallFunction_25.Hit"
+   ],
+   [
+    "K2Node_CallFunction_25#out0",
+    "K2Node_CallFunction_26.bPickA"
+   ],
+   [
+    "K2Node_CallFunction_25#out0",
+    "K2Node_CallFunction_29.bPickA"
+   ],
+   [
+    "K2Node_CallFunction_25#out0",
+    "K2Node_VariableSet_18.GroundHit"
+   ],
+   [
+    "K2Node_CallFunction_25#out3",
+    "K2Node_PromotableOperator_11.A"
+   ],
+   [
+    "K2Node_CallFunction_26#out0",
+    "K2Node_PromotableOperator_12.A"
+   ],
+   [
+    "K2Node_CallFunction_26#out0",
+    "K2Node_VariableSet_19.DistanceToGround"
+   ],
+   [
+    "K2Node_CallFunction_27#out0",
+    "K2Node_PromotableOperator_14.A"
+   ],
+   [
+    "K2Node_CallFunction_27#out0",
+    "K2Node_VariableSet_20.TimeToImpact"
+   ],
+   [
+    "K2Node_CallFunction_28#out0",
+    "K2Node_CallFunction_29.A"
+   ],
+   [
+    "K2Node_CallFunction_29#out0",
+    "K2Node_CallFunction_30.Target"
+   ],
+   [
+    "K2Node_CallFunction_3#out0",
+    "K2Node_CallFunction_5.BaseRotation"
+   ],
+   [
+    "K2Node_CallFunction_30#out0",
+    "K2Node_VariableSet_21.LandPrep"
+   ],
+   [
+    "K2Node_CallFunction_5#out0",
+    "K2Node_CallFunction_6.Value"
+   ],
+   [
+    "K2Node_CallFunction_5#out0",
+    "K2Node_CallFunction_8.A"
+   ],
+   [
+    "K2Node_CallFunction_6#out0",
+    "K2Node_CallFunction_8.B"
+   ],
+   [
+    "K2Node_CallFunction_7#out0",
+    "K2Node_VariableSet_3.GroundSpeed"
+   ],
+   [
+    "K2Node_CallFunction_8#out0",
+    "K2Node_VariableSet_4.Direction"
+   ],
+   [
+    "K2Node_CallFunction_9#out0",
+    "K2Node_PromotableOperator_2.A"
+   ],
+   [
+    "K2Node_CommutativeAssociativeBinaryOperator_0#out0",
+    "K2Node_VariableSet_5.ShouldMove"
+   ],
+   [
+    "K2Node_CommutativeAssociativeBinaryOperator_2#out0",
+    "K2Node_CallFunction_26.A"
+   ],
+   [
+    "K2Node_CommutativeAssociativeBinaryOperator_3#out0",
+    "K2Node_PromotableOperator_12.B"
+   ],
+   [
+    "K2Node_DynamicCast_0#out0",
+    "K2Node_VariableSet_0.execute"
+   ],
+   [
+    "K2Node_DynamicCast_0#out2",
+    "K2Node_VariableSet_0.Character"
+   ],
+   [
+    "K2Node_DynamicCast_1#out0",
+    "K2Node_VariableSet_10.execute"
+   ],
+   [
+    "K2Node_DynamicCast_1#out2",
+    "K2Node_VariableSet_10.PlayerCharacter"
+   ],
+   [
+    "K2Node_Event_0#out1",
+    "K2Node_VariableGet_0.execute"
+   ],
+   [
+    "K2Node_Event_0#out2",
+    "K2Node_CallFunction_0.DeltaTimeX"
+   ],
+   [
+    "K2Node_Event_0#out2",
+    "K2Node_CallFunction_30.DeltaTime"
+   ],
+   [
+    "K2Node_Event_1#out1",
+    "K2Node_DynamicCast_0.execute"
+   ],
+   [
+    "K2Node_ExecutionSequence_0#out0",
+    "K2Node_VariableSet_2.execute"
+   ],
+   [
+    "K2Node_ExecutionSequence_0#out1",
+    "K2Node_Knot_0.InputPin"
+   ],
+   [
+    "K2Node_ExecutionSequence_0#out2",
+    "K2Node_Knot_1.InputPin"
+   ],
+   [
+    "K2Node_ExecutionSequence_0#out3",
+    "K2Node_VariableSet_14.execute"
+   ],
+   [
+    "K2Node_ExecutionSequence_0#out4",
+    "K2Node_CallFunction_0.execute"
+   ],
+   [
+    "K2Node_IfThenElse_3#out0",
+    "K2Node_CallFunction_24.execute"
+   ],
+   [
+    "K2Node_IfThenElse_3#out1",
+    "K2Node_VariableSet_11.execute"
+   ],
+   [
+    "K2Node_Knot_0#out0",
+    "K2Node_VariableSet_5.execute"
+   ],
+   [
+    "K2Node_Knot_1#out0",
+    "K2Node_VariableSet_6.execute"
+   ],
+   [
+    "K2Node_MacroInstance_0#out0",
+    "K2Node_VariableSet_12.execute"
+   ],
+   [
+    "K2Node_PromotableOperator_0#out0",
+    "K2Node_CommutativeAssociativeBinaryOperator_0.A"
+   ],
+   [
+    "K2Node_PromotableOperator_10#out0",
+    "K2Node_CallFunction_24.End"
+   ],
+   [
+    "K2Node_PromotableOperator_11#out0",
+    "K2Node_CommutativeAssociativeBinaryOperator_2.A"
+   ],
+   [
+    "K2Node_PromotableOperator_12#out0",
+    "K2Node_CallFunction_27.B"
+   ],
+   [
+    "K2Node_PromotableOperator_13#out0",
+    "K2Node_CallFunction_27.bPickA"
+   ],
+   [
+    "K2Node_PromotableOperator_14#out0",
+    "K2Node_PromotableOperator_15.B"
+   ],
+   [
+    "K2Node_PromotableOperator_15#out0",
+    "K2Node_CallFunction_28.Value"
+   ],
+   [
+    "K2Node_PromotableOperator_2#out0",
+    "K2Node_CommutativeAssociativeBinaryOperator_0.B"
+   ],
+   [
+    "K2Node_PromotableOperator_3#out0",
+    "K2Node_CallFunction_2.Value"
+   ],
+   [
+    "K2Node_PromotableOperator_9#out0",
+    "K2Node_CallFunction_23.Z"
+   ],
+   [
+    "K2Node_VariableGet_0#out0",
+    "K2Node_ExecutionSequence_0.execute"
+   ],
+   [
+    "K2Node_VariableGet_1#out0",
+    "K2Node_VariableSet_1.MovementComponent"
+   ],
+   [
+    "K2Node_VariableGet_10#out0",
+    "K2Node_PromotableOperator_0.A"
+   ],
+   [
+    "K2Node_VariableGet_11#out0",
+    "K2Node_CallFunction_10.self"
+   ],
+   [
+    "K2Node_VariableGet_12#out0",
+    "K2Node_CallFunction_14.B"
+   ],
+   [
+    "K2Node_VariableGet_14#out0",
+    "K2Node_VariableSet_9.DistanceToFloor"
+   ],
+   [
+    "K2Node_VariableGet_15#out0",
+    "K2Node_IfThenElse_3.Condition"
+   ],
+   [
+    "K2Node_VariableGet_16#out0",
+    "K2Node_PromotableOperator_3.A"
+   ],
+   [
+    "K2Node_VariableGet_17#out0",
+    "K2Node_CallFunction_22.self"
+   ],
+   [
+    "K2Node_VariableGet_18#out0",
+    "K2Node_MacroInstance_0.InputObject"
+   ],
+   [
+    "K2Node_VariableGet_18#out0",
+    "K2Node_VariableGet_14.self"
+   ],
+   [
+    "K2Node_VariableGet_18#out0",
+    "K2Node_VariableGet_19.self"
+   ],
+   [
+    "K2Node_VariableGet_19#out0",
+    "K2Node_VariableSet_12.IsSwinging"
+   ],
+   [
+    "K2Node_VariableGet_2#out0",
+    "K2Node_VariableGet_4.self"
+   ],
+   [
+    "K2Node_VariableGet_20#out0",
+    "K2Node_PromotableOperator_11.B"
+   ],
+   [
+    "K2Node_VariableGet_20#out0",
+    "K2Node_PromotableOperator_9.A"
+   ],
+   [
+    "K2Node_VariableGet_21#out0",
+    "K2Node_CommutativeAssociativeBinaryOperator_3.A"
+   ],
+   [
+    "K2Node_VariableGet_22#out0",
+    "K2Node_PromotableOperator_13.A"
+   ],
+   [
+    "K2Node_VariableGet_23#out0",
+    "K2Node_CallFunction_30.Current"
+   ],
+   [
+    "K2Node_VariableGet_3#out0",
+    "K2Node_CallFunction_12.InVec"
+   ],
+   [
+    "K2Node_VariableGet_4#out0",
+    "K2Node_VariableSet_2.Velocity"
+   ],
+   [
+    "K2Node_VariableGet_5#out0",
+    "K2Node_CallFunction_3.self"
+   ],
+   [
+    "K2Node_VariableGet_6#out0",
+    "K2Node_CallFunction_5.Velocity"
+   ],
+   [
+    "K2Node_VariableGet_7#out0",
+    "K2Node_VariableGet_8.self"
+   ],
+   [
+    "K2Node_VariableGet_8#out0",
+    "K2Node_CallFunction_8.bPickA"
+   ],
+   [
+    "K2Node_VariableGet_9#out0",
+    "K2Node_CallFunction_9.self"
+   ],
+   [
+    "K2Node_VariableSet_0#out0",
+    "K2Node_VariableSet_1.execute"
+   ],
+   [
+    "K2Node_VariableSet_0#out1",
+    "K2Node_VariableGet_1.self"
+   ],
+   [
+    "K2Node_VariableSet_1#out0",
+    "K2Node_DynamicCast_1.execute"
+   ],
+   [
+    "K2Node_VariableSet_11#out0",
+    "K2Node_VariableSet_15.execute"
+   ],
+   [
+    "K2Node_VariableSet_12#out0",
+    "K2Node_VariableSet_9.execute"
+   ],
+   [
+    "K2Node_VariableSet_13#out0",
+    "K2Node_MacroInstance_0.exec"
+   ],
+   [
+    "K2Node_VariableSet_14#out0",
+    "K2Node_IfThenElse_3.execute"
+   ],
+   [
+    "K2Node_VariableSet_15#out0",
+    "K2Node_VariableSet_16.execute"
+   ],
+   [
+    "K2Node_VariableSet_16#out0",
+    "K2Node_VariableSet_17.execute"
+   ],
+   [
+    "K2Node_VariableSet_18#out0",
+    "K2Node_VariableSet_19.execute"
+   ],
+   [
+    "K2Node_VariableSet_19#out0",
+    "K2Node_VariableSet_20.execute"
+   ],
+   [
+    "K2Node_VariableSet_2#out0",
+    "K2Node_VariableSet_3.execute"
+   ],
+   [
+    "K2Node_VariableSet_2#out1",
+    "K2Node_CallFunction_7.A"
+   ],
+   [
+    "K2Node_VariableSet_20#out0",
+    "K2Node_VariableSet_21.execute"
+   ],
+   [
+    "K2Node_VariableSet_3#out0",
+    "K2Node_VariableSet_4.execute"
+   ],
+   [
+    "K2Node_VariableSet_6#out0",
+    "K2Node_VariableSet_7.execute"
+   ],
+   [
+    "K2Node_VariableSet_7#out0",
+    "K2Node_VariableSet_13.execute"
+   ]
+  ]
+ },
+ "UpdateProceduralVariables": {
+  "nodes": {
+   "K2Node_FunctionEntry_0": {
+    "x": 100,
+    "y": 5550,
+    "type": "|UpdateProceduralVariables"
+   },
+   "K2Node_ExecutionSequence_0": {
+    "x": 500,
+    "y": 5550,
+    "type": "Utilidades|ControlDeFlujo|Secuencia"
+   },
+   "K2Node_VariableGet_1": {
+    "x": 1100,
+    "y": 4550,
+    "type": "|GetGroundSpeed"
+   },
+   "K2Node_PromotableOperator_0": {
+    "x": 1400,
+    "y": 4550,
+    "type": "Matem\u00e1ticas|Float|float/float"
+   },
+   "K2Node_PromotableOperator_1": {
+    "x": 1800,
+    "y": 4550,
+    "type": "Matem\u00e1ticas|Float|float*float"
+   },
+   "K2Node_CallFunction_0": {
+    "x": 2150,
+    "y": 4550,
+    "type": "Matem\u00e1ticas|Float|Clamp(Float)"
+   },
+   "K2Node_VariableGet_2": {
+    "x": 2800,
+    "y": 4600,
+    "type": "|GetLeanPitch"
+   },
+   "K2Node_CallFunction_1": {
+    "x": 3100,
+    "y": 4600,
+    "type": "Matem\u00e1ticas|Interpolaci\u00f3n|FInterpTo"
+   },
+   "K2Node_VariableSet_0": {
+    "x": 3550,
+    "y": 4550,
+    "type": "|SetLeanPitch"
+   },
+   "K2Node_VariableGet_6": {
+    "x": 1100,
+    "y": 5250,
+    "type": "|GetCharacter"
+   },
+   "K2Node_CallFunction_12": {
+    "x": 1400,
+    "y": 5250,
+    "type": "Transformaci\u00f3n|GetActorRotation"
+   },
+   "K2Node_CallFunction_13": {
+    "x": 1750,
+    "y": 5250,
+    "type": "Matem\u00e1ticas|Rotaci\u00f3n|BreakRotator"
+   },
+   "K2Node_VariableGet_7": {
+    "x": 1750,
+    "y": 5450,
+    "type": "|GetPreviousYaw"
+   },
+   "K2Node_PromotableOperator_6": {
+    "x": 2100,
+    "y": 5350,
+    "type": "Matem\u00e1ticas|Float|float-float"
+   },
+   "K2Node_PromotableOperator_7": {
+    "x": 2450,
+    "y": 5400,
+    "type": "Matem\u00e1ticas|Float|float/float"
+   },
+   "K2Node_PromotableOperator_8": {
+    "x": 2800,
+    "y": 5400,
+    "type": "Matem\u00e1ticas|Float|float*float"
+   },
+   "K2Node_CallFunction_14": {
+    "x": 3150,
+    "y": 5400,
+    "type": "Matem\u00e1ticas|Float|Clamp(Float)"
+   },
+   "K2Node_VariableGet_8": {
+    "x": 3800,
+    "y": 5300,
+    "type": "|GetLeanRoll"
+   },
+   "K2Node_CallFunction_15": {
+    "x": 4100,
+    "y": 5300,
+    "type": "Matem\u00e1ticas|Interpolaci\u00f3n|FInterpTo"
+   },
+   "K2Node_VariableSet_3": {
+    "x": 4550,
+    "y": 5250,
+    "type": "|SetLeanRoll"
+   },
+   "K2Node_VariableSet_4": {
+    "x": 4900,
+    "y": 5250,
+    "type": "|SetPreviousYaw"
+   },
+   "K2Node_CallFunction_22": {
+    "x": 2800,
+    "y": 6150,
+    "type": "Animaci\u00f3n|GetOwningComponent"
+   },
+   "K2Node_CallFunction_23": {
+    "x": 3250,
+    "y": 6150,
+    "type": "Transformaci\u00f3n|GetSocketLocation"
+   },
+   "K2Node_CallFunction_24": {
+    "x": 6150,
+    "y": 7450,
+    "type": "Matem\u00e1ticas|Vector|MakeVector"
+   },
+   "K2Node_CallFunction_25": {
+    "x": 6150,
+    "y": 7800,
+    "type": "Matem\u00e1ticas|Vector|MakeVector"
+   },
+   "K2Node_PromotableOperator_11": {
+    "x": 6550,
+    "y": 7350,
+    "type": "Matem\u00e1ticas|Vector|vector+vector"
+   },
+   "K2Node_PromotableOperator_12": {
+    "x": 6550,
+    "y": 7750,
+    "type": "Matem\u00e1ticas|Vector|vector-vector"
+   },
+   "K2Node_CallFunction_26": {
+    "x": 4700,
+    "y": 6050,
+    "type": "Colisi\u00f3n|LineTraceByChannel"
+   },
+   "K2Node_CallFunction_27": {
+    "x": 5450,
+    "y": 6200,
+    "type": "Colisi\u00f3n|BreakHitResult"
+   },
+   "K2Node_PromotableOperator_13": {
+    "x": 5800,
+    "y": 6300,
+    "type": "Matem\u00e1ticas|Float|float-float"
+   },
+   "K2Node_Select_1": {
+    "x": 6200,
+    "y": 6100,
+    "type": "Utilidades|Seleccionar"
+   },
+   "K2Node_CallFunction_28": {
+    "x": 6650,
+    "y": 6100,
+    "type": "Matem\u00e1ticas|Float|Clamp(Float)"
+   },
+   "K2Node_VariableGet_9": {
+    "x": 7300,
+    "y": 6100,
+    "type": "|GetFootOffsetL"
+   },
+   "K2Node_CallFunction_29": {
+    "x": 7600,
+    "y": 6100,
+    "type": "Matem\u00e1ticas|Interpolaci\u00f3n|FInterpTo"
+   },
+   "K2Node_VariableSet_5": {
+    "x": 8050,
+    "y": 6050,
+    "type": "|SetFootOffsetL"
+   },
+   "K2Node_CallFunction_30": {
+    "x": 4700,
+    "y": 7350,
+    "type": "Transformaci\u00f3n|GetSocketLocation"
+   },
+   "K2Node_PromotableOperator_14": {
+    "x": 6550,
+    "y": 7550,
+    "type": "Matem\u00e1ticas|Vector|vector+vector"
+   },
+   "K2Node_PromotableOperator_15": {
+    "x": 6550,
+    "y": 7950,
+    "type": "Matem\u00e1ticas|Vector|vector-vector"
+   },
+   "K2Node_CallFunction_31": {
+    "x": 8700,
+    "y": 6050,
+    "type": "Colisi\u00f3n|LineTraceByChannel"
+   },
+   "K2Node_CallFunction_32": {
+    "x": 9450,
+    "y": 6100,
+    "type": "Colisi\u00f3n|BreakHitResult"
+   },
+   "K2Node_PromotableOperator_16": {
+    "x": 9800,
+    "y": 6250,
+    "type": "Matem\u00e1ticas|Float|float-float"
+   },
+   "K2Node_Select_2": {
+    "x": 10200,
+    "y": 6100,
+    "type": "Utilidades|Seleccionar"
+   },
+   "K2Node_CallFunction_33": {
+    "x": 10650,
+    "y": 6100,
+    "type": "Matem\u00e1ticas|Float|Clamp(Float)"
+   },
+   "K2Node_VariableGet_10": {
+    "x": 11300,
+    "y": 6100,
+    "type": "|GetFootOffsetR"
+   },
+   "K2Node_CallFunction_34": {
+    "x": 11600,
+    "y": 6100,
+    "type": "Matem\u00e1ticas|Interpolaci\u00f3n|FInterpTo"
+   },
+   "K2Node_VariableSet_6": {
+    "x": 12050,
+    "y": 6050,
+    "type": "|SetFootOffsetR"
+   },
+   "K2Node_CommutativeAssociativeBinaryOperator_1": {
+    "x": 12700,
+    "y": 6100,
+    "type": "Matem\u00e1ticas|Float|Min(Float)"
+   },
+   "K2Node_VariableSet_7": {
+    "x": 13050,
+    "y": 6050,
+    "type": "|SetPelvisOffset"
+   },
+   "K2Node_VariableGet_15": {
+    "x": 1850,
+    "y": 8600,
+    "type": "|GetIsFalling"
+   },
+   "K2Node_VariableGet_16": {
+    "x": 1100,
+    "y": 8800,
+    "type": "|GetTimeToImpact"
+   },
+   "K2Node_VariableGet_17": {
+    "x": 1100,
+    "y": 9050,
+    "type": "|GetPeakFallSpeed"
+   },
+   "K2Node_PromotableOperator_18": {
+    "x": 1850,
+    "y": 8750,
+    "type": "Matem\u00e1ticas|Float|float<float"
+   },
+   "K2Node_CommutativeAssociativeBinaryOperator_2": {
+    "x": 2250,
+    "y": 8700,
+    "type": "Matem\u00e1ticas|Booleano|ANDBoolean"
+   },
+   "K2Node_PromotableOperator_19": {
+    "x": 1450,
+    "y": 9050,
+    "type": "Matem\u00e1ticas|Float|float/float"
+   },
+   "K2Node_CallFunction_35": {
+    "x": 1850,
+    "y": 9150,
+    "type": "Matem\u00e1ticas|Float|Clamp(Float)"
+   },
+   "K2Node_PromotableOperator_20": {
+    "x": 1450,
+    "y": 8850,
+    "type": "Matem\u00e1ticas|Float|float/float"
+   },
+   "K2Node_PromotableOperator_21": {
+    "x": 1850,
+    "y": 8950,
+    "type": "Matem\u00e1ticas|Float|float-float"
+   },
+   "K2Node_PromotableOperator_22": {
+    "x": 2250,
+    "y": 8900,
+    "type": "Matem\u00e1ticas|Float|float*float"
+   },
+   "K2Node_Select_3": {
+    "x": 2600,
+    "y": 8750,
+    "type": "Utilidades|Seleccionar"
+   },
+   "K2Node_VariableGet_18": {
+    "x": 3300,
+    "y": 8650,
+    "type": "|GetLandCrouch"
+   },
+   "K2Node_CallFunction_36": {
+    "x": 3600,
+    "y": 8650,
+    "type": "Matem\u00e1ticas|Interpolaci\u00f3n|FInterpTo"
+   },
+   "K2Node_VariableSet_8": {
+    "x": 4050,
+    "y": 8600,
+    "type": "|SetLandCrouch"
+   },
+   "K2Node_VariableGet_19": {
+    "x": 1100,
+    "y": 6150,
+    "type": "|GetCharacter"
+   },
+   "K2Node_CallFunction_37": {
+    "x": 1400,
+    "y": 6050,
+    "type": "Transformaci\u00f3n|GetActorLocation"
+   },
+   "K2Node_CallFunction_38": {
+    "x": 1400,
+    "y": 6200,
+    "type": "Transformaci\u00f3n|GetActorForwardVector"
+   },
+   "K2Node_PromotableOperator_23": {
+    "x": 2800,
+    "y": 9850,
+    "type": "Matem\u00e1ticas|Vector|vector*vector"
+   },
+   "K2Node_PromotableOperator_24": {
+    "x": 3150,
+    "y": 9800,
+    "type": "Matem\u00e1ticas|Vector|vector+vector"
+   },
+   "K2Node_CallFunction_39": {
+    "x": 3150,
+    "y": 10000,
+    "type": "Matem\u00e1ticas|Vector|MakeVector"
+   },
+   "K2Node_PromotableOperator_25": {
+    "x": 3550,
+    "y": 9900,
+    "type": "Matem\u00e1ticas|Vector|vector+vector"
+   },
+   "K2Node_VariableSet_9": {
+    "x": 4150,
+    "y": 9800,
+    "type": "|SetLookTarget"
+   },
+   "K2Node_VariableSet_10": {
+    "x": 4550,
+    "y": 9800,
+    "type": "|SetLookAlpha"
+   },
+   "K2Node_VariableGet_20": {
+    "x": 2800,
+    "y": 6300,
+    "type": "|GetCharacter"
+   },
+   "K2Node_MakeArray_0": {
+    "x": 3250,
+    "y": 6350,
+    "type": "Utilidades|Array|Hacermatriz"
+   },
+   "K2Node_CallFunction_41": {
+    "x": 6150,
+    "y": 7250,
+    "type": "Matem\u00e1ticas|Vector|BreakVector"
+   },
+   "K2Node_CallFunction_46": {
+    "x": 1800,
+    "y": 6050,
+    "type": "Matem\u00e1ticas|Vector|BreakVector"
+   },
+   "K2Node_PromotableOperator_27": {
+    "x": 2150,
+    "y": 6150,
+    "type": "Matem\u00e1ticas|Float|float-float"
+   },
+   "K2Node_CallFunction_47": {
+    "x": 3750,
+    "y": 6150,
+    "type": "Matem\u00e1ticas|Vector|BreakVector"
+   },
+   "K2Node_CallFunction_48": {
+    "x": 4100,
+    "y": 6050,
+    "type": "Matem\u00e1ticas|Vector|MakeVector"
+   },
+   "K2Node_CallFunction_49": {
+    "x": 4100,
+    "y": 6250,
+    "type": "Matem\u00e1ticas|Vector|MakeVector"
+   },
+   "K2Node_CallFunction_50": {
+    "x": 5200,
+    "y": 7350,
+    "type": "Matem\u00e1ticas|Vector|BreakVector"
+   },
+   "K2Node_CallFunction_51": {
+    "x": 5550,
+    "y": 7250,
+    "type": "Matem\u00e1ticas|Vector|MakeVector"
+   },
+   "K2Node_CallFunction_52": {
+    "x": 5550,
+    "y": 7450,
+    "type": "Matem\u00e1ticas|Vector|MakeVector"
+   },
+   "K2Node_CallFunction_53": {
+    "x": 5450,
+    "y": 6050,
+    "type": "Matem\u00e1ticas|Booleano|NOTBoolean"
+   },
+   "K2Node_CommutativeAssociativeBinaryOperator_5": {
+    "x": 5800,
+    "y": 6100,
+    "type": "Matem\u00e1ticas|Booleano|ANDBoolean"
+   },
+   "K2Node_CommutativeAssociativeBinaryOperator_6": {
+    "x": 9800,
+    "y": 6050,
+    "type": "Matem\u00e1ticas|Booleano|ANDBoolean"
+   }
+  },
+  "edges": [
+   [
+    "K2Node_CallFunction_0#out0",
+    "K2Node_CallFunction_1.Target"
+   ],
+   [
+    "K2Node_CallFunction_1#out0",
+    "K2Node_VariableSet_0.LeanPitch"
+   ],
+   [
+    "K2Node_CallFunction_12#out0",
+    "K2Node_CallFunction_13.InRot"
+   ],
+   [
+    "K2Node_CallFunction_13#out2",
+    "K2Node_PromotableOperator_6.A"
+   ],
+   [
+    "K2Node_CallFunction_13#out2",
+    "K2Node_VariableSet_4.PreviousYaw"
+   ],
+   [
+    "K2Node_CallFunction_14#out0",
+    "K2Node_CallFunction_15.Target"
+   ],
+   [
+    "K2Node_CallFunction_15#out0",
+    "K2Node_VariableSet_3.LeanRoll"
+   ],
+   [
+    "K2Node_CallFunction_22#out0",
+    "K2Node_CallFunction_23.self"
+   ],
+   [
+    "K2Node_CallFunction_22#out0",
+    "K2Node_CallFunction_30.self"
+   ],
+   [
+    "K2Node_CallFunction_23#out0",
+    "K2Node_CallFunction_47.InVec"
+   ],
+   [
+    "K2Node_CallFunction_23#out0",
+    "K2Node_PromotableOperator_11.A"
+   ],
+   [
+    "K2Node_CallFunction_23#out0",
+    "K2Node_PromotableOperator_12.A"
+   ],
+   [
+    "K2Node_CallFunction_24#out0",
+    "K2Node_PromotableOperator_11.B"
+   ],
+   [
+    "K2Node_CallFunction_24#out0",
+    "K2Node_PromotableOperator_14.B"
+   ],
+   [
+    "K2Node_CallFunction_25#out0",
+    "K2Node_PromotableOperator_12.B"
+   ],
+   [
+    "K2Node_CallFunction_25#out0",
+    "K2Node_PromotableOperator_15.B"
+   ],
+   [
+    "K2Node_CallFunction_26#out0",
+    "K2Node_VariableSet_5.execute"
+   ],
+   [
+    "K2Node_CallFunction_26#out1",
+    "K2Node_CallFunction_27.Hit"
+   ],
+   [
+    "K2Node_CallFunction_27#out0",
+    "K2Node_CommutativeAssociativeBinaryOperator_5.A"
+   ],
+   [
+    "K2Node_CallFunction_27#out3",
+    "K2Node_PromotableOperator_13.B"
+   ],
+   [
+    "K2Node_CallFunction_28#out0",
+    "K2Node_CallFunction_29.Target"
+   ],
+   [
+    "K2Node_CallFunction_29#out0",
+    "K2Node_CommutativeAssociativeBinaryOperator_1.A"
+   ],
+   [
+    "K2Node_CallFunction_29#out0",
+    "K2Node_VariableSet_5.FootOffsetL"
+   ],
+   [
+    "K2Node_CallFunction_30#out0",
+    "K2Node_CallFunction_50.InVec"
+   ],
+   [
+    "K2Node_CallFunction_30#out0",
+    "K2Node_PromotableOperator_14.A"
+   ],
+   [
+    "K2Node_CallFunction_30#out0",
+    "K2Node_PromotableOperator_15.A"
+   ],
+   [
+    "K2Node_CallFunction_31#out0",
+    "K2Node_VariableSet_6.execute"
+   ],
+   [
+    "K2Node_CallFunction_31#out1",
+    "K2Node_CallFunction_32.Hit"
+   ],
+   [
+    "K2Node_CallFunction_32#out0",
+    "K2Node_CommutativeAssociativeBinaryOperator_6.A"
+   ],
+   [
+    "K2Node_CallFunction_32#out3",
+    "K2Node_PromotableOperator_16.B"
+   ],
+   [
+    "K2Node_CallFunction_33#out0",
+    "K2Node_CallFunction_34.Target"
+   ],
+   [
+    "K2Node_CallFunction_34#out0",
+    "K2Node_CommutativeAssociativeBinaryOperator_1.B"
+   ],
+   [
+    "K2Node_CallFunction_34#out0",
+    "K2Node_VariableSet_6.FootOffsetR"
+   ],
+   [
+    "K2Node_CallFunction_35#out0",
+    "K2Node_PromotableOperator_22.A"
+   ],
+   [
+    "K2Node_CallFunction_36#out0",
+    "K2Node_VariableSet_8.LandCrouch"
+   ],
+   [
+    "K2Node_CallFunction_37#out0",
+    "K2Node_CallFunction_41.InVec"
+   ],
+   [
+    "K2Node_CallFunction_37#out0",
+    "K2Node_CallFunction_46.InVec"
+   ],
+   [
+    "K2Node_CallFunction_37#out0",
+    "K2Node_PromotableOperator_24.A"
+   ],
+   [
+    "K2Node_CallFunction_38#out0",
+    "K2Node_PromotableOperator_23.A"
+   ],
+   [
+    "K2Node_CallFunction_39#out0",
+    "K2Node_PromotableOperator_25.B"
+   ],
+   [
+    "K2Node_CallFunction_46#out2",
+    "K2Node_CallFunction_48.Z"
+   ],
+   [
+    "K2Node_CallFunction_46#out2",
+    "K2Node_CallFunction_51.Z"
+   ],
+   [
+    "K2Node_CallFunction_46#out2",
+    "K2Node_PromotableOperator_27.A"
+   ],
+   [
+    "K2Node_CallFunction_47#out0",
+    "K2Node_CallFunction_48.X"
+   ],
+   [
+    "K2Node_CallFunction_47#out0",
+    "K2Node_CallFunction_49.X"
+   ],
+   [
+    "K2Node_CallFunction_47#out1",
+    "K2Node_CallFunction_48.Y"
+   ],
+   [
+    "K2Node_CallFunction_47#out1",
+    "K2Node_CallFunction_49.Y"
+   ],
+   [
+    "K2Node_CallFunction_48#out0",
+    "K2Node_CallFunction_26.Start"
+   ],
+   [
+    "K2Node_CallFunction_49#out0",
+    "K2Node_CallFunction_26.End"
+   ],
+   [
+    "K2Node_CallFunction_50#out0",
+    "K2Node_CallFunction_51.X"
+   ],
+   [
+    "K2Node_CallFunction_50#out0",
+    "K2Node_CallFunction_52.X"
+   ],
+   [
+    "K2Node_CallFunction_50#out1",
+    "K2Node_CallFunction_51.Y"
+   ],
+   [
+    "K2Node_CallFunction_50#out1",
+    "K2Node_CallFunction_52.Y"
+   ],
+   [
+    "K2Node_CallFunction_51#out0",
+    "K2Node_CallFunction_31.Start"
+   ],
+   [
+    "K2Node_CallFunction_52#out0",
+    "K2Node_CallFunction_31.End"
+   ],
+   [
+    "K2Node_CallFunction_53#out0",
+    "K2Node_CommutativeAssociativeBinaryOperator_5.B"
+   ],
+   [
+    "K2Node_CallFunction_53#out0",
+    "K2Node_CommutativeAssociativeBinaryOperator_6.B"
+   ],
+   [
+    "K2Node_CommutativeAssociativeBinaryOperator_1#out0",
+    "K2Node_VariableSet_7.PelvisOffset"
+   ],
+   [
+    "K2Node_CommutativeAssociativeBinaryOperator_2#out0",
+    "K2Node_Select_3.Index"
+   ],
+   [
+    "K2Node_CommutativeAssociativeBinaryOperator_5#out0",
+    "K2Node_Select_1.Index"
+   ],
+   [
+    "K2Node_CommutativeAssociativeBinaryOperator_6#out0",
+    "K2Node_Select_2.Index"
+   ],
+   [
+    "K2Node_ExecutionSequence_0#out0",
+    "K2Node_VariableSet_0.execute"
+   ],
+   [
+    "K2Node_ExecutionSequence_0#out1",
+    "K2Node_VariableSet_3.execute"
+   ],
+   [
+    "K2Node_ExecutionSequence_0#out2",
+    "K2Node_CallFunction_26.execute"
+   ],
+   [
+    "K2Node_ExecutionSequence_0#out3",
+    "K2Node_VariableSet_8.execute"
+   ],
+   [
+    "K2Node_ExecutionSequence_0#out4",
+    "K2Node_VariableSet_9.execute"
+   ],
+   [
+    "K2Node_FunctionEntry_0#out0",
+    "K2Node_ExecutionSequence_0.execute"
+   ],
+   [
+    "K2Node_FunctionEntry_0#out1",
+    "K2Node_CallFunction_1.DeltaTime"
+   ],
+   [
+    "K2Node_FunctionEntry_0#out1",
+    "K2Node_CallFunction_15.DeltaTime"
+   ],
+   [
+    "K2Node_FunctionEntry_0#out1",
+    "K2Node_CallFunction_29.DeltaTime"
+   ],
+   [
+    "K2Node_FunctionEntry_0#out1",
+    "K2Node_CallFunction_34.DeltaTime"
+   ],
+   [
+    "K2Node_FunctionEntry_0#out1",
+    "K2Node_CallFunction_36.DeltaTime"
+   ],
+   [
+    "K2Node_FunctionEntry_0#out1",
+    "K2Node_PromotableOperator_7.B"
+   ],
+   [
+    "K2Node_MakeArray_0#out0",
+    "K2Node_CallFunction_26.ActorsToIgnore"
+   ],
+   [
+    "K2Node_MakeArray_0#out0",
+    "K2Node_CallFunction_31.ActorsToIgnore"
+   ],
+   [
+    "K2Node_PromotableOperator_0#out0",
+    "K2Node_PromotableOperator_1.A"
+   ],
+   [
+    "K2Node_PromotableOperator_1#out0",
+    "K2Node_CallFunction_0.Value"
+   ],
+   [
+    "K2Node_PromotableOperator_13#out0",
+    "K2Node_Select_1.Option 1"
+   ],
+   [
+    "K2Node_PromotableOperator_16#out0",
+    "K2Node_Select_2.Option 1"
+   ],
+   [
+    "K2Node_PromotableOperator_18#out0",
+    "K2Node_CommutativeAssociativeBinaryOperator_2.B"
+   ],
+   [
+    "K2Node_PromotableOperator_19#out0",
+    "K2Node_CallFunction_35.Value"
+   ],
+   [
+    "K2Node_PromotableOperator_20#out0",
+    "K2Node_PromotableOperator_21.B"
+   ],
+   [
+    "K2Node_PromotableOperator_21#out0",
+    "K2Node_PromotableOperator_22.B"
+   ],
+   [
+    "K2Node_PromotableOperator_22#out0",
+    "K2Node_Select_3.Option 1"
+   ],
+   [
+    "K2Node_PromotableOperator_23#out0",
+    "K2Node_PromotableOperator_24.B"
+   ],
+   [
+    "K2Node_PromotableOperator_24#out0",
+    "K2Node_PromotableOperator_25.A"
+   ],
+   [
+    "K2Node_PromotableOperator_25#out0",
+    "K2Node_VariableSet_9.LookTarget"
+   ],
+   [
+    "K2Node_PromotableOperator_27#out0",
+    "K2Node_CallFunction_49.Z"
+   ],
+   [
+    "K2Node_PromotableOperator_27#out0",
+    "K2Node_CallFunction_52.Z"
+   ],
+   [
+    "K2Node_PromotableOperator_6#out0",
+    "K2Node_PromotableOperator_7.A"
+   ],
+   [
+    "K2Node_PromotableOperator_7#out0",
+    "K2Node_PromotableOperator_8.A"
+   ],
+   [
+    "K2Node_PromotableOperator_8#out0",
+    "K2Node_CallFunction_14.Value"
+   ],
+   [
+    "K2Node_Select_1#out0",
+    "K2Node_CallFunction_28.Value"
+   ],
+   [
+    "K2Node_Select_2#out0",
+    "K2Node_CallFunction_33.Value"
+   ],
+   [
+    "K2Node_Select_3#out0",
+    "K2Node_CallFunction_36.Target"
+   ],
+   [
+    "K2Node_VariableGet_1#out0",
+    "K2Node_PromotableOperator_0.A"
+   ],
+   [
+    "K2Node_VariableGet_10#out0",
+    "K2Node_CallFunction_34.Current"
+   ],
+   [
+    "K2Node_VariableGet_15#out0",
+    "K2Node_CallFunction_53.A"
+   ],
+   [
+    "K2Node_VariableGet_15#out0",
+    "K2Node_CommutativeAssociativeBinaryOperator_2.A"
+   ],
+   [
+    "K2Node_VariableGet_16#out0",
+    "K2Node_PromotableOperator_18.A"
+   ],
+   [
+    "K2Node_VariableGet_16#out0",
+    "K2Node_PromotableOperator_20.A"
+   ],
+   [
+    "K2Node_VariableGet_17#out0",
+    "K2Node_PromotableOperator_19.A"
+   ],
+   [
+    "K2Node_VariableGet_18#out0",
+    "K2Node_CallFunction_36.Current"
+   ],
+   [
+    "K2Node_VariableGet_19#out0",
+    "K2Node_CallFunction_37.self"
+   ],
+   [
+    "K2Node_VariableGet_19#out0",
+    "K2Node_CallFunction_38.self"
+   ],
+   [
+    "K2Node_VariableGet_2#out0",
+    "K2Node_CallFunction_1.Current"
+   ],
+   [
+    "K2Node_VariableGet_20#out0",
+    "K2Node_MakeArray_0.[0]"
+   ],
+   [
+    "K2Node_VariableGet_6#out0",
+    "K2Node_CallFunction_12.self"
+   ],
+   [
+    "K2Node_VariableGet_7#out0",
+    "K2Node_PromotableOperator_6.B"
+   ],
+   [
+    "K2Node_VariableGet_8#out0",
+    "K2Node_CallFunction_15.Current"
+   ],
+   [
+    "K2Node_VariableGet_9#out0",
+    "K2Node_CallFunction_29.Current"
+   ],
+   [
+    "K2Node_VariableSet_3#out0",
+    "K2Node_VariableSet_4.execute"
+   ],
+   [
+    "K2Node_VariableSet_5#out0",
+    "K2Node_CallFunction_31.execute"
+   ],
+   [
+    "K2Node_VariableSet_6#out0",
+    "K2Node_VariableSet_7.execute"
+   ],
+   [
+    "K2Node_VariableSet_9#out0",
+    "K2Node_VariableSet_10.execute"
+   ]
+  ]
+ },
+ "TestFunc": {
+  "nodes": {
+   "K2Node_FunctionEntry_0": {
+    "x": 0,
+    "y": 0,
+    "type": "|TestFunc"
+   },
+   "K2Node_VariableSet_2": {
+    "x": 280,
+    "y": 0,
+    "type": "|SetLeanPitch"
+   }
+  },
+  "edges": []
+ }
+}

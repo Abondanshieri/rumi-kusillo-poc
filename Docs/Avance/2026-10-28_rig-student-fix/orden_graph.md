@@ -187,3 +187,122 @@ Via nueva: **Python de editor** (`unreal.*`) ejecutado con el comando de consola
 6. **Correccion de una afirmacion de la ronda 4** (lectura viva con `get_default_value`): los originales NO conservan todos "PrimaryAxis X". CR_Student_IK original: PrimaryAxis (1,0,0), SecondaryAxis (0,1,0). CR_Student_Procedural original: PrimaryAxis (0,-1,0), SecondaryAxis (0,0,1), SecondaryAxisWeight 1.0, PoleVector (0,1,0). Las copias _fix: Procedural_fix PrimaryAxis (0,-1,0), SecondaryAxisWeight 0.0, PoleVector (+12,60,28.1)/(-12,60,28.1); IK_fix PrimaryAxis (0,-1,0), SecondaryAxis (0,0,1), SecondaryAxisWeight 1.0 (pines_ik_vivo en graph_ronda6_antes_despues.json).
 7. **Originales: en disco intactos, en memoria SUCIOS.** mtimes en disco sin cambio (CR_Student_IK 26-oct 23:20, CR_Student_Procedural 27-oct 21:49, Student_Skeleton_AnimBlueprint 27-oct 22:48, _Backup_v5 10-oct). Pero el dialogo "Guardar contenido" del editor lista CR_Student_IK y CR_Student_Procedural como modificados sin guardar (tambien BP_ProbeDriver, BP_TestDriver, BP_ThirdPersonCharacter, Limite_*, Limites_Mapa, Lvl_AnimTest, TEMP_Probe). No guardar esos dos al cerrar. No se determino que cambio en memoria.
 8. **Estado final.** compile_blueprint ABP_fix: null (sin errores). `AnimGraphNode_ControlRig_1`: alpha=1, alphaInputType=Float, clase CR_Student_Procedural_fix_C. Guardado con Ctrl+S: Procedural_fix 14:08:11, IK_fix 14:08:30, ABP_fix 14:08:40. Los .uasset contienen Get_LeanRoll, ORFANO_Mul_Hips_Offset_1, los titulos de comentario y ya no contienen "INIT (ref". Nivel Lvl_AnimTest sin guardar.
+
+## G1-grafos-rigs (reintento, ronda 7): orden de CR_Student_Procedural_fix y CR_Student_IK_fix
+
+Alcance: solo los dos Control Rigs `_fix` (Forwards Solve). No se tocaron originales, ABP ni nivel. Editor arrancado de nuevo con el MCP (`-ExecCmds=ModelContextProtocol.StartServer`); el intento anterior no habia dejado cambios utiles (estado de partida = lo guardado en disco).
+
+**Metodo.** Escalera de ejecucion: cada nodo de ejecucion (Set/TwoBoneIK/IK) queda una columna (450 u) a la derecha del anterior; los datos de cada bloque van en subcolumnas a su izquierda (entradas/Get de variables -> operaciones/Make -> Get Transform -> Set/solver). Rejilla de 50 u para nodos, cajas y tamanos. Cajas con margen 100 u, titulo 250 u arriba, 400 u de separacion vertical entre cajas. Comentarios fuente 120, color por tipo: azul = entrada, verde = proceso, naranja = salida/solver, rojo = huerfano. Posiciones en `evidencia/scripts_g1b/layout2.py`, aplicadas con `apply2.py` (Python del editor, `set_node_position_by_name` y comentarios).
+
+**Antes / despues (snapshots `evidencia/snap_g1_base2.json` y `snap_g1_despues.json`, informe `evidencia/g1_verificacion.json`).**
+
+| Metrica | Procedural antes | Procedural despues | IK antes | IK despues |
+|---|---|---|---|---|
+| Nodos fuera de rejilla 50 u | 51 | 0 | 21 | 0 |
+| Cables con retroceso (origen a la derecha) | 1 | 0 | 0 | 0 |
+| Cables > 1500 u | 5 | 0 (1 resuelto con 2 Reroute) | 0 | 0 |
+| Cruces de cables (estimados por geometria de pines) | 7 | 3 | 0 | 0 |
+| Solapes de nodos (tamanos estimados) | 2 | 0 | 0 | 0 |
+| Solapes de cajas / margen minimo nodo-caja | - | 0 / 100 u | - | 0 / 100 u |
+| Conexiones perdidas | - | 0 | - | 0 |
+| Valores de pin cambiados | - | 0 | - | 0 |
+
+Conexiones: Procedural 62 -> 64 enlaces solo por los 2 Reroute (`Reroute_PelvisOffset_1/2`, cosmeticos), que reemplazan el cable unico `Get_PelvisOffset.Value -> Sub_FootOffsetR.B` (3064 u): resolviendo los Reroute, el conjunto de conexiones origen->destino es identico (0 perdidas, 0 nuevas). Valores: 476 pines iguales; solo +2 pines de los Reroute. IK: 14 -> 14 enlaces, 371 valores iguales.
+
+**Cambios por rig.**
+- Procedural: ENTRADA (Begin) -> LEAN (Spine1, Spine2, cuello en tres sub-filas, Get_LeanPitch/Roll al centro para acortar cables) -> CADERA -> PIERNA IZQ -> PIERNA DER -> ORFANO (`ORFANO_Mul_Hips_Offset_1` aparte, caja roja). `Get_PelvisOffset` va dentro de CADERA y baja por la izquierda de las cajas de pierna via Reroute (fuera de cajas, sin retroceso). Dentro de las piernas se reordeno Get_*Foot / Clamp / Make / Add / Mul para pasar de 7 a 3 cruces.
+- IK: ENTRADA -> CADERA -> PIERNA IZQ -> PIERNA DER -> BRAZO IZQ -> BRAZO DER en escalera; cada IK con sus dos Get Transform a la izquierda.
+
+**Hallazgos.** `Add_HipsZ`, `Add_LeftFootZ` y `Add_RightFootZ` (y por tanto `Clamp_LeftOffset`/`Clamp_RightOffset`) no tienen salida conectada: son ramas muertas (se dejaron como estaban, solo reubicadas). Los tamanos de nodo vienen de estimaciones (la API devuelve 0) calibradas con la vista LOD; no se pudo hacer zoom para medir solapes internos al pixel.
+
+**Capturas.** `capturas/g1_CR_Student_Procedural_fix_orden.png`, `capturas/g1_CR_Student_IK_fix_orden.png` (recorte del panel, zoom de ajuste).
+
+**Guardado.** `unreal.EditorAssetLibrary.save_loaded_asset` devolvio True para ambos rigs (uasset con fecha 16:43). Aun asi conviene Ctrl+S final.
+
+---
+
+## G3-grafos-eventgraph (EventGraph + UpdateProceduralVariables del ABP _fix) - 2026-10-28
+
+Alcance: solo `EventGraph` (88 nodos) y `UpdateProceduralVariables` (85 nodos) de `Student_Skeleton_AnimBlueprint_fix`. TestFunc, AnimGraph, rigs, originales y _Backup_v5 sin tocar. No se compilo ni se guardo el ABP (lo hace el verificador / Ctrl+S del usuario). Esta es la segunda ejecucion: la primera se bloqueo porque el editor estaba cerrado; esta vez el editor y el MCP estaban vivos.
+
+### Metodo
+1. Snapshot ANTES: `evidencia/G3_snap_antes.json` (nodos + aristas pin->pin) y `evidencia/G3b_full_antes.json` (todos los pines, valores y enlaces). Se comprobo contra el estado vivo del editor al empezar: nodos y aristas identicos.
+2. Layout calculado por script (`evidencia/scripts_G3/g3layout.py`, `plan_event.py`, `plan_upv.py`, `apply_layout.py`): cada bloque por proposito se ordena por capas (longest-path; los nodos puros se acercan a su consumidor), barrido baricentrico para reducir cruces, y relajacion vertical (PAV) alineando pines; todo a rejilla de 50. Los bloques se colocan en filas (flujo izquierda->derecha: ENTRADA -> calculo -> salida). Posiciones aplicadas con `BlueprintTools.set_node_position` (173 nodos). Plan completo con posiciones y cajas: `evidencia/G3b_plan.json`.
+3. Se desplazo cada layout hacia abajo (EventGraph +1500, UPV +4300) para que las 8 cajas antiguas queden en una franja libre arriba (ver "Limitaciones").
+4. Comentarios nuevos creados **por pegado de texto T3D** en el grafo (clipboard + Ctrl+V; posicion, tamano, texto, color y fuente exactos, sin depender de seleccion de nodos). Un nodo ancla temporal (Reroute) calibra la posicion de pegado; se borro despues. Scripts: `paste.py`, `pasteops.py`, `paste_comments.py`. Verificacion dentro del editor (Python `get_nodes_in_comment`, `get_node_size`, `font_size`): `evidencia/scripts_G3/verify_comments.py`.
+5. Snapshot DESPUES: `evidencia/G3b_snap_despues.json`, `evidencia/G3b_full_despues.json`; comparacion: `evidencia/G3b_antes_despues.json`.
+
+### Resultados medidos (snapshot vivo, tamanos estimados con margen; los reales del editor son <= a los estimados)
+| Metrica | EventGraph antes -> despues | UpdateProceduralVariables antes -> despues |
+|---|---|---|
+| Nodos | 88 -> 88 | 85 -> 85 |
+| Conexiones | 106 -> 106 (0 perdidas, 0 nuevas) | 115 -> 115 (0 perdidas, 0 nuevas) |
+| Pines/valores/enlaces distintos | 0 | 0 |
+| Nodos fuera de rejilla 50 | 88 -> 0 | 80 -> 0 |
+| Solapes de nodos | 2 -> 0 | 1 -> 0 |
+| Cables con retroceso (origen a la derecha del destino) | 9 -> 0 | 5 -> 0 |
+| Cruces de cables (segmentos pin->pin) | 46 -> 12 | 157 -> 62 |
+| Cables largos > 1500 u (Euclides) | 11 -> 14 | 25 -> 32 |
+| Cajas de comentario | 5 nativas -> 14 nuevas | 3 -> 20 nuevas |
+| Solapes entre cajas | 0 | 0 |
+| Margen minimo nodo-borde de caja | 100 u (arriba 250 u para el titulo) | 100 u (idem) |
+
+Cada caja nueva contiene exactamente los nodos de su bloque (comprobado con `get_nodes_in_comment`: EventGraph 8+3+5+9+8+1+17+4+2+4+6+1+6+14 = 88; UPV 2+4+3+8+4+7+5+1+6+3+4+1+5+3+2+11+3+4+2+7 = 85). Fuente 90 en todas, un color por tipo: referencias (azul), entrada (violeta), proceso (verde), caida (naranja), datos procedurales (magenta), DEBUG (rojo), salida/interpolacion (turquesa), lean (verde lima), pies/pelvis (ocre), aterrizaje (lila), mirada (azul claro), huerfanos (gris). Burbuja de zoom desactivada para que los titulos no se superpongan al alejar la vista.
+
+### Bloques
+- EventGraph: INIT (recreado, ya sin solape con ningun comentario), ENTRADA, VELOCIDAD, DIRECCION, ESTADO DE MOVIMIENTO, LLAMADA UpdateProceduralVariables, CAIDA/SALTO, CAIDA FallSpeed, DATOS PROCEDURALES (decision, inicio/fin de traza, resultado de traza, TimeToImpact/LandPrep, rama sin caida) y caja DEBUG con el `LineTraceByChannel` (DrawDebugType None).
+- UpdateProceduralVariables: ENTRADA; LEAN PITCH (calculo / interpolacion+salida); LEAN ROLL (idem); REFERENCIAS (ubicacion del Character); PIE IZQ (traza / DEBUG / calculo de offset / interpolacion+salida); PIE DER (idem); PELVIS; ATERRIZAJE (calculo / interpolacion+salida); MIRADA (calculo / salida); ORFANOS (5 nodos con salida sin uso, no se borran). Las dos trazas estan en cajas DEBUG separadas porque el orden de ejecucion es traza L -> Set L -> traza R -> Set R: una sola caja DEBUG obligaria a un cable hacia atras.
+
+### Limitaciones (honestas)
+1. **Cajas antiguas no borradas (8):** los comentarios de Blueprint no se pueden borrar por API (`delete_node` y Python no los aceptan) y la UI estaba compartida con otros agentes que cambiaban de pestana cada pocos segundos, asi que no pude borrarlos con clics fiables. Se dejaron en una franja libre sin nodos (por eso el layout esta desplazado) y se renombraron `[OBSOLETO] borrar con Supr`, gris, fuente 24: EventGraph `EdGraphNode_Comment_0..4`, UPV `EdGraphNode_Comment_22..24`. Su texto original esta en `evidencia/scripts_G3/comments_antes.json`. Tarea manual: seleccionarlas y Supr (no tienen nodos dentro).
+2. **Cables largos (> 1500 u): no resueltos con Reroute.** Son fan-out de DeltaTime (entrada de la funcion hacia 6 `FInterpTo`), nodos compartidos (GetOwningComponent, MakeArray de trazas, Character) y saltos de ejecucion entre bloques secuenciales (Secuencia -> bloques, Set -> siguiente traza). Resolverlos con Reroute exigia ~60 reroutes solo en UPV (mas ruido que valor) y modifica el cableado; se decidio no hacerlo. Lista exacta en `G3b_antes_despues.json` (`cables_largos_despues`). Sin retrocesos: todos van de izquierda a derecha.
+3. Los nodos de las variables locales y de los nodos K2 no tienen renombrado por herramienta (los K2 no usan nombre editable); no se renombro nada.
+4. Medicion de tamanos de nodo: se usa max(estimado por pines, tamano reportado), que sobreestima ligeramente (a 1:1 se midieron Clamp 231x130, GetActorRotation 206x75, CalculateDirection 248x140); por eso no hay solapes ni nodos fuera de su caja, pero las cajas tienen algo mas de holgura.
+5. Efectos laterales: se uso el portapapeles de Windows (se sobrescribio su contenido); se crearon y borraron nodos temporales (Reroute ancla en cada grafo, un Branch y un Reroute de prueba en TestFunc: TestFunc volvio a 2 nodos); un archivo vacio `tmp_t5.py` quedo en la raiz de Git Bash (`/tmp_t5.py`) por un redireccionamiento mal formado: es inofensivo, borrarlo a mano si molesta. Un Ctrl+V de calibracion pudo caer en una pestana de rig de otro agente (RigVM rechaza texto de nodos Blueprint; no se detecto cambio).
+
+### Capturas (solo el panel del grafo)
+`capturas/G3_EventGraph_ordenado.png`, `capturas/G3_UpdateProceduralVariables_ordenado.png` (zoom -12; el canvas es mas ancho que el panel y la vista fit recorta el borde izquierdo).
+
+### Estado
+Sin compilar y sin guardar. Pendiente: el usuario hace Ctrl+S; el verificador compila una vez y comprueba errores. Nivel Lvl_AnimTest no modificado.
+
+## G1-grafos-rigs (ronda 8, correccion del verificador): CR_Student_Procedural_fix y CR_Student_IK_fix
+
+Alcance: solo los dos rigs `_fix`. Originales, ABP y nivel no se tocaron (mtimes: CR_Student_IK / CR_Student_Procedural 15:27; los dos `_fix` 17:44 tras `save_loaded_asset` = True). Sin compilar el ABP. Esta ronda **reemplaza** `g1_verificacion.json` y las capturas `g1_*` de la ronda 7 (ese informe mezclaba cifras de antes de los Reroute y tamanos estimados).
+
+**Que cambio respecto a la ronda 7 y por que.**
+1. *Tamanos reales.* Cada nodo se selecciono por API, se encuadro con `Home` (zoom 1:1) y se leyo su rectangulo y sus filas de pines del Snapshot de Slate: `tamanos_reales_Procedural.json` (45 nodos) y `tamanos_reales_IK.json` (15). Ejemplos: Get Transform 275x196, Set Transform 270x219, Multiply 137x128, From Euler 316x108, Basic IK 327x489 (Procedural) / 327x528 (IK), variable 189x69. Los Reroute (50x50) son la unica medida estimada.
+2. *Metricas con geometria real* (`scripts_g1c/geo.py`): posicion de cada pin por fila medida, cable = spline Hermite (aproximacion de la curva del editor), cruces cable-cable, cables que atraviesan nodos ajenos, retroceso, largos > 1500 u, solapes con holgura 20 u. Misma funcion para antes y despues (la base es el snapshot vivo de inicio de ronda, `snap_g1c_base.json`).
+3. *Layout nuevo* (`layout4.py`): escalera de ejecucion con tamanos reales; capas por etapa (variables -> operaciones -> Get -> Set/IK), orden de cada columna optimizado contra cruces y cables sobre nodos (busqueda con la metrica real); el primer nodo de ejecucion de cada bloque queda a la derecha del ultimo del bloque anterior (cable de ejecucion forward y < 1500 u). Descubierto durante la verificacion visual: en IK_fix los dos Get Transform de pierna/brazo estaban cruzados (pole arriba, effector abajo); la metrica no lo veia porque no normalizaba "PoleVector" vs "Pole Vector"; corregido y reordenado (foot arriba, pole abajo), 0 cruces.
+4. *Margenes y cajas.* Cajas con margen 100 u a los lados/abajo y 250 u arriba (titulo fuente 120), rejilla 50 u, hueco entre cajas 300 u (Procedural) / 450 u (IK). Colores: azul entrada, verde proceso, naranja salida/solver, rojo huerfano.
+
+**Resultados (editor vivo, `g1c_verificacion.json`, `g1c_comparacion.json`).**
+
+| Metrica (geometria real) | Procedural antes | Procedural despues | IK antes | IK despues |
+|---|---|---|---|---|
+| Cruces cable-cable | 6 | 3 | 0 | 0 |
+| Cables sobre nodos ajenos | 2 | 1 | 0 | 0 |
+| Cables > 1500 u | 1 (1553) | 0 | 0 | 0 |
+| Retroceso | 0 | 0 | 0 | 0 |
+| Solapes de nodos (holgura 20 u) | 0 | 0 | 0 | 0 |
+| Nodos fuera de rejilla 50 u | 0 | 0 | 0 | 0 |
+| Margen minimo nodo-caja | - | 100 u | - | 100 u |
+| Solapes de cajas / nodos en caja ajena | - | 0 / 0 | - | 0 / 0 |
+| Fuente de comentarios | - | 120 (6 de 6) | - | 120 (6 de 6) |
+
+Conexiones y valores (snapshot por Python del editor con `get_all_pins_recursively`, base vs despues): Procedural 64 -> 64 enlaces, 0 perdidos, 0 nuevos, 478 valores de pin iguales, 53 nodos; IK 14 -> 14, 0 perdidos, 0 nuevos, 371 valores iguales, 21 nodos. Se verifico en vivo en **los dos** rigs (la ronda 7 solo comprobo IK contra archivo).
+
+**Las 3 cruces que quedan (Procedural, bloque LEAN)**, todas del abanico Get_LeanPitch / Get_LeanRoll hacia las tres cadenas: `Get_LeanRoll->Mul_Roll_Spine2.A` x `Get_LeanPitch->Mul_Pitch_Neck.A`; `Get_LeanRoll->Quat_Spine1.Euler.Z` x `Get_LeanPitch->Mul_Pitch_Spine2.A`; `Get_LeanRoll->Quat_Spine1.Euler.Z` x `Get_LeanPitch->Mul_Pitch_Neck.A`. Son inherentes: dos fuentes alimentan tres consumidores y `Quat_Spine1` mezcla Pitch (Euler.X) y Roll (Euler.Z) en un solo nodo. El unico cable sobre un nodo ajeno: `Get_Hips.Transform -> Mul_Hips_Offset.A` pasa por encima de `SINSALIDA_Add_HipsZ`. Residuales y medidos, no ocultos.
+
+**Ramas muertas: decision tomada.** `Add_HipsZ`, `Add_LeftFootZ`, `Add_RightFootZ`, `Clamp_LeftOffset`, `Clamp_RightOffset` no tienen salida conectada. No se borran (no se cambia logica). Se renombraron con prefijo `SINSALIDA_` (mismo criterio que `ORFANO_`), siguen dentro de la caja de su bloque, en la fila inferior de su columna, y quedan documentadas aqui. Se probo sacarlas a cajas "SIN SALIDA" aparte (a la derecha o debajo de cada bloque): generaba 7 cables > 1500 u (hasta 2300 u) y 8 cables sobre nodos, peor que dejarlas dentro. Las dos Reroute (`Reroute_PelvisOffset_1/2`) se mantienen fuera de cajas para el cable `Get_PelvisOffset -> Sub_FootOffsetR`.
+
+**Comentarios leidos en vivo** (`g1c_comentarios_vivo.json`, `get_comment_text/get_node_color/get_comment_font_size`): Procedural LEAN y CADERA verde (0.15,0.45,0.20), PIERNA IZQ/DER naranja (0.70,0.40,0.10), ENTRADA azul (0.10,0.25,0.60), ORFANO rojo (0.60,0.12,0.12); IK igual salvo sin ORFANO. Fuente 120 en todos. No se perdio texto descriptivo: segun `graph_ronda6_antes_despues.json` los comentarios ya eran solo el titulo ("LEAN", "CADERA"...).
+
+**Capturas (legibles, solo panel del grafo)** en `capturas/`: por bloque a zoom 1:1 a -6, con nombres de nodo y pines legibles: `g1c_Procedural_{ENTRADA_ORFANO,LEAN_a_Spine1,LEAN_b_Spine2,LEAN_c_Cuello,LEAN,CADERA,PIERNA_IZQ,PIERNA_DER}.png`, `g1c_IK_{ENTRADA_CADERA,PIERNA_IZQ,PIERNA_DER,BRAZO_IZQ,BRAZO_DER}.png` y las vistas completas `g1c_Procedural_vista_completa.png`, `g1c_IK_vista_completa.png` (zoom -12, solo estructura). En las vistas completas las burbujas de titulo ya no se montan sobre la caja vecina; la burbuja de la primera caja de arriba (ENTRADA) queda tapada por la barra del panel porque `Home` encuadra los nodos y no la burbuja; por eso ENTRADA tiene captura propia.
+
+**Cable blanco de ejecucion.** Es la cadena Begin -> Set... -> IK que une un bloque con el siguiente; en la escalera pasa en diagonal entre cajas, nunca sobre un nodo (0 cables sobre nodos de ejecucion). Longitud maxima < 1500 u en ambos rigs.
+
+**Limites honestos.** (a) El spline es una aproximacion de la curva del editor; los cruces se confirmaron visualmente en las capturas pero no se cuentan automaticamente desde el editor. (b) Zoom -12 deja los nodos como iconos; la legibilidad de nodos esta en las capturas por bloque. (c) Los dos rigs estan guardados desde Python; el usuario aun puede hacer Ctrl+S final. (d) `g1c_*` y `snap_g1c_*` en `evidencia/`; scripts en `evidencia/scripts_g1c` (medicion: `scripts_g1b/measure2.py`).
+
+---
+Nota de archivo (2026-10-28): se movieron a `Archivo_No_Proyecto/2026-10-28/` (ver `Archivo_No_Proyecto/INDEX.md`): `evidencia/snap_ronda4/`, `snap_ronda5_antes/`, `snap_ronda6_despues/` y `snap_g1_antes.json` (-> `Snapshots/`); los scripts de una sola vez de `scripts_g1/`, `scripts_g1b/` (salvo layout2, apply2, measure2, g1u), `scripts_G3/` (calibracion/captura) y `scripts_ronda5/t*.py`, y todo `scripts_g2/` (-> `Scripts_de_prueba/`); y `G3b_cajas_metricas`, `G3b_comentarios_pegados_*`, `G3b_plan_event`, `G3b_real_sizes_EventGraph`, `g2_*` (-> `Evidencia_intermedia/`). Se conservan `snap_antes/`, `snap_despues/`, `snap_g1_base2/despues`, `snap_g1c_*` y todas las comparaciones antes/despues citadas arriba. Las capturas `r6_abp_event_sin_INIT.png` quedaron archivadas en `Capturas_descartadas/capturas/`.

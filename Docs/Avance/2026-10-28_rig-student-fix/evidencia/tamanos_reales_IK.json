@@ -1,0 +1,1217 @@
+{
+ "RigUnit_BeginExecution": {
+  "w": 155,
+  "h": 56,
+  "rows": [
+   [
+    "Forwards Solve",
+    30.0,
+    5.0,
+    90
+   ],
+   [
+    "Execute",
+    79.0,
+    34.0,
+    42
+   ]
+  ],
+  "fuente": "RigUnit_BeginExecution"
+ },
+ "SetTransform_Hips": {
+  "w": 270,
+  "h": 219,
+  "rows": [
+   [
+    "Set Transform - Bone",
+    30.0,
+    5.0,
+    205
+   ],
+   [
+    "Execute",
+    34.0,
+    34.0,
+    42
+   ],
+   [
+    "Item",
+    39.0,
+    58.0,
+    23
+   ],
+   [
+    "Space",
+    37.0,
+    85.0,
+    33
+   ],
+   [
+    "Global Space",
+    83.0,
+    86.0,
+    150
+   ],
+   [
+    "Initial",
+    37.0,
+    114.0,
+    30
+   ],
+   [
+    "Value",
+    39.0,
+    140.0,
+    31
+   ],
+   [
+    "Weight",
+    37.0,
+    167.0,
+    37
+   ],
+   [
+    "Propagate to Children",
+    37.0,
+    195.0,
+    119
+   ]
+  ],
+  "fuente": "GetTransform_ctrl_hips"
+ },
+ "GetTransform_ctrl_hips": {
+  "w": 275,
+  "h": 196,
+  "rows": [
+   [
+    "Get Transform - Control",
+    30.0,
+    5.0,
+    210
+   ],
+   [
+    "Transform",
+    180.0,
+    33.0,
+    56
+   ],
+   [
+    "Item",
+    39.0,
+    56.0,
+    23
+   ],
+   [
+    "Type",
+    49.0,
+    83.0,
+    26
+   ],
+   [
+    "Control",
+    88.0,
+    84.0,
+    150
+   ],
+   [
+    "Name",
+    49.0,
+    113.0,
+    31
+   ],
+   [
+    "ctrl_hips",
+    93.0,
+    114.0,
+    70
+   ],
+   [
+    "Space",
+    37.0,
+    143.0,
+    33
+   ],
+   [
+    "Global Space",
+    83.0,
+    144.0,
+    150
+   ],
+   [
+    "Initial",
+    37.0,
+    172.0,
+    30
+   ]
+  ],
+  "fuente": "GetTransform_ctrl_hips"
+ },
+ "IK_LeftLeg": {
+  "w": 327,
+  "h": 528,
+  "rows": [
+   [
+    "Basic IK (OutDated)",
+    30.0,
+    5.0,
+    262
+   ],
+   [
+    "Execute",
+    34.0,
+    34.0,
+    42
+   ],
+   [
+    "Bone A",
+    37.0,
+    61.0,
+    39
+   ],
+   [
+    "Bone B",
+    37.0,
+    90.0,
+    39
+   ],
+   [
+    "Effector Bone",
+    37.0,
+    119.0,
+    73
+   ],
+   [
+    "Effector",
+    39.0,
+    145.0,
+    42
+   ],
+   [
+    "Primary Axis",
+    39.0,
+    169.0,
+    68
+   ],
+   [
+    "Secondary Axis",
+    39.0,
+    193.0,
+    83
+   ],
+   [
+    "Secondary Axis Weight",
+    37.0,
+    220.0,
+    123
+   ],
+   [
+    "Pole Vector",
+    39.0,
+    246.0,
+    62
+   ],
+   [
+    "Pole Vector Kind",
+    37.0,
+    273.0,
+    90
+   ],
+   [
+    "Location",
+    140.0,
+    274.0,
+    150
+   ],
+   [
+    "Pole Vector Space",
+    37.0,
+    303.0,
+    98
+   ],
+   [
+    "Enable Stretch",
+    37.0,
+    331.0,
+    78
+   ],
+   [
+    "Stretch Start Ratio",
+    37.0,
+    360.0,
+    99
+   ],
+   [
+    "Stretch Maximum Ratio",
+    37.0,
+    389.0,
+    126
+   ],
+   [
+    "Weight",
+    37.0,
+    418.0,
+    37
+   ],
+   [
+    "Bone ALength",
+    37.0,
+    447.0,
+    77
+   ],
+   [
+    "Bone BLength",
+    37.0,
+    476.0,
+    77
+   ],
+   [
+    "Propagate to Children",
+    37.0,
+    504.0,
+    119
+   ],
+   [
+    "RigVM",
+    82.0,
+    376.0,
+    166
+   ]
+  ],
+  "fuente": "GetTransform_ctrl_foot_l_ik"
+ },
+ "GetTransform_ctrl_pole_knee_l": {
+  "w": 275,
+  "h": 196,
+  "rows": [
+   [
+    "Get Transform - Control",
+    30.0,
+    5.0,
+    210
+   ],
+   [
+    "Transform",
+    180.0,
+    33.0,
+    56
+   ],
+   [
+    "Item",
+    39.0,
+    56.0,
+    23
+   ],
+   [
+    "Type",
+    49.0,
+    83.0,
+    26
+   ],
+   [
+    "Control",
+    88.0,
+    84.0,
+    150
+   ],
+   [
+    "Name",
+    49.0,
+    113.0,
+    31
+   ],
+   [
+    "ctrl_pole_knee_l",
+    93.0,
+    114.0,
+    80
+   ],
+   [
+    "Space",
+    37.0,
+    143.0,
+    33
+   ],
+   [
+    "Global Space",
+    83.0,
+    144.0,
+    150
+   ],
+   [
+    "Initial",
+    37.0,
+    172.0,
+    30
+   ]
+  ],
+  "fuente": "GetTransform_ctrl_foot_l_ik"
+ },
+ "GetTransform_ctrl_foot_l_ik": {
+  "w": 275,
+  "h": 196,
+  "rows": [
+   [
+    "Get Transform - Control",
+    30.0,
+    5.0,
+    210
+   ],
+   [
+    "Transform",
+    180.0,
+    33.0,
+    56
+   ],
+   [
+    "Item",
+    39.0,
+    56.0,
+    23
+   ],
+   [
+    "Type",
+    49.0,
+    83.0,
+    26
+   ],
+   [
+    "Control",
+    88.0,
+    84.0,
+    150
+   ],
+   [
+    "Name",
+    49.0,
+    113.0,
+    31
+   ],
+   [
+    "ctrl_foot_l_ik",
+    93.0,
+    114.0,
+    70
+   ],
+   [
+    "Space",
+    37.0,
+    143.0,
+    33
+   ],
+   [
+    "Global Space",
+    83.0,
+    144.0,
+    150
+   ],
+   [
+    "Initial",
+    37.0,
+    172.0,
+    30
+   ]
+  ],
+  "fuente": "GetTransform_ctrl_foot_l_ik"
+ },
+ "IK_RightLeg": {
+  "w": 327,
+  "h": 528,
+  "rows": [
+   [
+    "Basic IK (OutDated)",
+    30.0,
+    5.0,
+    262
+   ],
+   [
+    "Execute",
+    34.0,
+    34.0,
+    42
+   ],
+   [
+    "Bone A",
+    37.0,
+    61.0,
+    39
+   ],
+   [
+    "Bone B",
+    37.0,
+    90.0,
+    39
+   ],
+   [
+    "Effector Bone",
+    37.0,
+    119.0,
+    73
+   ],
+   [
+    "Effector",
+    39.0,
+    145.0,
+    42
+   ],
+   [
+    "Primary Axis",
+    39.0,
+    169.0,
+    68
+   ],
+   [
+    "Secondary Axis",
+    39.0,
+    193.0,
+    83
+   ],
+   [
+    "Secondary Axis Weight",
+    37.0,
+    220.0,
+    123
+   ],
+   [
+    "Pole Vector",
+    39.0,
+    246.0,
+    62
+   ],
+   [
+    "Pole Vector Kind",
+    37.0,
+    273.0,
+    90
+   ],
+   [
+    "Location",
+    140.0,
+    274.0,
+    150
+   ],
+   [
+    "Pole Vector Space",
+    37.0,
+    303.0,
+    98
+   ],
+   [
+    "Enable Stretch",
+    37.0,
+    331.0,
+    78
+   ],
+   [
+    "Stretch Start Ratio",
+    37.0,
+    360.0,
+    99
+   ],
+   [
+    "Stretch Maximum Ratio",
+    37.0,
+    389.0,
+    126
+   ],
+   [
+    "Weight",
+    37.0,
+    418.0,
+    37
+   ],
+   [
+    "Bone ALength",
+    37.0,
+    447.0,
+    77
+   ],
+   [
+    "Bone BLength",
+    37.0,
+    476.0,
+    77
+   ],
+   [
+    "Propagate to Children",
+    37.0,
+    504.0,
+    119
+   ],
+   [
+    "RigVM",
+    82.0,
+    376.0,
+    166
+   ]
+  ],
+  "fuente": "GetTransform_ctrl_foot_r_ik"
+ },
+ "GetTransform_ctrl_pole_knee_r": {
+  "w": 275,
+  "h": 196,
+  "rows": [
+   [
+    "Get Transform - Control",
+    30.0,
+    5.0,
+    210
+   ],
+   [
+    "Transform",
+    180.0,
+    33.0,
+    56
+   ],
+   [
+    "Item",
+    39.0,
+    56.0,
+    23
+   ],
+   [
+    "Type",
+    49.0,
+    83.0,
+    26
+   ],
+   [
+    "Control",
+    88.0,
+    84.0,
+    150
+   ],
+   [
+    "Name",
+    49.0,
+    113.0,
+    31
+   ],
+   [
+    "ctrl_pole_knee_r",
+    93.0,
+    114.0,
+    81
+   ],
+   [
+    "Space",
+    37.0,
+    143.0,
+    33
+   ],
+   [
+    "Global Space",
+    83.0,
+    144.0,
+    150
+   ],
+   [
+    "Initial",
+    37.0,
+    172.0,
+    30
+   ]
+  ],
+  "fuente": "GetTransform_ctrl_foot_r_ik"
+ },
+ "GetTransform_ctrl_foot_r_ik": {
+  "w": 275,
+  "h": 196,
+  "rows": [
+   [
+    "Get Transform - Control",
+    30.0,
+    5.0,
+    210
+   ],
+   [
+    "Transform",
+    180.0,
+    33.0,
+    56
+   ],
+   [
+    "Item",
+    39.0,
+    56.0,
+    23
+   ],
+   [
+    "Type",
+    49.0,
+    83.0,
+    26
+   ],
+   [
+    "Control",
+    88.0,
+    84.0,
+    150
+   ],
+   [
+    "Name",
+    49.0,
+    113.0,
+    31
+   ],
+   [
+    "ctrl_foot_r_ik",
+    93.0,
+    114.0,
+    70
+   ],
+   [
+    "Space",
+    37.0,
+    143.0,
+    33
+   ],
+   [
+    "Global Space",
+    83.0,
+    144.0,
+    150
+   ],
+   [
+    "Initial",
+    37.0,
+    172.0,
+    30
+   ]
+  ],
+  "fuente": "GetTransform_ctrl_foot_r_ik"
+ },
+ "IK_LeftArm": {
+  "w": 327,
+  "h": 528,
+  "rows": [
+   [
+    "Basic IK (OutDated)",
+    30.0,
+    5.0,
+    262
+   ],
+   [
+    "Execute",
+    34.0,
+    34.0,
+    42
+   ],
+   [
+    "Bone A",
+    37.0,
+    61.0,
+    39
+   ],
+   [
+    "Bone B",
+    37.0,
+    90.0,
+    39
+   ],
+   [
+    "Effector Bone",
+    37.0,
+    119.0,
+    73
+   ],
+   [
+    "Effector",
+    39.0,
+    145.0,
+    42
+   ],
+   [
+    "Primary Axis",
+    39.0,
+    169.0,
+    68
+   ],
+   [
+    "Secondary Axis",
+    39.0,
+    193.0,
+    83
+   ],
+   [
+    "Secondary Axis Weight",
+    37.0,
+    220.0,
+    123
+   ],
+   [
+    "Pole Vector",
+    39.0,
+    246.0,
+    62
+   ],
+   [
+    "Pole Vector Kind",
+    37.0,
+    273.0,
+    90
+   ],
+   [
+    "Location",
+    140.0,
+    274.0,
+    150
+   ],
+   [
+    "Pole Vector Space",
+    37.0,
+    303.0,
+    98
+   ],
+   [
+    "Enable Stretch",
+    37.0,
+    331.0,
+    78
+   ],
+   [
+    "Stretch Start Ratio",
+    37.0,
+    360.0,
+    99
+   ],
+   [
+    "Stretch Maximum Ratio",
+    37.0,
+    389.0,
+    126
+   ],
+   [
+    "Weight",
+    37.0,
+    418.0,
+    37
+   ],
+   [
+    "Bone ALength",
+    37.0,
+    447.0,
+    77
+   ],
+   [
+    "Bone BLength",
+    37.0,
+    476.0,
+    77
+   ],
+   [
+    "Propagate to Children",
+    37.0,
+    504.0,
+    119
+   ],
+   [
+    "RigVM",
+    82.0,
+    386.0,
+    166
+   ]
+  ],
+  "fuente": "GetTransform_ctrl_hand_l_ik"
+ },
+ "GetTransform_ctrl_pole_elbow_l": {
+  "w": 275,
+  "h": 196,
+  "rows": [
+   [
+    "Get Transform - Control",
+    30.0,
+    5.0,
+    210
+   ],
+   [
+    "Transform",
+    180.0,
+    33.0,
+    56
+   ],
+   [
+    "Item",
+    39.0,
+    56.0,
+    23
+   ],
+   [
+    "Type",
+    49.0,
+    83.0,
+    26
+   ],
+   [
+    "Control",
+    88.0,
+    84.0,
+    150
+   ],
+   [
+    "Name",
+    49.0,
+    113.0,
+    31
+   ],
+   [
+    "ctrl_pole_elbow_l",
+    93.0,
+    114.0,
+    85
+   ],
+   [
+    "Space",
+    37.0,
+    143.0,
+    33
+   ],
+   [
+    "Global Space",
+    83.0,
+    144.0,
+    150
+   ],
+   [
+    "Initial",
+    37.0,
+    172.0,
+    30
+   ]
+  ],
+  "fuente": "GetTransform_ctrl_hand_l_ik"
+ },
+ "GetTransform_ctrl_hand_l_ik": {
+  "w": 275,
+  "h": 196,
+  "rows": [
+   [
+    "Get Transform - Control",
+    30.0,
+    5.0,
+    210
+   ],
+   [
+    "Transform",
+    180.0,
+    33.0,
+    56
+   ],
+   [
+    "Item",
+    39.0,
+    56.0,
+    23
+   ],
+   [
+    "Type",
+    49.0,
+    83.0,
+    26
+   ],
+   [
+    "Control",
+    88.0,
+    84.0,
+    150
+   ],
+   [
+    "Name",
+    49.0,
+    113.0,
+    31
+   ],
+   [
+    "ctrl_hand_l_ik",
+    93.0,
+    114.0,
+    70
+   ],
+   [
+    "Space",
+    37.0,
+    143.0,
+    33
+   ],
+   [
+    "Global Space",
+    83.0,
+    144.0,
+    150
+   ],
+   [
+    "Initial",
+    37.0,
+    172.0,
+    30
+   ]
+  ],
+  "fuente": "GetTransform_ctrl_hand_l_ik"
+ },
+ "IK_RightArm": {
+  "w": 327,
+  "h": 528,
+  "rows": [
+   [
+    "Basic IK (OutDated)",
+    30.0,
+    5.0,
+    262
+   ],
+   [
+    "Execute",
+    34.0,
+    34.0,
+    42
+   ],
+   [
+    "Bone A",
+    37.0,
+    61.0,
+    39
+   ],
+   [
+    "Bone B",
+    37.0,
+    90.0,
+    39
+   ],
+   [
+    "Effector Bone",
+    37.0,
+    119.0,
+    73
+   ],
+   [
+    "Effector",
+    39.0,
+    145.0,
+    42
+   ],
+   [
+    "Primary Axis",
+    39.0,
+    169.0,
+    68
+   ],
+   [
+    "Secondary Axis",
+    39.0,
+    193.0,
+    83
+   ],
+   [
+    "Secondary Axis Weight",
+    37.0,
+    220.0,
+    123
+   ],
+   [
+    "Pole Vector",
+    39.0,
+    246.0,
+    62
+   ],
+   [
+    "Pole Vector Kind",
+    37.0,
+    273.0,
+    90
+   ],
+   [
+    "Location",
+    140.0,
+    274.0,
+    150
+   ],
+   [
+    "Pole Vector Space",
+    37.0,
+    303.0,
+    98
+   ],
+   [
+    "Enable Stretch",
+    37.0,
+    331.0,
+    78
+   ],
+   [
+    "Stretch Start Ratio",
+    37.0,
+    360.0,
+    99
+   ],
+   [
+    "Stretch Maximum Ratio",
+    37.0,
+    389.0,
+    126
+   ],
+   [
+    "Weight",
+    37.0,
+    418.0,
+    37
+   ],
+   [
+    "Bone ALength",
+    37.0,
+    447.0,
+    77
+   ],
+   [
+    "Bone BLength",
+    37.0,
+    476.0,
+    77
+   ],
+   [
+    "Propagate to Children",
+    37.0,
+    504.0,
+    119
+   ],
+   [
+    "RigVM",
+    82.0,
+    376.0,
+    166
+   ]
+  ],
+  "fuente": "GetTransform_ctrl_hand_r_ik"
+ },
+ "GetTransform_ctrl_pole_elbow_r": {
+  "w": 275,
+  "h": 196,
+  "rows": [
+   [
+    "Get Transform - Control",
+    30.0,
+    5.0,
+    210
+   ],
+   [
+    "Transform",
+    180.0,
+    33.0,
+    56
+   ],
+   [
+    "Item",
+    39.0,
+    56.0,
+    23
+   ],
+   [
+    "Type",
+    49.0,
+    83.0,
+    26
+   ],
+   [
+    "Control",
+    88.0,
+    84.0,
+    150
+   ],
+   [
+    "Name",
+    49.0,
+    113.0,
+    31
+   ],
+   [
+    "ctrl_pole_elbow_r",
+    93.0,
+    114.0,
+    86
+   ],
+   [
+    "Space",
+    37.0,
+    143.0,
+    33
+   ],
+   [
+    "Global Space",
+    83.0,
+    144.0,
+    150
+   ],
+   [
+    "Initial",
+    37.0,
+    172.0,
+    30
+   ]
+  ],
+  "fuente": "GetTransform_ctrl_hand_r_ik"
+ },
+ "GetTransform_ctrl_hand_r_ik": {
+  "w": 275,
+  "h": 196,
+  "rows": [
+   [
+    "Get Transform - Control",
+    30.0,
+    5.0,
+    210
+   ],
+   [
+    "Transform",
+    180.0,
+    33.0,
+    56
+   ],
+   [
+    "Item",
+    39.0,
+    56.0,
+    23
+   ],
+   [
+    "Type",
+    49.0,
+    83.0,
+    26
+   ],
+   [
+    "Control",
+    88.0,
+    84.0,
+    150
+   ],
+   [
+    "Name",
+    49.0,
+    113.0,
+    31
+   ],
+   [
+    "ctrl_hand_r_ik",
+    93.0,
+    114.0,
+    70
+   ],
+   [
+    "Space",
+    37.0,
+    143.0,
+    33
+   ],
+   [
+    "Global Space",
+    83.0,
+    144.0,
+    150
+   ],
+   [
+    "Initial",
+    37.0,
+    172.0,
+    30
+   ]
+  ],
+  "fuente": "GetTransform_ctrl_hand_r_ik"
+ }
+}

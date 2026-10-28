@@ -15,6 +15,7 @@ Prueba de concepto de un juego educativo de matemáticas. Protagonista: **Rumi**
 | `Docs/Avance/` | Bitácora de avance con capturas recortadas del personaje. |
 | `Tools/ue_scripts/` | Scripts Python para automatizar el editor vía MCP (ver su `README.md`). |
 | `Tools/payloads_mcp/` | Payloads de ejemplo para el servidor MCP. |
+| `Archivo_No_Proyecto/` | Material que no necesita el proyecto, archivado por fecha y categoria (nada se borra; ver su `INDEX.md`). |
 | `.mcp.json` | Apunta al servidor Unreal MCP local `http://127.0.0.1:8000/mcp`. |
 | `CLAUDE.md` | Contexto del proyecto para Claude Code. |
 

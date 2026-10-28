@@ -1,0 +1,1016 @@
+{
+ "AnimGraph.AnimGraphNode_StateMachine_0.Main.AnimStateNode_0.Locomotion": {
+  "pos": {
+   "AnimGraphNode_UseCachedPose_0": [
+    0,
+    0
+   ],
+   "AnimGraphNode_StateResult_0": [
+    500,
+    0
+   ]
+  },
+  "antes": {
+   "cruces": 0,
+   "retrocesos": 0,
+   "solapes": 0
+  },
+  "despues": {
+   "cruces": 0,
+   "retrocesos": 0,
+   "solapes": 0
+  }
+ },
+ "AnimGraph.AnimGraphNode_StateMachine_1.Locomotion.AnimStateNode_4.Idle": {
+  "pos": {
+   "AnimGraphNode_SequencePlayer_2": [
+    0,
+    0
+   ],
+   "AnimGraphNode_StateResult_0": [
+    500,
+    0
+   ]
+  },
+  "antes": {
+   "cruces": 0,
+   "retrocesos": 1,
+   "solapes": 1
+  },
+  "despues": {
+   "cruces": 0,
+   "retrocesos": 0,
+   "solapes": 0
+  }
+ },
+ "AnimGraph.AnimGraphNode_StateMachine_1.Locomotion.AnimStateNode_5.Move/Run": {
+  "pos": {
+   "K2Node_VariableGet_1": [
+    0,
+    0
+   ],
+   "K2Node_VariableGet_2": [
+    0,
+    200
+   ],
+   "AnimGraphNode_BlendSpacePlayer_0": [
+    450,
+    0
+   ],
+   "AnimGraphNode_StateResult_0": [
+    1000,
+    0
+   ]
+  },
+  "antes": {
+   "cruces": 0,
+   "retrocesos": 2,
+   "solapes": 3
+  },
+  "despues": {
+   "cruces": 0,
+   "retrocesos": 0,
+   "solapes": 0
+  }
+ },
+ "AnimGraph.AnimGraphNode_StateMachine_1.Locomotion.AnimStateTransitionNode_1.Transition": {
+  "pos": {
+   "K2Node_VariableGet_0": [
+    0,
+    0
+   ],
+   "AnimGraphNode_TransitionResult_0": [
+    450,
+    0
+   ]
+  },
+  "antes": {
+   "cruces": 0,
+   "retrocesos": 1,
+   "solapes": 1
+  },
+  "despues": {
+   "cruces": 0,
+   "retrocesos": 0,
+   "solapes": 0
+  }
+ },
+ "AnimGraph.AnimGraphNode_StateMachine_1.Locomotion.AnimStateTransitionNode_2.Transition": {
+  "pos": {
+   "K2Node_VariableGet_0": [
+    0,
+    0
+   ],
+   "K2Node_CallFunction_0": [
+    450,
+    0
+   ],
+   "AnimGraphNode_TransitionResult_0": [
+    850,
+    0
+   ]
+  },
+  "antes": {
+   "cruces": 0,
+   "retrocesos": 1,
+   "solapes": 1
+  },
+  "despues": {
+   "cruces": 0,
+   "retrocesos": 0,
+   "solapes": 0
+  }
+ },
+ "AnimGraph.AnimGraphNode_StateMachine_1.Locomotion.AnimStateNode_0.Fall": {
+  "pos": {
+   "AnimGraphNode_SequencePlayer_4": [
+    0,
+    0
+   ],
+   "K2Node_VariableGet_0": [
+    0,
+    350
+   ],
+   "K2Node_VariableGet_1": [
+    0,
+    550
+   ],
+   "AnimGraphNode_BlendSpacePlayer_0": [
+    500,
+    0
+   ],
+   "AnimGraphNode_TwoWayBlend_0": [
+    1050,
+    0
+   ],
+   "AnimGraphNode_StateResult_0": [
+    1550,
+    0
+   ]
+  },
+  "antes": {
+   "cruces": 0,
+   "retrocesos": 2,
+   "solapes": 3
+  },
+  "despues": {
+   "cruces": 1,
+   "retrocesos": 0,
+   "solapes": 0
+  }
+ },
+ "AnimGraph.AnimGraphNode_StateMachine_1.Locomotion.AnimStateTransitionNode_0.Transition": {
+  "pos": {
+   "K2Node_VariableGet_0": [
+    0,
+    0
+   ],
+   "AnimGraphNode_TransitionResult_0": [
+    450,
+    0
+   ]
+  },
+  "antes": {
+   "cruces": 0,
+   "retrocesos": 1,
+   "solapes": 1
+  },
+  "despues": {
+   "cruces": 0,
+   "retrocesos": 0,
+   "solapes": 0
+  }
+ },
+ "AnimGraph.AnimGraphNode_StateMachine_1.Locomotion.AnimStateTransitionNode_3.Transition": {
+  "pos": {
+   "K2Node_VariableGet_0": [
+    0,
+    0
+   ],
+   "AnimGraphNode_TransitionResult_0": [
+    450,
+    0
+   ]
+  },
+  "antes": {
+   "cruces": 0,
+   "retrocesos": 1,
+   "solapes": 1
+  },
+  "despues": {
+   "cruces": 0,
+   "retrocesos": 0,
+   "solapes": 0
+  }
+ },
+ "AnimGraph.AnimGraphNode_StateMachine_1.Locomotion.AnimStateNode_2.Stop": {
+  "pos": {
+   "AnimGraphNode_SequencePlayer_0": [
+    0,
+    0
+   ],
+   "AnimGraphNode_SequencePlayer_4": [
+    0,
+    350
+   ],
+   "AnimGraphNode_StateResult_0": [
+    500,
+    0
+   ]
+  },
+  "antes": {
+   "cruces": 0,
+   "retrocesos": 1,
+   "solapes": 1
+  },
+  "despues": {
+   "cruces": 0,
+   "retrocesos": 0,
+   "solapes": 0
+  }
+ },
+ "AnimGraph.AnimGraphNode_StateMachine_1.Locomotion.AnimStateTransitionNode_7.Transition": {
+  "pos": {
+   "K2Node_VariableGet_0": [
+    0,
+    0
+   ],
+   "K2Node_VariableGet_2": [
+    0,
+    200
+   ],
+   "K2Node_CallFunction_0": [
+    450,
+    0
+   ],
+   "K2Node_PromotableOperator_0": [
+    450,
+    250
+   ],
+   "K2Node_CommutativeAssociativeBinaryOperator_0": [
+    850,
+    0
+   ],
+   "AnimGraphNode_TransitionResult_0": [
+    1250,
+    0
+   ]
+  },
+  "antes": {
+   "cruces": 0,
+   "retrocesos": 2,
+   "solapes": 4
+  },
+  "despues": {
+   "cruces": 0,
+   "retrocesos": 0,
+   "solapes": 0
+  }
+ },
+ "AnimGraph.AnimGraphNode_StateMachine_1.Locomotion.AnimStateNode_3.SwingStart": {
+  "pos": {
+   "AnimGraphNode_SequencePlayer_3": [
+    0,
+    0
+   ],
+   "AnimGraphNode_SequencePlayer_5": [
+    0,
+    350
+   ],
+   "AnimGraphNode_StateResult_0": [
+    500,
+    0
+   ]
+  },
+  "antes": {
+   "cruces": 0,
+   "retrocesos": 1,
+   "solapes": 2
+  },
+  "despues": {
+   "cruces": 0,
+   "retrocesos": 0,
+   "solapes": 0
+  }
+ },
+ "AnimGraph.AnimGraphNode_StateMachine_1.Locomotion.AnimStateTransitionNode_8.Transition": {
+  "pos": {
+   "K2Node_VariableGet_0": [
+    0,
+    0
+   ],
+   "AnimGraphNode_TransitionResult_0": [
+    450,
+    0
+   ]
+  },
+  "antes": {
+   "cruces": 0,
+   "retrocesos": 1,
+   "solapes": 1
+  },
+  "despues": {
+   "cruces": 0,
+   "retrocesos": 0,
+   "solapes": 0
+  }
+ },
+ "AnimGraph.AnimGraphNode_StateMachine_1.Locomotion.AnimStateNode_6.JumpStart": {
+  "pos": {
+   "AnimGraphNode_SequencePlayer_0": [
+    0,
+    0
+   ],
+   "AnimGraphNode_SequencePlayer_1": [
+    0,
+    350
+   ],
+   "AnimGraphNode_SequencePlayer_2": [
+    0,
+    700
+   ],
+   "AnimGraphNode_StateResult_0": [
+    500,
+    0
+   ]
+  },
+  "antes": {
+   "cruces": 0,
+   "retrocesos": 0,
+   "solapes": 3
+  },
+  "despues": {
+   "cruces": 0,
+   "retrocesos": 0,
+   "solapes": 0
+  }
+ },
+ "AnimGraph.AnimGraphNode_StateMachine_1.Locomotion.AnimStateTransitionNode_9.Transition": {
+  "pos": {
+   "K2Node_VariableGet_0": [
+    0,
+    0
+   ],
+   "K2Node_VariableGet_1": [
+    0,
+    200
+   ],
+   "K2Node_PromotableOperator_0": [
+    450,
+    0
+   ],
+   "K2Node_CommutativeAssociativeBinaryOperator_0": [
+    850,
+    0
+   ],
+   "AnimGraphNode_TransitionResult_0": [
+    1250,
+    0
+   ]
+  },
+  "antes": {
+   "cruces": 0,
+   "retrocesos": 1,
+   "solapes": 1
+  },
+  "despues": {
+   "cruces": 0,
+   "retrocesos": 0,
+   "solapes": 0
+  }
+ },
+ "AnimGraph.AnimGraphNode_StateMachine_1.Locomotion.AnimStateTransitionNode_10.Transition": {
+  "pos": {
+   "K2Node_VariableGet_0": [
+    0,
+    0
+   ],
+   "AnimGraphNode_TransitionResult_0": [
+    450,
+    0
+   ]
+  },
+  "antes": {
+   "cruces": 0,
+   "retrocesos": 0,
+   "solapes": 0
+  },
+  "despues": {
+   "cruces": 0,
+   "retrocesos": 0,
+   "solapes": 0
+  }
+ },
+ "AnimGraph.AnimGraphNode_StateMachine_1.Locomotion.AnimStateTransitionNode_11.Transition": {
+  "pos": {
+   "K2Node_VariableGet_0": [
+    0,
+    0
+   ],
+   "K2Node_VariableGet_1": [
+    0,
+    200
+   ],
+   "K2Node_PromotableOperator_0": [
+    450,
+    0
+   ],
+   "K2Node_CommutativeAssociativeBinaryOperator_0": [
+    850,
+    0
+   ],
+   "AnimGraphNode_TransitionResult_0": [
+    1250,
+    0
+   ]
+  },
+  "antes": {
+   "cruces": 0,
+   "retrocesos": 2,
+   "solapes": 3
+  },
+  "despues": {
+   "cruces": 0,
+   "retrocesos": 0,
+   "solapes": 0
+  }
+ },
+ "AnimGraph.AnimGraphNode_StateMachine_1.Locomotion.AnimStateTransitionNode_12.Transition": {
+  "pos": {
+   "K2Node_VariableGet_0": [
+    0,
+    0
+   ],
+   "AnimGraphNode_TransitionResult_0": [
+    450,
+    0
+   ]
+  },
+  "antes": {
+   "cruces": 0,
+   "retrocesos": 0,
+   "solapes": 0
+  },
+  "despues": {
+   "cruces": 0,
+   "retrocesos": 0,
+   "solapes": 0
+  }
+ },
+ "AnimGraph.AnimGraphNode_StateMachine_1.Locomotion.AnimStateTransitionNode_13.Transition": {
+  "pos": {
+   "K2Node_VariableGet_0": [
+    0,
+    0
+   ],
+   "AnimGraphNode_TransitionResult_0": [
+    450,
+    0
+   ]
+  },
+  "antes": {
+   "cruces": 0,
+   "retrocesos": 0,
+   "solapes": 0
+  },
+  "despues": {
+   "cruces": 0,
+   "retrocesos": 0,
+   "solapes": 0
+  }
+ },
+ "AnimGraph.AnimGraphNode_StateMachine_1.Locomotion.AnimStateTransitionNode_14.Transition": {
+  "pos": {
+   "K2Node_VariableGet_0": [
+    0,
+    0
+   ],
+   "AnimGraphNode_TransitionResult_0": [
+    450,
+    0
+   ]
+  },
+  "antes": {
+   "cruces": 0,
+   "retrocesos": 1,
+   "solapes": 1
+  },
+  "despues": {
+   "cruces": 0,
+   "retrocesos": 0,
+   "solapes": 0
+  }
+ },
+ "AnimGraph.AnimGraphNode_StateMachine_1.Locomotion.AnimStateTransitionNode_15.Transition": {
+  "pos": {
+   "AnimGraphNode_TransitionResult_0": [
+    0,
+    0
+   ]
+  },
+  "antes": {
+   "cruces": 0,
+   "retrocesos": 0,
+   "solapes": 0
+  },
+  "despues": {
+   "cruces": 0,
+   "retrocesos": 0,
+   "solapes": 0
+  }
+ },
+ "AnimGraph.AnimGraphNode_StateMachine_1.Locomotion.AnimStateTransitionNode_16.Transition": {
+  "pos": {
+   "K2Node_VariableGet_0": [
+    0,
+    0
+   ],
+   "AnimGraphNode_TransitionResult_0": [
+    450,
+    0
+   ]
+  },
+  "antes": {
+   "cruces": 0,
+   "retrocesos": 0,
+   "solapes": 0
+  },
+  "despues": {
+   "cruces": 0,
+   "retrocesos": 0,
+   "solapes": 0
+  }
+ },
+ "AnimGraph.AnimGraphNode_StateMachine_1.Locomotion.AnimStateTransitionNode_18.Transition": {
+  "pos": {
+   "K2Node_VariableGet_0": [
+    0,
+    0
+   ],
+   "K2Node_PromotableOperator_0": [
+    450,
+    0
+   ],
+   "AnimGraphNode_TransitionResult_0": [
+    850,
+    0
+   ]
+  },
+  "antes": {
+   "cruces": 0,
+   "retrocesos": 1,
+   "solapes": 1
+  },
+  "despues": {
+   "cruces": 0,
+   "retrocesos": 0,
+   "solapes": 0
+  }
+ },
+ "AnimGraph.AnimGraphNode_StateMachine_1.Locomotion.AnimStateNode_7.HardLanding": {
+  "pos": {
+   "AnimGraphNode_SequencePlayer_1": [
+    0,
+    0
+   ],
+   "AnimGraphNode_StateResult_0": [
+    500,
+    0
+   ]
+  },
+  "antes": {
+   "cruces": 0,
+   "retrocesos": 1,
+   "solapes": 1
+  },
+  "despues": {
+   "cruces": 0,
+   "retrocesos": 0,
+   "solapes": 0
+  }
+ },
+ "AnimGraph.AnimGraphNode_StateMachine_1.Locomotion.AnimStateTransitionNode_19.Transition": {
+  "pos": {
+   "K2Node_VariableGet_0": [
+    0,
+    0
+   ],
+   "K2Node_VariableGet_1": [
+    0,
+    200
+   ],
+   "K2Node_CallFunction_0": [
+    450,
+    0
+   ],
+   "K2Node_PromotableOperator_0": [
+    450,
+    250
+   ],
+   "K2Node_CommutativeAssociativeBinaryOperator_0": [
+    850,
+    0
+   ],
+   "AnimGraphNode_TransitionResult_0": [
+    1250,
+    0
+   ]
+  },
+  "antes": {
+   "cruces": 0,
+   "retrocesos": 2,
+   "solapes": 4
+  },
+  "despues": {
+   "cruces": 0,
+   "retrocesos": 0,
+   "solapes": 0
+  }
+ },
+ "AnimGraph.AnimGraphNode_StateMachine_1.Locomotion.AnimStateTransitionNode_20.Transition": {
+  "pos": {
+   "K2Node_VariableGet_0": [
+    0,
+    0
+   ],
+   "AnimGraphNode_TransitionResult_0": [
+    450,
+    0
+   ]
+  },
+  "antes": {
+   "cruces": 0,
+   "retrocesos": 1,
+   "solapes": 1
+  },
+  "despues": {
+   "cruces": 0,
+   "retrocesos": 0,
+   "solapes": 0
+  }
+ },
+ "AnimGraph.AnimGraphNode_StateMachine_1.Locomotion.AnimStateNode_8.SoftLand": {
+  "pos": {
+   "AnimGraphNode_SequencePlayer_0": [
+    0,
+    0
+   ],
+   "AnimGraphNode_SequencePlayer_1": [
+    0,
+    350
+   ],
+   "AnimGraphNode_StateResult_0": [
+    500,
+    0
+   ]
+  },
+  "antes": {
+   "cruces": 0,
+   "retrocesos": 1,
+   "solapes": 3
+  },
+  "despues": {
+   "cruces": 0,
+   "retrocesos": 0,
+   "solapes": 0
+  }
+ },
+ "AnimGraph.AnimGraphNode_StateMachine_1.Locomotion.AnimStateTransitionNode_21.Transition": {
+  "pos": {
+   "K2Node_VariableGet_1": [
+    0,
+    0
+   ],
+   "K2Node_CallFunction_0": [
+    450,
+    0
+   ],
+   "AnimGraphNode_TransitionResult_0": [
+    850,
+    0
+   ]
+  },
+  "antes": {
+   "cruces": 0,
+   "retrocesos": 1,
+   "solapes": 1
+  },
+  "despues": {
+   "cruces": 0,
+   "retrocesos": 0,
+   "solapes": 0
+  }
+ },
+ "AnimGraph.AnimGraphNode_StateMachine_1.Locomotion.AnimStateTransitionNode_22.Transition": {
+  "pos": {
+   "K2Node_AnimGetter_0": [
+    0,
+    0
+   ],
+   "K2Node_VariableGet_0": [
+    0,
+    250
+   ],
+   "K2Node_PromotableOperator_0": [
+    500,
+    0
+   ],
+   "K2Node_CommutativeAssociativeBinaryOperator_0": [
+    900,
+    0
+   ],
+   "AnimGraphNode_TransitionResult_0": [
+    1300,
+    0
+   ]
+  },
+  "antes": {
+   "cruces": 0,
+   "retrocesos": 1,
+   "solapes": 2
+  },
+  "despues": {
+   "cruces": 0,
+   "retrocesos": 0,
+   "solapes": 0
+  }
+ },
+ "AnimGraph.AnimGraphNode_StateMachine_1.Locomotion.AnimStateTransitionNode_23.Transition": {
+  "pos": {
+   "AnimGraphNode_TransitionResult_0": [
+    0,
+    0
+   ]
+  },
+  "antes": {
+   "cruces": 0,
+   "retrocesos": 0,
+   "solapes": 0
+  },
+  "despues": {
+   "cruces": 0,
+   "retrocesos": 0,
+   "solapes": 0
+  }
+ },
+ "AnimGraph.AnimGraphNode_StateMachine_1.Locomotion.AnimStateTransitionNode_24.Transition": {
+  "pos": {
+   "K2Node_AnimGetter_0": [
+    0,
+    0
+   ],
+   "K2Node_AnimGetter_1": [
+    0,
+    250
+   ],
+   "K2Node_VariableGet_0": [
+    0,
+    500
+   ],
+   "K2Node_PromotableOperator_0": [
+    500,
+    0
+   ],
+   "K2Node_CommutativeAssociativeBinaryOperator_0": [
+    900,
+    0
+   ],
+   "AnimGraphNode_TransitionResult_0": [
+    1300,
+    0
+   ]
+  },
+  "antes": {
+   "cruces": 0,
+   "retrocesos": 1,
+   "solapes": 2
+  },
+  "despues": {
+   "cruces": 0,
+   "retrocesos": 0,
+   "solapes": 0
+  }
+ },
+ "AnimGraph.AnimGraphNode_StateMachine_1.Locomotion.AnimStateTransitionNode_25.Transition": {
+  "pos": {
+   "AnimGraphNode_TransitionResult_0": [
+    0,
+    0
+   ]
+  },
+  "antes": {
+   "cruces": 0,
+   "retrocesos": 0,
+   "solapes": 0
+  },
+  "despues": {
+   "cruces": 0,
+   "retrocesos": 0,
+   "solapes": 0
+  }
+ },
+ "AnimGraph.AnimGraphNode_StateMachine_1.Locomotion.AnimStateNode_9.SwingLoop": {
+  "pos": {
+   "AnimGraphNode_SequencePlayer_2": [
+    0,
+    0
+   ],
+   "AnimGraphNode_StateResult_0": [
+    500,
+    0
+   ]
+  },
+  "antes": {
+   "cruces": 0,
+   "retrocesos": 1,
+   "solapes": 1
+  },
+  "despues": {
+   "cruces": 0,
+   "retrocesos": 0,
+   "solapes": 0
+  }
+ },
+ "AnimGraph.AnimGraphNode_StateMachine_1.Locomotion.AnimStateTransitionNode_27.Transition": {
+  "pos": {
+   "AnimGraphNode_TransitionResult_0": [
+    0,
+    0
+   ]
+  },
+  "antes": {
+   "cruces": 0,
+   "retrocesos": 0,
+   "solapes": 0
+  },
+  "despues": {
+   "cruces": 0,
+   "retrocesos": 0,
+   "solapes": 0
+  }
+ },
+ "AnimGraph.AnimGraphNode_StateMachine_1.Locomotion.AnimStateTransitionNode_28.Transition": {
+  "pos": {
+   "K2Node_VariableGet_0": [
+    0,
+    0
+   ],
+   "K2Node_CallFunction_0": [
+    450,
+    0
+   ],
+   "AnimGraphNode_TransitionResult_0": [
+    850,
+    0
+   ]
+  },
+  "antes": {
+   "cruces": 0,
+   "retrocesos": 1,
+   "solapes": 1
+  },
+  "despues": {
+   "cruces": 0,
+   "retrocesos": 0,
+   "solapes": 0
+  }
+ },
+ "AnimGraph.AnimGraphNode_StateMachine_1.Locomotion.AnimStateTransitionNode_29.Transition": {
+  "pos": {
+   "K2Node_VariableGet_0": [
+    0,
+    0
+   ],
+   "K2Node_CallFunction_0": [
+    450,
+    0
+   ],
+   "AnimGraphNode_TransitionResult_0": [
+    850,
+    0
+   ]
+  },
+  "antes": {
+   "cruces": 0,
+   "retrocesos": 1,
+   "solapes": 1
+  },
+  "despues": {
+   "cruces": 0,
+   "retrocesos": 0,
+   "solapes": 0
+  }
+ },
+ "AnimGraph.AnimGraphNode_StateMachine_1.Locomotion.AnimStateTransitionNode_4.Transition": {
+  "pos": {
+   "K2Node_VariableGet_0": [
+    0,
+    0
+   ],
+   "K2Node_VariableGet_2": [
+    0,
+    200
+   ],
+   "K2Node_PromotableOperator_0": [
+    450,
+    0
+   ],
+   "K2Node_CommutativeAssociativeBinaryOperator_0": [
+    850,
+    0
+   ],
+   "AnimGraphNode_TransitionResult_0": [
+    1250,
+    0
+   ]
+  },
+  "antes": {
+   "cruces": 0,
+   "retrocesos": 3,
+   "solapes": 2
+  },
+  "despues": {
+   "cruces": 0,
+   "retrocesos": 0,
+   "solapes": 0
+  }
+ },
+ "AnimGraph.AnimGraphNode_StateMachine_1.Locomotion.AnimStateTransitionNode_5.Transition": {
+  "pos": {
+   "K2Node_VariableGet_0": [
+    0,
+    0
+   ],
+   "AnimGraphNode_TransitionResult_0": [
+    450,
+    0
+   ]
+  },
+  "antes": {
+   "cruces": 0,
+   "retrocesos": 1,
+   "solapes": 1
+  },
+  "despues": {
+   "cruces": 0,
+   "retrocesos": 0,
+   "solapes": 0
+  }
+ },
+ "AnimGraph.AnimGraphNode_StateMachine_1.Locomotion.AnimStateTransitionNode_6.Transition": {
+  "pos": {
+   "K2Node_VariableGet_0": [
+    0,
+    0
+   ],
+   "K2Node_VariableGet_2": [
+    0,
+    200
+   ],
+   "K2Node_PromotableOperator_0": [
+    450,
+    0
+   ],
+   "K2Node_CommutativeAssociativeBinaryOperator_0": [
+    850,
+    0
+   ],
+   "AnimGraphNode_TransitionResult_0": [
+    1250,
+    0
+   ]
+  },
+  "antes": {
+   "cruces": 0,
+   "retrocesos": 3,
+   "solapes": 2
+  },
+  "despues": {
+   "cruces": 0,
+   "retrocesos": 0,
+   "solapes": 0
+  }
+ },
+ "AnimGraph.AnimGraphNode_StateMachine_1.Locomotion.AnimStateTransitionNode_17.Transition": {
+  "pos": {
+   "K2Node_VariableGet_0": [
+    0,
+    0
+   ],
+   "AnimGraphNode_TransitionResult_0": [
+    450,
+    0
+   ]
+  },
+  "antes": {
+   "cruces": 0,
+   "retrocesos": 1,
+   "solapes": 1
+  },
+  "despues": {
+   "cruces": 0,
+   "retrocesos": 0,
+   "solapes": 0
+  }
+ }
+}

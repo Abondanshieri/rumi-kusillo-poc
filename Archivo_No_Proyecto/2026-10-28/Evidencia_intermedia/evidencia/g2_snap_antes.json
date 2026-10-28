@@ -1,0 +1,1329 @@
+{
+ "AnimGraph": {
+  "nodes": {
+   "AnimGraphNode_Root_0": {
+    "x": 1300,
+    "y": 0,
+    "type": "Misc.|Posedesalida"
+   },
+   "AnimGraphNode_Slot_0": {
+    "x": -250,
+    "y": 0,
+    "type": "Animation|Montage|Slot'DefaultSlot'"
+   },
+   "AnimGraphNode_StateMachine_0": {
+    "x": -700,
+    "y": 0,
+    "type": "Animación|Autómatasfinitos|Main"
+   },
+   "AnimGraphNode_StateMachine_1": {
+    "x": -700,
+    "y": -450,
+    "type": "Animación|Autómatasfinitos|Locomotion"
+   },
+   "AnimGraphNode_SaveCachedPose_0": {
+    "x": -250,
+    "y": -450,
+    "type": "Animation|CachedPoses|Savecachedpose'Locomotion'"
+   },
+   "AnimGraphNode_Inertialization_0": {
+    "x": 150,
+    "y": 0,
+    "type": "Animación.|Inercialización"
+   },
+   "AnimGraphNode_ControlRig_1": {
+    "x": 600,
+    "y": 0,
+    "type": "Misc.|Equipodecontrol"
+   }
+  },
+  "edges": [
+   [
+    "AnimGraphNode_ControlRig_1#o0",
+    "AnimGraphNode_Root_0.Result"
+   ],
+   [
+    "AnimGraphNode_Inertialization_0#o0",
+    "AnimGraphNode_ControlRig_1.Source"
+   ],
+   [
+    "AnimGraphNode_Slot_0#o0",
+    "AnimGraphNode_Inertialization_0.Source"
+   ],
+   [
+    "AnimGraphNode_StateMachine_0#o0",
+    "AnimGraphNode_Slot_0.Source"
+   ],
+   [
+    "AnimGraphNode_StateMachine_1#o0",
+    "AnimGraphNode_SaveCachedPose_0.Pose"
+   ]
+  ],
+  "vals": {
+   "AnimGraphNode_Root_0.Result": "(LinkID=-1,SourceLinkID=-1)",
+   "AnimGraphNode_Slot_0.Source": "(LinkID=-1,SourceLinkID=-1)",
+   "AnimGraphNode_SaveCachedPose_0.Pose": "(LinkID=-1,SourceLinkID=-1)",
+   "AnimGraphNode_Inertialization_0.Source": "(LinkID=-1,SourceLinkID=-1)",
+   "AnimGraphNode_ControlRig_1.Source": "(LinkID=-1,SourceLinkID=-1)",
+   "AnimGraphNode_ControlRig_1.Alpha": "1.000000"
+  }
+ },
+ "AnimGraph.AnimGraphNode_StateMachine_0.Main.AnimStateNode_0.Locomotion": {
+  "nodes": {
+   "AnimGraphNode_StateResult_0": {
+    "x": 0,
+    "y": 0,
+    "type": "Misc.|Posedeanimacióndesalida"
+   },
+   "AnimGraphNode_UseCachedPose_0": {
+    "x": -320,
+    "y": 16,
+    "type": "Animation|CachedPoses|Usarposeencaché'Locomotion'"
+   }
+  },
+  "edges": [
+   [
+    "AnimGraphNode_UseCachedPose_0#o0",
+    "AnimGraphNode_StateResult_0.Result"
+   ]
+  ],
+  "vals": {
+   "AnimGraphNode_StateResult_0.Result": "(LinkID=-1,SourceLinkID=-1)"
+  }
+ },
+ "AnimGraph.AnimGraphNode_StateMachine_1.Locomotion.AnimStateNode_4.Idle": {
+  "nodes": {
+   "AnimGraphNode_StateResult_0": {
+    "x": 368,
+    "y": 0,
+    "type": "Misc.|Posedeanimacióndesalida"
+   },
+   "AnimGraphNode_SequencePlayer_2": {
+    "x": 80,
+    "y": -16,
+    "type": "Secuenciadeanimación|Reproductordesecuencias'Student_Idle'"
+   }
+  },
+  "edges": [
+   [
+    "AnimGraphNode_SequencePlayer_2#o0",
+    "AnimGraphNode_StateResult_0.Result"
+   ]
+  ],
+  "vals": {
+   "AnimGraphNode_StateResult_0.Result": "(LinkID=-1,SourceLinkID=-1)"
+  }
+ },
+ "AnimGraph.AnimGraphNode_StateMachine_1.Locomotion.AnimStateNode_5.Move/Run": {
+  "nodes": {
+   "AnimGraphNode_StateResult_0": {
+    "x": 96,
+    "y": -144,
+    "type": "Misc.|Posedeanimacióndesalida"
+   },
+   "K2Node_VariableGet_1": {
+    "x": -464,
+    "y": -48,
+    "type": "|GetGroundSpeed"
+   },
+   "K2Node_VariableGet_2": {
+    "x": -464,
+    "y": -112,
+    "type": "|GetDirection"
+   },
+   "AnimGraphNode_BlendSpacePlayer_0": {
+    "x": -224,
+    "y": -160,
+    "type": "AnimaciónSpaces|Reproductordeespaciodemezcla'Student_Skeleton_BlendSpace'"
+   }
+  },
+  "edges": [
+   [
+    "AnimGraphNode_BlendSpacePlayer_0#o0",
+    "AnimGraphNode_StateResult_0.Result"
+   ],
+   [
+    "K2Node_VariableGet_1#o0",
+    "AnimGraphNode_BlendSpacePlayer_0.Y"
+   ],
+   [
+    "K2Node_VariableGet_2#o0",
+    "AnimGraphNode_BlendSpacePlayer_0.X"
+   ]
+  ],
+  "vals": {
+   "AnimGraphNode_StateResult_0.Result": "(LinkID=-1,SourceLinkID=-1)",
+   "AnimGraphNode_BlendSpacePlayer_0.X": "0.000000",
+   "AnimGraphNode_BlendSpacePlayer_0.Y": "0.000000"
+  }
+ },
+ "AnimGraph.AnimGraphNode_StateMachine_1.Locomotion.AnimStateTransitionNode_1.Transition": {
+  "nodes": {
+   "AnimGraphNode_TransitionResult_0": {
+    "x": 0,
+    "y": 0,
+    "type": "Misc.|Resultado"
+   },
+   "K2Node_VariableGet_0": {
+    "x": -208,
+    "y": 16,
+    "type": "|GetShouldMove"
+   }
+  },
+  "edges": [
+   [
+    "K2Node_VariableGet_0#o0",
+    "AnimGraphNode_TransitionResult_0.bCanEnterTransition"
+   ]
+  ],
+  "vals": {
+   "AnimGraphNode_TransitionResult_0.bCanEnterTransition": "False"
+  }
+ },
+ "AnimGraph.AnimGraphNode_StateMachine_1.Locomotion.AnimStateTransitionNode_2.Transition": {
+  "nodes": {
+   "AnimGraphNode_TransitionResult_0": {
+    "x": 0,
+    "y": 0,
+    "type": "Misc.|Resultado"
+   },
+   "K2Node_VariableGet_0": {
+    "x": -448,
+    "y": 32,
+    "type": "|GetShouldMove"
+   },
+   "K2Node_CallFunction_0": {
+    "x": -240,
+    "y": 80,
+    "type": "Matemáticas|Booleano|NOTBoolean"
+   }
+  },
+  "edges": [
+   [
+    "K2Node_CallFunction_0#o0",
+    "AnimGraphNode_TransitionResult_0.bCanEnterTransition"
+   ],
+   [
+    "K2Node_VariableGet_0#o0",
+    "K2Node_CallFunction_0.A"
+   ]
+  ],
+  "vals": {
+   "AnimGraphNode_TransitionResult_0.bCanEnterTransition": "False",
+   "K2Node_CallFunction_0.A": "false"
+  }
+ },
+ "AnimGraph.AnimGraphNode_StateMachine_1.Locomotion.AnimStateNode_0.Fall": {
+  "nodes": {
+   "AnimGraphNode_StateResult_0": {
+    "x": 368,
+    "y": -96,
+    "type": "Misc.|Posedeanimacióndesalida"
+   },
+   "AnimGraphNode_BlendSpacePlayer_0": {
+    "x": -208,
+    "y": -32,
+    "type": "AnimaciónSpaces|Reproductordeespaciodemezcla'BS_Fall'"
+   },
+   "K2Node_VariableGet_1": {
+    "x": -450,
+    "y": 0,
+    "type": "|GetFallSpeed"
+   },
+   "AnimGraphNode_TwoWayBlend_0": {
+    "x": 144,
+    "y": -16,
+    "type": "Animación|Mezclabidireccional"
+   },
+   "K2Node_VariableGet_0": {
+    "x": -128,
+    "y": 368,
+    "type": "|GetLandPrep"
+   },
+   "AnimGraphNode_SequencePlayer_4": {
+    "x": -368,
+    "y": 288,
+    "type": "Secuenciadeanimación|Reproductordesecuencias'Jump_Polished_13'"
+   }
+  },
+  "edges": [
+   [
+    "AnimGraphNode_BlendSpacePlayer_0#o0",
+    "AnimGraphNode_TwoWayBlend_0.A"
+   ],
+   [
+    "AnimGraphNode_SequencePlayer_4#o0",
+    "AnimGraphNode_TwoWayBlend_0.B"
+   ],
+   [
+    "AnimGraphNode_TwoWayBlend_0#o0",
+    "AnimGraphNode_StateResult_0.Result"
+   ],
+   [
+    "K2Node_VariableGet_0#o0",
+    "AnimGraphNode_TwoWayBlend_0.Alpha"
+   ],
+   [
+    "K2Node_VariableGet_1#o0",
+    "AnimGraphNode_BlendSpacePlayer_0.X"
+   ]
+  ],
+  "vals": {
+   "AnimGraphNode_StateResult_0.Result": "(LinkID=-1,SourceLinkID=-1)",
+   "AnimGraphNode_BlendSpacePlayer_0.X": "0.000000",
+   "AnimGraphNode_BlendSpacePlayer_0.Y": "0.000000",
+   "AnimGraphNode_TwoWayBlend_0.A": "(LinkID=-1,SourceLinkID=-1)",
+   "AnimGraphNode_TwoWayBlend_0.B": "(LinkID=-1,SourceLinkID=-1)",
+   "AnimGraphNode_TwoWayBlend_0.Alpha": "0.000000"
+  }
+ },
+ "AnimGraph.AnimGraphNode_StateMachine_1.Locomotion.AnimStateTransitionNode_0.Transition": {
+  "nodes": {
+   "AnimGraphNode_TransitionResult_0": {
+    "x": 0,
+    "y": 0,
+    "type": "Misc.|Resultado"
+   },
+   "K2Node_VariableGet_0": {
+    "x": -224,
+    "y": 32,
+    "type": "|GetIsFalling"
+   }
+  },
+  "edges": [
+   [
+    "K2Node_VariableGet_0#o0",
+    "AnimGraphNode_TransitionResult_0.bCanEnterTransition"
+   ]
+  ],
+  "vals": {
+   "AnimGraphNode_TransitionResult_0.bCanEnterTransition": "False"
+  }
+ },
+ "AnimGraph.AnimGraphNode_StateMachine_1.Locomotion.AnimStateTransitionNode_3.Transition": {
+  "nodes": {
+   "AnimGraphNode_TransitionResult_0": {
+    "x": 0,
+    "y": 0,
+    "type": "Misc.|Resultado"
+   },
+   "K2Node_VariableGet_0": {
+    "x": -144,
+    "y": 32,
+    "type": "|GetIsFalling"
+   }
+  },
+  "edges": [
+   [
+    "K2Node_VariableGet_0#o0",
+    "AnimGraphNode_TransitionResult_0.bCanEnterTransition"
+   ]
+  ],
+  "vals": {
+   "AnimGraphNode_TransitionResult_0.bCanEnterTransition": "False"
+  }
+ },
+ "AnimGraph.AnimGraphNode_StateMachine_1.Locomotion.AnimStateNode_2.Stop": {
+  "nodes": {
+   "AnimGraphNode_StateResult_0": {
+    "x": -16,
+    "y": 16,
+    "type": "Misc.|Posedeanimacióndesalida"
+   },
+   "AnimGraphNode_SequencePlayer_0": {
+    "x": -320,
+    "y": 0,
+    "type": "Secuenciadeanimación|Reproductordesecuencias'Run_To_Stop_InPlace_Anim'"
+   },
+   "AnimGraphNode_SequencePlayer_4": {
+    "x": -304,
+    "y": 144,
+    "type": "Secuenciadeanimación|Reproductordesecuencias'Run_To_Stop_Polished'"
+   }
+  },
+  "edges": [
+   [
+    "AnimGraphNode_SequencePlayer_4#o0",
+    "AnimGraphNode_StateResult_0.Result"
+   ]
+  ],
+  "vals": {
+   "AnimGraphNode_StateResult_0.Result": "(LinkID=-1,SourceLinkID=-1)"
+  }
+ },
+ "AnimGraph.AnimGraphNode_StateMachine_1.Locomotion.AnimStateTransitionNode_7.Transition": {
+  "nodes": {
+   "AnimGraphNode_TransitionResult_0": {
+    "x": 544,
+    "y": -48,
+    "type": "Misc.|Resultado"
+   },
+   "K2Node_VariableGet_0": {
+    "x": -160,
+    "y": 0,
+    "type": "|GetShouldMove"
+   },
+   "K2Node_VariableGet_2": {
+    "x": -160,
+    "y": 112,
+    "type": "|GetGroundSpeed"
+   },
+   "K2Node_CallFunction_0": {
+    "x": 16,
+    "y": -16,
+    "type": "Matemáticas|Booleano|NOTBoolean"
+   },
+   "K2Node_PromotableOperator_0": {
+    "x": 32,
+    "y": 80,
+    "type": "Matemáticas|Float|float>float"
+   },
+   "K2Node_CommutativeAssociativeBinaryOperator_0": {
+    "x": 272,
+    "y": -16,
+    "type": "Matemáticas|Booleano|ANDBoolean"
+   }
+  },
+  "edges": [
+   [
+    "K2Node_CallFunction_0#o0",
+    "K2Node_CommutativeAssociativeBinaryOperator_0.A"
+   ],
+   [
+    "K2Node_CommutativeAssociativeBinaryOperator_0#o0",
+    "AnimGraphNode_TransitionResult_0.bCanEnterTransition"
+   ],
+   [
+    "K2Node_PromotableOperator_0#o0",
+    "K2Node_CommutativeAssociativeBinaryOperator_0.B"
+   ],
+   [
+    "K2Node_VariableGet_0#o0",
+    "K2Node_CallFunction_0.A"
+   ],
+   [
+    "K2Node_VariableGet_2#o0",
+    "K2Node_PromotableOperator_0.A"
+   ]
+  ],
+  "vals": {
+   "AnimGraphNode_TransitionResult_0.bCanEnterTransition": "False",
+   "K2Node_CallFunction_0.A": "false",
+   "K2Node_PromotableOperator_0.B": "250.000000",
+   "K2Node_CommutativeAssociativeBinaryOperator_0.A": "false",
+   "K2Node_CommutativeAssociativeBinaryOperator_0.B": "false"
+  }
+ },
+ "AnimGraph.AnimGraphNode_StateMachine_1.Locomotion.AnimStateNode_3.SwingStart": {
+  "nodes": {
+   "AnimGraphNode_StateResult_0": {
+    "x": 0,
+    "y": 0,
+    "type": "Misc.|Posedeanimacióndesalida"
+   },
+   "AnimGraphNode_SequencePlayer_5": {
+    "x": -192,
+    "y": -16,
+    "type": "Secuenciadeanimación|Reproductordesecuencias'SwingStart_Student'"
+   },
+   "AnimGraphNode_SequencePlayer_3": {
+    "x": -192,
+    "y": 144,
+    "type": "Secuenciadeanimación|Reproductordesecuencias'SwingStart_Realistic'"
+   }
+  },
+  "edges": [
+   [
+    "AnimGraphNode_SequencePlayer_3#o0",
+    "AnimGraphNode_StateResult_0.Result"
+   ]
+  ],
+  "vals": {
+   "AnimGraphNode_StateResult_0.Result": "(LinkID=-1,SourceLinkID=-1)"
+  }
+ },
+ "AnimGraph.AnimGraphNode_StateMachine_1.Locomotion.AnimStateTransitionNode_8.Transition": {
+  "nodes": {
+   "AnimGraphNode_TransitionResult_0": {
+    "x": 176,
+    "y": -32,
+    "type": "Misc.|Resultado"
+   },
+   "K2Node_VariableGet_0": {
+    "x": -48,
+    "y": -16,
+    "type": "|GetIsSwinging"
+   }
+  },
+  "edges": [
+   [
+    "K2Node_VariableGet_0#o0",
+    "AnimGraphNode_TransitionResult_0.bCanEnterTransition"
+   ]
+  ],
+  "vals": {
+   "AnimGraphNode_TransitionResult_0.bCanEnterTransition": "False"
+  }
+ },
+ "AnimGraph.AnimGraphNode_StateMachine_1.Locomotion.AnimStateNode_6.JumpStart": {
+  "nodes": {
+   "AnimGraphNode_StateResult_0": {
+    "x": 176,
+    "y": 0,
+    "type": "Misc.|Posedeanimacióndesalida"
+   },
+   "AnimGraphNode_SequencePlayer_0": {
+    "x": -160,
+    "y": -16,
+    "type": "Secuenciadeanimación|Reproductordesecuencias'Jump_Polished_12__1_'"
+   },
+   "AnimGraphNode_SequencePlayer_2": {
+    "x": -160,
+    "y": 112,
+    "type": "Secuenciadeanimación|Reproductordesecuencias'Jump_Polished_13'"
+   },
+   "AnimGraphNode_SequencePlayer_1": {
+    "x": -160,
+    "y": -128,
+    "type": "Secuenciadeanimación|Reproductordesecuencias'Student_Jump'"
+   }
+  },
+  "edges": [
+   [
+    "AnimGraphNode_SequencePlayer_0#o0",
+    "AnimGraphNode_StateResult_0.Result"
+   ]
+  ],
+  "vals": {
+   "AnimGraphNode_StateResult_0.Result": "(LinkID=-1,SourceLinkID=-1)"
+  }
+ },
+ "AnimGraph.AnimGraphNode_StateMachine_1.Locomotion.AnimStateTransitionNode_9.Transition": {
+  "nodes": {
+   "AnimGraphNode_TransitionResult_0": {
+    "x": 288,
+    "y": 16,
+    "type": "Misc.|Resultado"
+   },
+   "K2Node_VariableGet_0": {
+    "x": -320,
+    "y": 0,
+    "type": "|GetIsFalling"
+   },
+   "K2Node_CommutativeAssociativeBinaryOperator_0": {
+    "x": 16,
+    "y": 32,
+    "type": "Matemáticas|Booleano|ANDBoolean"
+   },
+   "K2Node_VariableGet_1": {
+    "x": -368,
+    "y": 160,
+    "type": "|GetVerticalSpeed"
+   },
+   "K2Node_PromotableOperator_0": {
+    "x": -192,
+    "y": 160,
+    "type": "Matemáticas|Float|float>float"
+   }
+  },
+  "edges": [
+   [
+    "K2Node_CommutativeAssociativeBinaryOperator_0#o0",
+    "AnimGraphNode_TransitionResult_0.bCanEnterTransition"
+   ],
+   [
+    "K2Node_PromotableOperator_0#o0",
+    "K2Node_CommutativeAssociativeBinaryOperator_0.B"
+   ],
+   [
+    "K2Node_VariableGet_0#o0",
+    "K2Node_CommutativeAssociativeBinaryOperator_0.A"
+   ],
+   [
+    "K2Node_VariableGet_1#o0",
+    "K2Node_PromotableOperator_0.A"
+   ]
+  ],
+  "vals": {
+   "AnimGraphNode_TransitionResult_0.bCanEnterTransition": "False",
+   "K2Node_CommutativeAssociativeBinaryOperator_0.A": "false",
+   "K2Node_CommutativeAssociativeBinaryOperator_0.B": "false",
+   "K2Node_PromotableOperator_0.B": "50.000000"
+  }
+ },
+ "AnimGraph.AnimGraphNode_StateMachine_1.Locomotion.AnimStateTransitionNode_10.Transition": {
+  "nodes": {
+   "AnimGraphNode_TransitionResult_0": {
+    "x": 0,
+    "y": 0,
+    "type": "Misc.|Resultado"
+   },
+   "K2Node_VariableGet_0": {
+    "x": -288,
+    "y": 16,
+    "type": "|GetIsSwinging"
+   }
+  },
+  "edges": [
+   [
+    "K2Node_VariableGet_0#o0",
+    "AnimGraphNode_TransitionResult_0.bCanEnterTransition"
+   ]
+  ],
+  "vals": {
+   "AnimGraphNode_TransitionResult_0.bCanEnterTransition": "False"
+  }
+ },
+ "AnimGraph.AnimGraphNode_StateMachine_1.Locomotion.AnimStateTransitionNode_11.Transition": {
+  "nodes": {
+   "AnimGraphNode_TransitionResult_0": {
+    "x": 288,
+    "y": -64,
+    "type": "Misc.|Resultado"
+   },
+   "K2Node_VariableGet_0": {
+    "x": -320,
+    "y": -80,
+    "type": "|GetIsFalling"
+   },
+   "K2Node_VariableGet_1": {
+    "x": -320,
+    "y": -16,
+    "type": "|GetVerticalSpeed"
+   },
+   "K2Node_PromotableOperator_0": {
+    "x": -144,
+    "y": 0,
+    "type": "Matemáticas|Float|float>float"
+   },
+   "K2Node_CommutativeAssociativeBinaryOperator_0": {
+    "x": 48,
+    "y": -48,
+    "type": "Matemáticas|Booleano|ANDBoolean"
+   }
+  },
+  "edges": [
+   [
+    "K2Node_CommutativeAssociativeBinaryOperator_0#o0",
+    "AnimGraphNode_TransitionResult_0.bCanEnterTransition"
+   ],
+   [
+    "K2Node_PromotableOperator_0#o0",
+    "K2Node_CommutativeAssociativeBinaryOperator_0.B"
+   ],
+   [
+    "K2Node_VariableGet_0#o0",
+    "K2Node_CommutativeAssociativeBinaryOperator_0.A"
+   ],
+   [
+    "K2Node_VariableGet_1#o0",
+    "K2Node_PromotableOperator_0.A"
+   ]
+  ],
+  "vals": {
+   "AnimGraphNode_TransitionResult_0.bCanEnterTransition": "False",
+   "K2Node_PromotableOperator_0.B": "50.000000",
+   "K2Node_CommutativeAssociativeBinaryOperator_0.A": "false",
+   "K2Node_CommutativeAssociativeBinaryOperator_0.B": "false"
+  }
+ },
+ "AnimGraph.AnimGraphNode_StateMachine_1.Locomotion.AnimStateTransitionNode_12.Transition": {
+  "nodes": {
+   "AnimGraphNode_TransitionResult_0": {
+    "x": 0,
+    "y": 0,
+    "type": "Misc.|Resultado"
+   },
+   "K2Node_VariableGet_0": {
+    "x": -320,
+    "y": 32,
+    "type": "|GetIsSwinging"
+   }
+  },
+  "edges": [
+   [
+    "K2Node_VariableGet_0#o0",
+    "AnimGraphNode_TransitionResult_0.bCanEnterTransition"
+   ]
+  ],
+  "vals": {
+   "AnimGraphNode_TransitionResult_0.bCanEnterTransition": "False"
+  }
+ },
+ "AnimGraph.AnimGraphNode_StateMachine_1.Locomotion.AnimStateTransitionNode_13.Transition": {
+  "nodes": {
+   "AnimGraphNode_TransitionResult_0": {
+    "x": 0,
+    "y": 0,
+    "type": "Misc.|Resultado"
+   },
+   "K2Node_VariableGet_0": {
+    "x": -288,
+    "y": 0,
+    "type": "|GetIsFalling"
+   }
+  },
+  "edges": [
+   [
+    "K2Node_VariableGet_0#o0",
+    "AnimGraphNode_TransitionResult_0.bCanEnterTransition"
+   ]
+  ],
+  "vals": {
+   "AnimGraphNode_TransitionResult_0.bCanEnterTransition": "False"
+  }
+ },
+ "AnimGraph.AnimGraphNode_StateMachine_1.Locomotion.AnimStateTransitionNode_14.Transition": {
+  "nodes": {
+   "AnimGraphNode_TransitionResult_0": {
+    "x": 0,
+    "y": 0,
+    "type": "Misc.|Resultado"
+   },
+   "K2Node_VariableGet_0": {
+    "x": -224,
+    "y": 48,
+    "type": "|GetShouldMove"
+   }
+  },
+  "edges": [
+   [
+    "K2Node_VariableGet_0#o0",
+    "AnimGraphNode_TransitionResult_0.bCanEnterTransition"
+   ]
+  ],
+  "vals": {
+   "AnimGraphNode_TransitionResult_0.bCanEnterTransition": "False"
+  }
+ },
+ "AnimGraph.AnimGraphNode_StateMachine_1.Locomotion.AnimStateTransitionNode_15.Transition": {
+  "nodes": {
+   "AnimGraphNode_TransitionResult_0": {
+    "x": 0,
+    "y": 0,
+    "type": "Misc.|Resultado"
+   }
+  },
+  "edges": [],
+  "vals": {
+   "AnimGraphNode_TransitionResult_0.bCanEnterTransition": "False"
+  }
+ },
+ "AnimGraph.AnimGraphNode_StateMachine_1.Locomotion.AnimStateTransitionNode_16.Transition": {
+  "nodes": {
+   "AnimGraphNode_TransitionResult_0": {
+    "x": 0,
+    "y": 0,
+    "type": "Misc.|Resultado"
+   },
+   "K2Node_VariableGet_0": {
+    "x": -272,
+    "y": 16,
+    "type": "|GetIsSwinging"
+   }
+  },
+  "edges": [
+   [
+    "K2Node_VariableGet_0#o0",
+    "AnimGraphNode_TransitionResult_0.bCanEnterTransition"
+   ]
+  ],
+  "vals": {
+   "AnimGraphNode_TransitionResult_0.bCanEnterTransition": "False"
+  }
+ },
+ "AnimGraph.AnimGraphNode_StateMachine_1.Locomotion.AnimStateTransitionNode_18.Transition": {
+  "nodes": {
+   "AnimGraphNode_TransitionResult_0": {
+    "x": 0,
+    "y": 0,
+    "type": "Misc.|Resultado"
+   },
+   "K2Node_VariableGet_0": {
+    "x": -400,
+    "y": -32,
+    "type": "|GetVerticalSpeed"
+   },
+   "K2Node_PromotableOperator_0": {
+    "x": -224,
+    "y": 16,
+    "type": "Matemáticas|Float|float<=float"
+   }
+  },
+  "edges": [
+   [
+    "K2Node_PromotableOperator_0#o0",
+    "AnimGraphNode_TransitionResult_0.bCanEnterTransition"
+   ],
+   [
+    "K2Node_VariableGet_0#o0",
+    "K2Node_PromotableOperator_0.A"
+   ]
+  ],
+  "vals": {
+   "AnimGraphNode_TransitionResult_0.bCanEnterTransition": "False",
+   "K2Node_PromotableOperator_0.B": "-20.000000"
+  }
+ },
+ "AnimGraph.AnimGraphNode_StateMachine_1.Locomotion.AnimStateNode_7.HardLanding": {
+  "nodes": {
+   "AnimGraphNode_StateResult_0": {
+    "x": 0,
+    "y": 0,
+    "type": "Misc.|Posedeanimacióndesalida"
+   },
+   "AnimGraphNode_SequencePlayer_1": {
+    "x": -224,
+    "y": -112,
+    "type": "Secuenciadeanimación|Reproductordesecuencias'Hard_Landing_InPlace_Anim'"
+   }
+  },
+  "edges": [
+   [
+    "AnimGraphNode_SequencePlayer_1#o0",
+    "AnimGraphNode_StateResult_0.Result"
+   ]
+  ],
+  "vals": {
+   "AnimGraphNode_StateResult_0.Result": "(LinkID=-1,SourceLinkID=-1)"
+  }
+ },
+ "AnimGraph.AnimGraphNode_StateMachine_1.Locomotion.AnimStateTransitionNode_19.Transition": {
+  "nodes": {
+   "AnimGraphNode_TransitionResult_0": {
+    "x": 336,
+    "y": 0,
+    "type": "Misc.|Resultado"
+   },
+   "K2Node_VariableGet_0": {
+    "x": -336,
+    "y": -48,
+    "type": "|GetIsFalling"
+   },
+   "K2Node_CallFunction_0": {
+    "x": -160,
+    "y": -48,
+    "type": "Matemáticas|Booleano|NOTBoolean"
+   },
+   "K2Node_VariableGet_1": {
+    "x": -336,
+    "y": 80,
+    "type": "|GetPeakFallSpeed"
+   },
+   "K2Node_PromotableOperator_0": {
+    "x": -160,
+    "y": 80,
+    "type": "Matemáticas|Float|float>float"
+   },
+   "K2Node_CommutativeAssociativeBinaryOperator_0": {
+    "x": 64,
+    "y": 32,
+    "type": "Matemáticas|Booleano|ANDBoolean"
+   }
+  },
+  "edges": [
+   [
+    "K2Node_CallFunction_0#o0",
+    "K2Node_CommutativeAssociativeBinaryOperator_0.A"
+   ],
+   [
+    "K2Node_CommutativeAssociativeBinaryOperator_0#o0",
+    "AnimGraphNode_TransitionResult_0.bCanEnterTransition"
+   ],
+   [
+    "K2Node_PromotableOperator_0#o0",
+    "K2Node_CommutativeAssociativeBinaryOperator_0.B"
+   ],
+   [
+    "K2Node_VariableGet_0#o0",
+    "K2Node_CallFunction_0.A"
+   ],
+   [
+    "K2Node_VariableGet_1#o0",
+    "K2Node_PromotableOperator_0.A"
+   ]
+  ],
+  "vals": {
+   "AnimGraphNode_TransitionResult_0.bCanEnterTransition": "False",
+   "K2Node_CallFunction_0.A": "false",
+   "K2Node_PromotableOperator_0.B": "1000.000000",
+   "K2Node_CommutativeAssociativeBinaryOperator_0.A": "false",
+   "K2Node_CommutativeAssociativeBinaryOperator_0.B": "false"
+  }
+ },
+ "AnimGraph.AnimGraphNode_StateMachine_1.Locomotion.AnimStateTransitionNode_20.Transition": {
+  "nodes": {
+   "AnimGraphNode_TransitionResult_0": {
+    "x": 0,
+    "y": 0,
+    "type": "Misc.|Resultado"
+   },
+   "K2Node_VariableGet_0": {
+    "x": -224,
+    "y": 16,
+    "type": "|GetIsSwinging"
+   }
+  },
+  "edges": [
+   [
+    "K2Node_VariableGet_0#o0",
+    "AnimGraphNode_TransitionResult_0.bCanEnterTransition"
+   ]
+  ],
+  "vals": {
+   "AnimGraphNode_TransitionResult_0.bCanEnterTransition": "False"
+  }
+ },
+ "AnimGraph.AnimGraphNode_StateMachine_1.Locomotion.AnimStateNode_8.SoftLand": {
+  "nodes": {
+   "AnimGraphNode_StateResult_0": {
+    "x": 0,
+    "y": 0,
+    "type": "Misc.|Posedeanimacióndesalida"
+   },
+   "AnimGraphNode_SequencePlayer_1": {
+    "x": -240,
+    "y": 80,
+    "type": "Secuenciadeanimación|Reproductordesecuencias'SoftLand_Polished__3_'"
+   },
+   "AnimGraphNode_SequencePlayer_0": {
+    "x": -240,
+    "y": -80,
+    "type": "Secuenciadeanimación|Reproductordesecuencias'SoftLand_Polished__4_'"
+   }
+  },
+  "edges": [
+   [
+    "AnimGraphNode_SequencePlayer_0#o0",
+    "AnimGraphNode_StateResult_0.Result"
+   ]
+  ],
+  "vals": {
+   "AnimGraphNode_StateResult_0.Result": "(LinkID=-1,SourceLinkID=-1)"
+  }
+ },
+ "AnimGraph.AnimGraphNode_StateMachine_1.Locomotion.AnimStateTransitionNode_21.Transition": {
+  "nodes": {
+   "AnimGraphNode_TransitionResult_0": {
+    "x": 240,
+    "y": 128,
+    "type": "Misc.|Resultado"
+   },
+   "K2Node_CallFunction_0": {
+    "x": 16,
+    "y": 128,
+    "type": "Matemáticas|Booleano|NOTBoolean"
+   },
+   "K2Node_VariableGet_1": {
+    "x": -192,
+    "y": 128,
+    "type": "|GetIsFalling"
+   }
+  },
+  "edges": [
+   [
+    "K2Node_CallFunction_0#o0",
+    "AnimGraphNode_TransitionResult_0.bCanEnterTransition"
+   ],
+   [
+    "K2Node_VariableGet_1#o0",
+    "K2Node_CallFunction_0.A"
+   ]
+  ],
+  "vals": {
+   "AnimGraphNode_TransitionResult_0.bCanEnterTransition": "False",
+   "K2Node_CallFunction_0.A": "false"
+  }
+ },
+ "AnimGraph.AnimGraphNode_StateMachine_1.Locomotion.AnimStateTransitionNode_22.Transition": {
+  "nodes": {
+   "AnimGraphNode_TransitionResult_0": {
+    "x": 240,
+    "y": 0,
+    "type": "Misc.|Resultado"
+   },
+   "K2Node_VariableGet_0": {
+    "x": -160,
+    "y": -16,
+    "type": "|GetShouldMove"
+   },
+   "K2Node_AnimGetter_0": {
+    "x": -576,
+    "y": 32,
+    "type": "Animación|Autómatasfinitos|GetRelevantAnimTimeRemainingFraction(SoftLand)"
+   },
+   "K2Node_PromotableOperator_0": {
+    "x": -176,
+    "y": 48,
+    "type": "Matemáticas|Float|float<float"
+   },
+   "K2Node_CommutativeAssociativeBinaryOperator_0": {
+    "x": 32,
+    "y": 16,
+    "type": "Matemáticas|Booleano|ANDBoolean"
+   }
+  },
+  "edges": [
+   [
+    "K2Node_AnimGetter_0#o0",
+    "K2Node_PromotableOperator_0.A"
+   ],
+   [
+    "K2Node_CommutativeAssociativeBinaryOperator_0#o0",
+    "AnimGraphNode_TransitionResult_0.bCanEnterTransition"
+   ],
+   [
+    "K2Node_PromotableOperator_0#o0",
+    "K2Node_CommutativeAssociativeBinaryOperator_0.B"
+   ],
+   [
+    "K2Node_VariableGet_0#o0",
+    "K2Node_CommutativeAssociativeBinaryOperator_0.A"
+   ]
+  ],
+  "vals": {
+   "AnimGraphNode_TransitionResult_0.bCanEnterTransition": "False",
+   "K2Node_PromotableOperator_0.B": "0.650000",
+   "K2Node_CommutativeAssociativeBinaryOperator_0.A": "false",
+   "K2Node_CommutativeAssociativeBinaryOperator_0.B": "false"
+  }
+ },
+ "AnimGraph.AnimGraphNode_StateMachine_1.Locomotion.AnimStateTransitionNode_23.Transition": {
+  "nodes": {
+   "AnimGraphNode_TransitionResult_0": {
+    "x": 0,
+    "y": 0,
+    "type": "Misc.|Resultado"
+   }
+  },
+  "edges": [],
+  "vals": {
+   "AnimGraphNode_TransitionResult_0.bCanEnterTransition": "False"
+  }
+ },
+ "AnimGraph.AnimGraphNode_StateMachine_1.Locomotion.AnimStateTransitionNode_24.Transition": {
+  "nodes": {
+   "AnimGraphNode_TransitionResult_0": {
+    "x": 320,
+    "y": 0,
+    "type": "Misc.|Resultado"
+   },
+   "K2Node_AnimGetter_0": {
+    "x": -528,
+    "y": 48,
+    "type": "Animación|Autómatasfinitos|GetRelevantAnimTimeRemainingFraction(HardLanding)"
+   },
+   "K2Node_PromotableOperator_0": {
+    "x": -96,
+    "y": 64,
+    "type": "Matemáticas|Float|float<float"
+   },
+   "K2Node_CommutativeAssociativeBinaryOperator_0": {
+    "x": 96,
+    "y": 0,
+    "type": "Matemáticas|Booleano|ANDBoolean"
+   },
+   "K2Node_VariableGet_0": {
+    "x": -304,
+    "y": -32,
+    "type": "|GetShouldMove"
+   },
+   "K2Node_AnimGetter_1": {
+    "x": -480,
+    "y": 144,
+    "type": "Animación|Autómatasfinitos|GetRelevantAnimTimeRemaining(HardLanding)"
+   }
+  },
+  "edges": [
+   [
+    "K2Node_AnimGetter_1#o0",
+    "K2Node_PromotableOperator_0.A"
+   ],
+   [
+    "K2Node_CommutativeAssociativeBinaryOperator_0#o0",
+    "AnimGraphNode_TransitionResult_0.bCanEnterTransition"
+   ],
+   [
+    "K2Node_PromotableOperator_0#o0",
+    "K2Node_CommutativeAssociativeBinaryOperator_0.B"
+   ],
+   [
+    "K2Node_VariableGet_0#o0",
+    "K2Node_CommutativeAssociativeBinaryOperator_0.A"
+   ]
+  ],
+  "vals": {
+   "AnimGraphNode_TransitionResult_0.bCanEnterTransition": "False",
+   "K2Node_PromotableOperator_0.B": "0.800000",
+   "K2Node_CommutativeAssociativeBinaryOperator_0.A": "false",
+   "K2Node_CommutativeAssociativeBinaryOperator_0.B": "false"
+  }
+ },
+ "AnimGraph.AnimGraphNode_StateMachine_1.Locomotion.AnimStateTransitionNode_25.Transition": {
+  "nodes": {
+   "AnimGraphNode_TransitionResult_0": {
+    "x": 0,
+    "y": 0,
+    "type": "Misc.|Resultado"
+   }
+  },
+  "edges": [],
+  "vals": {
+   "AnimGraphNode_TransitionResult_0.bCanEnterTransition": "False"
+  }
+ },
+ "AnimGraph.AnimGraphNode_StateMachine_1.Locomotion.AnimStateNode_9.SwingLoop": {
+  "nodes": {
+   "AnimGraphNode_StateResult_0": {
+    "x": 0,
+    "y": 0,
+    "type": "Misc.|Posedeanimacióndesalida"
+   },
+   "AnimGraphNode_SequencePlayer_2": {
+    "x": -256,
+    "y": -96,
+    "type": "Secuenciadeanimación|Reproductordesecuencias'SwingLoop_Realistic_v2'"
+   }
+  },
+  "edges": [
+   [
+    "AnimGraphNode_SequencePlayer_2#o0",
+    "AnimGraphNode_StateResult_0.Result"
+   ]
+  ],
+  "vals": {
+   "AnimGraphNode_StateResult_0.Result": "(LinkID=-1,SourceLinkID=-1)"
+  }
+ },
+ "AnimGraph.AnimGraphNode_StateMachine_1.Locomotion.AnimStateTransitionNode_27.Transition": {
+  "nodes": {
+   "AnimGraphNode_TransitionResult_0": {
+    "x": 0,
+    "y": 0,
+    "type": "Misc.|Resultado"
+   }
+  },
+  "edges": [],
+  "vals": {
+   "AnimGraphNode_TransitionResult_0.bCanEnterTransition": "False"
+  }
+ },
+ "AnimGraph.AnimGraphNode_StateMachine_1.Locomotion.AnimStateTransitionNode_28.Transition": {
+  "nodes": {
+   "AnimGraphNode_TransitionResult_0": {
+    "x": 96,
+    "y": 16,
+    "type": "Misc.|Resultado"
+   },
+   "K2Node_VariableGet_0": {
+    "x": -288,
+    "y": 32,
+    "type": "|GetIsSwinging"
+   },
+   "K2Node_CallFunction_0": {
+    "x": -128,
+    "y": 32,
+    "type": "Matemáticas|Booleano|NOTBoolean"
+   }
+  },
+  "edges": [
+   [
+    "K2Node_CallFunction_0#o0",
+    "AnimGraphNode_TransitionResult_0.bCanEnterTransition"
+   ],
+   [
+    "K2Node_VariableGet_0#o0",
+    "K2Node_CallFunction_0.A"
+   ]
+  ],
+  "vals": {
+   "AnimGraphNode_TransitionResult_0.bCanEnterTransition": "False",
+   "K2Node_CallFunction_0.A": "false"
+  }
+ },
+ "AnimGraph.AnimGraphNode_StateMachine_1.Locomotion.AnimStateTransitionNode_29.Transition": {
+  "nodes": {
+   "AnimGraphNode_TransitionResult_0": {
+    "x": 144,
+    "y": 64,
+    "type": "Misc.|Resultado"
+   },
+   "K2Node_VariableGet_0": {
+    "x": -336,
+    "y": 32,
+    "type": "|GetIsSwinging"
+   },
+   "K2Node_CallFunction_0": {
+    "x": -160,
+    "y": 64,
+    "type": "Matemáticas|Booleano|NOTBoolean"
+   }
+  },
+  "edges": [
+   [
+    "K2Node_CallFunction_0#o0",
+    "AnimGraphNode_TransitionResult_0.bCanEnterTransition"
+   ],
+   [
+    "K2Node_VariableGet_0#o0",
+    "K2Node_CallFunction_0.A"
+   ]
+  ],
+  "vals": {
+   "AnimGraphNode_TransitionResult_0.bCanEnterTransition": "False",
+   "K2Node_CallFunction_0.A": "false"
+  }
+ },
+ "AnimGraph.AnimGraphNode_StateMachine_1.Locomotion.AnimStateTransitionNode_4.Transition": {
+  "nodes": {
+   "AnimGraphNode_TransitionResult_0": {
+    "x": 128,
+    "y": 224,
+    "type": "Misc.|Resultado"
+   },
+   "K2Node_VariableGet_0": {
+    "x": -288,
+    "y": 272,
+    "type": "|GetIsFalling"
+   },
+   "K2Node_CommutativeAssociativeBinaryOperator_0": {
+    "x": -80,
+    "y": 224,
+    "type": "Matemáticas|Booleano|ANDBoolean"
+   },
+   "K2Node_VariableGet_2": {
+    "x": -352,
+    "y": 64,
+    "type": "|GetVerticalSpeed"
+   },
+   "K2Node_PromotableOperator_0": {
+    "x": -176,
+    "y": 64,
+    "type": "Matemáticas|Float|float>float"
+   }
+  },
+  "edges": [
+   [
+    "K2Node_CommutativeAssociativeBinaryOperator_0#o0",
+    "AnimGraphNode_TransitionResult_0.bCanEnterTransition"
+   ],
+   [
+    "K2Node_PromotableOperator_0#o0",
+    "K2Node_CommutativeAssociativeBinaryOperator_0.A"
+   ],
+   [
+    "K2Node_VariableGet_0#o0",
+    "K2Node_CommutativeAssociativeBinaryOperator_0.B"
+   ],
+   [
+    "K2Node_VariableGet_2#o0",
+    "K2Node_PromotableOperator_0.A"
+   ]
+  ],
+  "vals": {
+   "AnimGraphNode_TransitionResult_0.bCanEnterTransition": "False",
+   "K2Node_CommutativeAssociativeBinaryOperator_0.A": "false",
+   "K2Node_CommutativeAssociativeBinaryOperator_0.B": "false",
+   "K2Node_PromotableOperator_0.B": "50.000000"
+  }
+ },
+ "AnimGraph.AnimGraphNode_StateMachine_1.Locomotion.AnimStateTransitionNode_5.Transition": {
+  "nodes": {
+   "AnimGraphNode_TransitionResult_0": {
+    "x": 0,
+    "y": 0,
+    "type": "Misc.|Resultado"
+   },
+   "K2Node_VariableGet_0": {
+    "x": -192,
+    "y": 16,
+    "type": "|GetIsSwinging"
+   }
+  },
+  "edges": [
+   [
+    "K2Node_VariableGet_0#o0",
+    "AnimGraphNode_TransitionResult_0.bCanEnterTransition"
+   ]
+  ],
+  "vals": {
+   "AnimGraphNode_TransitionResult_0.bCanEnterTransition": "False"
+  }
+ },
+ "AnimGraph.AnimGraphNode_StateMachine_1.Locomotion.AnimStateTransitionNode_6.Transition": {
+  "nodes": {
+   "AnimGraphNode_TransitionResult_0": {
+    "x": 144,
+    "y": -48,
+    "type": "Misc.|Resultado"
+   },
+   "K2Node_VariableGet_0": {
+    "x": -288,
+    "y": 96,
+    "type": "|GetIsFalling"
+   },
+   "K2Node_CommutativeAssociativeBinaryOperator_0": {
+    "x": -80,
+    "y": 48,
+    "type": "Matemáticas|Booleano|ANDBoolean"
+   },
+   "K2Node_VariableGet_2": {
+    "x": -352,
+    "y": -112,
+    "type": "|GetVerticalSpeed"
+   },
+   "K2Node_PromotableOperator_0": {
+    "x": -176,
+    "y": -112,
+    "type": "Matemáticas|Float|float>float"
+   }
+  },
+  "edges": [
+   [
+    "K2Node_CommutativeAssociativeBinaryOperator_0#o0",
+    "AnimGraphNode_TransitionResult_0.bCanEnterTransition"
+   ],
+   [
+    "K2Node_PromotableOperator_0#o0",
+    "K2Node_CommutativeAssociativeBinaryOperator_0.A"
+   ],
+   [
+    "K2Node_VariableGet_0#o0",
+    "K2Node_CommutativeAssociativeBinaryOperator_0.B"
+   ],
+   [
+    "K2Node_VariableGet_2#o0",
+    "K2Node_PromotableOperator_0.A"
+   ]
+  ],
+  "vals": {
+   "AnimGraphNode_TransitionResult_0.bCanEnterTransition": "False",
+   "K2Node_CommutativeAssociativeBinaryOperator_0.A": "false",
+   "K2Node_CommutativeAssociativeBinaryOperator_0.B": "false",
+   "K2Node_PromotableOperator_0.B": "50.000000"
+  }
+ },
+ "AnimGraph.AnimGraphNode_StateMachine_1.Locomotion.AnimStateTransitionNode_17.Transition": {
+  "nodes": {
+   "AnimGraphNode_TransitionResult_0": {
+    "x": 0,
+    "y": 0,
+    "type": "Misc.|Resultado"
+   },
+   "K2Node_VariableGet_0": {
+    "x": -208,
+    "y": 32,
+    "type": "|GetIsSwinging"
+   }
+  },
+  "edges": [
+   [
+    "K2Node_VariableGet_0#o0",
+    "AnimGraphNode_TransitionResult_0.bCanEnterTransition"
+   ]
+  ],
+  "vals": {
+   "AnimGraphNode_TransitionResult_0.bCanEnterTransition": "False"
+  }
+ }
+}

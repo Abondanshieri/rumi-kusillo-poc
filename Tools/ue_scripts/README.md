@@ -17,7 +17,7 @@ Cada script añade su propia carpeta a `sys.path` (`os.path.dirname(os.path.absp
 | `build_` | Crea assets/grafos desde cero (Control Rig procedural, sistema completo) |
 | `fix_` | Modifica assets existentes para corregir/optimizar (rotaciones CR, parte 1 CR, parte 2 AnimBP) |
 | `diag_` | Solo lectura: inspecciona nodos, pines, variables, grafos (antes check_/inspect_/find_/list_/read_/scratch_) |
-| `test_` | Experimentos puntuales de nodos/conexiones/math |
+| `test_` | Experimentos puntuales de nodos/conexiones/math (los existentes se archivaron en `Archivo_No_Proyecto/2026-10-28/Scripts_de_prueba/ue_scripts/`; los nuevos se crean aqui y se archivan al terminar) |
 | `verify_` | Comprobaciones finales (compilación, PIE en vivo, setup final) |
 | `util_` | Utilidades (p. ej. guardar el Control Rig) |
 

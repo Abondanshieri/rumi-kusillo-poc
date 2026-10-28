@@ -1,0 +1,148 @@
+{
+ "CR_Student_Procedural_fix": {
+  "antes": {
+   "enlaces": 64,
+   "retroceso": 0,
+   "largos_mayor_1500": [
+    [
+     "Get_PelvisOffset.Value",
+     "Sub_FootOffsetL.B",
+     1553
+    ]
+   ],
+   "cruces": 6,
+   "cruces_lista": [
+    [
+     "Get_LeanRoll.Value>Mul_Roll_Spine2.A",
+     "Get_LeanPitch.Value>Mul_Pitch_Neck.A"
+    ],
+    [
+     "Get_LeanRoll.Value>Quat_Spine1.Euler.Z",
+     "Get_LeanPitch.Value>Mul_Pitch_Spine2.A"
+    ],
+    [
+     "Get_LeanRoll.Value>Quat_Spine1.Euler.Z",
+     "Get_LeanPitch.Value>Mul_Pitch_Neck.A"
+    ],
+    [
+     "Add_PelvisLand.Result>SINSALIDA_Add_HipsZ.B",
+     "Get_Hips.Transform>Mul_Hips_Offset.A"
+    ],
+    [
+     "Add_PelvisLand.Result>SINSALIDA_Add_HipsZ.B",
+     "Get_Hips.Transform.Rotation>Set_Hips.Value.Rotation"
+    ],
+    [
+     "Add_PelvisLand.Result>SINSALIDA_Add_HipsZ.B",
+     "Get_Hips.Transform.Scale3D>Set_Hips.Value.Scale3D"
+    ]
+   ],
+   "cable_sobre_nodo": 2,
+   "cable_sobre_nodo_lista": [
+    [
+     "Get_LeanPitch.Value>Mul_Pitch_Neck.A",
+     "Mul_Roll_Spine2"
+    ],
+    [
+     "Add_PelvisLand.Result>SINSALIDA_Add_HipsZ.B",
+     "Get_Hips"
+    ]
+   ],
+   "solapes_nodos_holgura20": 0
+  },
+  "despues": {
+   "enlaces": 64,
+   "retroceso": 0,
+   "largos_mayor_1500": [],
+   "cruces": 3,
+   "cruces_lista": [
+    [
+     "Get_LeanRoll.Value>Mul_Roll_Spine2.A",
+     "Get_LeanPitch.Value>Mul_Pitch_Neck.A"
+    ],
+    [
+     "Get_LeanRoll.Value>Quat_Spine1.Euler.Z",
+     "Get_LeanPitch.Value>Mul_Pitch_Spine2.A"
+    ],
+    [
+     "Get_LeanRoll.Value>Quat_Spine1.Euler.Z",
+     "Get_LeanPitch.Value>Mul_Pitch_Neck.A"
+    ]
+   ],
+   "cable_sobre_nodo": 1,
+   "cable_sobre_nodo_lista": [
+    [
+     "Get_Hips.Transform>Mul_Hips_Offset.A",
+     "SINSALIDA_Add_HipsZ"
+    ]
+   ],
+   "solapes_nodos_holgura20": 0
+  },
+  "margen_min_nodo_caja": 100.0,
+  "peor_margen": [
+   [
+    "RigUnit_BeginExecution",
+    100.0
+   ],
+   [
+    "Get_LeanRoll",
+    100.0
+   ],
+   [
+    "Get_LeanPitch",
+    100.0
+   ]
+  ],
+  "nodos_fuera_de_caja_o_en_ajena": [],
+  "solapes_cajas": [],
+  "fuera_rejilla": [],
+  "fuentes": [
+   120
+  ],
+  "capturas_editor": []
+ },
+ "CR_Student_IK_fix": {
+  "antes": {
+   "enlaces": 14,
+   "retroceso": 0,
+   "largos_mayor_1500": [],
+   "cruces": 0,
+   "cruces_lista": [],
+   "cable_sobre_nodo": 0,
+   "cable_sobre_nodo_lista": [],
+   "solapes_nodos_holgura20": 0
+  },
+  "despues": {
+   "enlaces": 14,
+   "retroceso": 0,
+   "largos_mayor_1500": [],
+   "cruces": 0,
+   "cruces_lista": [],
+   "cable_sobre_nodo": 0,
+   "cable_sobre_nodo_lista": [],
+   "solapes_nodos_holgura20": 0
+  },
+  "margen_min_nodo_caja": 100.0,
+  "peor_margen": [
+   [
+    "RigUnit_BeginExecution",
+    100.0
+   ],
+   [
+    "GetTransform_ctrl_hips",
+    100.0
+   ],
+   [
+    "GetTransform_ctrl_foot_l_ik",
+    100.0
+   ]
+  ],
+  "nodos_fuera_de_caja_o_en_ajena": [],
+  "solapes_cajas": [],
+  "fuera_rejilla": [],
+  "fuentes": [
+   120
+  ],
+  "capturas_editor": []
+ }
+}

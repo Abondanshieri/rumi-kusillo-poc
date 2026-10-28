@@ -1,0 +1,28 @@
+{
+ "CR_Student_Procedural_fix": {
+  "enlaces_antes": 64,
+  "enlaces_despues": 64,
+  "perdidos": [],
+  "nuevos": [],
+  "valores_antes": 478,
+  "valores_despues": 478,
+  "valores_distintos": [],
+  "nodos_antes": 53,
+  "nodos_despues": 53,
+  "nodos_faltan": [],
+  "nodos_nuevos": []
+ },
+ "CR_Student_IK_fix": {
+  "enlaces_antes": 14,
+  "enlaces_despues": 14,
+  "perdidos": [],
+  "nuevos": [],
+  "valores_antes": 371,
+  "valores_despues": 371,
+  "valores_distintos": [],
+  "nodos_antes": 21,
+  "nodos_despues": 21,
+  "nodos_faltan": [],
+  "nodos_nuevos": []
+ }
+}

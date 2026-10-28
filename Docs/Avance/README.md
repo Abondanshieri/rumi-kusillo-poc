@@ -27,7 +27,8 @@ Plantilla: [_plantilla/informe.md](_plantilla/informe.md)
 | `Docs/Mensajes/` | Mensajes al equipo (F-M1 a Jhasmani) |
 | `Docs/Guias/` | Guias tecnicas (State Machine de Rumi) |
 | `Docs/Reportes/` | Reporte al docente, inventario/manifiesto de orden, propuesta de estructura de Content |
-| `Docs/Reportes/Archivo/` | Material archivado (nada se borra), con `MANIFIESTO.txt` |
+| `Docs/Reportes/Archivo/` | Manifiesto del archivado previo (`MANIFIESTO.txt`) |
+| `Archivo_No_Proyecto/` | Capturas descartadas, scripts de prueba, evidencia/snapshots intermedios, duplicados y temporales, por fecha y categoria; `INDEX.md` + `revertir.py` (nada se borra) |
 | `Tools/ue_scripts/` | Scripts Python del MCP de Unreal (prefijos build/fix/diag/test/verify/util) |
 | `Tools/ue_scripts/README.md` | Como usar los scripts y significado de cada prefijo |
 | `Tools/ocr_pages.ps1` | Utilidad PowerShell de OCR de paginas (suelta, movida desde la raiz) |

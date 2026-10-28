@@ -1,0 +1,8233 @@
+{
+ "EventGraph": {
+  "K2Node_Event_0": {
+   "x": 100,
+   "y": 4050,
+   "type": "Añadirevento|EventoBlueprintUpdateAnimation",
+   "pins": [
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "OutputDelegate",
+     "type": "Delegado",
+     "value": "",
+     "links": []
+    },
+    {
+     "dir": "out",
+     "idx": 1,
+     "name": "then",
+     "type": "Ejecución",
+     "value": "",
+     "links": [
+      [
+       "K2Node_VariableGet_0",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "out",
+     "idx": 2,
+     "name": "DeltaTimeX",
+     "type": "Flotante (precisión sencilla)",
+     "value": "0.0",
+     "links": [
+      [
+       "K2Node_CallFunction_30",
+       2
+      ],
+      [
+       "K2Node_CallFunction_0",
+       2
+      ]
+     ]
+    }
+   ]
+  },
+  "K2Node_Event_1": {
+   "x": 100,
+   "y": 1750,
+   "type": "Añadirevento|EventoBlueprintInitializeAnimation",
+   "pins": [
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "OutputDelegate",
+     "type": "Delegado",
+     "value": "",
+     "links": []
+    },
+    {
+     "dir": "out",
+     "idx": 1,
+     "name": "then",
+     "type": "Ejecución",
+     "value": "",
+     "links": [
+      [
+       "K2Node_DynamicCast_0",
+       0
+      ]
+     ]
+    }
+   ]
+  },
+  "K2Node_DynamicCast_0": {
+   "x": 600,
+   "y": 1800,
+   "type": "Utilidades|Casting|CastToCharacter",
+   "pins": [
+    {
+     "dir": "in",
+     "idx": 0,
+     "name": "execute",
+     "type": "Ejecución",
+     "value": "",
+     "links": [
+      [
+       "K2Node_Event_1",
+       1
+      ]
+     ]
+    },
+    {
+     "dir": "in",
+     "idx": 1,
+     "name": "Object",
+     "type": "Referencia a objeto",
+     "value": "",
+     "links": [
+      [
+       "K2Node_CallFunction_1",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "then",
+     "type": "Ejecución",
+     "value": "",
+     "links": [
+      [
+       "K2Node_VariableSet_0",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "out",
+     "idx": 1,
+     "name": "CastFailed",
+     "type": "Ejecución",
+     "value": "",
+     "links": []
+    },
+    {
+     "dir": "out",
+     "idx": 2,
+     "name": "AsCharacter",
+     "type": "Character Referencia a objeto",
+     "value": "",
+     "links": [
+      [
+       "K2Node_VariableSet_0",
+       1
+      ]
+     ]
+    }
+   ]
+  },
+  "K2Node_CallFunction_1": {
+   "x": 100,
+   "y": 1900,
+   "type": "Animación|GetOwningActor",
+   "pins": [
+    {
+     "dir": "in",
+     "idx": 0,
+     "name": "self",
+     "type": "Anim Instance Referencia a objeto",
+     "value": "",
+     "links": []
+    },
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "ReturnValue",
+     "type": "Actor Referencia a objeto",
+     "value": "",
+     "links": [
+      [
+       "K2Node_DynamicCast_0",
+       1
+      ],
+      [
+       "K2Node_DynamicCast_1",
+       1
+      ]
+     ]
+    }
+   ]
+  },
+  "K2Node_VariableSet_0": {
+   "x": 950,
+   "y": 1800,
+   "type": "|SetCharacter",
+   "pins": [
+    {
+     "dir": "in",
+     "idx": 0,
+     "name": "execute",
+     "type": "Ejecución",
+     "value": "",
+     "links": [
+      [
+       "K2Node_DynamicCast_0",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "in",
+     "idx": 1,
+     "name": "Character",
+     "type": "Character Referencia a objeto",
+     "value": "",
+     "links": [
+      [
+       "K2Node_DynamicCast_0",
+       2
+      ]
+     ]
+    },
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "then",
+     "type": "Ejecución",
+     "value": "",
+     "links": [
+      [
+       "K2Node_VariableSet_1",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "out",
+     "idx": 1,
+     "name": "Output_Get",
+     "type": "Character Referencia a objeto",
+     "value": "",
+     "links": [
+      [
+       "K2Node_VariableGet_1",
+       0
+      ]
+     ]
+    }
+   ]
+  },
+  "K2Node_VariableSet_1": {
+   "x": 1750,
+   "y": 1800,
+   "type": "|SetMovementComponent",
+   "pins": [
+    {
+     "dir": "in",
+     "idx": 0,
+     "name": "execute",
+     "type": "Ejecución",
+     "value": "",
+     "links": [
+      [
+       "K2Node_VariableSet_0",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "in",
+     "idx": 1,
+     "name": "MovementComponent",
+     "type": "Character Movement Component Referencia a objeto",
+     "value": "",
+     "links": [
+      [
+       "K2Node_VariableGet_1",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "then",
+     "type": "Ejecución",
+     "value": "",
+     "links": [
+      [
+       "K2Node_DynamicCast_1",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "out",
+     "idx": 1,
+     "name": "Output_Get",
+     "type": "Character Movement Component Referencia a objeto",
+     "value": "",
+     "links": []
+    }
+   ]
+  },
+  "K2Node_VariableGet_1": {
+   "x": 1350,
+   "y": 1850,
+   "type": "|GetCharacterMovement",
+   "pins": [
+    {
+     "dir": "in",
+     "idx": 0,
+     "name": "self",
+     "type": "Character Referencia a objeto",
+     "value": "",
+     "links": [
+      [
+       "K2Node_VariableSet_0",
+       1
+      ]
+     ]
+    },
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "CharacterMovement",
+     "type": "Character Movement Component Referencia a objeto",
+     "value": "",
+     "links": [
+      [
+       "K2Node_VariableSet_1",
+       1
+      ]
+     ]
+    }
+   ]
+  },
+  "K2Node_VariableGet_0": {
+   "x": 550,
+   "y": 4050,
+   "type": "|Obtener",
+   "pins": [
+    {
+     "dir": "in",
+     "idx": 0,
+     "name": "execute",
+     "type": "Ejecución",
+     "value": "",
+     "links": [
+      [
+       "K2Node_Event_0",
+       1
+      ]
+     ]
+    },
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "then",
+     "type": "Ejecución",
+     "value": "",
+     "links": [
+      [
+       "K2Node_ExecutionSequence_0",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "out",
+     "idx": 1,
+     "name": "else",
+     "type": "Ejecución",
+     "value": "",
+     "links": []
+    },
+    {
+     "dir": "out",
+     "idx": 2,
+     "name": "Character",
+     "type": "Character Referencia a objeto",
+     "value": "",
+     "links": []
+    }
+   ]
+  },
+  "K2Node_VariableGet_2": {
+   "x": 1500,
+   "y": 2550,
+   "type": "|GetMovementComponent",
+   "pins": [
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "MovementComponent",
+     "type": "Character Movement Component Referencia a objeto",
+     "value": "",
+     "links": [
+      [
+       "K2Node_VariableGet_4",
+       0
+      ]
+     ]
+    }
+   ]
+  },
+  "K2Node_VariableSet_2": {
+   "x": 2150,
+   "y": 2500,
+   "type": "|SetVelocity",
+   "pins": [
+    {
+     "dir": "in",
+     "idx": 0,
+     "name": "execute",
+     "type": "Ejecución",
+     "value": "",
+     "links": [
+      [
+       "K2Node_ExecutionSequence_0",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "in",
+     "idx": 1,
+     "name": "Velocity",
+     "type": "Vector",
+     "value": "0, 0, 0",
+     "links": [
+      [
+       "K2Node_VariableGet_4",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "then",
+     "type": "Ejecución",
+     "value": "",
+     "links": [
+      [
+       "K2Node_VariableSet_3",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "out",
+     "idx": 1,
+     "name": "Output_Get",
+     "type": "Vector",
+     "value": "0, 0, 0",
+     "links": [
+      [
+       "K2Node_CallFunction_7",
+       0
+      ]
+     ]
+    }
+   ]
+  },
+  "K2Node_VariableGet_4": {
+   "x": 1850,
+   "y": 2550,
+   "type": "|GetVelocity",
+   "pins": [
+    {
+     "dir": "in",
+     "idx": 0,
+     "name": "self",
+     "type": "Movement Component Referencia a objeto",
+     "value": "",
+     "links": [
+      [
+       "K2Node_VariableGet_2",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "Velocity",
+     "type": "Vector",
+     "value": "0, 0, 0",
+     "links": [
+      [
+       "K2Node_VariableSet_2",
+       1
+      ]
+     ]
+    }
+   ]
+  },
+  "K2Node_VariableSet_3": {
+   "x": 2850,
+   "y": 2500,
+   "type": "|SetGroundSpeed",
+   "pins": [
+    {
+     "dir": "in",
+     "idx": 0,
+     "name": "execute",
+     "type": "Ejecución",
+     "value": "",
+     "links": [
+      [
+       "K2Node_VariableSet_2",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "in",
+     "idx": 1,
+     "name": "GroundSpeed",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": [
+      [
+       "K2Node_CallFunction_7",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "then",
+     "type": "Ejecución",
+     "value": "",
+     "links": [
+      [
+       "K2Node_VariableSet_4",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "out",
+     "idx": 1,
+     "name": "Output_Get",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": []
+    }
+   ]
+  },
+  "K2Node_VariableSet_4": {
+   "x": 5350,
+   "y": 2500,
+   "type": "|SetDirection",
+   "pins": [
+    {
+     "dir": "in",
+     "idx": 0,
+     "name": "execute",
+     "type": "Ejecución",
+     "value": "",
+     "links": [
+      [
+       "K2Node_VariableSet_3",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "in",
+     "idx": 1,
+     "name": "Direction",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": [
+      [
+       "K2Node_CallFunction_8",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "then",
+     "type": "Ejecución",
+     "value": "",
+     "links": []
+    },
+    {
+     "dir": "out",
+     "idx": 1,
+     "name": "Output_Get",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": []
+    }
+   ]
+  },
+  "K2Node_VariableGet_5": {
+   "x": 3500,
+   "y": 2650,
+   "type": "|GetCharacter",
+   "pins": [
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "Character",
+     "type": "Character Referencia a objeto",
+     "value": "",
+     "links": [
+      [
+       "K2Node_CallFunction_3",
+       0
+      ]
+     ]
+    }
+   ]
+  },
+  "K2Node_CallFunction_3": {
+   "x": 3800,
+   "y": 2650,
+   "type": "Transformación|GetActorRotation",
+   "pins": [
+    {
+     "dir": "in",
+     "idx": 0,
+     "name": "self",
+     "type": "Actor Referencia a objeto",
+     "value": "",
+     "links": [
+      [
+       "K2Node_VariableGet_5",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "ReturnValue",
+     "type": "Rotator",
+     "value": "0, 0, 0",
+     "links": [
+      [
+       "K2Node_CallFunction_5",
+       2
+      ]
+     ]
+    }
+   ]
+  },
+  "K2Node_VariableGet_6": {
+   "x": 3800,
+   "y": 2500,
+   "type": "|GetVelocity",
+   "pins": [
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "Velocity",
+     "type": "Vector",
+     "value": "0, 0, 0",
+     "links": [
+      [
+       "K2Node_CallFunction_5",
+       1
+      ]
+     ]
+    }
+   ]
+  },
+  "K2Node_CallFunction_5": {
+   "x": 4150,
+   "y": 2500,
+   "type": "Animación|CalculateDirection",
+   "pins": [
+    {
+     "dir": "in",
+     "idx": 0,
+     "name": "self",
+     "type": "Anim Instance Referencia a objeto",
+     "value": "",
+     "links": []
+    },
+    {
+     "dir": "in",
+     "idx": 1,
+     "name": "Velocity",
+     "type": "Vector (por referencia)",
+     "value": "0, 0, 0",
+     "links": [
+      [
+       "K2Node_VariableGet_6",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "in",
+     "idx": 2,
+     "name": "BaseRotation",
+     "type": "Rotator (por referencia)",
+     "value": "0, 0, 0",
+     "links": [
+      [
+       "K2Node_CallFunction_3",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "ReturnValue",
+     "type": "Flotante (precisión sencilla)",
+     "value": "0.0",
+     "links": [
+      [
+       "K2Node_CallFunction_6",
+       0
+      ],
+      [
+       "K2Node_CallFunction_8",
+       0
+      ]
+     ]
+    }
+   ]
+  },
+  "K2Node_CallFunction_6": {
+   "x": 4550,
+   "y": 2500,
+   "type": "Matemáticas|Float|Clamp(Float)",
+   "pins": [
+    {
+     "dir": "in",
+     "idx": 0,
+     "name": "Value",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": [
+      [
+       "K2Node_CallFunction_5",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "in",
+     "idx": 1,
+     "name": "Min",
+     "type": "Flotante (doble precisión)",
+     "value": "-45.000000",
+     "links": []
+    },
+    {
+     "dir": "in",
+     "idx": 2,
+     "name": "Max",
+     "type": "Flotante (doble precisión)",
+     "value": "45.000000",
+     "links": []
+    },
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "ReturnValue",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": [
+      [
+       "K2Node_CallFunction_8",
+       1
+      ]
+     ]
+    }
+   ]
+  },
+  "K2Node_VariableGet_7": {
+   "x": 4150,
+   "y": 2700,
+   "type": "|GetMovementComponent",
+   "pins": [
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "MovementComponent",
+     "type": "Character Movement Component Referencia a objeto",
+     "value": "",
+     "links": [
+      [
+       "K2Node_VariableGet_8",
+       0
+      ]
+     ]
+    }
+   ]
+  },
+  "K2Node_VariableGet_8": {
+   "x": 4550,
+   "y": 2700,
+   "type": "|GetbOrientRotationToMovement",
+   "pins": [
+    {
+     "dir": "in",
+     "idx": 0,
+     "name": "self",
+     "type": "Character Movement Component Referencia a objeto",
+     "value": "",
+     "links": [
+      [
+       "K2Node_VariableGet_7",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "bOrientRotationToMovement",
+     "type": "Booleano",
+     "value": "false",
+     "links": [
+      [
+       "K2Node_CallFunction_8",
+       2
+      ]
+     ]
+    }
+   ]
+  },
+  "K2Node_CallFunction_8": {
+   "x": 5000,
+   "y": 2550,
+   "type": "Matemáticas|Float|SelectFloat",
+   "pins": [
+    {
+     "dir": "in",
+     "idx": 0,
+     "name": "A",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": [
+      [
+       "K2Node_CallFunction_5",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "in",
+     "idx": 1,
+     "name": "B",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": [
+      [
+       "K2Node_CallFunction_6",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "in",
+     "idx": 2,
+     "name": "bPickA",
+     "type": "Booleano",
+     "value": "false",
+     "links": [
+      [
+       "K2Node_VariableGet_8",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "ReturnValue",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": [
+      [
+       "K2Node_VariableSet_4",
+       1
+      ]
+     ]
+    }
+   ]
+  },
+  "K2Node_ExecutionSequence_0": {
+   "x": 900,
+   "y": 4050,
+   "type": "Utilidades|ControlDeFlujo|Secuencia",
+   "pins": [
+    {
+     "dir": "in",
+     "idx": 0,
+     "name": "execute",
+     "type": "Ejecución",
+     "value": "",
+     "links": [
+      [
+       "K2Node_VariableGet_0",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "then_0",
+     "type": "Ejecución",
+     "value": "",
+     "links": [
+      [
+       "K2Node_VariableSet_2",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "out",
+     "idx": 1,
+     "name": "then_1",
+     "type": "Ejecución",
+     "value": "",
+     "links": [
+      [
+       "K2Node_Knot_0",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "out",
+     "idx": 2,
+     "name": "then_2",
+     "type": "Ejecución",
+     "value": "",
+     "links": [
+      [
+       "K2Node_Knot_1",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "out",
+     "idx": 3,
+     "name": "then_3",
+     "type": "Ejecución",
+     "value": "",
+     "links": [
+      [
+       "K2Node_VariableSet_14",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "out",
+     "idx": 4,
+     "name": "then_4",
+     "type": "Ejecución",
+     "value": "",
+     "links": [
+      [
+       "K2Node_CallFunction_0",
+       0
+      ]
+     ]
+    }
+   ]
+  },
+  "K2Node_VariableGet_9": {
+   "x": 1500,
+   "y": 3500,
+   "type": "|GetMovementComponent",
+   "pins": [
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "MovementComponent",
+     "type": "Character Movement Component Referencia a objeto",
+     "value": "",
+     "links": [
+      [
+       "K2Node_CallFunction_9",
+       0
+      ]
+     ]
+    }
+   ]
+  },
+  "K2Node_CallFunction_9": {
+   "x": 1850,
+   "y": 3450,
+   "type": "Pawn|Componentes|CharacterMovement|GetCurrentAcceleration",
+   "pins": [
+    {
+     "dir": "in",
+     "idx": 0,
+     "name": "self",
+     "type": "Character Movement Component Referencia a objeto",
+     "value": "",
+     "links": [
+      [
+       "K2Node_VariableGet_9",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "ReturnValue",
+     "type": "Vector",
+     "value": "0, 0, 0",
+     "links": [
+      [
+       "K2Node_PromotableOperator_2",
+       0
+      ]
+     ]
+    }
+   ]
+  },
+  "K2Node_PromotableOperator_2": {
+   "x": 2400,
+   "y": 3500,
+   "type": "Matemáticas|Vector|NotEqual(Vector)",
+   "pins": [
+    {
+     "dir": "in",
+     "idx": 0,
+     "name": "A",
+     "type": "Vector",
+     "value": "",
+     "links": [
+      [
+       "K2Node_CallFunction_9",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "in",
+     "idx": 1,
+     "name": "B",
+     "type": "Vector",
+     "value": "",
+     "links": []
+    },
+    {
+     "dir": "in",
+     "idx": 2,
+     "name": "ErrorTolerance",
+     "type": "Flotante (precisión sencilla)",
+     "value": "",
+     "links": []
+    },
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "ReturnValue",
+     "type": "Booleano",
+     "value": "",
+     "links": [
+      [
+       "K2Node_CommutativeAssociativeBinaryOperator_0",
+       1
+      ]
+     ]
+    }
+   ]
+  },
+  "K2Node_VariableGet_10": {
+   "x": 1850,
+   "y": 3300,
+   "type": "|GetGroundSpeed",
+   "pins": [
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "GroundSpeed",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": [
+      [
+       "K2Node_PromotableOperator_0",
+       0
+      ]
+     ]
+    }
+   ]
+  },
+  "K2Node_PromotableOperator_0": {
+   "x": 2400,
+   "y": 3300,
+   "type": "Matemáticas|Float|float>float",
+   "pins": [
+    {
+     "dir": "in",
+     "idx": 0,
+     "name": "A",
+     "type": "Flotante (doble precisión)",
+     "value": "",
+     "links": [
+      [
+       "K2Node_VariableGet_10",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "in",
+     "idx": 1,
+     "name": "B",
+     "type": "Flotante (doble precisión)",
+     "value": "3.0",
+     "links": []
+    },
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "ReturnValue",
+     "type": "Booleano",
+     "value": "",
+     "links": [
+      [
+       "K2Node_CommutativeAssociativeBinaryOperator_0",
+       0
+      ]
+     ]
+    }
+   ]
+  },
+  "K2Node_CommutativeAssociativeBinaryOperator_0": {
+   "x": 2800,
+   "y": 3350,
+   "type": "Matemáticas|Booleano|ANDBoolean",
+   "pins": [
+    {
+     "dir": "in",
+     "idx": 0,
+     "name": "A",
+     "type": "Booleano",
+     "value": "false",
+     "links": [
+      [
+       "K2Node_PromotableOperator_0",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "in",
+     "idx": 1,
+     "name": "B",
+     "type": "Booleano",
+     "value": "false",
+     "links": [
+      [
+       "K2Node_PromotableOperator_2",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "ReturnValue",
+     "type": "Booleano",
+     "value": "false",
+     "links": [
+      [
+       "K2Node_VariableSet_5",
+       1
+      ]
+     ]
+    }
+   ]
+  },
+  "K2Node_VariableSet_5": {
+   "x": 3150,
+   "y": 3350,
+   "type": "|SetShouldMove",
+   "pins": [
+    {
+     "dir": "in",
+     "idx": 0,
+     "name": "execute",
+     "type": "Ejecución",
+     "value": "",
+     "links": [
+      [
+       "K2Node_Knot_0",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "in",
+     "idx": 1,
+     "name": "ShouldMove",
+     "type": "Booleano",
+     "value": "false",
+     "links": [
+      [
+       "K2Node_CommutativeAssociativeBinaryOperator_0",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "then",
+     "type": "Ejecución",
+     "value": "",
+     "links": []
+    },
+    {
+     "dir": "out",
+     "idx": 1,
+     "name": "Output_Get",
+     "type": "Booleano",
+     "value": "false",
+     "links": []
+    }
+   ]
+  },
+  "K2Node_Knot_0": {
+   "x": 1500,
+   "y": 3350,
+   "type": "|Nododereenrutamiento",
+   "pins": [
+    {
+     "dir": "in",
+     "idx": 0,
+     "name": "InputPin",
+     "type": "Ejecución",
+     "value": "",
+     "links": [
+      [
+       "K2Node_ExecutionSequence_0",
+       1
+      ]
+     ]
+    },
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "OutputPin",
+     "type": "Ejecución",
+     "value": "",
+     "links": [
+      [
+       "K2Node_VariableSet_5",
+       0
+      ]
+     ]
+    }
+   ]
+  },
+  "K2Node_VariableGet_11": {
+   "x": 1500,
+   "y": 4400,
+   "type": "|GetMovementComponent",
+   "pins": [
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "MovementComponent",
+     "type": "Character Movement Component Referencia a objeto",
+     "value": "",
+     "links": [
+      [
+       "K2Node_CallFunction_10",
+       0
+      ]
+     ]
+    }
+   ]
+  },
+  "K2Node_CallFunction_10": {
+   "x": 1850,
+   "y": 4400,
+   "type": "IA|Componentes|Movimientodenavegación|IsFalling",
+   "pins": [
+    {
+     "dir": "in",
+     "idx": 0,
+     "name": "self",
+     "type": "Nav Movement Component Referencia a objeto",
+     "value": "",
+     "links": [
+      [
+       "K2Node_VariableGet_11",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "ReturnValue",
+     "type": "Booleano",
+     "value": "false",
+     "links": [
+      [
+       "K2Node_VariableSet_6",
+       1
+      ],
+      [
+       "K2Node_CallFunction_14",
+       2
+      ]
+     ]
+    }
+   ]
+  },
+  "K2Node_VariableSet_6": {
+   "x": 2250,
+   "y": 4500,
+   "type": "|SetIsFalling",
+   "pins": [
+    {
+     "dir": "in",
+     "idx": 0,
+     "name": "execute",
+     "type": "Ejecución",
+     "value": "",
+     "links": [
+      [
+       "K2Node_Knot_1",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "in",
+     "idx": 1,
+     "name": "IsFalling",
+     "type": "Booleano",
+     "value": "false",
+     "links": [
+      [
+       "K2Node_CallFunction_10",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "then",
+     "type": "Ejecución",
+     "value": "",
+     "links": [
+      [
+       "K2Node_VariableSet_7",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "out",
+     "idx": 1,
+     "name": "Output_Get",
+     "type": "Booleano",
+     "value": "false",
+     "links": []
+    }
+   ]
+  },
+  "K2Node_Knot_1": {
+   "x": 1500,
+   "y": 4550,
+   "type": "|Nododereenrutamiento",
+   "pins": [
+    {
+     "dir": "in",
+     "idx": 0,
+     "name": "InputPin",
+     "type": "Ejecución",
+     "value": "",
+     "links": [
+      [
+       "K2Node_ExecutionSequence_0",
+       2
+      ]
+     ]
+    },
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "OutputPin",
+     "type": "Ejecución",
+     "value": "",
+     "links": [
+      [
+       "K2Node_VariableSet_6",
+       0
+      ]
+     ]
+    }
+   ]
+  },
+  "K2Node_VariableGet_3": {
+   "x": 1500,
+   "y": 4200,
+   "type": "|GetVelocity",
+   "pins": [
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "Velocity",
+     "type": "Vector",
+     "value": "0, 0, 0",
+     "links": [
+      [
+       "K2Node_CallFunction_12",
+       0
+      ]
+     ]
+    }
+   ]
+  },
+  "K2Node_VariableGet_12": {
+   "x": 2250,
+   "y": 4200,
+   "type": "|GetPeakFallSpeed",
+   "pins": [
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "PeakFallSpeed",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": [
+      [
+       "K2Node_CallFunction_14",
+       1
+      ]
+     ]
+    }
+   ]
+  },
+  "K2Node_VariableSet_7": {
+   "x": 3000,
+   "y": 4300,
+   "type": "|SetPeakFallSpeed",
+   "pins": [
+    {
+     "dir": "in",
+     "idx": 0,
+     "name": "execute",
+     "type": "Ejecución",
+     "value": "",
+     "links": [
+      [
+       "K2Node_VariableSet_6",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "in",
+     "idx": 1,
+     "name": "PeakFallSpeed",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": [
+      [
+       "K2Node_CallFunction_14",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "then",
+     "type": "Ejecución",
+     "value": "",
+     "links": [
+      [
+       "K2Node_VariableSet_13",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "out",
+     "idx": 1,
+     "name": "Output_Get",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": []
+    }
+   ]
+  },
+  "K2Node_CallFunction_12": {
+   "x": 1850,
+   "y": 4200,
+   "type": "Matemáticas|Vector|BreakVector",
+   "pins": [
+    {
+     "dir": "in",
+     "idx": 0,
+     "name": "InVec",
+     "type": "Vector",
+     "value": "0, 0, 0",
+     "links": [
+      [
+       "K2Node_VariableGet_3",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "X",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": []
+    },
+    {
+     "dir": "out",
+     "idx": 1,
+     "name": "Y",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": []
+    },
+    {
+     "dir": "out",
+     "idx": 2,
+     "name": "Z",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": [
+      [
+       "K2Node_CallFunction_13",
+       0
+      ],
+      [
+       "K2Node_VariableSet_13",
+       1
+      ]
+     ]
+    }
+   ]
+  },
+  "K2Node_CallFunction_13": {
+   "x": 2250,
+   "y": 4350,
+   "type": "Matemáticas|Float|Absolute(Float)",
+   "pins": [
+    {
+     "dir": "in",
+     "idx": 0,
+     "name": "A",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": [
+      [
+       "K2Node_CallFunction_12",
+       2
+      ]
+     ]
+    },
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "ReturnValue",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": [
+      [
+       "K2Node_CallFunction_14",
+       0
+      ]
+     ]
+    }
+   ]
+  },
+  "K2Node_CallFunction_14": {
+   "x": 2650,
+   "y": 4300,
+   "type": "Matemáticas|Float|SelectFloat",
+   "pins": [
+    {
+     "dir": "in",
+     "idx": 0,
+     "name": "A",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": [
+      [
+       "K2Node_CallFunction_13",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "in",
+     "idx": 1,
+     "name": "B",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": [
+      [
+       "K2Node_VariableGet_12",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "in",
+     "idx": 2,
+     "name": "bPickA",
+     "type": "Booleano",
+     "value": "false",
+     "links": [
+      [
+       "K2Node_CallFunction_10",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "ReturnValue",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": [
+      [
+       "K2Node_VariableSet_7",
+       1
+      ]
+     ]
+    }
+   ]
+  },
+  "K2Node_CallFunction_7": {
+   "x": 2500,
+   "y": 2550,
+   "type": "Matemáticas|Vector|VectorLengthXY",
+   "pins": [
+    {
+     "dir": "in",
+     "idx": 0,
+     "name": "A",
+     "type": "Vector",
+     "value": "0, 0, 0",
+     "links": [
+      [
+       "K2Node_VariableSet_2",
+       1
+      ]
+     ]
+    },
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "ReturnValue",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": [
+      [
+       "K2Node_VariableSet_3",
+       1
+      ]
+     ]
+    }
+   ]
+  },
+  "K2Node_DynamicCast_1": {
+   "x": 2200,
+   "y": 1800,
+   "type": "Utilidades|Casting|CastToBP_ThirdPersonCharacter",
+   "pins": [
+    {
+     "dir": "in",
+     "idx": 0,
+     "name": "execute",
+     "type": "Ejecución",
+     "value": "",
+     "links": [
+      [
+       "K2Node_VariableSet_1",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "in",
+     "idx": 1,
+     "name": "Object",
+     "type": "Referencia a objeto",
+     "value": "",
+     "links": [
+      [
+       "K2Node_CallFunction_1",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "then",
+     "type": "Ejecución",
+     "value": "",
+     "links": [
+      [
+       "K2Node_VariableSet_10",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "out",
+     "idx": 1,
+     "name": "CastFailed",
+     "type": "Ejecución",
+     "value": "",
+     "links": []
+    },
+    {
+     "dir": "out",
+     "idx": 2,
+     "name": "AsBP Third Person Character",
+     "type": "BP Third Person Character Referencia a objeto",
+     "value": "",
+     "links": [
+      [
+       "K2Node_VariableSet_10",
+       1
+      ]
+     ]
+    }
+   ]
+  },
+  "K2Node_VariableSet_10": {
+   "x": 2700,
+   "y": 1800,
+   "type": "|SetPlayerCharacter",
+   "pins": [
+    {
+     "dir": "in",
+     "idx": 0,
+     "name": "execute",
+     "type": "Ejecución",
+     "value": "",
+     "links": [
+      [
+       "K2Node_DynamicCast_1",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "in",
+     "idx": 1,
+     "name": "PlayerCharacter",
+     "type": "BP Third Person Character Referencia a objeto",
+     "value": "",
+     "links": [
+      [
+       "K2Node_DynamicCast_1",
+       2
+      ]
+     ]
+    },
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "then",
+     "type": "Ejecución",
+     "value": "",
+     "links": []
+    },
+    {
+     "dir": "out",
+     "idx": 1,
+     "name": "Output_Get",
+     "type": "BP Third Person Character Referencia a objeto",
+     "value": "",
+     "links": []
+    }
+   ]
+  },
+  "K2Node_VariableGet_18": {
+   "x": 3400,
+   "y": 4350,
+   "type": "|GetPlayerCharacter",
+   "pins": [
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "PlayerCharacter",
+     "type": "BP Third Person Character Referencia a objeto",
+     "value": "",
+     "links": [
+      [
+       "K2Node_VariableGet_19",
+       0
+      ],
+      [
+       "K2Node_MacroInstance_0",
+       1
+      ],
+      [
+       "K2Node_VariableGet_14",
+       0
+      ]
+     ]
+    }
+   ]
+  },
+  "K2Node_VariableGet_19": {
+   "x": 3800,
+   "y": 4300,
+   "type": "|GetIsSwinging",
+   "pins": [
+    {
+     "dir": "in",
+     "idx": 0,
+     "name": "self",
+     "type": "BP Third Person Character Referencia a objeto",
+     "value": "",
+     "links": [
+      [
+       "K2Node_VariableGet_18",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "IsSwinging",
+     "type": "Booleano",
+     "value": "false",
+     "links": [
+      [
+       "K2Node_VariableSet_12",
+       1
+      ]
+     ]
+    }
+   ]
+  },
+  "K2Node_VariableSet_12": {
+   "x": 4200,
+   "y": 4100,
+   "type": "|SetIsSwinging",
+   "pins": [
+    {
+     "dir": "in",
+     "idx": 0,
+     "name": "execute",
+     "type": "Ejecución",
+     "value": "",
+     "links": [
+      [
+       "K2Node_MacroInstance_0",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "in",
+     "idx": 1,
+     "name": "IsSwinging",
+     "type": "Booleano",
+     "value": "false",
+     "links": [
+      [
+       "K2Node_VariableGet_19",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "then",
+     "type": "Ejecución",
+     "value": "",
+     "links": [
+      [
+       "K2Node_VariableSet_9",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "out",
+     "idx": 1,
+     "name": "Output_Get",
+     "type": "Booleano",
+     "value": "false",
+     "links": []
+    }
+   ]
+  },
+  "K2Node_VariableSet_13": {
+   "x": 3400,
+   "y": 4150,
+   "type": "|SetVerticalSpeed",
+   "pins": [
+    {
+     "dir": "in",
+     "idx": 0,
+     "name": "execute",
+     "type": "Ejecución",
+     "value": "",
+     "links": [
+      [
+       "K2Node_VariableSet_7",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "in",
+     "idx": 1,
+     "name": "VerticalSpeed",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": [
+      [
+       "K2Node_CallFunction_12",
+       2
+      ]
+     ]
+    },
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "then",
+     "type": "Ejecución",
+     "value": "",
+     "links": [
+      [
+       "K2Node_MacroInstance_0",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "out",
+     "idx": 1,
+     "name": "Output_Get",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": []
+    }
+   ]
+  },
+  "K2Node_MacroInstance_0": {
+   "x": 3800,
+   "y": 4100,
+   "type": "Utilities|IsValid",
+   "pins": [
+    {
+     "dir": "in",
+     "idx": 0,
+     "name": "exec",
+     "type": "Ejecución",
+     "value": "",
+     "links": [
+      [
+       "K2Node_VariableSet_13",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "in",
+     "idx": 1,
+     "name": "InputObject",
+     "type": "Referencia a objeto",
+     "value": "",
+     "links": [
+      [
+       "K2Node_VariableGet_18",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "Is Valid",
+     "type": "Ejecución",
+     "value": "",
+     "links": [
+      [
+       "K2Node_VariableSet_12",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "out",
+     "idx": 1,
+     "name": "Is Not Valid",
+     "type": "Ejecución",
+     "value": "",
+     "links": []
+    }
+   ]
+  },
+  "K2Node_VariableGet_14": {
+   "x": 4200,
+   "y": 4300,
+   "type": "|GetDistanceToFloor",
+   "pins": [
+    {
+     "dir": "in",
+     "idx": 0,
+     "name": "self",
+     "type": "BP Third Person Character Referencia a objeto",
+     "value": "",
+     "links": [
+      [
+       "K2Node_VariableGet_18",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "DistanceToFloor",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": [
+      [
+       "K2Node_VariableSet_9",
+       1
+      ]
+     ]
+    }
+   ]
+  },
+  "K2Node_VariableSet_9": {
+   "x": 4600,
+   "y": 4150,
+   "type": "|SetDistanceToFloor",
+   "pins": [
+    {
+     "dir": "in",
+     "idx": 0,
+     "name": "execute",
+     "type": "Ejecución",
+     "value": "",
+     "links": [
+      [
+       "K2Node_VariableSet_12",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "in",
+     "idx": 1,
+     "name": "DistanceToFloor",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": [
+      [
+       "K2Node_VariableGet_14",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "then",
+     "type": "Ejecución",
+     "value": "",
+     "links": []
+    },
+    {
+     "dir": "out",
+     "idx": 1,
+     "name": "Output_Get",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": []
+    }
+   ]
+  },
+  "K2Node_VariableGet_16": {
+   "x": 1500,
+   "y": 5200,
+   "type": "|GetVerticalSpeed",
+   "pins": [
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "VerticalSpeed",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": [
+      [
+       "K2Node_PromotableOperator_3",
+       0
+      ]
+     ]
+    }
+   ]
+  },
+  "K2Node_PromotableOperator_3": {
+   "x": 1850,
+   "y": 5200,
+   "type": "Matemáticas|Float|float*float",
+   "pins": [
+    {
+     "dir": "in",
+     "idx": 0,
+     "name": "A",
+     "type": "Flotante (doble precisión)",
+     "value": "",
+     "links": [
+      [
+       "K2Node_VariableGet_16",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "in",
+     "idx": 1,
+     "name": "B",
+     "type": "Flotante (doble precisión)",
+     "value": "-1.0",
+     "links": []
+    },
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "ReturnValue",
+     "type": "Flotante (doble precisión)",
+     "value": "",
+     "links": [
+      [
+       "K2Node_CallFunction_2",
+       0
+      ]
+     ]
+    }
+   ]
+  },
+  "K2Node_CallFunction_2": {
+   "x": 2250,
+   "y": 5200,
+   "type": "Matemáticas|Float|Clamp(Float)",
+   "pins": [
+    {
+     "dir": "in",
+     "idx": 0,
+     "name": "Value",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": [
+      [
+       "K2Node_PromotableOperator_3",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "in",
+     "idx": 1,
+     "name": "Min",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": []
+    },
+    {
+     "dir": "in",
+     "idx": 2,
+     "name": "Max",
+     "type": "Flotante (doble precisión)",
+     "value": "1200.0",
+     "links": []
+    },
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "ReturnValue",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": [
+      [
+       "K2Node_VariableSet_14",
+       1
+      ]
+     ]
+    }
+   ]
+  },
+  "K2Node_VariableSet_14": {
+   "x": 2650,
+   "y": 5150,
+   "type": "|SetFallSpeed",
+   "pins": [
+    {
+     "dir": "in",
+     "idx": 0,
+     "name": "execute",
+     "type": "Ejecución",
+     "value": "",
+     "links": [
+      [
+       "K2Node_ExecutionSequence_0",
+       3
+      ]
+     ]
+    },
+    {
+     "dir": "in",
+     "idx": 1,
+     "name": "FallSpeed",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": [
+      [
+       "K2Node_CallFunction_2",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "then",
+     "type": "Ejecución",
+     "value": "",
+     "links": [
+      [
+       "K2Node_IfThenElse_3",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "out",
+     "idx": 1,
+     "name": "Output_Get",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": []
+    }
+   ]
+  },
+  "K2Node_IfThenElse_3": {
+   "x": 5300,
+   "y": 5150,
+   "type": "Utilidades|ControlDeFlujo|Rama",
+   "pins": [
+    {
+     "dir": "in",
+     "idx": 0,
+     "name": "execute",
+     "type": "Ejecución",
+     "value": "",
+     "links": [
+      [
+       "K2Node_VariableSet_14",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "in",
+     "idx": 1,
+     "name": "Condition",
+     "type": "Booleano",
+     "value": "true",
+     "links": [
+      [
+       "K2Node_VariableGet_15",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "then",
+     "type": "Ejecución",
+     "value": "",
+     "links": [
+      [
+       "K2Node_CallFunction_24",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "out",
+     "idx": 1,
+     "name": "else",
+     "type": "Ejecución",
+     "value": "",
+     "links": [
+      [
+       "K2Node_VariableSet_11",
+       0
+      ]
+     ]
+    }
+   ]
+  },
+  "K2Node_VariableGet_15": {
+   "x": 5000,
+   "y": 5200,
+   "type": "|GetIsFalling",
+   "pins": [
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "IsFalling",
+     "type": "Booleano",
+     "value": "false",
+     "links": [
+      [
+       "K2Node_IfThenElse_3",
+       1
+      ]
+     ]
+    }
+   ]
+  },
+  "K2Node_VariableSet_11": {
+   "x": 5900,
+   "y": 6250,
+   "type": "|SetGroundHit",
+   "pins": [
+    {
+     "dir": "in",
+     "idx": 0,
+     "name": "execute",
+     "type": "Ejecución",
+     "value": "",
+     "links": [
+      [
+       "K2Node_IfThenElse_3",
+       1
+      ]
+     ]
+    },
+    {
+     "dir": "in",
+     "idx": 1,
+     "name": "GroundHit",
+     "type": "Booleano",
+     "value": "false",
+     "links": []
+    },
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "then",
+     "type": "Ejecución",
+     "value": "",
+     "links": [
+      [
+       "K2Node_VariableSet_15",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "out",
+     "idx": 1,
+     "name": "Output_Get",
+     "type": "Booleano",
+     "value": "false",
+     "links": []
+    }
+   ]
+  },
+  "K2Node_VariableSet_15": {
+   "x": 6350,
+   "y": 6250,
+   "type": "|SetDistanceToGround",
+   "pins": [
+    {
+     "dir": "in",
+     "idx": 0,
+     "name": "execute",
+     "type": "Ejecución",
+     "value": "",
+     "links": [
+      [
+       "K2Node_VariableSet_11",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "in",
+     "idx": 1,
+     "name": "DistanceToGround",
+     "type": "Flotante (doble precisión)",
+     "value": "500.0",
+     "links": []
+    },
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "then",
+     "type": "Ejecución",
+     "value": "",
+     "links": [
+      [
+       "K2Node_VariableSet_16",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "out",
+     "idx": 1,
+     "name": "Output_Get",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": []
+    }
+   ]
+  },
+  "K2Node_VariableSet_16": {
+   "x": 6850,
+   "y": 6250,
+   "type": "|SetTimeToImpact",
+   "pins": [
+    {
+     "dir": "in",
+     "idx": 0,
+     "name": "execute",
+     "type": "Ejecución",
+     "value": "",
+     "links": [
+      [
+       "K2Node_VariableSet_15",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "in",
+     "idx": 1,
+     "name": "TimeToImpact",
+     "type": "Flotante (doble precisión)",
+     "value": "9.0",
+     "links": []
+    },
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "then",
+     "type": "Ejecución",
+     "value": "",
+     "links": [
+      [
+       "K2Node_VariableSet_17",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "out",
+     "idx": 1,
+     "name": "Output_Get",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": []
+    }
+   ]
+  },
+  "K2Node_VariableSet_17": {
+   "x": 7300,
+   "y": 6250,
+   "type": "|SetLandPrep",
+   "pins": [
+    {
+     "dir": "in",
+     "idx": 0,
+     "name": "execute",
+     "type": "Ejecución",
+     "value": "",
+     "links": [
+      [
+       "K2Node_VariableSet_16",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "in",
+     "idx": 1,
+     "name": "LandPrep",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": []
+    },
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "then",
+     "type": "Ejecución",
+     "value": "",
+     "links": []
+    },
+    {
+     "dir": "out",
+     "idx": 1,
+     "name": "Output_Get",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": []
+    }
+   ]
+  },
+  "K2Node_VariableGet_17": {
+   "x": 3600,
+   "y": 5150,
+   "type": "|GetCharacter",
+   "pins": [
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "Character",
+     "type": "Character Referencia a objeto",
+     "value": "",
+     "links": [
+      [
+       "K2Node_CallFunction_22",
+       0
+      ]
+     ]
+    }
+   ]
+  },
+  "K2Node_CallFunction_22": {
+   "x": 4000,
+   "y": 5150,
+   "type": "Transformación|GetActorLocation",
+   "pins": [
+    {
+     "dir": "in",
+     "idx": 0,
+     "name": "self",
+     "type": "Actor Referencia a objeto",
+     "value": "",
+     "links": [
+      [
+       "K2Node_VariableGet_17",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "ReturnValue",
+     "type": "Vector",
+     "value": "0, 0, 0",
+     "links": [
+      [
+       "K2Node_CallFunction_24",
+       1
+      ],
+      [
+       "K2Node_PromotableOperator_10",
+       0
+      ]
+     ]
+    }
+   ]
+  },
+  "K2Node_VariableGet_20": {
+   "x": 3300,
+   "y": 5350,
+   "type": "|GetHalfHeight",
+   "pins": [
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "HalfHeight",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": [
+      [
+       "K2Node_PromotableOperator_9",
+       0
+      ],
+      [
+       "K2Node_PromotableOperator_11",
+       1
+      ]
+     ]
+    }
+   ]
+  },
+  "K2Node_PromotableOperator_9": {
+   "x": 3600,
+   "y": 5350,
+   "type": "Matemáticas|Float|float+float",
+   "pins": [
+    {
+     "dir": "in",
+     "idx": 0,
+     "name": "A",
+     "type": "Flotante (doble precisión)",
+     "value": "",
+     "links": [
+      [
+       "K2Node_VariableGet_20",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "in",
+     "idx": 1,
+     "name": "B",
+     "type": "Flotante (doble precisión)",
+     "value": "500.0",
+     "links": []
+    },
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "ReturnValue",
+     "type": "Flotante (doble precisión)",
+     "value": "",
+     "links": [
+      [
+       "K2Node_CallFunction_23",
+       2
+      ]
+     ]
+    }
+   ]
+  },
+  "K2Node_CallFunction_23": {
+   "x": 4000,
+   "y": 5300,
+   "type": "Matemáticas|Vector|MakeVector",
+   "pins": [
+    {
+     "dir": "in",
+     "idx": 0,
+     "name": "X",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": []
+    },
+    {
+     "dir": "in",
+     "idx": 1,
+     "name": "Y",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": []
+    },
+    {
+     "dir": "in",
+     "idx": 2,
+     "name": "Z",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": [
+      [
+       "K2Node_PromotableOperator_9",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "ReturnValue",
+     "type": "Vector",
+     "value": "0, 0, 0",
+     "links": [
+      [
+       "K2Node_PromotableOperator_10",
+       1
+      ]
+     ]
+    }
+   ]
+  },
+  "K2Node_PromotableOperator_10": {
+   "x": 4400,
+   "y": 5200,
+   "type": "Matemáticas|Vector|vector-vector",
+   "pins": [
+    {
+     "dir": "in",
+     "idx": 0,
+     "name": "A",
+     "type": "Vector",
+     "value": "",
+     "links": [
+      [
+       "K2Node_CallFunction_22",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "in",
+     "idx": 1,
+     "name": "B",
+     "type": "Vector",
+     "value": "",
+     "links": [
+      [
+       "K2Node_CallFunction_23",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "ReturnValue",
+     "type": "Vector",
+     "value": "",
+     "links": [
+      [
+       "K2Node_CallFunction_24",
+       2
+      ]
+     ]
+    }
+   ]
+  },
+  "K2Node_CallFunction_24": {
+   "x": 5900,
+   "y": 5150,
+   "type": "Colisión|LineTraceByChannel",
+   "pins": [
+    {
+     "dir": "in",
+     "idx": 0,
+     "name": "execute",
+     "type": "Ejecución",
+     "value": "",
+     "links": [
+      [
+       "K2Node_IfThenElse_3",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "in",
+     "idx": 1,
+     "name": "Start",
+     "type": "Vector",
+     "value": "0, 0, 0",
+     "links": [
+      [
+       "K2Node_CallFunction_22",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "in",
+     "idx": 2,
+     "name": "End",
+     "type": "Vector",
+     "value": "0, 0, 0",
+     "links": [
+      [
+       "K2Node_PromotableOperator_10",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "in",
+     "idx": 3,
+     "name": "TraceChannel",
+     "type": "Enumerador ETraceTypeQuery",
+     "value": "TraceTypeQuery1",
+     "links": []
+    },
+    {
+     "dir": "in",
+     "idx": 4,
+     "name": "bTraceComplex",
+     "type": "Booleano",
+     "value": "false",
+     "links": []
+    },
+    {
+     "dir": "in",
+     "idx": 5,
+     "name": "ActorsToIgnore",
+     "type": "Matriz de Actor Referencia a objetos",
+     "value": "",
+     "links": []
+    },
+    {
+     "dir": "in",
+     "idx": 6,
+     "name": "DrawDebugType",
+     "type": "Enumerador EDrawDebugTrace",
+     "value": "None",
+     "links": []
+    },
+    {
+     "dir": "in",
+     "idx": 7,
+     "name": "bIgnoreSelf",
+     "type": "Booleano",
+     "value": "true",
+     "links": []
+    },
+    {
+     "dir": "in",
+     "idx": 8,
+     "name": "TraceColor",
+     "type": "Linear Color Estructura",
+     "value": "(R=1.000000,G=0.000000,B=0.000000,A=1.000000)",
+     "links": []
+    },
+    {
+     "dir": "in",
+     "idx": 9,
+     "name": "TraceHitColor",
+     "type": "Linear Color Estructura",
+     "value": "(R=0.000000,G=1.000000,B=0.000000,A=1.000000)",
+     "links": []
+    },
+    {
+     "dir": "in",
+     "idx": 10,
+     "name": "DrawTime",
+     "type": "Flotante (precisión sencilla)",
+     "value": "5.000000",
+     "links": []
+    },
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "then",
+     "type": "Ejecución",
+     "value": "",
+     "links": [
+      [
+       "K2Node_VariableSet_18",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "out",
+     "idx": 1,
+     "name": "OutHit",
+     "type": "Hit Result Estructura",
+     "value": "",
+     "links": [
+      [
+       "K2Node_CallFunction_25",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "out",
+     "idx": 2,
+     "name": "ReturnValue",
+     "type": "Booleano",
+     "value": "false",
+     "links": []
+    }
+   ]
+  },
+  "K2Node_CallFunction_25": {
+   "x": 6650,
+   "y": 5200,
+   "type": "Colisión|BreakHitResult",
+   "pins": [
+    {
+     "dir": "in",
+     "idx": 0,
+     "name": "Hit",
+     "type": "Hit Result Estructura (por referencia)",
+     "value": "",
+     "links": [
+      [
+       "K2Node_CallFunction_24",
+       1
+      ]
+     ]
+    },
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "bBlockingHit",
+     "type": "Booleano",
+     "value": "false",
+     "links": [
+      [
+       "K2Node_VariableSet_18",
+       1
+      ],
+      [
+       "K2Node_CallFunction_26",
+       2
+      ],
+      [
+       "K2Node_CallFunction_29",
+       2
+      ]
+     ]
+    },
+    {
+     "dir": "out",
+     "idx": 1,
+     "name": "bInitialOverlap",
+     "type": "Booleano",
+     "value": "false",
+     "links": []
+    },
+    {
+     "dir": "out",
+     "idx": 2,
+     "name": "Time",
+     "type": "Flotante (precisión sencilla)",
+     "value": "0.0",
+     "links": []
+    },
+    {
+     "dir": "out",
+     "idx": 3,
+     "name": "Distance",
+     "type": "Flotante (precisión sencilla)",
+     "value": "0.0",
+     "links": [
+      [
+       "K2Node_PromotableOperator_11",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "out",
+     "idx": 4,
+     "name": "Location",
+     "type": "Vector",
+     "value": "0, 0, 0",
+     "links": []
+    },
+    {
+     "dir": "out",
+     "idx": 5,
+     "name": "ImpactPoint",
+     "type": "Vector",
+     "value": "0, 0, 0",
+     "links": []
+    },
+    {
+     "dir": "out",
+     "idx": 6,
+     "name": "Normal",
+     "type": "Vector",
+     "value": "0, 0, 0",
+     "links": []
+    },
+    {
+     "dir": "out",
+     "idx": 7,
+     "name": "ImpactNormal",
+     "type": "Vector",
+     "value": "0, 0, 0",
+     "links": []
+    },
+    {
+     "dir": "out",
+     "idx": 8,
+     "name": "PhysMat",
+     "type": "Physical Material Referencia a objeto",
+     "value": "",
+     "links": []
+    },
+    {
+     "dir": "out",
+     "idx": 9,
+     "name": "HitActor",
+     "type": "Actor Referencia a objeto",
+     "value": "",
+     "links": []
+    },
+    {
+     "dir": "out",
+     "idx": 10,
+     "name": "HitComponent",
+     "type": "Primitive Component Referencia a objeto",
+     "value": "",
+     "links": []
+    },
+    {
+     "dir": "out",
+     "idx": 11,
+     "name": "HitBoneName",
+     "type": "Nombre",
+     "value": "None",
+     "links": []
+    },
+    {
+     "dir": "out",
+     "idx": 12,
+     "name": "BoneName",
+     "type": "Nombre",
+     "value": "None",
+     "links": []
+    },
+    {
+     "dir": "out",
+     "idx": 13,
+     "name": "HitItem",
+     "type": "Entero",
+     "value": "0",
+     "links": []
+    },
+    {
+     "dir": "out",
+     "idx": 14,
+     "name": "ElementIndex",
+     "type": "Entero",
+     "value": "0",
+     "links": []
+    },
+    {
+     "dir": "out",
+     "idx": 15,
+     "name": "FaceIndex",
+     "type": "Entero",
+     "value": "0",
+     "links": []
+    },
+    {
+     "dir": "out",
+     "idx": 16,
+     "name": "TraceStart",
+     "type": "Vector",
+     "value": "0, 0, 0",
+     "links": []
+    },
+    {
+     "dir": "out",
+     "idx": 17,
+     "name": "TraceEnd",
+     "type": "Vector",
+     "value": "0, 0, 0",
+     "links": []
+    }
+   ]
+  },
+  "K2Node_VariableSet_18": {
+   "x": 7000,
+   "y": 5150,
+   "type": "|SetGroundHit",
+   "pins": [
+    {
+     "dir": "in",
+     "idx": 0,
+     "name": "execute",
+     "type": "Ejecución",
+     "value": "",
+     "links": [
+      [
+       "K2Node_CallFunction_24",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "in",
+     "idx": 1,
+     "name": "GroundHit",
+     "type": "Booleano",
+     "value": "false",
+     "links": [
+      [
+       "K2Node_CallFunction_25",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "then",
+     "type": "Ejecución",
+     "value": "",
+     "links": [
+      [
+       "K2Node_VariableSet_19",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "out",
+     "idx": 1,
+     "name": "Output_Get",
+     "type": "Booleano",
+     "value": "false",
+     "links": []
+    }
+   ]
+  },
+  "K2Node_PromotableOperator_11": {
+   "x": 7000,
+   "y": 5350,
+   "type": "Matemáticas|Float|float-float",
+   "pins": [
+    {
+     "dir": "in",
+     "idx": 0,
+     "name": "A",
+     "type": "Flotante (doble precisión)",
+     "value": "",
+     "links": [
+      [
+       "K2Node_CallFunction_25",
+       3
+      ]
+     ]
+    },
+    {
+     "dir": "in",
+     "idx": 1,
+     "name": "B",
+     "type": "Flotante (doble precisión)",
+     "value": "",
+     "links": [
+      [
+       "K2Node_VariableGet_20",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "ReturnValue",
+     "type": "Flotante (doble precisión)",
+     "value": "",
+     "links": [
+      [
+       "K2Node_CommutativeAssociativeBinaryOperator_2",
+       0
+      ]
+     ]
+    }
+   ]
+  },
+  "K2Node_CommutativeAssociativeBinaryOperator_2": {
+   "x": 7400,
+   "y": 5250,
+   "type": "Matemáticas|Float|Max(Float)",
+   "pins": [
+    {
+     "dir": "in",
+     "idx": 0,
+     "name": "A",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": [
+      [
+       "K2Node_PromotableOperator_11",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "in",
+     "idx": 1,
+     "name": "B",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": []
+    },
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "ReturnValue",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": [
+      [
+       "K2Node_CallFunction_26",
+       0
+      ]
+     ]
+    }
+   ]
+  },
+  "K2Node_CallFunction_26": {
+   "x": 7800,
+   "y": 5200,
+   "type": "Matemáticas|Float|SelectFloat",
+   "pins": [
+    {
+     "dir": "in",
+     "idx": 0,
+     "name": "A",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": [
+      [
+       "K2Node_CommutativeAssociativeBinaryOperator_2",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "in",
+     "idx": 1,
+     "name": "B",
+     "type": "Flotante (doble precisión)",
+     "value": "500.0",
+     "links": []
+    },
+    {
+     "dir": "in",
+     "idx": 2,
+     "name": "bPickA",
+     "type": "Booleano",
+     "value": "false",
+     "links": [
+      [
+       "K2Node_CallFunction_25",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "ReturnValue",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": [
+      [
+       "K2Node_VariableSet_19",
+       1
+      ],
+      [
+       "K2Node_PromotableOperator_12",
+       0
+      ]
+     ]
+    }
+   ]
+  },
+  "K2Node_VariableSet_19": {
+   "x": 8250,
+   "y": 5150,
+   "type": "|SetDistanceToGround",
+   "pins": [
+    {
+     "dir": "in",
+     "idx": 0,
+     "name": "execute",
+     "type": "Ejecución",
+     "value": "",
+     "links": [
+      [
+       "K2Node_VariableSet_18",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "in",
+     "idx": 1,
+     "name": "DistanceToGround",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": [
+      [
+       "K2Node_CallFunction_26",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "then",
+     "type": "Ejecución",
+     "value": "",
+     "links": [
+      [
+       "K2Node_VariableSet_20",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "out",
+     "idx": 1,
+     "name": "Output_Get",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": []
+    }
+   ]
+  },
+  "K2Node_VariableGet_21": {
+   "x": 8950,
+   "y": 5200,
+   "type": "|GetFallSpeed",
+   "pins": [
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "FallSpeed",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": [
+      [
+       "K2Node_CommutativeAssociativeBinaryOperator_3",
+       0
+      ]
+     ]
+    }
+   ]
+  },
+  "K2Node_CommutativeAssociativeBinaryOperator_3": {
+   "x": 9250,
+   "y": 5200,
+   "type": "Matemáticas|Float|Max(Float)",
+   "pins": [
+    {
+     "dir": "in",
+     "idx": 0,
+     "name": "A",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": [
+      [
+       "K2Node_VariableGet_21",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "in",
+     "idx": 1,
+     "name": "B",
+     "type": "Flotante (doble precisión)",
+     "value": "1.0",
+     "links": []
+    },
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "ReturnValue",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": [
+      [
+       "K2Node_PromotableOperator_12",
+       1
+      ]
+     ]
+    }
+   ]
+  },
+  "K2Node_PromotableOperator_12": {
+   "x": 9650,
+   "y": 5200,
+   "type": "Matemáticas|Float|float/float",
+   "pins": [
+    {
+     "dir": "in",
+     "idx": 0,
+     "name": "A",
+     "type": "Flotante (doble precisión)",
+     "value": "",
+     "links": [
+      [
+       "K2Node_CallFunction_26",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "in",
+     "idx": 1,
+     "name": "B",
+     "type": "Flotante (doble precisión)",
+     "value": "",
+     "links": [
+      [
+       "K2Node_CommutativeAssociativeBinaryOperator_3",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "ReturnValue",
+     "type": "Flotante (doble precisión)",
+     "value": "",
+     "links": [
+      [
+       "K2Node_CallFunction_27",
+       1
+      ]
+     ]
+    }
+   ]
+  },
+  "K2Node_VariableGet_22": {
+   "x": 9250,
+   "y": 5400,
+   "type": "|GetVerticalSpeed",
+   "pins": [
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "VerticalSpeed",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": [
+      [
+       "K2Node_PromotableOperator_13",
+       0
+      ]
+     ]
+    }
+   ]
+  },
+  "K2Node_PromotableOperator_13": {
+   "x": 9650,
+   "y": 5400,
+   "type": "Matemáticas|Float|float>float",
+   "pins": [
+    {
+     "dir": "in",
+     "idx": 0,
+     "name": "A",
+     "type": "Flotante (doble precisión)",
+     "value": "",
+     "links": [
+      [
+       "K2Node_VariableGet_22",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "in",
+     "idx": 1,
+     "name": "B",
+     "type": "Flotante (doble precisión)",
+     "value": "",
+     "links": []
+    },
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "ReturnValue",
+     "type": "Booleano",
+     "value": "",
+     "links": [
+      [
+       "K2Node_CallFunction_27",
+       2
+      ]
+     ]
+    }
+   ]
+  },
+  "K2Node_CallFunction_27": {
+   "x": 10000,
+   "y": 5250,
+   "type": "Matemáticas|Float|SelectFloat",
+   "pins": [
+    {
+     "dir": "in",
+     "idx": 0,
+     "name": "A",
+     "type": "Flotante (doble precisión)",
+     "value": "9.0",
+     "links": []
+    },
+    {
+     "dir": "in",
+     "idx": 1,
+     "name": "B",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": [
+      [
+       "K2Node_PromotableOperator_12",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "in",
+     "idx": 2,
+     "name": "bPickA",
+     "type": "Booleano",
+     "value": "false",
+     "links": [
+      [
+       "K2Node_PromotableOperator_13",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "ReturnValue",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": [
+      [
+       "K2Node_VariableSet_20",
+       1
+      ],
+      [
+       "K2Node_PromotableOperator_14",
+       0
+      ]
+     ]
+    }
+   ]
+  },
+  "K2Node_VariableSet_20": {
+   "x": 10450,
+   "y": 5150,
+   "type": "|SetTimeToImpact",
+   "pins": [
+    {
+     "dir": "in",
+     "idx": 0,
+     "name": "execute",
+     "type": "Ejecución",
+     "value": "",
+     "links": [
+      [
+       "K2Node_VariableSet_19",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "in",
+     "idx": 1,
+     "name": "TimeToImpact",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": [
+      [
+       "K2Node_CallFunction_27",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "then",
+     "type": "Ejecución",
+     "value": "",
+     "links": [
+      [
+       "K2Node_VariableSet_21",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "out",
+     "idx": 1,
+     "name": "Output_Get",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": []
+    }
+   ]
+  },
+  "K2Node_PromotableOperator_14": {
+   "x": 10450,
+   "y": 5350,
+   "type": "Matemáticas|Float|float/float",
+   "pins": [
+    {
+     "dir": "in",
+     "idx": 0,
+     "name": "A",
+     "type": "Flotante (doble precisión)",
+     "value": "",
+     "links": [
+      [
+       "K2Node_CallFunction_27",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "in",
+     "idx": 1,
+     "name": "B",
+     "type": "Flotante (doble precisión)",
+     "value": "0.22",
+     "links": []
+    },
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "ReturnValue",
+     "type": "Flotante (doble precisión)",
+     "value": "",
+     "links": [
+      [
+       "K2Node_PromotableOperator_15",
+       1
+      ]
+     ]
+    }
+   ]
+  },
+  "K2Node_PromotableOperator_15": {
+   "x": 10850,
+   "y": 5300,
+   "type": "Matemáticas|Float|float-float",
+   "pins": [
+    {
+     "dir": "in",
+     "idx": 0,
+     "name": "A",
+     "type": "Flotante (doble precisión)",
+     "value": "1.0",
+     "links": []
+    },
+    {
+     "dir": "in",
+     "idx": 1,
+     "name": "B",
+     "type": "Flotante (doble precisión)",
+     "value": "",
+     "links": [
+      [
+       "K2Node_PromotableOperator_14",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "ReturnValue",
+     "type": "Flotante (doble precisión)",
+     "value": "",
+     "links": [
+      [
+       "K2Node_CallFunction_28",
+       0
+      ]
+     ]
+    }
+   ]
+  },
+  "K2Node_CallFunction_28": {
+   "x": 11250,
+   "y": 5300,
+   "type": "Matemáticas|Float|Clamp(Float)",
+   "pins": [
+    {
+     "dir": "in",
+     "idx": 0,
+     "name": "Value",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": [
+      [
+       "K2Node_PromotableOperator_15",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "in",
+     "idx": 1,
+     "name": "Min",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": []
+    },
+    {
+     "dir": "in",
+     "idx": 2,
+     "name": "Max",
+     "type": "Flotante (doble precisión)",
+     "value": "1.0",
+     "links": []
+    },
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "ReturnValue",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": [
+      [
+       "K2Node_CallFunction_29",
+       0
+      ]
+     ]
+    }
+   ]
+  },
+  "K2Node_CallFunction_29": {
+   "x": 11650,
+   "y": 5350,
+   "type": "Matemáticas|Float|SelectFloat",
+   "pins": [
+    {
+     "dir": "in",
+     "idx": 0,
+     "name": "A",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": [
+      [
+       "K2Node_CallFunction_28",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "in",
+     "idx": 1,
+     "name": "B",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": []
+    },
+    {
+     "dir": "in",
+     "idx": 2,
+     "name": "bPickA",
+     "type": "Booleano",
+     "value": "false",
+     "links": [
+      [
+       "K2Node_CallFunction_25",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "ReturnValue",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": [
+      [
+       "K2Node_CallFunction_30",
+       1
+      ]
+     ]
+    }
+   ]
+  },
+  "K2Node_VariableGet_23": {
+   "x": 11650,
+   "y": 5200,
+   "type": "|GetLandPrep",
+   "pins": [
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "LandPrep",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": [
+      [
+       "K2Node_CallFunction_30",
+       0
+      ]
+     ]
+    }
+   ]
+  },
+  "K2Node_CallFunction_30": {
+   "x": 12100,
+   "y": 5250,
+   "type": "Matemáticas|Interpolación|FInterpTo",
+   "pins": [
+    {
+     "dir": "in",
+     "idx": 0,
+     "name": "Current",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": [
+      [
+       "K2Node_VariableGet_23",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "in",
+     "idx": 1,
+     "name": "Target",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": [
+      [
+       "K2Node_CallFunction_29",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "in",
+     "idx": 2,
+     "name": "DeltaTime",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": [
+      [
+       "K2Node_Event_0",
+       2
+      ]
+     ]
+    },
+    {
+     "dir": "in",
+     "idx": 3,
+     "name": "InterpSpeed",
+     "type": "Flotante (doble precisión)",
+     "value": "14.0",
+     "links": []
+    },
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "ReturnValue",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": [
+      [
+       "K2Node_VariableSet_21",
+       1
+      ]
+     ]
+    }
+   ]
+  },
+  "K2Node_VariableSet_21": {
+   "x": 12550,
+   "y": 5150,
+   "type": "|SetLandPrep",
+   "pins": [
+    {
+     "dir": "in",
+     "idx": 0,
+     "name": "execute",
+     "type": "Ejecución",
+     "value": "",
+     "links": [
+      [
+       "K2Node_VariableSet_20",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "in",
+     "idx": 1,
+     "name": "LandPrep",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": [
+      [
+       "K2Node_CallFunction_30",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "then",
+     "type": "Ejecución",
+     "value": "",
+     "links": []
+    },
+    {
+     "dir": "out",
+     "idx": 1,
+     "name": "Output_Get",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": []
+    }
+   ]
+  },
+  "K2Node_CallFunction_0": {
+   "x": 1500,
+   "y": 6250,
+   "type": "|UpdateProceduralVariables",
+   "pins": [
+    {
+     "dir": "in",
+     "idx": 0,
+     "name": "execute",
+     "type": "Ejecución",
+     "value": "",
+     "links": [
+      [
+       "K2Node_ExecutionSequence_0",
+       4
+      ]
+     ]
+    },
+    {
+     "dir": "in",
+     "idx": 1,
+     "name": "self",
+     "type": "Self Referencia a objeto",
+     "value": "",
+     "links": []
+    },
+    {
+     "dir": "in",
+     "idx": 2,
+     "name": "DeltaTimeX",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": [
+      [
+       "K2Node_Event_0",
+       2
+      ]
+     ]
+    },
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "then",
+     "type": "Ejecución",
+     "value": "",
+     "links": []
+    }
+   ]
+  }
+ },
+ "UpdateProceduralVariables": {
+  "K2Node_FunctionEntry_0": {
+   "x": 100,
+   "y": 5550,
+   "type": "|UpdateProceduralVariables",
+   "pins": [
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "then",
+     "type": "Ejecución",
+     "value": "",
+     "links": [
+      [
+       "K2Node_ExecutionSequence_0",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "out",
+     "idx": 1,
+     "name": "DeltaTimeX",
+     "type": "Flotante (doble precisión)",
+     "value": "",
+     "links": [
+      [
+       "K2Node_CallFunction_1",
+       2
+      ],
+      [
+       "K2Node_PromotableOperator_7",
+       1
+      ],
+      [
+       "K2Node_CallFunction_15",
+       2
+      ],
+      [
+       "K2Node_CallFunction_29",
+       2
+      ],
+      [
+       "K2Node_CallFunction_34",
+       2
+      ],
+      [
+       "K2Node_CallFunction_36",
+       2
+      ]
+     ]
+    }
+   ]
+  },
+  "K2Node_ExecutionSequence_0": {
+   "x": 500,
+   "y": 5550,
+   "type": "Utilidades|ControlDeFlujo|Secuencia",
+   "pins": [
+    {
+     "dir": "in",
+     "idx": 0,
+     "name": "execute",
+     "type": "Ejecución",
+     "value": "",
+     "links": [
+      [
+       "K2Node_FunctionEntry_0",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "then_0",
+     "type": "Ejecución",
+     "value": "",
+     "links": [
+      [
+       "K2Node_VariableSet_0",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "out",
+     "idx": 1,
+     "name": "then_1",
+     "type": "Ejecución",
+     "value": "",
+     "links": [
+      [
+       "K2Node_VariableSet_3",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "out",
+     "idx": 2,
+     "name": "then_2",
+     "type": "Ejecución",
+     "value": "",
+     "links": [
+      [
+       "K2Node_CallFunction_26",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "out",
+     "idx": 3,
+     "name": "then_3",
+     "type": "Ejecución",
+     "value": "",
+     "links": [
+      [
+       "K2Node_VariableSet_8",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "out",
+     "idx": 4,
+     "name": "then_4",
+     "type": "Ejecución",
+     "value": "",
+     "links": [
+      [
+       "K2Node_VariableSet_9",
+       0
+      ]
+     ]
+    }
+   ]
+  },
+  "K2Node_VariableGet_1": {
+   "x": 1100,
+   "y": 4550,
+   "type": "|GetGroundSpeed",
+   "pins": [
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "GroundSpeed",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": [
+      [
+       "K2Node_PromotableOperator_0",
+       0
+      ]
+     ]
+    }
+   ]
+  },
+  "K2Node_PromotableOperator_0": {
+   "x": 1400,
+   "y": 4550,
+   "type": "Matemáticas|Float|float/float",
+   "pins": [
+    {
+     "dir": "in",
+     "idx": 0,
+     "name": "A",
+     "type": "Flotante (doble precisión)",
+     "value": "",
+     "links": [
+      [
+       "K2Node_VariableGet_1",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "in",
+     "idx": 1,
+     "name": "B",
+     "type": "Flotante (doble precisión)",
+     "value": "600.0",
+     "links": []
+    },
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "ReturnValue",
+     "type": "Flotante (doble precisión)",
+     "value": "",
+     "links": [
+      [
+       "K2Node_PromotableOperator_1",
+       0
+      ]
+     ]
+    }
+   ]
+  },
+  "K2Node_PromotableOperator_1": {
+   "x": 1800,
+   "y": 4550,
+   "type": "Matemáticas|Float|float*float",
+   "pins": [
+    {
+     "dir": "in",
+     "idx": 0,
+     "name": "A",
+     "type": "Flotante (doble precisión)",
+     "value": "",
+     "links": [
+      [
+       "K2Node_PromotableOperator_0",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "in",
+     "idx": 1,
+     "name": "B",
+     "type": "Flotante (doble precisión)",
+     "value": "",
+     "links": []
+    },
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "ReturnValue",
+     "type": "Flotante (doble precisión)",
+     "value": "",
+     "links": [
+      [
+       "K2Node_CallFunction_0",
+       0
+      ]
+     ]
+    }
+   ]
+  },
+  "K2Node_CallFunction_0": {
+   "x": 2150,
+   "y": 4550,
+   "type": "Matemáticas|Float|Clamp(Float)",
+   "pins": [
+    {
+     "dir": "in",
+     "idx": 0,
+     "name": "Value",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": [
+      [
+       "K2Node_PromotableOperator_1",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "in",
+     "idx": 1,
+     "name": "Min",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": []
+    },
+    {
+     "dir": "in",
+     "idx": 2,
+     "name": "Max",
+     "type": "Flotante (doble precisión)",
+     "value": "7.0",
+     "links": []
+    },
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "ReturnValue",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": [
+      [
+       "K2Node_CallFunction_1",
+       1
+      ]
+     ]
+    }
+   ]
+  },
+  "K2Node_VariableGet_2": {
+   "x": 2800,
+   "y": 4600,
+   "type": "|GetLeanPitch",
+   "pins": [
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "LeanPitch",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": [
+      [
+       "K2Node_CallFunction_1",
+       0
+      ]
+     ]
+    }
+   ]
+  },
+  "K2Node_CallFunction_1": {
+   "x": 3100,
+   "y": 4600,
+   "type": "Matemáticas|Interpolación|FInterpTo",
+   "pins": [
+    {
+     "dir": "in",
+     "idx": 0,
+     "name": "Current",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": [
+      [
+       "K2Node_VariableGet_2",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "in",
+     "idx": 1,
+     "name": "Target",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": [
+      [
+       "K2Node_CallFunction_0",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "in",
+     "idx": 2,
+     "name": "DeltaTime",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": [
+      [
+       "K2Node_FunctionEntry_0",
+       1
+      ]
+     ]
+    },
+    {
+     "dir": "in",
+     "idx": 3,
+     "name": "InterpSpeed",
+     "type": "Flotante (doble precisión)",
+     "value": "6.0",
+     "links": []
+    },
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "ReturnValue",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": [
+      [
+       "K2Node_VariableSet_0",
+       1
+      ]
+     ]
+    }
+   ]
+  },
+  "K2Node_VariableSet_0": {
+   "x": 3550,
+   "y": 4550,
+   "type": "|SetLeanPitch",
+   "pins": [
+    {
+     "dir": "in",
+     "idx": 0,
+     "name": "execute",
+     "type": "Ejecución",
+     "value": "",
+     "links": [
+      [
+       "K2Node_ExecutionSequence_0",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "in",
+     "idx": 1,
+     "name": "LeanPitch",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": [
+      [
+       "K2Node_CallFunction_1",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "then",
+     "type": "Ejecución",
+     "value": "",
+     "links": []
+    },
+    {
+     "dir": "out",
+     "idx": 1,
+     "name": "Output_Get",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": []
+    }
+   ]
+  },
+  "K2Node_VariableGet_6": {
+   "x": 1100,
+   "y": 5250,
+   "type": "|GetCharacter",
+   "pins": [
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "Character",
+     "type": "Character Referencia a objeto",
+     "value": "",
+     "links": [
+      [
+       "K2Node_CallFunction_12",
+       0
+      ]
+     ]
+    }
+   ]
+  },
+  "K2Node_CallFunction_12": {
+   "x": 1400,
+   "y": 5250,
+   "type": "Transformación|GetActorRotation",
+   "pins": [
+    {
+     "dir": "in",
+     "idx": 0,
+     "name": "self",
+     "type": "Actor Referencia a objeto",
+     "value": "",
+     "links": [
+      [
+       "K2Node_VariableGet_6",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "ReturnValue",
+     "type": "Rotator",
+     "value": "0, 0, 0",
+     "links": [
+      [
+       "K2Node_CallFunction_13",
+       0
+      ]
+     ]
+    }
+   ]
+  },
+  "K2Node_CallFunction_13": {
+   "x": 1750,
+   "y": 5250,
+   "type": "Matemáticas|Rotación|BreakRotator",
+   "pins": [
+    {
+     "dir": "in",
+     "idx": 0,
+     "name": "InRot",
+     "type": "Rotator",
+     "value": "0, 0, 0",
+     "links": [
+      [
+       "K2Node_CallFunction_12",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "Roll",
+     "type": "Flotante (precisión sencilla)",
+     "value": "0.0",
+     "links": []
+    },
+    {
+     "dir": "out",
+     "idx": 1,
+     "name": "Pitch",
+     "type": "Flotante (precisión sencilla)",
+     "value": "0.0",
+     "links": []
+    },
+    {
+     "dir": "out",
+     "idx": 2,
+     "name": "Yaw",
+     "type": "Flotante (precisión sencilla)",
+     "value": "0.0",
+     "links": [
+      [
+       "K2Node_PromotableOperator_6",
+       0
+      ],
+      [
+       "K2Node_VariableSet_4",
+       1
+      ]
+     ]
+    }
+   ]
+  },
+  "K2Node_VariableGet_7": {
+   "x": 1750,
+   "y": 5450,
+   "type": "|GetPreviousYaw",
+   "pins": [
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "PreviousYaw",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": [
+      [
+       "K2Node_PromotableOperator_6",
+       1
+      ]
+     ]
+    }
+   ]
+  },
+  "K2Node_PromotableOperator_6": {
+   "x": 2100,
+   "y": 5350,
+   "type": "Matemáticas|Float|float-float",
+   "pins": [
+    {
+     "dir": "in",
+     "idx": 0,
+     "name": "A",
+     "type": "Flotante (doble precisión)",
+     "value": "",
+     "links": [
+      [
+       "K2Node_CallFunction_13",
+       2
+      ]
+     ]
+    },
+    {
+     "dir": "in",
+     "idx": 1,
+     "name": "B",
+     "type": "Flotante (doble precisión)",
+     "value": "",
+     "links": [
+      [
+       "K2Node_VariableGet_7",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "ReturnValue",
+     "type": "Flotante (doble precisión)",
+     "value": "",
+     "links": [
+      [
+       "K2Node_PromotableOperator_7",
+       0
+      ]
+     ]
+    }
+   ]
+  },
+  "K2Node_PromotableOperator_7": {
+   "x": 2450,
+   "y": 5400,
+   "type": "Matemáticas|Float|float/float",
+   "pins": [
+    {
+     "dir": "in",
+     "idx": 0,
+     "name": "A",
+     "type": "Flotante (doble precisión)",
+     "value": "",
+     "links": [
+      [
+       "K2Node_PromotableOperator_6",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "in",
+     "idx": 1,
+     "name": "B",
+     "type": "Flotante (doble precisión)",
+     "value": "",
+     "links": [
+      [
+       "K2Node_FunctionEntry_0",
+       1
+      ]
+     ]
+    },
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "ReturnValue",
+     "type": "Flotante (doble precisión)",
+     "value": "",
+     "links": [
+      [
+       "K2Node_PromotableOperator_8",
+       0
+      ]
+     ]
+    }
+   ]
+  },
+  "K2Node_PromotableOperator_8": {
+   "x": 2800,
+   "y": 5400,
+   "type": "Matemáticas|Float|float*float",
+   "pins": [
+    {
+     "dir": "in",
+     "idx": 0,
+     "name": "A",
+     "type": "Flotante (doble precisión)",
+     "value": "",
+     "links": [
+      [
+       "K2Node_PromotableOperator_7",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "in",
+     "idx": 1,
+     "name": "B",
+     "type": "Flotante (doble precisión)",
+     "value": "",
+     "links": []
+    },
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "ReturnValue",
+     "type": "Flotante (doble precisión)",
+     "value": "",
+     "links": [
+      [
+       "K2Node_CallFunction_14",
+       0
+      ]
+     ]
+    }
+   ]
+  },
+  "K2Node_CallFunction_14": {
+   "x": 3150,
+   "y": 5400,
+   "type": "Matemáticas|Float|Clamp(Float)",
+   "pins": [
+    {
+     "dir": "in",
+     "idx": 0,
+     "name": "Value",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": [
+      [
+       "K2Node_PromotableOperator_8",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "in",
+     "idx": 1,
+     "name": "Min",
+     "type": "Flotante (doble precisión)",
+     "value": "-8.0",
+     "links": []
+    },
+    {
+     "dir": "in",
+     "idx": 2,
+     "name": "Max",
+     "type": "Flotante (doble precisión)",
+     "value": "8.0",
+     "links": []
+    },
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "ReturnValue",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": [
+      [
+       "K2Node_CallFunction_15",
+       1
+      ]
+     ]
+    }
+   ]
+  },
+  "K2Node_VariableGet_8": {
+   "x": 3800,
+   "y": 5300,
+   "type": "|GetLeanRoll",
+   "pins": [
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "LeanRoll",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": [
+      [
+       "K2Node_CallFunction_15",
+       0
+      ]
+     ]
+    }
+   ]
+  },
+  "K2Node_CallFunction_15": {
+   "x": 4100,
+   "y": 5300,
+   "type": "Matemáticas|Interpolación|FInterpTo",
+   "pins": [
+    {
+     "dir": "in",
+     "idx": 0,
+     "name": "Current",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": [
+      [
+       "K2Node_VariableGet_8",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "in",
+     "idx": 1,
+     "name": "Target",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": [
+      [
+       "K2Node_CallFunction_14",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "in",
+     "idx": 2,
+     "name": "DeltaTime",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": [
+      [
+       "K2Node_FunctionEntry_0",
+       1
+      ]
+     ]
+    },
+    {
+     "dir": "in",
+     "idx": 3,
+     "name": "InterpSpeed",
+     "type": "Flotante (doble precisión)",
+     "value": "8.0",
+     "links": []
+    },
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "ReturnValue",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": [
+      [
+       "K2Node_VariableSet_3",
+       1
+      ]
+     ]
+    }
+   ]
+  },
+  "K2Node_VariableSet_3": {
+   "x": 4550,
+   "y": 5250,
+   "type": "|SetLeanRoll",
+   "pins": [
+    {
+     "dir": "in",
+     "idx": 0,
+     "name": "execute",
+     "type": "Ejecución",
+     "value": "",
+     "links": [
+      [
+       "K2Node_ExecutionSequence_0",
+       1
+      ]
+     ]
+    },
+    {
+     "dir": "in",
+     "idx": 1,
+     "name": "LeanRoll",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": [
+      [
+       "K2Node_CallFunction_15",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "then",
+     "type": "Ejecución",
+     "value": "",
+     "links": [
+      [
+       "K2Node_VariableSet_4",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "out",
+     "idx": 1,
+     "name": "Output_Get",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": []
+    }
+   ]
+  },
+  "K2Node_VariableSet_4": {
+   "x": 4900,
+   "y": 5250,
+   "type": "|SetPreviousYaw",
+   "pins": [
+    {
+     "dir": "in",
+     "idx": 0,
+     "name": "execute",
+     "type": "Ejecución",
+     "value": "",
+     "links": [
+      [
+       "K2Node_VariableSet_3",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "in",
+     "idx": 1,
+     "name": "PreviousYaw",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": [
+      [
+       "K2Node_CallFunction_13",
+       2
+      ]
+     ]
+    },
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "then",
+     "type": "Ejecución",
+     "value": "",
+     "links": []
+    },
+    {
+     "dir": "out",
+     "idx": 1,
+     "name": "Output_Get",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": []
+    }
+   ]
+  },
+  "K2Node_CallFunction_22": {
+   "x": 2800,
+   "y": 6150,
+   "type": "Animación|GetOwningComponent",
+   "pins": [
+    {
+     "dir": "in",
+     "idx": 0,
+     "name": "self",
+     "type": "Anim Instance Referencia a objeto",
+     "value": "",
+     "links": []
+    },
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "ReturnValue",
+     "type": "Skeletal Mesh Component Referencia a objeto",
+     "value": "",
+     "links": [
+      [
+       "K2Node_CallFunction_23",
+       0
+      ],
+      [
+       "K2Node_CallFunction_30",
+       0
+      ]
+     ]
+    }
+   ]
+  },
+  "K2Node_CallFunction_23": {
+   "x": 3250,
+   "y": 6150,
+   "type": "Transformación|GetSocketLocation",
+   "pins": [
+    {
+     "dir": "in",
+     "idx": 0,
+     "name": "self",
+     "type": "Componente De Escena Referencia a objeto",
+     "value": "",
+     "links": [
+      [
+       "K2Node_CallFunction_22",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "in",
+     "idx": 1,
+     "name": "InSocketName",
+     "type": "Nombre",
+     "value": "LeftFoot",
+     "links": []
+    },
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "ReturnValue",
+     "type": "Vector",
+     "value": "0, 0, 0",
+     "links": [
+      [
+       "K2Node_PromotableOperator_11",
+       0
+      ],
+      [
+       "K2Node_PromotableOperator_12",
+       0
+      ],
+      [
+       "K2Node_CallFunction_47",
+       0
+      ]
+     ]
+    }
+   ]
+  },
+  "K2Node_CallFunction_24": {
+   "x": 6150,
+   "y": 7450,
+   "type": "Matemáticas|Vector|MakeVector",
+   "pins": [
+    {
+     "dir": "in",
+     "idx": 0,
+     "name": "X",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": []
+    },
+    {
+     "dir": "in",
+     "idx": 1,
+     "name": "Y",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": []
+    },
+    {
+     "dir": "in",
+     "idx": 2,
+     "name": "Z",
+     "type": "Flotante (doble precisión)",
+     "value": "30.0",
+     "links": []
+    },
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "ReturnValue",
+     "type": "Vector",
+     "value": "0, 0, 0",
+     "links": [
+      [
+       "K2Node_PromotableOperator_11",
+       1
+      ],
+      [
+       "K2Node_PromotableOperator_14",
+       1
+      ]
+     ]
+    }
+   ]
+  },
+  "K2Node_CallFunction_25": {
+   "x": 6150,
+   "y": 7800,
+   "type": "Matemáticas|Vector|MakeVector",
+   "pins": [
+    {
+     "dir": "in",
+     "idx": 0,
+     "name": "X",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": []
+    },
+    {
+     "dir": "in",
+     "idx": 1,
+     "name": "Y",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": []
+    },
+    {
+     "dir": "in",
+     "idx": 2,
+     "name": "Z",
+     "type": "Flotante (doble precisión)",
+     "value": "65.0",
+     "links": []
+    },
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "ReturnValue",
+     "type": "Vector",
+     "value": "0, 0, 0",
+     "links": [
+      [
+       "K2Node_PromotableOperator_12",
+       1
+      ],
+      [
+       "K2Node_PromotableOperator_15",
+       1
+      ]
+     ]
+    }
+   ]
+  },
+  "K2Node_PromotableOperator_11": {
+   "x": 6550,
+   "y": 7350,
+   "type": "Matemáticas|Vector|vector+vector",
+   "pins": [
+    {
+     "dir": "in",
+     "idx": 0,
+     "name": "A",
+     "type": "Vector",
+     "value": "",
+     "links": [
+      [
+       "K2Node_CallFunction_23",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "in",
+     "idx": 1,
+     "name": "B",
+     "type": "Vector",
+     "value": "",
+     "links": [
+      [
+       "K2Node_CallFunction_24",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "ReturnValue",
+     "type": "Vector",
+     "value": "",
+     "links": []
+    }
+   ]
+  },
+  "K2Node_PromotableOperator_12": {
+   "x": 6550,
+   "y": 7750,
+   "type": "Matemáticas|Vector|vector-vector",
+   "pins": [
+    {
+     "dir": "in",
+     "idx": 0,
+     "name": "A",
+     "type": "Vector",
+     "value": "",
+     "links": [
+      [
+       "K2Node_CallFunction_23",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "in",
+     "idx": 1,
+     "name": "B",
+     "type": "Vector",
+     "value": "",
+     "links": [
+      [
+       "K2Node_CallFunction_25",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "ReturnValue",
+     "type": "Vector",
+     "value": "",
+     "links": []
+    }
+   ]
+  },
+  "K2Node_CallFunction_26": {
+   "x": 4700,
+   "y": 6050,
+   "type": "Colisión|LineTraceByChannel",
+   "pins": [
+    {
+     "dir": "in",
+     "idx": 0,
+     "name": "execute",
+     "type": "Ejecución",
+     "value": "",
+     "links": [
+      [
+       "K2Node_ExecutionSequence_0",
+       2
+      ]
+     ]
+    },
+    {
+     "dir": "in",
+     "idx": 1,
+     "name": "Start",
+     "type": "Vector",
+     "value": "0, 0, 0",
+     "links": [
+      [
+       "K2Node_CallFunction_48",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "in",
+     "idx": 2,
+     "name": "End",
+     "type": "Vector",
+     "value": "0, 0, 0",
+     "links": [
+      [
+       "K2Node_CallFunction_49",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "in",
+     "idx": 3,
+     "name": "TraceChannel",
+     "type": "Enumerador ETraceTypeQuery",
+     "value": "TraceTypeQuery1",
+     "links": []
+    },
+    {
+     "dir": "in",
+     "idx": 4,
+     "name": "bTraceComplex",
+     "type": "Booleano",
+     "value": "false",
+     "links": []
+    },
+    {
+     "dir": "in",
+     "idx": 5,
+     "name": "ActorsToIgnore",
+     "type": "Matriz de Actor Referencia a objetos",
+     "value": "",
+     "links": [
+      [
+       "K2Node_MakeArray_0",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "in",
+     "idx": 6,
+     "name": "DrawDebugType",
+     "type": "Enumerador EDrawDebugTrace",
+     "value": "None",
+     "links": []
+    },
+    {
+     "dir": "in",
+     "idx": 7,
+     "name": "bIgnoreSelf",
+     "type": "Booleano",
+     "value": "true",
+     "links": []
+    },
+    {
+     "dir": "in",
+     "idx": 8,
+     "name": "TraceColor",
+     "type": "Linear Color Estructura",
+     "value": "(R=1.000000,G=0.000000,B=0.000000,A=1.000000)",
+     "links": []
+    },
+    {
+     "dir": "in",
+     "idx": 9,
+     "name": "TraceHitColor",
+     "type": "Linear Color Estructura",
+     "value": "(R=0.000000,G=1.000000,B=0.000000,A=1.000000)",
+     "links": []
+    },
+    {
+     "dir": "in",
+     "idx": 10,
+     "name": "DrawTime",
+     "type": "Flotante (precisión sencilla)",
+     "value": "5.000000",
+     "links": []
+    },
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "then",
+     "type": "Ejecución",
+     "value": "",
+     "links": [
+      [
+       "K2Node_VariableSet_5",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "out",
+     "idx": 1,
+     "name": "OutHit",
+     "type": "Hit Result Estructura",
+     "value": "",
+     "links": [
+      [
+       "K2Node_CallFunction_27",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "out",
+     "idx": 2,
+     "name": "ReturnValue",
+     "type": "Booleano",
+     "value": "false",
+     "links": []
+    }
+   ]
+  },
+  "K2Node_CallFunction_27": {
+   "x": 5450,
+   "y": 6200,
+   "type": "Colisión|BreakHitResult",
+   "pins": [
+    {
+     "dir": "in",
+     "idx": 0,
+     "name": "Hit",
+     "type": "Hit Result Estructura (por referencia)",
+     "value": "",
+     "links": [
+      [
+       "K2Node_CallFunction_26",
+       1
+      ]
+     ]
+    },
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "bBlockingHit",
+     "type": "Booleano",
+     "value": "false",
+     "links": [
+      [
+       "K2Node_CommutativeAssociativeBinaryOperator_5",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "out",
+     "idx": 1,
+     "name": "bInitialOverlap",
+     "type": "Booleano",
+     "value": "false",
+     "links": []
+    },
+    {
+     "dir": "out",
+     "idx": 2,
+     "name": "Time",
+     "type": "Flotante (precisión sencilla)",
+     "value": "0.0",
+     "links": []
+    },
+    {
+     "dir": "out",
+     "idx": 3,
+     "name": "Distance",
+     "type": "Flotante (precisión sencilla)",
+     "value": "0.0",
+     "links": [
+      [
+       "K2Node_PromotableOperator_13",
+       1
+      ]
+     ]
+    },
+    {
+     "dir": "out",
+     "idx": 4,
+     "name": "Location",
+     "type": "Vector",
+     "value": "0, 0, 0",
+     "links": []
+    },
+    {
+     "dir": "out",
+     "idx": 5,
+     "name": "ImpactPoint",
+     "type": "Vector",
+     "value": "0, 0, 0",
+     "links": []
+    },
+    {
+     "dir": "out",
+     "idx": 6,
+     "name": "Normal",
+     "type": "Vector",
+     "value": "0, 0, 0",
+     "links": []
+    },
+    {
+     "dir": "out",
+     "idx": 7,
+     "name": "ImpactNormal",
+     "type": "Vector",
+     "value": "0, 0, 0",
+     "links": []
+    },
+    {
+     "dir": "out",
+     "idx": 8,
+     "name": "PhysMat",
+     "type": "Physical Material Referencia a objeto",
+     "value": "",
+     "links": []
+    },
+    {
+     "dir": "out",
+     "idx": 9,
+     "name": "HitActor",
+     "type": "Actor Referencia a objeto",
+     "value": "",
+     "links": []
+    },
+    {
+     "dir": "out",
+     "idx": 10,
+     "name": "HitComponent",
+     "type": "Primitive Component Referencia a objeto",
+     "value": "",
+     "links": []
+    },
+    {
+     "dir": "out",
+     "idx": 11,
+     "name": "HitBoneName",
+     "type": "Nombre",
+     "value": "None",
+     "links": []
+    },
+    {
+     "dir": "out",
+     "idx": 12,
+     "name": "BoneName",
+     "type": "Nombre",
+     "value": "None",
+     "links": []
+    },
+    {
+     "dir": "out",
+     "idx": 13,
+     "name": "HitItem",
+     "type": "Entero",
+     "value": "0",
+     "links": []
+    },
+    {
+     "dir": "out",
+     "idx": 14,
+     "name": "ElementIndex",
+     "type": "Entero",
+     "value": "0",
+     "links": []
+    },
+    {
+     "dir": "out",
+     "idx": 15,
+     "name": "FaceIndex",
+     "type": "Entero",
+     "value": "0",
+     "links": []
+    },
+    {
+     "dir": "out",
+     "idx": 16,
+     "name": "TraceStart",
+     "type": "Vector",
+     "value": "0, 0, 0",
+     "links": []
+    },
+    {
+     "dir": "out",
+     "idx": 17,
+     "name": "TraceEnd",
+     "type": "Vector",
+     "value": "0, 0, 0",
+     "links": []
+    }
+   ]
+  },
+  "K2Node_PromotableOperator_13": {
+   "x": 5800,
+   "y": 6300,
+   "type": "Matemáticas|Float|float-float",
+   "pins": [
+    {
+     "dir": "in",
+     "idx": 0,
+     "name": "A",
+     "type": "Flotante (doble precisión)",
+     "value": "90.0",
+     "links": []
+    },
+    {
+     "dir": "in",
+     "idx": 1,
+     "name": "B",
+     "type": "Flotante (doble precisión)",
+     "value": "",
+     "links": [
+      [
+       "K2Node_CallFunction_27",
+       3
+      ]
+     ]
+    },
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "ReturnValue",
+     "type": "Flotante (doble precisión)",
+     "value": "",
+     "links": [
+      [
+       "K2Node_Select_1",
+       1
+      ]
+     ]
+    }
+   ]
+  },
+  "K2Node_Select_1": {
+   "x": 6200,
+   "y": 6100,
+   "type": "Utilidades|Seleccionar",
+   "pins": [
+    {
+     "dir": "in",
+     "idx": 0,
+     "name": "Option 0",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": []
+    },
+    {
+     "dir": "in",
+     "idx": 1,
+     "name": "Option 1",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": [
+      [
+       "K2Node_PromotableOperator_13",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "in",
+     "idx": 2,
+     "name": "Index",
+     "type": "Booleano",
+     "value": "false",
+     "links": [
+      [
+       "K2Node_CommutativeAssociativeBinaryOperator_5",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "ReturnValue",
+     "type": "Flotante (doble precisión)",
+     "value": "",
+     "links": [
+      [
+       "K2Node_CallFunction_28",
+       0
+      ]
+     ]
+    }
+   ]
+  },
+  "K2Node_CallFunction_28": {
+   "x": 6650,
+   "y": 6100,
+   "type": "Matemáticas|Float|Clamp(Float)",
+   "pins": [
+    {
+     "dir": "in",
+     "idx": 0,
+     "name": "Value",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": [
+      [
+       "K2Node_Select_1",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "in",
+     "idx": 1,
+     "name": "Min",
+     "type": "Flotante (doble precisión)",
+     "value": "-40.0",
+     "links": []
+    },
+    {
+     "dir": "in",
+     "idx": 2,
+     "name": "Max",
+     "type": "Flotante (doble precisión)",
+     "value": "30.0",
+     "links": []
+    },
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "ReturnValue",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": [
+      [
+       "K2Node_CallFunction_29",
+       1
+      ]
+     ]
+    }
+   ]
+  },
+  "K2Node_VariableGet_9": {
+   "x": 7300,
+   "y": 6100,
+   "type": "|GetFootOffsetL",
+   "pins": [
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "FootOffsetL",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": [
+      [
+       "K2Node_CallFunction_29",
+       0
+      ]
+     ]
+    }
+   ]
+  },
+  "K2Node_CallFunction_29": {
+   "x": 7600,
+   "y": 6100,
+   "type": "Matemáticas|Interpolación|FInterpTo",
+   "pins": [
+    {
+     "dir": "in",
+     "idx": 0,
+     "name": "Current",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": [
+      [
+       "K2Node_VariableGet_9",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "in",
+     "idx": 1,
+     "name": "Target",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": [
+      [
+       "K2Node_CallFunction_28",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "in",
+     "idx": 2,
+     "name": "DeltaTime",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": [
+      [
+       "K2Node_FunctionEntry_0",
+       1
+      ]
+     ]
+    },
+    {
+     "dir": "in",
+     "idx": 3,
+     "name": "InterpSpeed",
+     "type": "Flotante (doble precisión)",
+     "value": "12.0",
+     "links": []
+    },
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "ReturnValue",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": [
+      [
+       "K2Node_VariableSet_5",
+       1
+      ],
+      [
+       "K2Node_CommutativeAssociativeBinaryOperator_1",
+       0
+      ]
+     ]
+    }
+   ]
+  },
+  "K2Node_VariableSet_5": {
+   "x": 8050,
+   "y": 6050,
+   "type": "|SetFootOffsetL",
+   "pins": [
+    {
+     "dir": "in",
+     "idx": 0,
+     "name": "execute",
+     "type": "Ejecución",
+     "value": "",
+     "links": [
+      [
+       "K2Node_CallFunction_26",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "in",
+     "idx": 1,
+     "name": "FootOffsetL",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": [
+      [
+       "K2Node_CallFunction_29",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "then",
+     "type": "Ejecución",
+     "value": "",
+     "links": [
+      [
+       "K2Node_CallFunction_31",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "out",
+     "idx": 1,
+     "name": "Output_Get",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": []
+    }
+   ]
+  },
+  "K2Node_CallFunction_30": {
+   "x": 4700,
+   "y": 7350,
+   "type": "Transformación|GetSocketLocation",
+   "pins": [
+    {
+     "dir": "in",
+     "idx": 0,
+     "name": "self",
+     "type": "Componente De Escena Referencia a objeto",
+     "value": "",
+     "links": [
+      [
+       "K2Node_CallFunction_22",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "in",
+     "idx": 1,
+     "name": "InSocketName",
+     "type": "Nombre",
+     "value": "RightFoot",
+     "links": []
+    },
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "ReturnValue",
+     "type": "Vector",
+     "value": "0, 0, 0",
+     "links": [
+      [
+       "K2Node_PromotableOperator_14",
+       0
+      ],
+      [
+       "K2Node_PromotableOperator_15",
+       0
+      ],
+      [
+       "K2Node_CallFunction_50",
+       0
+      ]
+     ]
+    }
+   ]
+  },
+  "K2Node_PromotableOperator_14": {
+   "x": 6550,
+   "y": 7550,
+   "type": "Matemáticas|Vector|vector+vector",
+   "pins": [
+    {
+     "dir": "in",
+     "idx": 0,
+     "name": "A",
+     "type": "Vector",
+     "value": "",
+     "links": [
+      [
+       "K2Node_CallFunction_30",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "in",
+     "idx": 1,
+     "name": "B",
+     "type": "Vector",
+     "value": "",
+     "links": [
+      [
+       "K2Node_CallFunction_24",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "ReturnValue",
+     "type": "Vector",
+     "value": "",
+     "links": []
+    }
+   ]
+  },
+  "K2Node_PromotableOperator_15": {
+   "x": 6550,
+   "y": 7950,
+   "type": "Matemáticas|Vector|vector-vector",
+   "pins": [
+    {
+     "dir": "in",
+     "idx": 0,
+     "name": "A",
+     "type": "Vector",
+     "value": "",
+     "links": [
+      [
+       "K2Node_CallFunction_30",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "in",
+     "idx": 1,
+     "name": "B",
+     "type": "Vector",
+     "value": "",
+     "links": [
+      [
+       "K2Node_CallFunction_25",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "ReturnValue",
+     "type": "Vector",
+     "value": "",
+     "links": []
+    }
+   ]
+  },
+  "K2Node_CallFunction_31": {
+   "x": 8700,
+   "y": 6050,
+   "type": "Colisión|LineTraceByChannel",
+   "pins": [
+    {
+     "dir": "in",
+     "idx": 0,
+     "name": "execute",
+     "type": "Ejecución",
+     "value": "",
+     "links": [
+      [
+       "K2Node_VariableSet_5",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "in",
+     "idx": 1,
+     "name": "Start",
+     "type": "Vector",
+     "value": "0, 0, 0",
+     "links": [
+      [
+       "K2Node_CallFunction_51",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "in",
+     "idx": 2,
+     "name": "End",
+     "type": "Vector",
+     "value": "0, 0, 0",
+     "links": [
+      [
+       "K2Node_CallFunction_52",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "in",
+     "idx": 3,
+     "name": "TraceChannel",
+     "type": "Enumerador ETraceTypeQuery",
+     "value": "TraceTypeQuery1",
+     "links": []
+    },
+    {
+     "dir": "in",
+     "idx": 4,
+     "name": "bTraceComplex",
+     "type": "Booleano",
+     "value": "false",
+     "links": []
+    },
+    {
+     "dir": "in",
+     "idx": 5,
+     "name": "ActorsToIgnore",
+     "type": "Matriz de Actor Referencia a objetos",
+     "value": "",
+     "links": [
+      [
+       "K2Node_MakeArray_0",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "in",
+     "idx": 6,
+     "name": "DrawDebugType",
+     "type": "Enumerador EDrawDebugTrace",
+     "value": "None",
+     "links": []
+    },
+    {
+     "dir": "in",
+     "idx": 7,
+     "name": "bIgnoreSelf",
+     "type": "Booleano",
+     "value": "true",
+     "links": []
+    },
+    {
+     "dir": "in",
+     "idx": 8,
+     "name": "TraceColor",
+     "type": "Linear Color Estructura",
+     "value": "(R=1.000000,G=0.000000,B=0.000000,A=1.000000)",
+     "links": []
+    },
+    {
+     "dir": "in",
+     "idx": 9,
+     "name": "TraceHitColor",
+     "type": "Linear Color Estructura",
+     "value": "(R=0.000000,G=1.000000,B=0.000000,A=1.000000)",
+     "links": []
+    },
+    {
+     "dir": "in",
+     "idx": 10,
+     "name": "DrawTime",
+     "type": "Flotante (precisión sencilla)",
+     "value": "5.000000",
+     "links": []
+    },
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "then",
+     "type": "Ejecución",
+     "value": "",
+     "links": [
+      [
+       "K2Node_VariableSet_6",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "out",
+     "idx": 1,
+     "name": "OutHit",
+     "type": "Hit Result Estructura",
+     "value": "",
+     "links": [
+      [
+       "K2Node_CallFunction_32",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "out",
+     "idx": 2,
+     "name": "ReturnValue",
+     "type": "Booleano",
+     "value": "false",
+     "links": []
+    }
+   ]
+  },
+  "K2Node_CallFunction_32": {
+   "x": 9450,
+   "y": 6100,
+   "type": "Colisión|BreakHitResult",
+   "pins": [
+    {
+     "dir": "in",
+     "idx": 0,
+     "name": "Hit",
+     "type": "Hit Result Estructura (por referencia)",
+     "value": "",
+     "links": [
+      [
+       "K2Node_CallFunction_31",
+       1
+      ]
+     ]
+    },
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "bBlockingHit",
+     "type": "Booleano",
+     "value": "false",
+     "links": [
+      [
+       "K2Node_CommutativeAssociativeBinaryOperator_6",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "out",
+     "idx": 1,
+     "name": "bInitialOverlap",
+     "type": "Booleano",
+     "value": "false",
+     "links": []
+    },
+    {
+     "dir": "out",
+     "idx": 2,
+     "name": "Time",
+     "type": "Flotante (precisión sencilla)",
+     "value": "0.0",
+     "links": []
+    },
+    {
+     "dir": "out",
+     "idx": 3,
+     "name": "Distance",
+     "type": "Flotante (precisión sencilla)",
+     "value": "0.0",
+     "links": [
+      [
+       "K2Node_PromotableOperator_16",
+       1
+      ]
+     ]
+    },
+    {
+     "dir": "out",
+     "idx": 4,
+     "name": "Location",
+     "type": "Vector",
+     "value": "0, 0, 0",
+     "links": []
+    },
+    {
+     "dir": "out",
+     "idx": 5,
+     "name": "ImpactPoint",
+     "type": "Vector",
+     "value": "0, 0, 0",
+     "links": []
+    },
+    {
+     "dir": "out",
+     "idx": 6,
+     "name": "Normal",
+     "type": "Vector",
+     "value": "0, 0, 0",
+     "links": []
+    },
+    {
+     "dir": "out",
+     "idx": 7,
+     "name": "ImpactNormal",
+     "type": "Vector",
+     "value": "0, 0, 0",
+     "links": []
+    },
+    {
+     "dir": "out",
+     "idx": 8,
+     "name": "PhysMat",
+     "type": "Physical Material Referencia a objeto",
+     "value": "",
+     "links": []
+    },
+    {
+     "dir": "out",
+     "idx": 9,
+     "name": "HitActor",
+     "type": "Actor Referencia a objeto",
+     "value": "",
+     "links": []
+    },
+    {
+     "dir": "out",
+     "idx": 10,
+     "name": "HitComponent",
+     "type": "Primitive Component Referencia a objeto",
+     "value": "",
+     "links": []
+    },
+    {
+     "dir": "out",
+     "idx": 11,
+     "name": "HitBoneName",
+     "type": "Nombre",
+     "value": "None",
+     "links": []
+    },
+    {
+     "dir": "out",
+     "idx": 12,
+     "name": "BoneName",
+     "type": "Nombre",
+     "value": "None",
+     "links": []
+    },
+    {
+     "dir": "out",
+     "idx": 13,
+     "name": "HitItem",
+     "type": "Entero",
+     "value": "0",
+     "links": []
+    },
+    {
+     "dir": "out",
+     "idx": 14,
+     "name": "ElementIndex",
+     "type": "Entero",
+     "value": "0",
+     "links": []
+    },
+    {
+     "dir": "out",
+     "idx": 15,
+     "name": "FaceIndex",
+     "type": "Entero",
+     "value": "0",
+     "links": []
+    },
+    {
+     "dir": "out",
+     "idx": 16,
+     "name": "TraceStart",
+     "type": "Vector",
+     "value": "0, 0, 0",
+     "links": []
+    },
+    {
+     "dir": "out",
+     "idx": 17,
+     "name": "TraceEnd",
+     "type": "Vector",
+     "value": "0, 0, 0",
+     "links": []
+    }
+   ]
+  },
+  "K2Node_PromotableOperator_16": {
+   "x": 9800,
+   "y": 6250,
+   "type": "Matemáticas|Float|float-float",
+   "pins": [
+    {
+     "dir": "in",
+     "idx": 0,
+     "name": "A",
+     "type": "Flotante (doble precisión)",
+     "value": "90.0",
+     "links": []
+    },
+    {
+     "dir": "in",
+     "idx": 1,
+     "name": "B",
+     "type": "Flotante (doble precisión)",
+     "value": "",
+     "links": [
+      [
+       "K2Node_CallFunction_32",
+       3
+      ]
+     ]
+    },
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "ReturnValue",
+     "type": "Flotante (doble precisión)",
+     "value": "",
+     "links": [
+      [
+       "K2Node_Select_2",
+       1
+      ]
+     ]
+    }
+   ]
+  },
+  "K2Node_Select_2": {
+   "x": 10200,
+   "y": 6100,
+   "type": "Utilidades|Seleccionar",
+   "pins": [
+    {
+     "dir": "in",
+     "idx": 0,
+     "name": "Option 0",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": []
+    },
+    {
+     "dir": "in",
+     "idx": 1,
+     "name": "Option 1",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": [
+      [
+       "K2Node_PromotableOperator_16",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "in",
+     "idx": 2,
+     "name": "Index",
+     "type": "Booleano",
+     "value": "false",
+     "links": [
+      [
+       "K2Node_CommutativeAssociativeBinaryOperator_6",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "ReturnValue",
+     "type": "Flotante (doble precisión)",
+     "value": "",
+     "links": [
+      [
+       "K2Node_CallFunction_33",
+       0
+      ]
+     ]
+    }
+   ]
+  },
+  "K2Node_CallFunction_33": {
+   "x": 10650,
+   "y": 6100,
+   "type": "Matemáticas|Float|Clamp(Float)",
+   "pins": [
+    {
+     "dir": "in",
+     "idx": 0,
+     "name": "Value",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": [
+      [
+       "K2Node_Select_2",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "in",
+     "idx": 1,
+     "name": "Min",
+     "type": "Flotante (doble precisión)",
+     "value": "-40.0",
+     "links": []
+    },
+    {
+     "dir": "in",
+     "idx": 2,
+     "name": "Max",
+     "type": "Flotante (doble precisión)",
+     "value": "30.0",
+     "links": []
+    },
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "ReturnValue",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": [
+      [
+       "K2Node_CallFunction_34",
+       1
+      ]
+     ]
+    }
+   ]
+  },
+  "K2Node_VariableGet_10": {
+   "x": 11300,
+   "y": 6100,
+   "type": "|GetFootOffsetR",
+   "pins": [
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "FootOffsetR",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": [
+      [
+       "K2Node_CallFunction_34",
+       0
+      ]
+     ]
+    }
+   ]
+  },
+  "K2Node_CallFunction_34": {
+   "x": 11600,
+   "y": 6100,
+   "type": "Matemáticas|Interpolación|FInterpTo",
+   "pins": [
+    {
+     "dir": "in",
+     "idx": 0,
+     "name": "Current",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": [
+      [
+       "K2Node_VariableGet_10",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "in",
+     "idx": 1,
+     "name": "Target",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": [
+      [
+       "K2Node_CallFunction_33",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "in",
+     "idx": 2,
+     "name": "DeltaTime",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": [
+      [
+       "K2Node_FunctionEntry_0",
+       1
+      ]
+     ]
+    },
+    {
+     "dir": "in",
+     "idx": 3,
+     "name": "InterpSpeed",
+     "type": "Flotante (doble precisión)",
+     "value": "12.0",
+     "links": []
+    },
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "ReturnValue",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": [
+      [
+       "K2Node_VariableSet_6",
+       1
+      ],
+      [
+       "K2Node_CommutativeAssociativeBinaryOperator_1",
+       1
+      ]
+     ]
+    }
+   ]
+  },
+  "K2Node_VariableSet_6": {
+   "x": 12050,
+   "y": 6050,
+   "type": "|SetFootOffsetR",
+   "pins": [
+    {
+     "dir": "in",
+     "idx": 0,
+     "name": "execute",
+     "type": "Ejecución",
+     "value": "",
+     "links": [
+      [
+       "K2Node_CallFunction_31",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "in",
+     "idx": 1,
+     "name": "FootOffsetR",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": [
+      [
+       "K2Node_CallFunction_34",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "then",
+     "type": "Ejecución",
+     "value": "",
+     "links": [
+      [
+       "K2Node_VariableSet_7",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "out",
+     "idx": 1,
+     "name": "Output_Get",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": []
+    }
+   ]
+  },
+  "K2Node_CommutativeAssociativeBinaryOperator_1": {
+   "x": 12700,
+   "y": 6100,
+   "type": "Matemáticas|Float|Min(Float)",
+   "pins": [
+    {
+     "dir": "in",
+     "idx": 0,
+     "name": "A",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": [
+      [
+       "K2Node_CallFunction_29",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "in",
+     "idx": 1,
+     "name": "B",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": [
+      [
+       "K2Node_CallFunction_34",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "ReturnValue",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": [
+      [
+       "K2Node_VariableSet_7",
+       1
+      ]
+     ]
+    }
+   ]
+  },
+  "K2Node_VariableSet_7": {
+   "x": 13050,
+   "y": 6050,
+   "type": "|SetPelvisOffset",
+   "pins": [
+    {
+     "dir": "in",
+     "idx": 0,
+     "name": "execute",
+     "type": "Ejecución",
+     "value": "",
+     "links": [
+      [
+       "K2Node_VariableSet_6",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "in",
+     "idx": 1,
+     "name": "PelvisOffset",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": [
+      [
+       "K2Node_CommutativeAssociativeBinaryOperator_1",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "then",
+     "type": "Ejecución",
+     "value": "",
+     "links": []
+    },
+    {
+     "dir": "out",
+     "idx": 1,
+     "name": "Output_Get",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": []
+    }
+   ]
+  },
+  "K2Node_VariableGet_15": {
+   "x": 1850,
+   "y": 8600,
+   "type": "|GetIsFalling",
+   "pins": [
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "IsFalling",
+     "type": "Booleano",
+     "value": "false",
+     "links": [
+      [
+       "K2Node_CommutativeAssociativeBinaryOperator_2",
+       0
+      ],
+      [
+       "K2Node_CallFunction_53",
+       0
+      ]
+     ]
+    }
+   ]
+  },
+  "K2Node_VariableGet_16": {
+   "x": 1100,
+   "y": 8800,
+   "type": "|GetTimeToImpact",
+   "pins": [
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "TimeToImpact",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": [
+      [
+       "K2Node_PromotableOperator_18",
+       0
+      ],
+      [
+       "K2Node_PromotableOperator_20",
+       0
+      ]
+     ]
+    }
+   ]
+  },
+  "K2Node_VariableGet_17": {
+   "x": 1100,
+   "y": 9050,
+   "type": "|GetPeakFallSpeed",
+   "pins": [
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "PeakFallSpeed",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": [
+      [
+       "K2Node_PromotableOperator_19",
+       0
+      ]
+     ]
+    }
+   ]
+  },
+  "K2Node_PromotableOperator_18": {
+   "x": 1850,
+   "y": 8750,
+   "type": "Matemáticas|Float|float<float",
+   "pins": [
+    {
+     "dir": "in",
+     "idx": 0,
+     "name": "A",
+     "type": "Flotante (doble precisión)",
+     "value": "",
+     "links": [
+      [
+       "K2Node_VariableGet_16",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "in",
+     "idx": 1,
+     "name": "B",
+     "type": "Flotante (doble precisión)",
+     "value": "0.35",
+     "links": []
+    },
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "ReturnValue",
+     "type": "Booleano",
+     "value": "",
+     "links": [
+      [
+       "K2Node_CommutativeAssociativeBinaryOperator_2",
+       1
+      ]
+     ]
+    }
+   ]
+  },
+  "K2Node_CommutativeAssociativeBinaryOperator_2": {
+   "x": 2250,
+   "y": 8700,
+   "type": "Matemáticas|Booleano|ANDBoolean",
+   "pins": [
+    {
+     "dir": "in",
+     "idx": 0,
+     "name": "A",
+     "type": "Booleano",
+     "value": "false",
+     "links": [
+      [
+       "K2Node_VariableGet_15",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "in",
+     "idx": 1,
+     "name": "B",
+     "type": "Booleano",
+     "value": "false",
+     "links": [
+      [
+       "K2Node_PromotableOperator_18",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "ReturnValue",
+     "type": "Booleano",
+     "value": "false",
+     "links": [
+      [
+       "K2Node_Select_3",
+       2
+      ]
+     ]
+    }
+   ]
+  },
+  "K2Node_PromotableOperator_19": {
+   "x": 1450,
+   "y": 9050,
+   "type": "Matemáticas|Float|float/float",
+   "pins": [
+    {
+     "dir": "in",
+     "idx": 0,
+     "name": "A",
+     "type": "Flotante (doble precisión)",
+     "value": "",
+     "links": [
+      [
+       "K2Node_VariableGet_17",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "in",
+     "idx": 1,
+     "name": "B",
+     "type": "Flotante (doble precisión)",
+     "value": "1000.0",
+     "links": []
+    },
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "ReturnValue",
+     "type": "Flotante (doble precisión)",
+     "value": "",
+     "links": [
+      [
+       "K2Node_CallFunction_35",
+       0
+      ]
+     ]
+    }
+   ]
+  },
+  "K2Node_CallFunction_35": {
+   "x": 1850,
+   "y": 9150,
+   "type": "Matemáticas|Float|Clamp(Float)",
+   "pins": [
+    {
+     "dir": "in",
+     "idx": 0,
+     "name": "Value",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": [
+      [
+       "K2Node_PromotableOperator_19",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "in",
+     "idx": 1,
+     "name": "Min",
+     "type": "Flotante (doble precisión)",
+     "value": "0.2",
+     "links": []
+    },
+    {
+     "dir": "in",
+     "idx": 2,
+     "name": "Max",
+     "type": "Flotante (doble precisión)",
+     "value": "1.0",
+     "links": []
+    },
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "ReturnValue",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": [
+      [
+       "K2Node_PromotableOperator_22",
+       0
+      ]
+     ]
+    }
+   ]
+  },
+  "K2Node_PromotableOperator_20": {
+   "x": 1450,
+   "y": 8850,
+   "type": "Matemáticas|Float|float/float",
+   "pins": [
+    {
+     "dir": "in",
+     "idx": 0,
+     "name": "A",
+     "type": "Flotante (doble precisión)",
+     "value": "",
+     "links": [
+      [
+       "K2Node_VariableGet_16",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "in",
+     "idx": 1,
+     "name": "B",
+     "type": "Flotante (doble precisión)",
+     "value": "0.35",
+     "links": []
+    },
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "ReturnValue",
+     "type": "Flotante (doble precisión)",
+     "value": "",
+     "links": [
+      [
+       "K2Node_PromotableOperator_21",
+       1
+      ]
+     ]
+    }
+   ]
+  },
+  "K2Node_PromotableOperator_21": {
+   "x": 1850,
+   "y": 8950,
+   "type": "Matemáticas|Float|float-float",
+   "pins": [
+    {
+     "dir": "in",
+     "idx": 0,
+     "name": "A",
+     "type": "Flotante (doble precisión)",
+     "value": "",
+     "links": []
+    },
+    {
+     "dir": "in",
+     "idx": 1,
+     "name": "B",
+     "type": "Flotante (doble precisión)",
+     "value": "",
+     "links": [
+      [
+       "K2Node_PromotableOperator_20",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "ReturnValue",
+     "type": "Flotante (doble precisión)",
+     "value": "",
+     "links": [
+      [
+       "K2Node_PromotableOperator_22",
+       1
+      ]
+     ]
+    }
+   ]
+  },
+  "K2Node_PromotableOperator_22": {
+   "x": 2250,
+   "y": 8900,
+   "type": "Matemáticas|Float|float*float",
+   "pins": [
+    {
+     "dir": "in",
+     "idx": 0,
+     "name": "A",
+     "type": "Flotante (doble precisión)",
+     "value": "",
+     "links": [
+      [
+       "K2Node_CallFunction_35",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "in",
+     "idx": 1,
+     "name": "B",
+     "type": "Flotante (doble precisión)",
+     "value": "",
+     "links": [
+      [
+       "K2Node_PromotableOperator_21",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "ReturnValue",
+     "type": "Flotante (doble precisión)",
+     "value": "",
+     "links": [
+      [
+       "K2Node_Select_3",
+       1
+      ]
+     ]
+    }
+   ]
+  },
+  "K2Node_Select_3": {
+   "x": 2600,
+   "y": 8750,
+   "type": "Utilidades|Seleccionar",
+   "pins": [
+    {
+     "dir": "in",
+     "idx": 0,
+     "name": "Option 0",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": []
+    },
+    {
+     "dir": "in",
+     "idx": 1,
+     "name": "Option 1",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": [
+      [
+       "K2Node_PromotableOperator_22",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "in",
+     "idx": 2,
+     "name": "Index",
+     "type": "Booleano",
+     "value": "false",
+     "links": [
+      [
+       "K2Node_CommutativeAssociativeBinaryOperator_2",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "ReturnValue",
+     "type": "Flotante (doble precisión)",
+     "value": "",
+     "links": [
+      [
+       "K2Node_CallFunction_36",
+       1
+      ]
+     ]
+    }
+   ]
+  },
+  "K2Node_VariableGet_18": {
+   "x": 3300,
+   "y": 8650,
+   "type": "|GetLandCrouch",
+   "pins": [
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "LandCrouch",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": [
+      [
+       "K2Node_CallFunction_36",
+       0
+      ]
+     ]
+    }
+   ]
+  },
+  "K2Node_CallFunction_36": {
+   "x": 3600,
+   "y": 8650,
+   "type": "Matemáticas|Interpolación|FInterpTo",
+   "pins": [
+    {
+     "dir": "in",
+     "idx": 0,
+     "name": "Current",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": [
+      [
+       "K2Node_VariableGet_18",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "in",
+     "idx": 1,
+     "name": "Target",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": [
+      [
+       "K2Node_Select_3",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "in",
+     "idx": 2,
+     "name": "DeltaTime",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": [
+      [
+       "K2Node_FunctionEntry_0",
+       1
+      ]
+     ]
+    },
+    {
+     "dir": "in",
+     "idx": 3,
+     "name": "InterpSpeed",
+     "type": "Flotante (doble precisión)",
+     "value": "10.0",
+     "links": []
+    },
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "ReturnValue",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": [
+      [
+       "K2Node_VariableSet_8",
+       1
+      ]
+     ]
+    }
+   ]
+  },
+  "K2Node_VariableSet_8": {
+   "x": 4050,
+   "y": 8600,
+   "type": "|SetLandCrouch",
+   "pins": [
+    {
+     "dir": "in",
+     "idx": 0,
+     "name": "execute",
+     "type": "Ejecución",
+     "value": "",
+     "links": [
+      [
+       "K2Node_ExecutionSequence_0",
+       3
+      ]
+     ]
+    },
+    {
+     "dir": "in",
+     "idx": 1,
+     "name": "LandCrouch",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": [
+      [
+       "K2Node_CallFunction_36",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "then",
+     "type": "Ejecución",
+     "value": "",
+     "links": []
+    },
+    {
+     "dir": "out",
+     "idx": 1,
+     "name": "Output_Get",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": []
+    }
+   ]
+  },
+  "K2Node_VariableGet_19": {
+   "x": 1100,
+   "y": 6150,
+   "type": "|GetCharacter",
+   "pins": [
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "Character",
+     "type": "Character Referencia a objeto",
+     "value": "",
+     "links": [
+      [
+       "K2Node_CallFunction_37",
+       0
+      ],
+      [
+       "K2Node_CallFunction_38",
+       0
+      ]
+     ]
+    }
+   ]
+  },
+  "K2Node_CallFunction_37": {
+   "x": 1400,
+   "y": 6050,
+   "type": "Transformación|GetActorLocation",
+   "pins": [
+    {
+     "dir": "in",
+     "idx": 0,
+     "name": "self",
+     "type": "Actor Referencia a objeto",
+     "value": "",
+     "links": [
+      [
+       "K2Node_VariableGet_19",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "ReturnValue",
+     "type": "Vector",
+     "value": "0, 0, 0",
+     "links": [
+      [
+       "K2Node_PromotableOperator_24",
+       0
+      ],
+      [
+       "K2Node_CallFunction_41",
+       0
+      ],
+      [
+       "K2Node_CallFunction_46",
+       0
+      ]
+     ]
+    }
+   ]
+  },
+  "K2Node_CallFunction_38": {
+   "x": 1400,
+   "y": 6200,
+   "type": "Transformación|GetActorForwardVector",
+   "pins": [
+    {
+     "dir": "in",
+     "idx": 0,
+     "name": "self",
+     "type": "Actor Referencia a objeto",
+     "value": "",
+     "links": [
+      [
+       "K2Node_VariableGet_19",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "ReturnValue",
+     "type": "Vector",
+     "value": "0, 0, 0",
+     "links": [
+      [
+       "K2Node_PromotableOperator_23",
+       0
+      ]
+     ]
+    }
+   ]
+  },
+  "K2Node_PromotableOperator_23": {
+   "x": 2800,
+   "y": 9850,
+   "type": "Matemáticas|Vector|vector*vector",
+   "pins": [
+    {
+     "dir": "in",
+     "idx": 0,
+     "name": "A",
+     "type": "Vector",
+     "value": "",
+     "links": [
+      [
+       "K2Node_CallFunction_38",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "in",
+     "idx": 1,
+     "name": "B",
+     "type": "Vector",
+     "value": "",
+     "links": []
+    },
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "ReturnValue",
+     "type": "Vector",
+     "value": "",
+     "links": [
+      [
+       "K2Node_PromotableOperator_24",
+       1
+      ]
+     ]
+    }
+   ]
+  },
+  "K2Node_PromotableOperator_24": {
+   "x": 3150,
+   "y": 9800,
+   "type": "Matemáticas|Vector|vector+vector",
+   "pins": [
+    {
+     "dir": "in",
+     "idx": 0,
+     "name": "A",
+     "type": "Vector",
+     "value": "",
+     "links": [
+      [
+       "K2Node_CallFunction_37",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "in",
+     "idx": 1,
+     "name": "B",
+     "type": "Vector",
+     "value": "",
+     "links": [
+      [
+       "K2Node_PromotableOperator_23",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "ReturnValue",
+     "type": "Vector",
+     "value": "",
+     "links": [
+      [
+       "K2Node_PromotableOperator_25",
+       0
+      ]
+     ]
+    }
+   ]
+  },
+  "K2Node_CallFunction_39": {
+   "x": 3150,
+   "y": 10000,
+   "type": "Matemáticas|Vector|MakeVector",
+   "pins": [
+    {
+     "dir": "in",
+     "idx": 0,
+     "name": "X",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": []
+    },
+    {
+     "dir": "in",
+     "idx": 1,
+     "name": "Y",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": []
+    },
+    {
+     "dir": "in",
+     "idx": 2,
+     "name": "Z",
+     "type": "Flotante (doble precisión)",
+     "value": "50.0",
+     "links": []
+    },
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "ReturnValue",
+     "type": "Vector",
+     "value": "0, 0, 0",
+     "links": [
+      [
+       "K2Node_PromotableOperator_25",
+       1
+      ]
+     ]
+    }
+   ]
+  },
+  "K2Node_PromotableOperator_25": {
+   "x": 3550,
+   "y": 9900,
+   "type": "Matemáticas|Vector|vector+vector",
+   "pins": [
+    {
+     "dir": "in",
+     "idx": 0,
+     "name": "A",
+     "type": "Vector",
+     "value": "",
+     "links": [
+      [
+       "K2Node_PromotableOperator_24",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "in",
+     "idx": 1,
+     "name": "B",
+     "type": "Vector",
+     "value": "",
+     "links": [
+      [
+       "K2Node_CallFunction_39",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "ReturnValue",
+     "type": "Vector",
+     "value": "",
+     "links": [
+      [
+       "K2Node_VariableSet_9",
+       1
+      ]
+     ]
+    }
+   ]
+  },
+  "K2Node_VariableSet_9": {
+   "x": 4150,
+   "y": 9800,
+   "type": "|SetLookTarget",
+   "pins": [
+    {
+     "dir": "in",
+     "idx": 0,
+     "name": "execute",
+     "type": "Ejecución",
+     "value": "",
+     "links": [
+      [
+       "K2Node_ExecutionSequence_0",
+       4
+      ]
+     ]
+    },
+    {
+     "dir": "in",
+     "idx": 1,
+     "name": "LookTarget",
+     "type": "Vector",
+     "value": "0, 0, 0",
+     "links": [
+      [
+       "K2Node_PromotableOperator_25",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "then",
+     "type": "Ejecución",
+     "value": "",
+     "links": [
+      [
+       "K2Node_VariableSet_10",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "out",
+     "idx": 1,
+     "name": "Output_Get",
+     "type": "Vector",
+     "value": "0, 0, 0",
+     "links": []
+    }
+   ]
+  },
+  "K2Node_VariableSet_10": {
+   "x": 4550,
+   "y": 9800,
+   "type": "|SetLookAlpha",
+   "pins": [
+    {
+     "dir": "in",
+     "idx": 0,
+     "name": "execute",
+     "type": "Ejecución",
+     "value": "",
+     "links": [
+      [
+       "K2Node_VariableSet_9",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "in",
+     "idx": 1,
+     "name": "LookAlpha",
+     "type": "Flotante (doble precisión)",
+     "value": "1.0",
+     "links": []
+    },
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "then",
+     "type": "Ejecución",
+     "value": "",
+     "links": []
+    },
+    {
+     "dir": "out",
+     "idx": 1,
+     "name": "Output_Get",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": []
+    }
+   ]
+  },
+  "K2Node_VariableGet_20": {
+   "x": 2800,
+   "y": 6300,
+   "type": "|GetCharacter",
+   "pins": [
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "Character",
+     "type": "Character Referencia a objeto",
+     "value": "",
+     "links": [
+      [
+       "K2Node_MakeArray_0",
+       0
+      ]
+     ]
+    }
+   ]
+  },
+  "K2Node_MakeArray_0": {
+   "x": 3250,
+   "y": 6350,
+   "type": "Utilidades|Array|Hacermatriz",
+   "pins": [
+    {
+     "dir": "in",
+     "idx": 0,
+     "name": "[0]",
+     "type": "Actor Referencia a objeto",
+     "value": "",
+     "links": [
+      [
+       "K2Node_VariableGet_20",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "Array",
+     "type": "Matriz de Actor Referencia a objetos",
+     "value": "",
+     "links": [
+      [
+       "K2Node_CallFunction_26",
+       5
+      ],
+      [
+       "K2Node_CallFunction_31",
+       5
+      ]
+     ]
+    }
+   ]
+  },
+  "K2Node_CallFunction_41": {
+   "x": 6150,
+   "y": 7250,
+   "type": "Matemáticas|Vector|BreakVector",
+   "pins": [
+    {
+     "dir": "in",
+     "idx": 0,
+     "name": "InVec",
+     "type": "Vector",
+     "value": "0, 0, 0",
+     "links": [
+      [
+       "K2Node_CallFunction_37",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "X",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": []
+    },
+    {
+     "dir": "out",
+     "idx": 1,
+     "name": "Y",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": []
+    },
+    {
+     "dir": "out",
+     "idx": 2,
+     "name": "Z",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": []
+    }
+   ]
+  },
+  "K2Node_CallFunction_46": {
+   "x": 1800,
+   "y": 6050,
+   "type": "Matemáticas|Vector|BreakVector",
+   "pins": [
+    {
+     "dir": "in",
+     "idx": 0,
+     "name": "InVec",
+     "type": "Vector",
+     "value": "0, 0, 0",
+     "links": [
+      [
+       "K2Node_CallFunction_37",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "X",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": []
+    },
+    {
+     "dir": "out",
+     "idx": 1,
+     "name": "Y",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": []
+    },
+    {
+     "dir": "out",
+     "idx": 2,
+     "name": "Z",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": [
+      [
+       "K2Node_PromotableOperator_27",
+       0
+      ],
+      [
+       "K2Node_CallFunction_48",
+       2
+      ],
+      [
+       "K2Node_CallFunction_51",
+       2
+      ]
+     ]
+    }
+   ]
+  },
+  "K2Node_PromotableOperator_27": {
+   "x": 2150,
+   "y": 6150,
+   "type": "Matemáticas|Float|float-float",
+   "pins": [
+    {
+     "dir": "in",
+     "idx": 0,
+     "name": "A",
+     "type": "Flotante (doble precisión)",
+     "value": "",
+     "links": [
+      [
+       "K2Node_CallFunction_46",
+       2
+      ]
+     ]
+    },
+    {
+     "dir": "in",
+     "idx": 1,
+     "name": "B",
+     "type": "Flotante (doble precisión)",
+     "value": "150.0",
+     "links": []
+    },
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "ReturnValue",
+     "type": "Flotante (doble precisión)",
+     "value": "",
+     "links": [
+      [
+       "K2Node_CallFunction_49",
+       2
+      ],
+      [
+       "K2Node_CallFunction_52",
+       2
+      ]
+     ]
+    }
+   ]
+  },
+  "K2Node_CallFunction_47": {
+   "x": 3750,
+   "y": 6150,
+   "type": "Matemáticas|Vector|BreakVector",
+   "pins": [
+    {
+     "dir": "in",
+     "idx": 0,
+     "name": "InVec",
+     "type": "Vector",
+     "value": "0, 0, 0",
+     "links": [
+      [
+       "K2Node_CallFunction_23",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "X",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": [
+      [
+       "K2Node_CallFunction_48",
+       0
+      ],
+      [
+       "K2Node_CallFunction_49",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "out",
+     "idx": 1,
+     "name": "Y",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": [
+      [
+       "K2Node_CallFunction_48",
+       1
+      ],
+      [
+       "K2Node_CallFunction_49",
+       1
+      ]
+     ]
+    },
+    {
+     "dir": "out",
+     "idx": 2,
+     "name": "Z",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": []
+    }
+   ]
+  },
+  "K2Node_CallFunction_48": {
+   "x": 4100,
+   "y": 6050,
+   "type": "Matemáticas|Vector|MakeVector",
+   "pins": [
+    {
+     "dir": "in",
+     "idx": 0,
+     "name": "X",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": [
+      [
+       "K2Node_CallFunction_47",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "in",
+     "idx": 1,
+     "name": "Y",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": [
+      [
+       "K2Node_CallFunction_47",
+       1
+      ]
+     ]
+    },
+    {
+     "dir": "in",
+     "idx": 2,
+     "name": "Z",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": [
+      [
+       "K2Node_CallFunction_46",
+       2
+      ]
+     ]
+    },
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "ReturnValue",
+     "type": "Vector",
+     "value": "0, 0, 0",
+     "links": [
+      [
+       "K2Node_CallFunction_26",
+       1
+      ]
+     ]
+    }
+   ]
+  },
+  "K2Node_CallFunction_49": {
+   "x": 4100,
+   "y": 6250,
+   "type": "Matemáticas|Vector|MakeVector",
+   "pins": [
+    {
+     "dir": "in",
+     "idx": 0,
+     "name": "X",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": [
+      [
+       "K2Node_CallFunction_47",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "in",
+     "idx": 1,
+     "name": "Y",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": [
+      [
+       "K2Node_CallFunction_47",
+       1
+      ]
+     ]
+    },
+    {
+     "dir": "in",
+     "idx": 2,
+     "name": "Z",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": [
+      [
+       "K2Node_PromotableOperator_27",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "ReturnValue",
+     "type": "Vector",
+     "value": "0, 0, 0",
+     "links": [
+      [
+       "K2Node_CallFunction_26",
+       2
+      ]
+     ]
+    }
+   ]
+  },
+  "K2Node_CallFunction_50": {
+   "x": 5200,
+   "y": 7350,
+   "type": "Matemáticas|Vector|BreakVector",
+   "pins": [
+    {
+     "dir": "in",
+     "idx": 0,
+     "name": "InVec",
+     "type": "Vector",
+     "value": "0, 0, 0",
+     "links": [
+      [
+       "K2Node_CallFunction_30",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "X",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": [
+      [
+       "K2Node_CallFunction_51",
+       0
+      ],
+      [
+       "K2Node_CallFunction_52",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "out",
+     "idx": 1,
+     "name": "Y",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": [
+      [
+       "K2Node_CallFunction_51",
+       1
+      ],
+      [
+       "K2Node_CallFunction_52",
+       1
+      ]
+     ]
+    },
+    {
+     "dir": "out",
+     "idx": 2,
+     "name": "Z",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": []
+    }
+   ]
+  },
+  "K2Node_CallFunction_51": {
+   "x": 5550,
+   "y": 7250,
+   "type": "Matemáticas|Vector|MakeVector",
+   "pins": [
+    {
+     "dir": "in",
+     "idx": 0,
+     "name": "X",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": [
+      [
+       "K2Node_CallFunction_50",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "in",
+     "idx": 1,
+     "name": "Y",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": [
+      [
+       "K2Node_CallFunction_50",
+       1
+      ]
+     ]
+    },
+    {
+     "dir": "in",
+     "idx": 2,
+     "name": "Z",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": [
+      [
+       "K2Node_CallFunction_46",
+       2
+      ]
+     ]
+    },
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "ReturnValue",
+     "type": "Vector",
+     "value": "0, 0, 0",
+     "links": [
+      [
+       "K2Node_CallFunction_31",
+       1
+      ]
+     ]
+    }
+   ]
+  },
+  "K2Node_CallFunction_52": {
+   "x": 5550,
+   "y": 7450,
+   "type": "Matemáticas|Vector|MakeVector",
+   "pins": [
+    {
+     "dir": "in",
+     "idx": 0,
+     "name": "X",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": [
+      [
+       "K2Node_CallFunction_50",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "in",
+     "idx": 1,
+     "name": "Y",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": [
+      [
+       "K2Node_CallFunction_50",
+       1
+      ]
+     ]
+    },
+    {
+     "dir": "in",
+     "idx": 2,
+     "name": "Z",
+     "type": "Flotante (doble precisión)",
+     "value": "0.0",
+     "links": [
+      [
+       "K2Node_PromotableOperator_27",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "ReturnValue",
+     "type": "Vector",
+     "value": "0, 0, 0",
+     "links": [
+      [
+       "K2Node_CallFunction_31",
+       2
+      ]
+     ]
+    }
+   ]
+  },
+  "K2Node_CallFunction_53": {
+   "x": 5450,
+   "y": 6050,
+   "type": "Matemáticas|Booleano|NOTBoolean",
+   "pins": [
+    {
+     "dir": "in",
+     "idx": 0,
+     "name": "A",
+     "type": "Booleano",
+     "value": "false",
+     "links": [
+      [
+       "K2Node_VariableGet_15",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "ReturnValue",
+     "type": "Booleano",
+     "value": "false",
+     "links": [
+      [
+       "K2Node_CommutativeAssociativeBinaryOperator_5",
+       1
+      ],
+      [
+       "K2Node_CommutativeAssociativeBinaryOperator_6",
+       1
+      ]
+     ]
+    }
+   ]
+  },
+  "K2Node_CommutativeAssociativeBinaryOperator_5": {
+   "x": 5800,
+   "y": 6100,
+   "type": "Matemáticas|Booleano|ANDBoolean",
+   "pins": [
+    {
+     "dir": "in",
+     "idx": 0,
+     "name": "A",
+     "type": "Booleano",
+     "value": "false",
+     "links": [
+      [
+       "K2Node_CallFunction_27",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "in",
+     "idx": 1,
+     "name": "B",
+     "type": "Booleano",
+     "value": "false",
+     "links": [
+      [
+       "K2Node_CallFunction_53",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "ReturnValue",
+     "type": "Booleano",
+     "value": "false",
+     "links": [
+      [
+       "K2Node_Select_1",
+       2
+      ]
+     ]
+    }
+   ]
+  },
+  "K2Node_CommutativeAssociativeBinaryOperator_6": {
+   "x": 9800,
+   "y": 6050,
+   "type": "Matemáticas|Booleano|ANDBoolean",
+   "pins": [
+    {
+     "dir": "in",
+     "idx": 0,
+     "name": "A",
+     "type": "Booleano",
+     "value": "false",
+     "links": [
+      [
+       "K2Node_CallFunction_32",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "in",
+     "idx": 1,
+     "name": "B",
+     "type": "Booleano",
+     "value": "false",
+     "links": [
+      [
+       "K2Node_CallFunction_53",
+       0
+      ]
+     ]
+    },
+    {
+     "dir": "out",
+     "idx": 0,
+     "name": "ReturnValue",
+     "type": "Booleano",
+     "value": "false",
+     "links": [
+      [
+       "K2Node_Select_2",
+       2
+      ]
+     ]
+    }
+   ]
+  }
+ }
+}

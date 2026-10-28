@@ -1,0 +1,14 @@
+{
+ "EventGraph": {
+  "cajas_nuevas": 14,
+  "solapes_cajas_(nuevas+obsoletas)": 0,
+  "hueco_minimo_entre_cajas": 64,
+  "margen_minimo_nodo_borde_(top incluye titulo)": 100
+ },
+ "UpdateProceduralVariables": {
+  "cajas_nuevas": 20,
+  "solapes_cajas_(nuevas+obsoletas)": 0,
+  "hueco_minimo_entre_cajas": 106,
+  "margen_minimo_nodo_borde_(top incluye titulo)": 100
+ }
+}

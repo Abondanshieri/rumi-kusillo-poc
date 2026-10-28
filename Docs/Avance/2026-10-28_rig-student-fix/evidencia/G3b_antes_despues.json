@@ -1,0 +1,304 @@
+{
+ "AnimGraph": {
+  "nodos_antes": 7,
+  "nodos_despues": 7,
+  "conexiones_antes": 5,
+  "conexiones_despues": 5,
+  "perdidas": 0,
+  "nuevas": 0,
+  "nodos_movidos": 0,
+  "fuera_rejilla50_despues": 0
+ },
+ "EventGraph": {
+  "nodos_antes": 88,
+  "nodos_despues": 88,
+  "conexiones_antes": 106,
+  "conexiones_despues": 106,
+  "perdidas": 0,
+  "nuevas": 0,
+  "nodos_movidos": 88,
+  "fuera_rejilla50_despues": 0,
+  "medido_despues_snapshot": {
+   "cruces": 12,
+   "retroceso": 0,
+   "largos_1500": 14,
+   "solapes": 0,
+   "fuera_rejilla50": 0
+  },
+  "antes_estimado": {
+   "cruces": 46,
+   "retroceso": 9,
+   "largos_1500": 11,
+   "solapes": 2,
+   "fuera_rejilla50": 88
+  },
+  "cables_largos_despues": [
+   [
+    "K2Node_ExecutionSequence_0",
+    "K2Node_VariableSet_2",
+    1867
+   ],
+   [
+    "K2Node_VariableSet_3",
+    "K2Node_VariableSet_4",
+    2230
+   ],
+   [
+    "K2Node_CallFunction_1",
+    "K2Node_DynamicCast_1",
+    1821
+   ],
+   [
+    "K2Node_ExecutionSequence_0",
+    "K2Node_VariableSet_14",
+    1845
+   ],
+   [
+    "K2Node_VariableSet_14",
+    "K2Node_IfThenElse_3",
+    2390
+   ],
+   [
+    "K2Node_CallFunction_22",
+    "K2Node_CallFunction_24",
+    1650
+   ],
+   [
+    "K2Node_VariableGet_20",
+    "K2Node_PromotableOperator_11",
+    3500
+   ],
+   [
+    "K2Node_CallFunction_26",
+    "K2Node_PromotableOperator_12",
+    1540
+   ],
+   [
+    "K2Node_VariableSet_19",
+    "K2Node_VariableSet_20",
+    1890
+   ],
+   [
+    "K2Node_CallFunction_25",
+    "K2Node_CallFunction_29",
+    4754
+   ],
+   [
+    "K2Node_Event_0",
+    "K2Node_CallFunction_30",
+    11724
+   ],
+   [
+    "K2Node_VariableSet_20",
+    "K2Node_VariableSet_21",
+    1820
+   ],
+   [
+    "K2Node_ExecutionSequence_0",
+    "K2Node_CallFunction_0",
+    2124
+   ],
+   [
+    "K2Node_Event_0",
+    "K2Node_CallFunction_0",
+    2467
+   ]
+  ]
+ },
+ "UpdateProceduralVariables": {
+  "nodos_antes": 85,
+  "nodos_despues": 85,
+  "conexiones_antes": 115,
+  "conexiones_despues": 115,
+  "perdidas": 0,
+  "nuevas": 0,
+  "nodos_movidos": 85,
+  "fuera_rejilla50_despues": 0,
+  "medido_despues_snapshot": {
+   "cruces": 62,
+   "retroceso": 0,
+   "largos_1500": 32,
+   "solapes": 0,
+   "fuera_rejilla50": 0
+  },
+  "antes_estimado": {
+   "cruces": 157,
+   "retroceso": 5,
+   "largos_1500": 25,
+   "solapes": 1,
+   "fuera_rejilla50": 80
+  },
+  "cables_largos_despues": [
+   [
+    "K2Node_FunctionEntry_0",
+    "K2Node_CallFunction_1",
+    2853
+   ],
+   [
+    "K2Node_ExecutionSequence_0",
+    "K2Node_VariableSet_0",
+    3011
+   ],
+   [
+    "K2Node_FunctionEntry_0",
+    "K2Node_PromotableOperator_7",
+    2055
+   ],
+   [
+    "K2Node_FunctionEntry_0",
+    "K2Node_CallFunction_15",
+    3707
+   ],
+   [
+    "K2Node_ExecutionSequence_0",
+    "K2Node_VariableSet_3",
+    3854
+   ],
+   [
+    "K2Node_CallFunction_13",
+    "K2Node_VariableSet_4",
+    2900
+   ],
+   [
+    "K2Node_CallFunction_23",
+    "K2Node_PromotableOperator_11",
+    3175
+   ],
+   [
+    "K2Node_CallFunction_23",
+    "K2Node_PromotableOperator_12",
+    3347
+   ],
+   [
+    "K2Node_ExecutionSequence_0",
+    "K2Node_CallFunction_26",
+    4015
+   ],
+   [
+    "K2Node_FunctionEntry_0",
+    "K2Node_CallFunction_29",
+    7223
+   ],
+   [
+    "K2Node_CallFunction_26",
+    "K2Node_VariableSet_5",
+    2980
+   ],
+   [
+    "K2Node_CallFunction_22",
+    "K2Node_CallFunction_30",
+    1992
+   ],
+   [
+    "K2Node_CallFunction_30",
+    "K2Node_PromotableOperator_14",
+    1503
+   ],
+   [
+    "K2Node_CallFunction_30",
+    "K2Node_PromotableOperator_15",
+    1606
+   ],
+   [
+    "K2Node_CallFunction_51",
+    "K2Node_CallFunction_31",
+    3128
+   ],
+   [
+    "K2Node_CallFunction_52",
+    "K2Node_CallFunction_31",
+    3196
+   ],
+   [
+    "K2Node_MakeArray_0",
+    "K2Node_CallFunction_31",
+    5252
+   ],
+   [
+    "K2Node_FunctionEntry_0",
+    "K2Node_CallFunction_34",
+    11215
+   ],
+   [
+    "K2Node_CallFunction_31",
+    "K2Node_VariableSet_6",
+    2980
+   ],
+   [
+    "K2Node_CallFunction_29",
+    "K2Node_CommutativeAssociativeBinaryOperator_1",
+    4750
+   ],
+   [
+    "K2Node_FunctionEntry_0",
+    "K2Node_CallFunction_36",
+    4475
+   ],
+   [
+    "K2Node_ExecutionSequence_0",
+    "K2Node_VariableSet_8",
+    4467
+   ],
+   [
+    "K2Node_CallFunction_38",
+    "K2Node_PromotableOperator_23",
+    3821
+   ],
+   [
+    "K2Node_CallFunction_37",
+    "K2Node_PromotableOperator_24",
+    4039
+   ],
+   [
+    "K2Node_ExecutionSequence_0",
+    "K2Node_VariableSet_9",
+    5381
+   ],
+   [
+    "K2Node_CallFunction_37",
+    "K2Node_CallFunction_41",
+    4657
+   ],
+   [
+    "K2Node_CallFunction_46",
+    "K2Node_CallFunction_48",
+    2050
+   ],
+   [
+    "K2Node_PromotableOperator_27",
+    "K2Node_CallFunction_49",
+    1687
+   ],
+   [
+    "K2Node_CallFunction_46",
+    "K2Node_CallFunction_51",
+    3700
+   ],
+   [
+    "K2Node_PromotableOperator_27",
+    "K2Node_CallFunction_52",
+    3411
+   ],
+   [
+    "K2Node_VariableGet_15",
+    "K2Node_CallFunction_53",
+    4250
+   ],
+   [
+    "K2Node_CallFunction_53",
+    "K2Node_CommutativeAssociativeBinaryOperator_6",
+    4100
+   ]
+  ]
+ },
+ "TestFunc": {
+  "nodos_antes": 2,
+  "nodos_despues": 2,
+  "conexiones_antes": 0,
+  "conexiones_despues": 0,
+  "perdidas": 0,
+  "nuevas": 0,
+  "nodos_movidos": 0,
+  "fuera_rejilla50_despues": 1
+ }
+}

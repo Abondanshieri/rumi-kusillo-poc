@@ -1,0 +1,36 @@
+{
+ "CR_Student_Procedural_fix": {
+  "enlaces": 64,
+  "retroceso": [],
+  "largos": [],
+  "cruces": [
+   [
+    "Get_LeanRoll.Value>Mul_Roll_Spine2.A",
+    "Get_LeanPitch.Value>Mul_Pitch_Neck.A"
+   ],
+   [
+    "Get_LeanRoll.Value>Quat_Spine1.Euler.Z",
+    "Get_LeanPitch.Value>Mul_Pitch_Spine2.A"
+   ],
+   [
+    "Get_LeanRoll.Value>Quat_Spine1.Euler.Z",
+    "Get_LeanPitch.Value>Mul_Pitch_Neck.A"
+   ]
+  ],
+  "cable_sobre_nodo": [
+   [
+    "Get_Hips.Transform>Mul_Hips_Offset.A",
+    "SINSALIDA_Add_HipsZ"
+   ]
+  ],
+  "solapes": []
+ },
+ "CR_Student_IK_fix": {
+  "enlaces": 14,
+  "retroceso": [],
+  "largos": [],
+  "cruces": [],
+  "cable_sobre_nodo": [],
+  "solapes": []
+ }
+}

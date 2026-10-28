@@ -72,6 +72,7 @@ primera vez que el servidor arrancó.
 ## Estructura de carpetas
 
 - `Content/`, `Config/`, `Rumi.uproject` — proyecto UE (los assets solo se mueven/renombran desde el editor; ver `Docs/Reportes/propuesta_estructura_content.md`).
-- `Docs/Hitos`, `Docs/Mensajes`, `Docs/Guias`, `Docs/Reportes` (+ `Archivo/`), `Docs/Avance` (entregas `AAAA-MM-DD_tema/`, indice en su README).
-- `Tools/ue_scripts/` — scripts Python vía MCP (`ue_mcp.py` + prefijos build/fix/diag/test/verify/util); `Tools/payloads_mcp/`, `Tools/ocr_pages.ps1`.
-- Raiz limpia: nada suelto salvo `CLAUDE.md`, `.mcp.json`, `Rumi.uproject`, `.gitignore`. Nada se borra: lo obsoleto va a `Docs/Reportes/Archivo/` con manifiesto (`Docs/Reportes/manifiesto_orden_2026-10-28.txt`).
+- `Docs/Hitos`, `Docs/Mensajes`, `Docs/Guias`, `Docs/Reportes`, `Docs/Avance` (entregas `AAAA-MM-DD_tema/`, indice en su README). Solo se conservan documentos vigentes y la evidencia que citan.
+- `Tools/ue_scripts/` — scripts Python vía MCP (`ue_mcp.py` + prefijos build/fix/diag/verify/util); `Tools/payloads_mcp/`, `Tools/ocr_pages.ps1`.
+- `Archivo_No_Proyecto/<AAAA-MM-DD>/<categoria>/` — todo lo que no necesita el proyecto (capturas descartadas, scripts de prueba, evidencia/snapshots intermedios, duplicados, temporales). Nada se borra: `Archivo_No_Proyecto/INDEX.md` lista cada movimiento y `revertir.py` lo deshace. Si algo falta de un informe, buscarlo ahí antes de regenerarlo.
+- Raiz limpia: nada suelto salvo `CLAUDE.md`, `README.md`, `.mcp.json`, `Rumi.uproject`, `.gitignore`, `.gitattributes`.

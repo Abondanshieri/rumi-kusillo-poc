@@ -1,0 +1,2109 @@
+{
+ "CR_Student_Procedural_fix": {
+  "nodes": {
+   "RigUnit_BeginExecution": {
+    "cls": "RigVMUnitNode",
+    "title": "Forwards Solve",
+    "pos": [
+     900.0,
+     250.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "Get_LeanRoll": {
+    "cls": "RigVMVariableNode",
+    "title": "Get LeanRoll",
+    "pos": [
+     0.0,
+     2000.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ],
+    "var": "LeanRoll"
+   },
+   "Get_LeanPitch": {
+    "cls": "RigVMVariableNode",
+    "title": "Get LeanPitch",
+    "pos": [
+     0.0,
+     1850.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ],
+    "var": "LeanPitch"
+   },
+   "Quat_Spine1": {
+    "cls": "RigVMUnitNode",
+    "title": "From Euler",
+    "pos": [
+     450.0,
+     1150.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "Get_Spine1": {
+    "cls": "RigVMUnitNode",
+    "title": "Get Transform",
+    "pos": [
+     450.0,
+     1450.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "Mul_Spine1": {
+    "cls": "RigVMUnitNode",
+    "title": "Multiply",
+    "pos": [
+     900.0,
+     1250.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "Set_Spine1": {
+    "cls": "RigVMUnitNode",
+    "title": "Set Transform",
+    "pos": [
+     1350.0,
+     1300.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "Mul_Roll_Spine2": {
+    "cls": "RigVMUnitNode",
+    "title": "Multiply",
+    "pos": [
+     450.0,
+     2050.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "Mul_Pitch_Spine2": {
+    "cls": "RigVMUnitNode",
+    "title": "Multiply",
+    "pos": [
+     450.0,
+     1800.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "Quat_Spine2": {
+    "cls": "RigVMUnitNode",
+    "title": "From Euler",
+    "pos": [
+     900.0,
+     1900.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "Get_Spine2": {
+    "cls": "RigVMUnitNode",
+    "title": "Get Transform",
+    "pos": [
+     900.0,
+     2200.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "Mul_Spine2": {
+    "cls": "RigVMUnitNode",
+    "title": "Multiply",
+    "pos": [
+     1350.0,
+     2050.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "Set_Spine2": {
+    "cls": "RigVMUnitNode",
+    "title": "Set Transform",
+    "pos": [
+     1800.0,
+     2100.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "Mul_Roll_Neck": {
+    "cls": "RigVMUnitNode",
+    "title": "Multiply",
+    "pos": [
+     900.0,
+     2800.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "Mul_Pitch_Neck": {
+    "cls": "RigVMUnitNode",
+    "title": "Multiply",
+    "pos": [
+     900.0,
+     2550.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "Quat_Neck": {
+    "cls": "RigVMUnitNode",
+    "title": "From Euler",
+    "pos": [
+     1350.0,
+     2650.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "Get_Neck_Lean": {
+    "cls": "RigVMUnitNode",
+    "title": "Get Transform",
+    "pos": [
+     1350.0,
+     2950.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "Mul_Neck_Lean": {
+    "cls": "RigVMUnitNode",
+    "title": "Multiply",
+    "pos": [
+     1800.0,
+     2800.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "Set_Neck_Lean": {
+    "cls": "RigVMUnitNode",
+    "title": "Set Transform",
+    "pos": [
+     2250.0,
+     2850.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "Get_PelvisOffset": {
+    "cls": "RigVMVariableNode",
+    "title": "Get PelvisOffset",
+    "pos": [
+     450.0,
+     4650.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ],
+    "var": "PelvisOffset"
+   },
+   "Get_LandCrouch": {
+    "cls": "RigVMVariableNode",
+    "title": "Get LandCrouch",
+    "pos": [
+     450.0,
+     4000.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ],
+    "var": "LandCrouch"
+   },
+   "Mul_LandCrouch": {
+    "cls": "RigVMUnitNode",
+    "title": "Multiply",
+    "pos": [
+     900.0,
+     4000.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "Add_PelvisLand": {
+    "cls": "RigVMUnitNode",
+    "title": "Add",
+    "pos": [
+     1350.0,
+     4150.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "Get_Hips": {
+    "cls": "RigVMUnitNode",
+    "title": "Get Transform",
+    "pos": [
+     1800.0,
+     4050.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "Add_HipsZ": {
+    "cls": "RigVMUnitNode",
+    "title": "Add",
+    "pos": [
+     2250.0,
+     4000.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "Set_Hips": {
+    "cls": "RigVMUnitNode",
+    "title": "Set Transform",
+    "pos": [
+     2700.0,
+     4300.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "Get_FootOffsetL": {
+    "cls": "RigVMVariableNode",
+    "title": "Get FootOffsetL",
+    "pos": [
+     1350.0,
+     5650.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ],
+    "var": "FootOffsetL"
+   },
+   "Sub_FootOffsetL": {
+    "cls": "RigVMUnitNode",
+    "title": "Subtract",
+    "pos": [
+     1800.0,
+     5650.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "Get_LeftFoot": {
+    "cls": "RigVMUnitNode",
+    "title": "Get Transform",
+    "pos": [
+     2250.0,
+     5850.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "Add_LeftFootZ": {
+    "cls": "RigVMUnitNode",
+    "title": "Add",
+    "pos": [
+     2700.0,
+     5550.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "TwoBoneIK_Left": {
+    "cls": "RigVMUnitNode",
+    "title": "Basic IK",
+    "pos": [
+     3150.0,
+     5750.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "Get_FootOffsetR": {
+    "cls": "RigVMVariableNode",
+    "title": "Get FootOffsetR",
+    "pos": [
+     1800.0,
+     7300.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ],
+    "var": "FootOffsetR"
+   },
+   "Sub_FootOffsetR": {
+    "cls": "RigVMUnitNode",
+    "title": "Subtract",
+    "pos": [
+     2250.0,
+     7300.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "Get_RightFoot": {
+    "cls": "RigVMUnitNode",
+    "title": "Get Transform",
+    "pos": [
+     2700.0,
+     7500.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "Add_RightFootZ": {
+    "cls": "RigVMUnitNode",
+    "title": "Add",
+    "pos": [
+     3150.0,
+     7200.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "TwoBoneIK_Right": {
+    "cls": "RigVMUnitNode",
+    "title": "Basic IK",
+    "pos": [
+     3600.0,
+     7200.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "Mul_Hips_Offset": {
+    "cls": "RigVMUnitNode",
+    "title": "Multiply",
+    "pos": [
+     2250.0,
+     4300.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "Clamp_LeftOffset": {
+    "cls": "RigVMUnitNode",
+    "title": "Clamp",
+    "pos": [
+     2250.0,
+     5550.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "Clamp_RightOffset": {
+    "cls": "RigVMUnitNode",
+    "title": "Clamp",
+    "pos": [
+     2700.0,
+     7200.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "Make_Hips_Offset": {
+    "cls": "RigVMUnitNode",
+    "title": "Make Transform",
+    "pos": [
+     1800.0,
+     4450.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "ORFANO_Mul_Hips_Offset_1": {
+    "cls": "RigVMUnitNode",
+    "title": "Multiply",
+    "pos": [
+     0.0,
+     8850.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "Make_LeftFoot_Offset": {
+    "cls": "RigVMUnitNode",
+    "title": "Make Transform",
+    "pos": [
+     2250.0,
+     6150.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "Mul_LeftFoot_Offset": {
+    "cls": "RigVMUnitNode",
+    "title": "Multiply",
+    "pos": [
+     2700.0,
+     6150.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "Make_RightFoot_Offset": {
+    "cls": "RigVMUnitNode",
+    "title": "Make Transform",
+    "pos": [
+     2700.0,
+     7800.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "Mul_RightFoot_Offset": {
+    "cls": "RigVMUnitNode",
+    "title": "Multiply",
+    "pos": [
+     3150.0,
+     7800.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "EdGraphNode_Comment_9": {
+    "cls": "RigVMCommentNode",
+    "title": "LEAN",
+    "pos": [
+     -100.0,
+     900.0
+    ],
+    "size": [
+     2850.0,
+     2450.0
+    ],
+    "text": "LEAN",
+    "font": 120,
+    "color": "<Struct 'LinearColor' (0x000001BB0BCDFC20) {r: 0.150000, g: 0.450000, b: 0.200000, a: 0.500000}>"
+   },
+   "EdGraphNode_Comment_10": {
+    "cls": "RigVMCommentNode",
+    "title": "CADERA",
+    "pos": [
+     350.0,
+     3750.0
+    ],
+    "size": [
+     2850.0,
+     1150.0
+    ],
+    "text": "CADERA",
+    "font": 120,
+    "color": "<Struct 'LinearColor' (0x000001BB0BCC9620) {r: 0.150000, g: 0.450000, b: 0.200000, a: 0.500000}>"
+   },
+   "EdGraphNode_Comment_11": {
+    "cls": "RigVMCommentNode",
+    "title": "PIERNA IZQ",
+    "pos": [
+     1250.0,
+     5300.0
+    ],
+    "size": [
+     2350.0,
+     1250.0
+    ],
+    "text": "PIERNA IZQ",
+    "font": 120,
+    "color": "<Struct 'LinearColor' (0x000001BB0BCAADA0) {r: 0.700000, g: 0.400000, b: 0.100000, a: 0.500000}>"
+   },
+   "EdGraphNode_Comment_12": {
+    "cls": "RigVMCommentNode",
+    "title": "PIERNA DER",
+    "pos": [
+     1700.0,
+     6950.0
+    ],
+    "size": [
+     2350.0,
+     1250.0
+    ],
+    "text": "PIERNA DER",
+    "font": 120,
+    "color": "<Struct 'LinearColor' (0x000001BB0BCAAD20) {r: 0.700000, g: 0.400000, b: 0.100000, a: 0.500000}>"
+   },
+   "EdGraphNode_Comment_13": {
+    "cls": "RigVMCommentNode",
+    "title": "ORFANO",
+    "pos": [
+     -100.0,
+     8600.0
+    ],
+    "size": [
+     800.0,
+     750.0
+    ],
+    "text": "ORFANO",
+    "font": 120,
+    "color": "<Struct 'LinearColor' (0x000001BB0BCAACA0) {r: 0.600000, g: 0.120000, b: 0.120000, a: 0.500000}>"
+   },
+   "CommentNode": {
+    "cls": "RigVMCommentNode",
+    "title": "ENTRADA",
+    "pos": [
+     800.0,
+     0.0
+    ],
+    "size": [
+     700.0,
+     500.0
+    ],
+    "text": "ENTRADA",
+    "font": 120,
+    "color": "<Struct 'LinearColor' (0x000001BB0BCAABE0) {r: 0.100000, g: 0.250000, b: 0.600000, a: 0.500000}>"
+   },
+   "Reroute_PelvisOffset_1": {
+    "cls": "RigVMRerouteNode",
+    "title": "Float",
+    "pos": [
+     1000.0,
+     5900.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "Reroute_PelvisOffset_2": {
+    "cls": "RigVMRerouteNode",
+    "title": "Float",
+    "pos": [
+     1150.0,
+     6800.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "links": [
+   [
+    "RigUnit_BeginExecution.ExecutePin",
+    "Set_Spine1.ExecutePin"
+   ],
+   [
+    "Get_LeanRoll.Value",
+    "Mul_Roll_Spine2.A"
+   ],
+   [
+    "Get_LeanRoll.Value",
+    "Mul_Roll_Neck.A"
+   ],
+   [
+    "Get_LeanRoll.Value",
+    "Quat_Spine1.Euler.Z"
+   ],
+   [
+    "Get_LeanPitch.Value",
+    "Mul_Pitch_Spine2.A"
+   ],
+   [
+    "Get_LeanPitch.Value",
+    "Mul_Pitch_Neck.A"
+   ],
+   [
+    "Get_LeanPitch.Value",
+    "Quat_Spine1.Euler.X"
+   ],
+   [
+    "Quat_Spine1.Result",
+    "Mul_Spine1.B"
+   ],
+   [
+    "Get_Spine1.Transform",
+    "Set_Spine1.Value"
+   ],
+   [
+    "Get_Spine1.Transform.Rotation",
+    "Mul_Spine1.A"
+   ],
+   [
+    "Mul_Spine1.Result",
+    "Set_Spine1.Value.Rotation"
+   ],
+   [
+    "Set_Spine1.ExecutePin",
+    "Set_Spine2.ExecutePin"
+   ],
+   [
+    "Mul_Roll_Spine2.Result",
+    "Quat_Spine2.Euler.Z"
+   ],
+   [
+    "Mul_Pitch_Spine2.Result",
+    "Quat_Spine2.Euler.X"
+   ],
+   [
+    "Quat_Spine2.Result",
+    "Mul_Spine2.B"
+   ],
+   [
+    "Get_Spine2.Transform",
+    "Set_Spine2.Value"
+   ],
+   [
+    "Get_Spine2.Transform.Rotation",
+    "Mul_Spine2.A"
+   ],
+   [
+    "Mul_Spine2.Result",
+    "Set_Spine2.Value.Rotation"
+   ],
+   [
+    "Set_Spine2.ExecutePin",
+    "Set_Neck_Lean.ExecutePin"
+   ],
+   [
+    "Mul_Roll_Neck.Result",
+    "Quat_Neck.Euler.Z"
+   ],
+   [
+    "Mul_Pitch_Neck.Result",
+    "Quat_Neck.Euler.X"
+   ],
+   [
+    "Quat_Neck.Result",
+    "Mul_Neck_Lean.B"
+   ],
+   [
+    "Get_Neck_Lean.Transform",
+    "Set_Neck_Lean.Value"
+   ],
+   [
+    "Get_Neck_Lean.Transform.Rotation",
+    "Mul_Neck_Lean.A"
+   ],
+   [
+    "Mul_Neck_Lean.Result",
+    "Set_Neck_Lean.Value.Rotation"
+   ],
+   [
+    "Set_Neck_Lean.ExecutePin",
+    "Set_Hips.ExecutePin"
+   ],
+   [
+    "Get_PelvisOffset.Value",
+    "Add_PelvisLand.A"
+   ],
+   [
+    "Get_PelvisOffset.Value",
+    "Sub_FootOffsetL.B"
+   ],
+   [
+    "Get_PelvisOffset.Value",
+    "Reroute_PelvisOffset_1.Value"
+   ],
+   [
+    "Get_LandCrouch.Value",
+    "Mul_LandCrouch.A"
+   ],
+   [
+    "Mul_LandCrouch.Result",
+    "Add_PelvisLand.B"
+   ],
+   [
+    "Add_PelvisLand.Result",
+    "Add_HipsZ.B"
+   ],
+   [
+    "Add_PelvisLand.Result",
+    "Mul_Hips_Offset.B.Translation.Z"
+   ],
+   [
+    "Add_PelvisLand.Result",
+    "Make_Hips_Offset.Translation.Z"
+   ],
+   [
+    "Get_Hips.Transform",
+    "Mul_Hips_Offset.A"
+   ],
+   [
+    "Get_Hips.Transform.Rotation",
+    "Set_Hips.Value.Rotation"
+   ],
+   [
+    "Get_Hips.Transform.Translation.Z",
+    "Add_HipsZ.A"
+   ],
+   [
+    "Get_Hips.Transform.Scale3D",
+    "Set_Hips.Value.Scale3D"
+   ],
+   [
+    "Set_Hips.ExecutePin",
+    "TwoBoneIK_Left.ExecutePin"
+   ],
+   [
+    "Get_FootOffsetL.Value",
+    "Sub_FootOffsetL.A"
+   ],
+   [
+    "Sub_FootOffsetL.Result",
+    "Clamp_LeftOffset.Value"
+   ],
+   [
+    "Sub_FootOffsetL.Result",
+    "Make_LeftFoot_Offset.Translation.Z"
+   ],
+   [
+    "Get_LeftFoot.Transform",
+    "Mul_LeftFoot_Offset.A"
+   ],
+   [
+    "Get_LeftFoot.Transform.Rotation",
+    "TwoBoneIK_Left.Effector.Rotation"
+   ],
+   [
+    "Get_LeftFoot.Transform.Translation.Z",
+    "Add_LeftFootZ.A"
+   ],
+   [
+    "Get_LeftFoot.Transform.Scale3D",
+    "TwoBoneIK_Left.Effector.Scale3D"
+   ],
+   [
+    "TwoBoneIK_Left.ExecutePin",
+    "TwoBoneIK_Right.ExecutePin"
+   ],
+   [
+    "Get_FootOffsetR.Value",
+    "Sub_FootOffsetR.A"
+   ],
+   [
+    "Sub_FootOffsetR.Result",
+    "Clamp_RightOffset.Value"
+   ],
+   [
+    "Sub_FootOffsetR.Result",
+    "Make_RightFoot_Offset.Translation.Z"
+   ],
+   [
+    "Get_RightFoot.Transform",
+    "Mul_RightFoot_Offset.A"
+   ],
+   [
+    "Get_RightFoot.Transform.Rotation",
+    "TwoBoneIK_Right.Effector.Rotation"
+   ],
+   [
+    "Get_RightFoot.Transform.Translation.Z",
+    "Add_RightFootZ.A"
+   ],
+   [
+    "Get_RightFoot.Transform.Scale3D",
+    "TwoBoneIK_Right.Effector.Scale3D"
+   ],
+   [
+    "Mul_Hips_Offset.Result",
+    "Set_Hips.Value"
+   ],
+   [
+    "Clamp_LeftOffset.Result",
+    "Add_LeftFootZ.B"
+   ],
+   [
+    "Clamp_RightOffset.Result",
+    "Add_RightFootZ.B"
+   ],
+   [
+    "Make_Hips_Offset.Result",
+    "Mul_Hips_Offset.B"
+   ],
+   [
+    "Make_LeftFoot_Offset.Result",
+    "Mul_LeftFoot_Offset.B"
+   ],
+   [
+    "Mul_LeftFoot_Offset.Result",
+    "TwoBoneIK_Left.Effector"
+   ],
+   [
+    "Make_RightFoot_Offset.Result",
+    "Mul_RightFoot_Offset.B"
+   ],
+   [
+    "Mul_RightFoot_Offset.Result",
+    "TwoBoneIK_Right.Effector"
+   ],
+   [
+    "Reroute_PelvisOffset_1.Value",
+    "Reroute_PelvisOffset_2.Value"
+   ],
+   [
+    "Reroute_PelvisOffset_2.Value",
+    "Sub_FootOffsetR.B"
+   ]
+  ],
+  "vals": {
+   "RigUnit_BeginExecution.ExecutePin": "()",
+   "Get_LeanRoll.Variable": "LeanRoll",
+   "Get_LeanRoll.Value": "",
+   "Get_LeanPitch.Variable": "LeanPitch",
+   "Get_LeanPitch.Value": "",
+   "Quat_Spine1.Euler.X": "0.000000",
+   "Quat_Spine1.Euler.Y": "0.000000",
+   "Quat_Spine1.Euler.Z": "0.000000",
+   "Quat_Spine1.RotationOrder": "ZYX",
+   "Quat_Spine1.Result": "(X=0.000000,Y=0.000000,Z=0.000000,W=1.000000)",
+   "Get_Spine1.Item.Type": "Bone",
+   "Get_Spine1.Item.Name": "Spine1",
+   "Get_Spine1.Space": "LocalSpace",
+   "Get_Spine1.bInitial": "False",
+   "Get_Spine1.Transform.Rotation": "(X=0.000000,Y=0.000000,Z=0.000000,W=1.000000)",
+   "Get_Spine1.Transform.Translation.X": "0.000000",
+   "Get_Spine1.Transform.Translation.Y": "0.000000",
+   "Get_Spine1.Transform.Translation.Z": "0.000000",
+   "Get_Spine1.Transform.Scale3D.X": "1.000000",
+   "Get_Spine1.Transform.Scale3D.Y": "1.000000",
+   "Get_Spine1.Transform.Scale3D.Z": "1.000000",
+   "Get_Spine1.CachedIndex.Key.Type": "None",
+   "Get_Spine1.CachedIndex.Key.Name": "None",
+   "Get_Spine1.CachedIndex.Index": "65535",
+   "Get_Spine1.CachedIndex.ContainerVersion": "-1",
+   "Mul_Spine1.A": "(X=0.000000,Y=0.000000,Z=0.000000,W=1.000000)",
+   "Mul_Spine1.B": "(X=0.000000,Y=0.000000,Z=0.000000,W=1.000000)",
+   "Mul_Spine1.Result": "(X=0.000000,Y=0.000000,Z=0.000000,W=1.000000)",
+   "Set_Spine1.ExecutePin": "()",
+   "Set_Spine1.Item.Type": "Bone",
+   "Set_Spine1.Item.Name": "Spine1",
+   "Set_Spine1.Space": "LocalSpace",
+   "Set_Spine1.bInitial": "False",
+   "Set_Spine1.Value.Rotation": "(X=0.000000,Y=0.000000,Z=0.000000,W=1.000000)",
+   "Set_Spine1.Value.Translation.X": "0.000000",
+   "Set_Spine1.Value.Translation.Y": "0.000000",
+   "Set_Spine1.Value.Translation.Z": "0.000000",
+   "Set_Spine1.Value.Scale3D.X": "1.000000",
+   "Set_Spine1.Value.Scale3D.Y": "1.000000",
+   "Set_Spine1.Value.Scale3D.Z": "1.000000",
+   "Set_Spine1.Weight": "1.0",
+   "Set_Spine1.bPropagateToChildren": "True",
+   "Set_Spine1.CachedIndex.Key.Type": "None",
+   "Set_Spine1.CachedIndex.Key.Name": "None",
+   "Set_Spine1.CachedIndex.Index": "65535",
+   "Set_Spine1.CachedIndex.ContainerVersion": "-1",
+   "Mul_Roll_Spine2.A": "1.000000",
+   "Mul_Roll_Spine2.B": "0.5",
+   "Mul_Roll_Spine2.Result": "0.000000",
+   "Mul_Pitch_Spine2.A": "1.000000",
+   "Mul_Pitch_Spine2.B": "0.5",
+   "Mul_Pitch_Spine2.Result": "0.000000",
+   "Quat_Spine2.Euler.X": "0.000000",
+   "Quat_Spine2.Euler.Y": "0.000000",
+   "Quat_Spine2.Euler.Z": "0.000000",
+   "Quat_Spine2.RotationOrder": "ZYX",
+   "Quat_Spine2.Result": "(X=0.000000,Y=0.000000,Z=0.000000,W=1.000000)",
+   "Get_Spine2.Item.Type": "Bone",
+   "Get_Spine2.Item.Name": "Spine2",
+   "Get_Spine2.Space": "LocalSpace",
+   "Get_Spine2.bInitial": "False",
+   "Get_Spine2.Transform.Rotation": "(X=0.000000,Y=0.000000,Z=0.000000,W=1.000000)",
+   "Get_Spine2.Transform.Translation.X": "0.000000",
+   "Get_Spine2.Transform.Translation.Y": "0.000000",
+   "Get_Spine2.Transform.Translation.Z": "0.000000",
+   "Get_Spine2.Transform.Scale3D.X": "1.000000",
+   "Get_Spine2.Transform.Scale3D.Y": "1.000000",
+   "Get_Spine2.Transform.Scale3D.Z": "1.000000",
+   "Get_Spine2.CachedIndex.Key.Type": "None",
+   "Get_Spine2.CachedIndex.Key.Name": "None",
+   "Get_Spine2.CachedIndex.Index": "65535",
+   "Get_Spine2.CachedIndex.ContainerVersion": "-1",
+   "Mul_Spine2.A": "(X=0.000000,Y=0.000000,Z=0.000000,W=1.000000)",
+   "Mul_Spine2.B": "(X=0.000000,Y=0.000000,Z=0.000000,W=1.000000)",
+   "Mul_Spine2.Result": "(X=0.000000,Y=0.000000,Z=0.000000,W=1.000000)",
+   "Set_Spine2.ExecutePin": "()",
+   "Set_Spine2.Item.Type": "Bone",
+   "Set_Spine2.Item.Name": "Spine2",
+   "Set_Spine2.Space": "LocalSpace",
+   "Set_Spine2.bInitial": "False",
+   "Set_Spine2.Value.Rotation": "(X=0.000000,Y=0.000000,Z=0.000000,W=1.000000)",
+   "Set_Spine2.Value.Translation.X": "0.000000",
+   "Set_Spine2.Value.Translation.Y": "0.000000",
+   "Set_Spine2.Value.Translation.Z": "0.000000",
+   "Set_Spine2.Value.Scale3D.X": "1.000000",
+   "Set_Spine2.Value.Scale3D.Y": "1.000000",
+   "Set_Spine2.Value.Scale3D.Z": "1.000000",
+   "Set_Spine2.Weight": "1.0",
+   "Set_Spine2.bPropagateToChildren": "True",
+   "Set_Spine2.CachedIndex.Key.Type": "None",
+   "Set_Spine2.CachedIndex.Key.Name": "None",
+   "Set_Spine2.CachedIndex.Index": "65535",
+   "Set_Spine2.CachedIndex.ContainerVersion": "-1",
+   "Mul_Roll_Neck.A": "1.000000",
+   "Mul_Roll_Neck.B": "0.333333",
+   "Mul_Roll_Neck.Result": "0.000000",
+   "Mul_Pitch_Neck.A": "1.000000",
+   "Mul_Pitch_Neck.B": "0.333333",
+   "Mul_Pitch_Neck.Result": "0.000000",
+   "Quat_Neck.Euler.X": "0.000000",
+   "Quat_Neck.Euler.Y": "0.000000",
+   "Quat_Neck.Euler.Z": "0.000000",
+   "Quat_Neck.RotationOrder": "ZYX",
+   "Quat_Neck.Result": "(X=0.000000,Y=0.000000,Z=0.000000,W=1.000000)",
+   "Get_Neck_Lean.Item.Type": "Bone",
+   "Get_Neck_Lean.Item.Name": "Neck",
+   "Get_Neck_Lean.Space": "LocalSpace",
+   "Get_Neck_Lean.bInitial": "False",
+   "Get_Neck_Lean.Transform.Rotation": "(X=0.000000,Y=0.000000,Z=0.000000,W=1.000000)",
+   "Get_Neck_Lean.Transform.Translation.X": "0.000000",
+   "Get_Neck_Lean.Transform.Translation.Y": "0.000000",
+   "Get_Neck_Lean.Transform.Translation.Z": "0.000000",
+   "Get_Neck_Lean.Transform.Scale3D.X": "1.000000",
+   "Get_Neck_Lean.Transform.Scale3D.Y": "1.000000",
+   "Get_Neck_Lean.Transform.Scale3D.Z": "1.000000",
+   "Get_Neck_Lean.CachedIndex.Key.Type": "None",
+   "Get_Neck_Lean.CachedIndex.Key.Name": "None",
+   "Get_Neck_Lean.CachedIndex.Index": "65535",
+   "Get_Neck_Lean.CachedIndex.ContainerVersion": "-1",
+   "Mul_Neck_Lean.A": "(X=0.000000,Y=0.000000,Z=0.000000,W=1.000000)",
+   "Mul_Neck_Lean.B": "(X=0.000000,Y=0.000000,Z=0.000000,W=1.000000)",
+   "Mul_Neck_Lean.Result": "(X=0.000000,Y=0.000000,Z=0.000000,W=1.000000)",
+   "Set_Neck_Lean.ExecutePin": "()",
+   "Set_Neck_Lean.Item.Type": "Bone",
+   "Set_Neck_Lean.Item.Name": "Neck",
+   "Set_Neck_Lean.Space": "LocalSpace",
+   "Set_Neck_Lean.bInitial": "False",
+   "Set_Neck_Lean.Value.Rotation": "(X=0.000000,Y=0.000000,Z=0.000000,W=1.000000)",
+   "Set_Neck_Lean.Value.Translation.X": "0.000000",
+   "Set_Neck_Lean.Value.Translation.Y": "0.000000",
+   "Set_Neck_Lean.Value.Translation.Z": "0.000000",
+   "Set_Neck_Lean.Value.Scale3D.X": "1.000000",
+   "Set_Neck_Lean.Value.Scale3D.Y": "1.000000",
+   "Set_Neck_Lean.Value.Scale3D.Z": "1.000000",
+   "Set_Neck_Lean.Weight": "1.0",
+   "Set_Neck_Lean.bPropagateToChildren": "True",
+   "Set_Neck_Lean.CachedIndex.Key.Type": "None",
+   "Set_Neck_Lean.CachedIndex.Key.Name": "None",
+   "Set_Neck_Lean.CachedIndex.Index": "65535",
+   "Set_Neck_Lean.CachedIndex.ContainerVersion": "-1",
+   "Get_PelvisOffset.Variable": "PelvisOffset",
+   "Get_PelvisOffset.Value": "",
+   "Get_LandCrouch.Variable": "LandCrouch",
+   "Get_LandCrouch.Value": "",
+   "Mul_LandCrouch.A": "1.000000",
+   "Mul_LandCrouch.B": "25.0",
+   "Mul_LandCrouch.Result": "0.000000",
+   "Add_PelvisLand.A": "0.000000",
+   "Add_PelvisLand.B": "0.000000",
+   "Add_PelvisLand.Result": "0.000000",
+   "Get_Hips.Item.Type": "Bone",
+   "Get_Hips.Item.Name": "Hips",
+   "Get_Hips.Space": "LocalSpace",
+   "Get_Hips.bInitial": "False",
+   "Get_Hips.Transform.Rotation": "(X=0.000000,Y=0.000000,Z=0.000000,W=1.000000)",
+   "Get_Hips.Transform.Translation.X": "0.000000",
+   "Get_Hips.Transform.Translation.Y": "0.000000",
+   "Get_Hips.Transform.Translation.Z": "0.000000",
+   "Get_Hips.Transform.Scale3D.X": "1.000000",
+   "Get_Hips.Transform.Scale3D.Y": "1.000000",
+   "Get_Hips.Transform.Scale3D.Z": "1.000000",
+   "Get_Hips.CachedIndex.Key.Type": "None",
+   "Get_Hips.CachedIndex.Key.Name": "None",
+   "Get_Hips.CachedIndex.Index": "65535",
+   "Get_Hips.CachedIndex.ContainerVersion": "-1",
+   "Add_HipsZ.A": "0.000000",
+   "Add_HipsZ.B": "0.000000",
+   "Add_HipsZ.Result": "0.000000",
+   "Set_Hips.ExecutePin": "()",
+   "Set_Hips.Item.Type": "Bone",
+   "Set_Hips.Item.Name": "Hips",
+   "Set_Hips.Space": "LocalSpace",
+   "Set_Hips.bInitial": "False",
+   "Set_Hips.Value.Rotation": "(X=0.000000,Y=0.000000,Z=0.000000,W=1.000000)",
+   "Set_Hips.Value.Translation.X": "0.000000",
+   "Set_Hips.Value.Translation.Y": "0.000000",
+   "Set_Hips.Value.Translation.Z": "0.000000",
+   "Set_Hips.Value.Scale3D.X": "1.000000",
+   "Set_Hips.Value.Scale3D.Y": "1.000000",
+   "Set_Hips.Value.Scale3D.Z": "1.000000",
+   "Set_Hips.Weight": "1.0",
+   "Set_Hips.bPropagateToChildren": "True",
+   "Set_Hips.CachedIndex.Key.Type": "None",
+   "Set_Hips.CachedIndex.Key.Name": "None",
+   "Set_Hips.CachedIndex.Index": "65535",
+   "Set_Hips.CachedIndex.ContainerVersion": "-1",
+   "Get_FootOffsetL.Variable": "FootOffsetL",
+   "Get_FootOffsetL.Value": "",
+   "Sub_FootOffsetL.A": "0.000000",
+   "Sub_FootOffsetL.B": "0.000000",
+   "Sub_FootOffsetL.Result": "0.000000",
+   "Get_LeftFoot.Item.Type": "Bone",
+   "Get_LeftFoot.Item.Name": "LeftFoot",
+   "Get_LeftFoot.Space": "GlobalSpace",
+   "Get_LeftFoot.bInitial": "False",
+   "Get_LeftFoot.Transform.Rotation": "(X=0.000000,Y=0.000000,Z=0.000000,W=1.000000)",
+   "Get_LeftFoot.Transform.Translation.X": "0.000000",
+   "Get_LeftFoot.Transform.Translation.Y": "0.000000",
+   "Get_LeftFoot.Transform.Translation.Z": "0.000000",
+   "Get_LeftFoot.Transform.Scale3D.X": "1.000000",
+   "Get_LeftFoot.Transform.Scale3D.Y": "1.000000",
+   "Get_LeftFoot.Transform.Scale3D.Z": "1.000000",
+   "Get_LeftFoot.CachedIndex.Key.Type": "None",
+   "Get_LeftFoot.CachedIndex.Key.Name": "None",
+   "Get_LeftFoot.CachedIndex.Index": "65535",
+   "Get_LeftFoot.CachedIndex.ContainerVersion": "-1",
+   "Add_LeftFootZ.A": "0.000000",
+   "Add_LeftFootZ.B": "0.000000",
+   "Add_LeftFootZ.Result": "0.000000",
+   "TwoBoneIK_Left.ExecutePin": "()",
+   "TwoBoneIK_Left.BoneA": "LeftUpLeg",
+   "TwoBoneIK_Left.BoneB": "LeftLeg",
+   "TwoBoneIK_Left.EffectorBone": "LeftFoot",
+   "TwoBoneIK_Left.Effector.Rotation": "(X=-0.011,Y=0.985,Z=0.170,W=0.019)",
+   "TwoBoneIK_Left.Effector.Translation.X": "6.291350",
+   "TwoBoneIK_Left.Effector.Translation.Y": "-1.226046",
+   "TwoBoneIK_Left.Effector.Translation.Z": "22.339157",
+   "TwoBoneIK_Left.Effector.Scale3D.X": "1.0",
+   "TwoBoneIK_Left.Effector.Scale3D.Y": "1.0",
+   "TwoBoneIK_Left.Effector.Scale3D.Z": "1.0",
+   "TwoBoneIK_Left.PrimaryAxis.X": "0.000000",
+   "TwoBoneIK_Left.PrimaryAxis.Y": "-1.000000",
+   "TwoBoneIK_Left.PrimaryAxis.Z": "0.000000",
+   "TwoBoneIK_Left.SecondaryAxis.X": "0.000000",
+   "TwoBoneIK_Left.SecondaryAxis.Y": "0.000000",
+   "TwoBoneIK_Left.SecondaryAxis.Z": "1.000000",
+   "TwoBoneIK_Left.SecondaryAxisWeight": "0.0",
+   "TwoBoneIK_Left.PoleVector.X": "12.000000",
+   "TwoBoneIK_Left.PoleVector.Y": "60.000000",
+   "TwoBoneIK_Left.PoleVector.Z": "28.100000",
+   "TwoBoneIK_Left.PoleVectorKind": "Location",
+   "TwoBoneIK_Left.PoleVectorSpace": "None",
+   "TwoBoneIK_Left.bEnableStretch": "False",
+   "TwoBoneIK_Left.StretchStartRatio": "0.750000",
+   "TwoBoneIK_Left.StretchMaximumRatio": "1.250000",
+   "TwoBoneIK_Left.Weight": "1.0",
+   "TwoBoneIK_Left.BoneALength": "0.000000",
+   "TwoBoneIK_Left.BoneBLength": "0.000000",
+   "TwoBoneIK_Left.bPropagateToChildren": "True",
+   "TwoBoneIK_Left.DebugSettings.bEnabled": "False",
+   "TwoBoneIK_Left.DebugSettings.Scale": "10.000000",
+   "TwoBoneIK_Left.DebugSettings.WorldOffset.Rotation": "(X=0.000000,Y=0.000000,Z=0.000000,W=1.000000)",
+   "TwoBoneIK_Left.DebugSettings.WorldOffset.Translation.X": "0.000000",
+   "TwoBoneIK_Left.DebugSettings.WorldOffset.Translation.Y": "0.000000",
+   "TwoBoneIK_Left.DebugSettings.WorldOffset.Translation.Z": "0.000000",
+   "TwoBoneIK_Left.DebugSettings.WorldOffset.Scale3D.X": "1.000000",
+   "TwoBoneIK_Left.DebugSettings.WorldOffset.Scale3D.Y": "1.000000",
+   "TwoBoneIK_Left.DebugSettings.WorldOffset.Scale3D.Z": "1.000000",
+   "TwoBoneIK_Left.CachedBoneAIndex.Key.Type": "None",
+   "TwoBoneIK_Left.CachedBoneAIndex.Key.Name": "None",
+   "TwoBoneIK_Left.CachedBoneAIndex.Index": "65535",
+   "TwoBoneIK_Left.CachedBoneAIndex.ContainerVersion": "-1",
+   "TwoBoneIK_Left.CachedBoneBIndex.Key.Type": "None",
+   "TwoBoneIK_Left.CachedBoneBIndex.Key.Name": "None",
+   "TwoBoneIK_Left.CachedBoneBIndex.Index": "65535",
+   "TwoBoneIK_Left.CachedBoneBIndex.ContainerVersion": "-1",
+   "TwoBoneIK_Left.CachedEffectorBoneIndex.Key.Type": "None",
+   "TwoBoneIK_Left.CachedEffectorBoneIndex.Key.Name": "None",
+   "TwoBoneIK_Left.CachedEffectorBoneIndex.Index": "65535",
+   "TwoBoneIK_Left.CachedEffectorBoneIndex.ContainerVersion": "-1",
+   "TwoBoneIK_Left.CachedPoleVectorSpaceIndex.Key.Type": "None",
+   "TwoBoneIK_Left.CachedPoleVectorSpaceIndex.Key.Name": "None",
+   "TwoBoneIK_Left.CachedPoleVectorSpaceIndex.Index": "65535",
+   "TwoBoneIK_Left.CachedPoleVectorSpaceIndex.ContainerVersion": "-1",
+   "Get_FootOffsetR.Variable": "FootOffsetR",
+   "Get_FootOffsetR.Value": "",
+   "Sub_FootOffsetR.A": "0.000000",
+   "Sub_FootOffsetR.B": "0.000000",
+   "Sub_FootOffsetR.Result": "0.000000",
+   "Get_RightFoot.Item.Type": "Bone",
+   "Get_RightFoot.Item.Name": "RightFoot",
+   "Get_RightFoot.Space": "GlobalSpace",
+   "Get_RightFoot.bInitial": "False",
+   "Get_RightFoot.Transform.Rotation": "(X=0.000000,Y=0.000000,Z=0.000000,W=1.000000)",
+   "Get_RightFoot.Transform.Translation.X": "0.000000",
+   "Get_RightFoot.Transform.Translation.Y": "0.000000",
+   "Get_RightFoot.Transform.Translation.Z": "0.000000",
+   "Get_RightFoot.Transform.Scale3D.X": "1.000000",
+   "Get_RightFoot.Transform.Scale3D.Y": "1.000000",
+   "Get_RightFoot.Transform.Scale3D.Z": "1.000000",
+   "Get_RightFoot.CachedIndex.Key.Type": "None",
+   "Get_RightFoot.CachedIndex.Key.Name": "None",
+   "Get_RightFoot.CachedIndex.Index": "65535",
+   "Get_RightFoot.CachedIndex.ContainerVersion": "-1",
+   "Add_RightFootZ.A": "0.000000",
+   "Add_RightFootZ.B": "0.000000",
+   "Add_RightFootZ.Result": "0.000000",
+   "TwoBoneIK_Right.ExecutePin": "()",
+   "TwoBoneIK_Right.BoneA": "RightUpLeg",
+   "TwoBoneIK_Right.BoneB": "RightLeg",
+   "TwoBoneIK_Right.EffectorBone": "RightFoot",
+   "TwoBoneIK_Right.Effector.Rotation": "(X=0.000000,Y=0.000000,Z=0.000000,W=1.000000)",
+   "TwoBoneIK_Right.Effector.Translation.X": "0.000000",
+   "TwoBoneIK_Right.Effector.Translation.Y": "0.000000",
+   "TwoBoneIK_Right.Effector.Translation.Z": "0.000000",
+   "TwoBoneIK_Right.Effector.Scale3D.X": "1.000000",
+   "TwoBoneIK_Right.Effector.Scale3D.Y": "1.000000",
+   "TwoBoneIK_Right.Effector.Scale3D.Z": "1.000000",
+   "TwoBoneIK_Right.PrimaryAxis.X": "0.000000",
+   "TwoBoneIK_Right.PrimaryAxis.Y": "-1.000000",
+   "TwoBoneIK_Right.PrimaryAxis.Z": "0.000000",
+   "TwoBoneIK_Right.SecondaryAxis.X": "0.000000",
+   "TwoBoneIK_Right.SecondaryAxis.Y": "0.000000",
+   "TwoBoneIK_Right.SecondaryAxis.Z": "1.000000",
+   "TwoBoneIK_Right.SecondaryAxisWeight": "0.0",
+   "TwoBoneIK_Right.PoleVector.X": "-12.000000",
+   "TwoBoneIK_Right.PoleVector.Y": "60.000000",
+   "TwoBoneIK_Right.PoleVector.Z": "28.100000",
+   "TwoBoneIK_Right.PoleVectorKind": "Location",
+   "TwoBoneIK_Right.PoleVectorSpace": "None",
+   "TwoBoneIK_Right.bEnableStretch": "False",
+   "TwoBoneIK_Right.StretchStartRatio": "0.750000",
+   "TwoBoneIK_Right.StretchMaximumRatio": "1.250000",
+   "TwoBoneIK_Right.Weight": "1.0",
+   "TwoBoneIK_Right.BoneALength": "0.000000",
+   "TwoBoneIK_Right.BoneBLength": "0.000000",
+   "TwoBoneIK_Right.bPropagateToChildren": "True",
+   "TwoBoneIK_Right.DebugSettings.bEnabled": "False",
+   "TwoBoneIK_Right.DebugSettings.Scale": "10.000000",
+   "TwoBoneIK_Right.DebugSettings.WorldOffset.Rotation": "(X=0.000000,Y=0.000000,Z=0.000000,W=1.000000)",
+   "TwoBoneIK_Right.DebugSettings.WorldOffset.Translation.X": "0.000000",
+   "TwoBoneIK_Right.DebugSettings.WorldOffset.Translation.Y": "0.000000",
+   "TwoBoneIK_Right.DebugSettings.WorldOffset.Translation.Z": "0.000000",
+   "TwoBoneIK_Right.DebugSettings.WorldOffset.Scale3D.X": "1.000000",
+   "TwoBoneIK_Right.DebugSettings.WorldOffset.Scale3D.Y": "1.000000",
+   "TwoBoneIK_Right.DebugSettings.WorldOffset.Scale3D.Z": "1.000000",
+   "TwoBoneIK_Right.CachedBoneAIndex.Key.Type": "None",
+   "TwoBoneIK_Right.CachedBoneAIndex.Key.Name": "None",
+   "TwoBoneIK_Right.CachedBoneAIndex.Index": "65535",
+   "TwoBoneIK_Right.CachedBoneAIndex.ContainerVersion": "-1",
+   "TwoBoneIK_Right.CachedBoneBIndex.Key.Type": "None",
+   "TwoBoneIK_Right.CachedBoneBIndex.Key.Name": "None",
+   "TwoBoneIK_Right.CachedBoneBIndex.Index": "65535",
+   "TwoBoneIK_Right.CachedBoneBIndex.ContainerVersion": "-1",
+   "TwoBoneIK_Right.CachedEffectorBoneIndex.Key.Type": "None",
+   "TwoBoneIK_Right.CachedEffectorBoneIndex.Key.Name": "None",
+   "TwoBoneIK_Right.CachedEffectorBoneIndex.Index": "65535",
+   "TwoBoneIK_Right.CachedEffectorBoneIndex.ContainerVersion": "-1",
+   "TwoBoneIK_Right.CachedPoleVectorSpaceIndex.Key.Type": "None",
+   "TwoBoneIK_Right.CachedPoleVectorSpaceIndex.Key.Name": "None",
+   "TwoBoneIK_Right.CachedPoleVectorSpaceIndex.Index": "65535",
+   "TwoBoneIK_Right.CachedPoleVectorSpaceIndex.ContainerVersion": "-1",
+   "Mul_Hips_Offset.A.Rotation": "(X=0.000000,Y=0.000000,Z=0.000000,W=1.000000)",
+   "Mul_Hips_Offset.A.Translation.X": "0.000000",
+   "Mul_Hips_Offset.A.Translation.Y": "0.000000",
+   "Mul_Hips_Offset.A.Translation.Z": "0.000000",
+   "Mul_Hips_Offset.A.Scale3D.X": "1.000000",
+   "Mul_Hips_Offset.A.Scale3D.Y": "1.000000",
+   "Mul_Hips_Offset.A.Scale3D.Z": "1.000000",
+   "Mul_Hips_Offset.B.Rotation": "(X=0.000000,Y=0.000000,Z=0.000000,W=1.000000)",
+   "Mul_Hips_Offset.B.Translation.X": "0.000000",
+   "Mul_Hips_Offset.B.Translation.Y": "0.000000",
+   "Mul_Hips_Offset.B.Translation.Z": "0.000000",
+   "Mul_Hips_Offset.B.Scale3D.X": "1.000000",
+   "Mul_Hips_Offset.B.Scale3D.Y": "1.000000",
+   "Mul_Hips_Offset.B.Scale3D.Z": "1.000000",
+   "Mul_Hips_Offset.Result.Rotation": "(X=0.000000,Y=0.000000,Z=0.000000,W=1.000000)",
+   "Mul_Hips_Offset.Result.Translation.X": "0.000000",
+   "Mul_Hips_Offset.Result.Translation.Y": "0.000000",
+   "Mul_Hips_Offset.Result.Translation.Z": "0.000000",
+   "Mul_Hips_Offset.Result.Scale3D.X": "1.000000",
+   "Mul_Hips_Offset.Result.Scale3D.Y": "1.000000",
+   "Mul_Hips_Offset.Result.Scale3D.Z": "1.000000",
+   "Clamp_LeftOffset.Value": "0.000000",
+   "Clamp_LeftOffset.Minimum": "0.000000",
+   "Clamp_LeftOffset.Maximum": "35.000000",
+   "Clamp_LeftOffset.Result": "0.000000",
+   "Clamp_RightOffset.Value": "0.000000",
+   "Clamp_RightOffset.Minimum": "0.000000",
+   "Clamp_RightOffset.Maximum": "35.000000",
+   "Clamp_RightOffset.Result": "0.000000",
+   "Make_Hips_Offset.Translation.X": "0.0",
+   "Make_Hips_Offset.Translation.Y": "0.000000",
+   "Make_Hips_Offset.Translation.Z": "0.000000",
+   "Make_Hips_Offset.Rotation": "(X=0.000000,Y=0.000000,Z=0.000000,W=1.000000)",
+   "Make_Hips_Offset.Scale.X": "1.000000",
+   "Make_Hips_Offset.Scale.Y": "1.000000",
+   "Make_Hips_Offset.Scale.Z": "1.000000",
+   "Make_Hips_Offset.Result.Rotation": "(X=0.000000,Y=0.000000,Z=0.000000,W=1.000000)",
+   "Make_Hips_Offset.Result.Translation.X": "0.000000",
+   "Make_Hips_Offset.Result.Translation.Y": "0.000000",
+   "Make_Hips_Offset.Result.Translation.Z": "0.000000",
+   "Make_Hips_Offset.Result.Scale3D.X": "1.000000",
+   "Make_Hips_Offset.Result.Scale3D.Y": "1.000000",
+   "Make_Hips_Offset.Result.Scale3D.Z": "1.000000",
+   "ORFANO_Mul_Hips_Offset_1.A.Rotation": "(X=0.000000,Y=0.000000,Z=0.000000,W=1.000000)",
+   "ORFANO_Mul_Hips_Offset_1.A.Translation.X": "0.000000",
+   "ORFANO_Mul_Hips_Offset_1.A.Translation.Y": "0.000000",
+   "ORFANO_Mul_Hips_Offset_1.A.Translation.Z": "0.000000",
+   "ORFANO_Mul_Hips_Offset_1.A.Scale3D.X": "1.000000",
+   "ORFANO_Mul_Hips_Offset_1.A.Scale3D.Y": "1.000000",
+   "ORFANO_Mul_Hips_Offset_1.A.Scale3D.Z": "1.000000",
+   "ORFANO_Mul_Hips_Offset_1.B.Rotation": "(X=0.000000,Y=0.000000,Z=0.000000,W=1.000000)",
+   "ORFANO_Mul_Hips_Offset_1.B.Translation.X": "0.000000",
+   "ORFANO_Mul_Hips_Offset_1.B.Translation.Y": "0.000000",
+   "ORFANO_Mul_Hips_Offset_1.B.Translation.Z": "0.000000",
+   "ORFANO_Mul_Hips_Offset_1.B.Scale3D.X": "1.000000",
+   "ORFANO_Mul_Hips_Offset_1.B.Scale3D.Y": "1.000000",
+   "ORFANO_Mul_Hips_Offset_1.B.Scale3D.Z": "1.000000",
+   "ORFANO_Mul_Hips_Offset_1.Result.Rotation": "(X=0.000000,Y=0.000000,Z=0.000000,W=1.000000)",
+   "ORFANO_Mul_Hips_Offset_1.Result.Translation.X": "0.000000",
+   "ORFANO_Mul_Hips_Offset_1.Result.Translation.Y": "0.000000",
+   "ORFANO_Mul_Hips_Offset_1.Result.Translation.Z": "0.000000",
+   "ORFANO_Mul_Hips_Offset_1.Result.Scale3D.X": "1.000000",
+   "ORFANO_Mul_Hips_Offset_1.Result.Scale3D.Y": "1.000000",
+   "ORFANO_Mul_Hips_Offset_1.Result.Scale3D.Z": "1.000000",
+   "Make_LeftFoot_Offset.Translation.X": "0.000000",
+   "Make_LeftFoot_Offset.Translation.Y": "0.0",
+   "Make_LeftFoot_Offset.Translation.Z": "0.000000",
+   "Make_LeftFoot_Offset.Rotation": "(X=0.000000,Y=0.000000,Z=0.000000,W=1.000000)",
+   "Make_LeftFoot_Offset.Scale.X": "1.000000",
+   "Make_LeftFoot_Offset.Scale.Y": "1.000000",
+   "Make_LeftFoot_Offset.Scale.Z": "1.000000",
+   "Make_LeftFoot_Offset.Result.Rotation": "(X=0.000000,Y=0.000000,Z=0.000000,W=1.000000)",
+   "Make_LeftFoot_Offset.Result.Translation.X": "0.000000",
+   "Make_LeftFoot_Offset.Result.Translation.Y": "0.000000",
+   "Make_LeftFoot_Offset.Result.Translation.Z": "0.000000",
+   "Make_LeftFoot_Offset.Result.Scale3D.X": "1.000000",
+   "Make_LeftFoot_Offset.Result.Scale3D.Y": "1.000000",
+   "Make_LeftFoot_Offset.Result.Scale3D.Z": "1.000000",
+   "Mul_LeftFoot_Offset.A.Rotation": "(X=0.000000,Y=0.000000,Z=0.000000,W=1.000000)",
+   "Mul_LeftFoot_Offset.A.Translation.X": "0.000000",
+   "Mul_LeftFoot_Offset.A.Translation.Y": "0.000000",
+   "Mul_LeftFoot_Offset.A.Translation.Z": "0.000000",
+   "Mul_LeftFoot_Offset.A.Scale3D.X": "1.000000",
+   "Mul_LeftFoot_Offset.A.Scale3D.Y": "1.000000",
+   "Mul_LeftFoot_Offset.A.Scale3D.Z": "1.000000",
+   "Mul_LeftFoot_Offset.B.Rotation": "(X=0.000000,Y=0.000000,Z=0.000000,W=1.000000)",
+   "Mul_LeftFoot_Offset.B.Translation.X": "0.000000",
+   "Mul_LeftFoot_Offset.B.Translation.Y": "0.000000",
+   "Mul_LeftFoot_Offset.B.Translation.Z": "0.000000",
+   "Mul_LeftFoot_Offset.B.Scale3D.X": "1.000000",
+   "Mul_LeftFoot_Offset.B.Scale3D.Y": "1.000000",
+   "Mul_LeftFoot_Offset.B.Scale3D.Z": "1.000000",
+   "Mul_LeftFoot_Offset.Result.Rotation": "(X=0.000000,Y=0.000000,Z=0.000000,W=1.000000)",
+   "Mul_LeftFoot_Offset.Result.Translation.X": "0.000000",
+   "Mul_LeftFoot_Offset.Result.Translation.Y": "0.000000",
+   "Mul_LeftFoot_Offset.Result.Translation.Z": "0.000000",
+   "Mul_LeftFoot_Offset.Result.Scale3D.X": "1.000000",
+   "Mul_LeftFoot_Offset.Result.Scale3D.Y": "1.000000",
+   "Mul_LeftFoot_Offset.Result.Scale3D.Z": "1.000000",
+   "Make_RightFoot_Offset.Translation.X": "0.000000",
+   "Make_RightFoot_Offset.Translation.Y": "0.000000",
+   "Make_RightFoot_Offset.Translation.Z": "0.000000",
+   "Make_RightFoot_Offset.Rotation": "(X=0.000000,Y=0.000000,Z=0.000000,W=1.000000)",
+   "Make_RightFoot_Offset.Scale.X": "1.000000",
+   "Make_RightFoot_Offset.Scale.Y": "1.000000",
+   "Make_RightFoot_Offset.Scale.Z": "1.000000",
+   "Make_RightFoot_Offset.Result.Rotation": "(X=0.000000,Y=0.000000,Z=0.000000,W=1.000000)",
+   "Make_RightFoot_Offset.Result.Translation.X": "0.000000",
+   "Make_RightFoot_Offset.Result.Translation.Y": "0.000000",
+   "Make_RightFoot_Offset.Result.Translation.Z": "0.000000",
+   "Make_RightFoot_Offset.Result.Scale3D.X": "1.000000",
+   "Make_RightFoot_Offset.Result.Scale3D.Y": "1.000000",
+   "Make_RightFoot_Offset.Result.Scale3D.Z": "1.000000",
+   "Mul_RightFoot_Offset.A.Rotation": "(X=0.000000,Y=0.000000,Z=0.000000,W=1.000000)",
+   "Mul_RightFoot_Offset.A.Translation.X": "0.000000",
+   "Mul_RightFoot_Offset.A.Translation.Y": "0.000000",
+   "Mul_RightFoot_Offset.A.Translation.Z": "0.000000",
+   "Mul_RightFoot_Offset.A.Scale3D.X": "1.000000",
+   "Mul_RightFoot_Offset.A.Scale3D.Y": "1.000000",
+   "Mul_RightFoot_Offset.A.Scale3D.Z": "1.000000",
+   "Mul_RightFoot_Offset.B.Rotation": "(X=0.000000,Y=0.000000,Z=0.000000,W=1.000000)",
+   "Mul_RightFoot_Offset.B.Translation.X": "0.000000",
+   "Mul_RightFoot_Offset.B.Translation.Y": "0.000000",
+   "Mul_RightFoot_Offset.B.Translation.Z": "0.000000",
+   "Mul_RightFoot_Offset.B.Scale3D.X": "1.000000",
+   "Mul_RightFoot_Offset.B.Scale3D.Y": "1.000000",
+   "Mul_RightFoot_Offset.B.Scale3D.Z": "1.000000",
+   "Mul_RightFoot_Offset.Result.Rotation": "(X=0.000000,Y=0.000000,Z=0.000000,W=1.000000)",
+   "Mul_RightFoot_Offset.Result.Translation.X": "0.000000",
+   "Mul_RightFoot_Offset.Result.Translation.Y": "0.000000",
+   "Mul_RightFoot_Offset.Result.Translation.Z": "0.000000",
+   "Mul_RightFoot_Offset.Result.Scale3D.X": "1.000000",
+   "Mul_RightFoot_Offset.Result.Scale3D.Y": "1.000000",
+   "Mul_RightFoot_Offset.Result.Scale3D.Z": "1.000000",
+   "Reroute_PelvisOffset_1.Value": "0.000000",
+   "Reroute_PelvisOffset_2.Value": "0.000000"
+  }
+ },
+ "CR_Student_IK_fix": {
+  "nodes": {
+   "RigUnit_BeginExecution": {
+    "cls": "RigVMUnitNode",
+    "title": "Forwards Solve",
+    "pos": [
+     0.0,
+     250.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "GetTransform_ctrl_hips": {
+    "cls": "RigVMUnitNode",
+    "title": "Get Transform",
+    "pos": [
+     0.0,
+     1150.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "SetTransform_Hips": {
+    "cls": "RigVMUnitNode",
+    "title": "Set Transform",
+    "pos": [
+     450.0,
+     1150.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "GetTransform_ctrl_foot_l_ik": {
+    "cls": "RigVMUnitNode",
+    "title": "Get Transform",
+    "pos": [
+     900.0,
+     2300.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "GetTransform_ctrl_pole_knee_l": {
+    "cls": "RigVMUnitNode",
+    "title": "Get Transform",
+    "pos": [
+     900.0,
+     2650.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "IK_LeftLeg": {
+    "cls": "RigVMUnitNode",
+    "title": "Basic IK",
+    "pos": [
+     1350.0,
+     2300.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "GetTransform_ctrl_foot_r_ik": {
+    "cls": "RigVMUnitNode",
+    "title": "Get Transform",
+    "pos": [
+     1350.0,
+     3700.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "GetTransform_ctrl_pole_knee_r": {
+    "cls": "RigVMUnitNode",
+    "title": "Get Transform",
+    "pos": [
+     1350.0,
+     4050.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "IK_RightLeg": {
+    "cls": "RigVMUnitNode",
+    "title": "Basic IK",
+    "pos": [
+     1800.0,
+     3700.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "GetTransform_ctrl_hand_l_ik": {
+    "cls": "RigVMUnitNode",
+    "title": "Get Transform",
+    "pos": [
+     1800.0,
+     5100.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "GetTransform_ctrl_pole_elbow_l": {
+    "cls": "RigVMUnitNode",
+    "title": "Get Transform",
+    "pos": [
+     1800.0,
+     5450.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "IK_LeftArm": {
+    "cls": "RigVMUnitNode",
+    "title": "Basic IK",
+    "pos": [
+     2250.0,
+     5100.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "GetTransform_ctrl_hand_r_ik": {
+    "cls": "RigVMUnitNode",
+    "title": "Get Transform",
+    "pos": [
+     2250.0,
+     6500.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "GetTransform_ctrl_pole_elbow_r": {
+    "cls": "RigVMUnitNode",
+    "title": "Get Transform",
+    "pos": [
+     2250.0,
+     6850.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "IK_RightArm": {
+    "cls": "RigVMUnitNode",
+    "title": "Basic IK",
+    "pos": [
+     2700.0,
+     6500.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "EdGraphNode_Comment_0": {
+    "cls": "RigVMCommentNode",
+    "title": "CADERA",
+    "pos": [
+     -100.0,
+     900.0
+    ],
+    "size": [
+     1050.0,
+     750.0
+    ],
+    "text": "CADERA",
+    "font": 120,
+    "color": "<Struct 'LinearColor' (0x000001BB0BCB80A0) {r: 0.150000, g: 0.450000, b: 0.200000, a: 0.500000}>"
+   },
+   "EdGraphNode_Comment_5": {
+    "cls": "RigVMCommentNode",
+    "title": "PIERNA IZQ",
+    "pos": [
+     800.0,
+     2050.0
+    ],
+    "size": [
+     1000.0,
+     1000.0
+    ],
+    "text": "PIERNA IZQ",
+    "font": 120,
+    "color": "<Struct 'LinearColor' (0x000001BB0BCB8120) {r: 0.700000, g: 0.400000, b: 0.100000, a: 0.500000}>"
+   },
+   "EdGraphNode_Comment_6": {
+    "cls": "RigVMCommentNode",
+    "title": "PIERNA DER",
+    "pos": [
+     1250.0,
+     3450.0
+    ],
+    "size": [
+     1000.0,
+     1000.0
+    ],
+    "text": "PIERNA DER",
+    "font": 120,
+    "color": "<Struct 'LinearColor' (0x000001BB0BCB87E0) {r: 0.700000, g: 0.400000, b: 0.100000, a: 0.500000}>"
+   },
+   "EdGraphNode_Comment_7": {
+    "cls": "RigVMCommentNode",
+    "title": "BRAZO IZQ",
+    "pos": [
+     1700.0,
+     4850.0
+    ],
+    "size": [
+     1000.0,
+     1000.0
+    ],
+    "text": "BRAZO IZQ",
+    "font": 120,
+    "color": "<Struct 'LinearColor' (0x000001BB0BCB92A0) {r: 0.700000, g: 0.400000, b: 0.100000, a: 0.500000}>"
+   },
+   "EdGraphNode_Comment_8": {
+    "cls": "RigVMCommentNode",
+    "title": "BRAZO DER",
+    "pos": [
+     2150.0,
+     6250.0
+    ],
+    "size": [
+     1000.0,
+     1000.0
+    ],
+    "text": "BRAZO DER",
+    "font": 120,
+    "color": "<Struct 'LinearColor' (0x000001BB0BCBA6E0) {r: 0.700000, g: 0.400000, b: 0.100000, a: 0.500000}>"
+   },
+   "CommentNode": {
+    "cls": "RigVMCommentNode",
+    "title": "ENTRADA",
+    "pos": [
+     -100.0,
+     0.0
+    ],
+    "size": [
+     700.0,
+     500.0
+    ],
+    "text": "ENTRADA",
+    "font": 120,
+    "color": "<Struct 'LinearColor' (0x000001BB0BCBBF60) {r: 0.100000, g: 0.250000, b: 0.600000, a: 0.500000}>"
+   }
+  },
+  "links": [
+   [
+    "RigUnit_BeginExecution.ExecutePin",
+    "SetTransform_Hips.ExecutePin"
+   ],
+   [
+    "GetTransform_ctrl_hips.Transform",
+    "SetTransform_Hips.Value"
+   ],
+   [
+    "SetTransform_Hips.ExecutePin",
+    "IK_LeftLeg.ExecutePin"
+   ],
+   [
+    "GetTransform_ctrl_foot_l_ik.Transform",
+    "IK_LeftLeg.Effector"
+   ],
+   [
+    "GetTransform_ctrl_pole_knee_l.Transform.Translation",
+    "IK_LeftLeg.PoleVector"
+   ],
+   [
+    "IK_LeftLeg.ExecutePin",
+    "IK_RightLeg.ExecutePin"
+   ],
+   [
+    "GetTransform_ctrl_foot_r_ik.Transform",
+    "IK_RightLeg.Effector"
+   ],
+   [
+    "GetTransform_ctrl_pole_knee_r.Transform.Translation",
+    "IK_RightLeg.PoleVector"
+   ],
+   [
+    "IK_RightLeg.ExecutePin",
+    "IK_LeftArm.ExecutePin"
+   ],
+   [
+    "GetTransform_ctrl_hand_l_ik.Transform",
+    "IK_LeftArm.Effector"
+   ],
+   [
+    "GetTransform_ctrl_pole_elbow_l.Transform.Translation",
+    "IK_LeftArm.PoleVector"
+   ],
+   [
+    "IK_LeftArm.ExecutePin",
+    "IK_RightArm.ExecutePin"
+   ],
+   [
+    "GetTransform_ctrl_hand_r_ik.Transform",
+    "IK_RightArm.Effector"
+   ],
+   [
+    "GetTransform_ctrl_pole_elbow_r.Transform.Translation",
+    "IK_RightArm.PoleVector"
+   ]
+  ],
+  "vals": {
+   "RigUnit_BeginExecution.ExecutePin": "()",
+   "GetTransform_ctrl_hips.Item.Type": "Control",
+   "GetTransform_ctrl_hips.Item.Name": "ctrl_hips",
+   "GetTransform_ctrl_hips.Space": "GlobalSpace",
+   "GetTransform_ctrl_hips.bInitial": "False",
+   "GetTransform_ctrl_hips.Transform.Rotation": "(X=0.000000,Y=0.000000,Z=0.000000,W=1.000000)",
+   "GetTransform_ctrl_hips.Transform.Translation.X": "0.000000",
+   "GetTransform_ctrl_hips.Transform.Translation.Y": "0.000000",
+   "GetTransform_ctrl_hips.Transform.Translation.Z": "0.000000",
+   "GetTransform_ctrl_hips.Transform.Scale3D.X": "1.000000",
+   "GetTransform_ctrl_hips.Transform.Scale3D.Y": "1.000000",
+   "GetTransform_ctrl_hips.Transform.Scale3D.Z": "1.000000",
+   "GetTransform_ctrl_hips.CachedIndex.Key.Type": "None",
+   "GetTransform_ctrl_hips.CachedIndex.Key.Name": "None",
+   "GetTransform_ctrl_hips.CachedIndex.Index": "65535",
+   "GetTransform_ctrl_hips.CachedIndex.ContainerVersion": "-1",
+   "SetTransform_Hips.ExecutePin": "()",
+   "SetTransform_Hips.Item.Type": "Bone",
+   "SetTransform_Hips.Item.Name": "Hips",
+   "SetTransform_Hips.Space": "GlobalSpace",
+   "SetTransform_Hips.bInitial": "False",
+   "SetTransform_Hips.Value.Rotation": "(X=0.000000,Y=0.000000,Z=0.000000,W=1.000000)",
+   "SetTransform_Hips.Value.Translation.X": "0.000000",
+   "SetTransform_Hips.Value.Translation.Y": "0.000000",
+   "SetTransform_Hips.Value.Translation.Z": "0.000000",
+   "SetTransform_Hips.Value.Scale3D.X": "1.000000",
+   "SetTransform_Hips.Value.Scale3D.Y": "1.000000",
+   "SetTransform_Hips.Value.Scale3D.Z": "1.000000",
+   "SetTransform_Hips.Weight": "1.000000",
+   "SetTransform_Hips.bPropagateToChildren": "True",
+   "SetTransform_Hips.CachedIndex": "()",
+   "GetTransform_ctrl_foot_l_ik.Item.Type": "Control",
+   "GetTransform_ctrl_foot_l_ik.Item.Name": "ctrl_foot_l_ik",
+   "GetTransform_ctrl_foot_l_ik.Space": "GlobalSpace",
+   "GetTransform_ctrl_foot_l_ik.bInitial": "False",
+   "GetTransform_ctrl_foot_l_ik.Transform.Rotation": "(X=0.000000,Y=0.000000,Z=0.000000,W=1.000000)",
+   "GetTransform_ctrl_foot_l_ik.Transform.Translation.X": "0.000000",
+   "GetTransform_ctrl_foot_l_ik.Transform.Translation.Y": "0.000000",
+   "GetTransform_ctrl_foot_l_ik.Transform.Translation.Z": "0.000000",
+   "GetTransform_ctrl_foot_l_ik.Transform.Scale3D.X": "1.000000",
+   "GetTransform_ctrl_foot_l_ik.Transform.Scale3D.Y": "1.000000",
+   "GetTransform_ctrl_foot_l_ik.Transform.Scale3D.Z": "1.000000",
+   "GetTransform_ctrl_foot_l_ik.CachedIndex.Key.Type": "None",
+   "GetTransform_ctrl_foot_l_ik.CachedIndex.Key.Name": "None",
+   "GetTransform_ctrl_foot_l_ik.CachedIndex.Index": "65535",
+   "GetTransform_ctrl_foot_l_ik.CachedIndex.ContainerVersion": "-1",
+   "GetTransform_ctrl_pole_knee_l.Item.Type": "Control",
+   "GetTransform_ctrl_pole_knee_l.Item.Name": "ctrl_pole_knee_l",
+   "GetTransform_ctrl_pole_knee_l.Space": "GlobalSpace",
+   "GetTransform_ctrl_pole_knee_l.bInitial": "False",
+   "GetTransform_ctrl_pole_knee_l.Transform.Rotation": "(X=0.000000,Y=0.000000,Z=0.000000,W=1.000000)",
+   "GetTransform_ctrl_pole_knee_l.Transform.Translation.X": "0.000000",
+   "GetTransform_ctrl_pole_knee_l.Transform.Translation.Y": "0.000000",
+   "GetTransform_ctrl_pole_knee_l.Transform.Translation.Z": "0.000000",
+   "GetTransform_ctrl_pole_knee_l.Transform.Scale3D.X": "1.000000",
+   "GetTransform_ctrl_pole_knee_l.Transform.Scale3D.Y": "1.000000",
+   "GetTransform_ctrl_pole_knee_l.Transform.Scale3D.Z": "1.000000",
+   "GetTransform_ctrl_pole_knee_l.CachedIndex.Key.Type": "None",
+   "GetTransform_ctrl_pole_knee_l.CachedIndex.Key.Name": "None",
+   "GetTransform_ctrl_pole_knee_l.CachedIndex.Index": "65535",
+   "GetTransform_ctrl_pole_knee_l.CachedIndex.ContainerVersion": "-1",
+   "IK_LeftLeg.ExecutePin": "()",
+   "IK_LeftLeg.BoneA": "LeftUpLeg",
+   "IK_LeftLeg.BoneB": "LeftLeg",
+   "IK_LeftLeg.EffectorBone": "LeftFoot",
+   "IK_LeftLeg.Effector.Rotation": "(X=0.000000,Y=0.000000,Z=0.000000,W=1.000000)",
+   "IK_LeftLeg.Effector.Translation.X": "0.000000",
+   "IK_LeftLeg.Effector.Translation.Y": "0.000000",
+   "IK_LeftLeg.Effector.Translation.Z": "0.000000",
+   "IK_LeftLeg.Effector.Scale3D.X": "1.000000",
+   "IK_LeftLeg.Effector.Scale3D.Y": "1.000000",
+   "IK_LeftLeg.Effector.Scale3D.Z": "1.000000",
+   "IK_LeftLeg.PrimaryAxis.X": "0.000000",
+   "IK_LeftLeg.PrimaryAxis.Y": "-1.000000",
+   "IK_LeftLeg.PrimaryAxis.Z": "0.000000",
+   "IK_LeftLeg.SecondaryAxis.X": "0.000000",
+   "IK_LeftLeg.SecondaryAxis.Y": "0.000000",
+   "IK_LeftLeg.SecondaryAxis.Z": "1.000000",
+   "IK_LeftLeg.SecondaryAxisWeight": "1.000000",
+   "IK_LeftLeg.PoleVector.X": "0.000000",
+   "IK_LeftLeg.PoleVector.Y": "0.000000",
+   "IK_LeftLeg.PoleVector.Z": "1.000000",
+   "IK_LeftLeg.PoleVectorKind": "Location",
+   "IK_LeftLeg.PoleVectorSpace": "None",
+   "IK_LeftLeg.bEnableStretch": "False",
+   "IK_LeftLeg.StretchStartRatio": "0.750000",
+   "IK_LeftLeg.StretchMaximumRatio": "1.250000",
+   "IK_LeftLeg.Weight": "1.000000",
+   "IK_LeftLeg.BoneALength": "0.000000",
+   "IK_LeftLeg.BoneBLength": "0.000000",
+   "IK_LeftLeg.bPropagateToChildren": "True",
+   "IK_LeftLeg.DebugSettings.bEnabled": "False",
+   "IK_LeftLeg.DebugSettings.Scale": "10.000000",
+   "IK_LeftLeg.DebugSettings.WorldOffset.Rotation": "(X=0.000000,Y=0.000000,Z=0.000000,W=1.000000)",
+   "IK_LeftLeg.DebugSettings.WorldOffset.Translation.X": "0.000000",
+   "IK_LeftLeg.DebugSettings.WorldOffset.Translation.Y": "0.000000",
+   "IK_LeftLeg.DebugSettings.WorldOffset.Translation.Z": "0.000000",
+   "IK_LeftLeg.DebugSettings.WorldOffset.Scale3D.X": "1.000000",
+   "IK_LeftLeg.DebugSettings.WorldOffset.Scale3D.Y": "1.000000",
+   "IK_LeftLeg.DebugSettings.WorldOffset.Scale3D.Z": "1.000000",
+   "IK_LeftLeg.CachedBoneAIndex.Key.Type": "None",
+   "IK_LeftLeg.CachedBoneAIndex.Key.Name": "None",
+   "IK_LeftLeg.CachedBoneAIndex.Index": "65535",
+   "IK_LeftLeg.CachedBoneAIndex.ContainerVersion": "-1",
+   "IK_LeftLeg.CachedBoneBIndex.Key.Type": "None",
+   "IK_LeftLeg.CachedBoneBIndex.Key.Name": "None",
+   "IK_LeftLeg.CachedBoneBIndex.Index": "65535",
+   "IK_LeftLeg.CachedBoneBIndex.ContainerVersion": "-1",
+   "IK_LeftLeg.CachedEffectorBoneIndex.Key.Type": "None",
+   "IK_LeftLeg.CachedEffectorBoneIndex.Key.Name": "None",
+   "IK_LeftLeg.CachedEffectorBoneIndex.Index": "65535",
+   "IK_LeftLeg.CachedEffectorBoneIndex.ContainerVersion": "-1",
+   "IK_LeftLeg.CachedPoleVectorSpaceIndex.Key.Type": "None",
+   "IK_LeftLeg.CachedPoleVectorSpaceIndex.Key.Name": "None",
+   "IK_LeftLeg.CachedPoleVectorSpaceIndex.Index": "65535",
+   "IK_LeftLeg.CachedPoleVectorSpaceIndex.ContainerVersion": "-1",
+   "GetTransform_ctrl_foot_r_ik.Item.Type": "Control",
+   "GetTransform_ctrl_foot_r_ik.Item.Name": "ctrl_foot_r_ik",
+   "GetTransform_ctrl_foot_r_ik.Space": "GlobalSpace",
+   "GetTransform_ctrl_foot_r_ik.bInitial": "False",
+   "GetTransform_ctrl_foot_r_ik.Transform.Rotation": "(X=0.000000,Y=0.000000,Z=0.000000,W=1.000000)",
+   "GetTransform_ctrl_foot_r_ik.Transform.Translation.X": "0.000000",
+   "GetTransform_ctrl_foot_r_ik.Transform.Translation.Y": "0.000000",
+   "GetTransform_ctrl_foot_r_ik.Transform.Translation.Z": "0.000000",
+   "GetTransform_ctrl_foot_r_ik.Transform.Scale3D.X": "1.000000",
+   "GetTransform_ctrl_foot_r_ik.Transform.Scale3D.Y": "1.000000",
+   "GetTransform_ctrl_foot_r_ik.Transform.Scale3D.Z": "1.000000",
+   "GetTransform_ctrl_foot_r_ik.CachedIndex.Key.Type": "None",
+   "GetTransform_ctrl_foot_r_ik.CachedIndex.Key.Name": "None",
+   "GetTransform_ctrl_foot_r_ik.CachedIndex.Index": "65535",
+   "GetTransform_ctrl_foot_r_ik.CachedIndex.ContainerVersion": "-1",
+   "GetTransform_ctrl_pole_knee_r.Item.Type": "Control",
+   "GetTransform_ctrl_pole_knee_r.Item.Name": "ctrl_pole_knee_r",
+   "GetTransform_ctrl_pole_knee_r.Space": "GlobalSpace",
+   "GetTransform_ctrl_pole_knee_r.bInitial": "False",
+   "GetTransform_ctrl_pole_knee_r.Transform.Rotation": "(X=0.000000,Y=0.000000,Z=0.000000,W=1.000000)",
+   "GetTransform_ctrl_pole_knee_r.Transform.Translation.X": "0.000000",
+   "GetTransform_ctrl_pole_knee_r.Transform.Translation.Y": "0.000000",
+   "GetTransform_ctrl_pole_knee_r.Transform.Translation.Z": "0.000000",
+   "GetTransform_ctrl_pole_knee_r.Transform.Scale3D.X": "1.000000",
+   "GetTransform_ctrl_pole_knee_r.Transform.Scale3D.Y": "1.000000",
+   "GetTransform_ctrl_pole_knee_r.Transform.Scale3D.Z": "1.000000",
+   "GetTransform_ctrl_pole_knee_r.CachedIndex.Key.Type": "None",
+   "GetTransform_ctrl_pole_knee_r.CachedIndex.Key.Name": "None",
+   "GetTransform_ctrl_pole_knee_r.CachedIndex.Index": "65535",
+   "GetTransform_ctrl_pole_knee_r.CachedIndex.ContainerVersion": "-1",
+   "IK_RightLeg.ExecutePin": "()",
+   "IK_RightLeg.BoneA": "RightUpLeg",
+   "IK_RightLeg.BoneB": "RightLeg",
+   "IK_RightLeg.EffectorBone": "RightFoot",
+   "IK_RightLeg.Effector.Rotation": "(X=0.000000,Y=0.000000,Z=0.000000,W=1.000000)",
+   "IK_RightLeg.Effector.Translation.X": "0.000000",
+   "IK_RightLeg.Effector.Translation.Y": "0.000000",
+   "IK_RightLeg.Effector.Translation.Z": "0.000000",
+   "IK_RightLeg.Effector.Scale3D.X": "1.000000",
+   "IK_RightLeg.Effector.Scale3D.Y": "1.000000",
+   "IK_RightLeg.Effector.Scale3D.Z": "1.000000",
+   "IK_RightLeg.PrimaryAxis.X": "0.000000",
+   "IK_RightLeg.PrimaryAxis.Y": "-1.000000",
+   "IK_RightLeg.PrimaryAxis.Z": "0.000000",
+   "IK_RightLeg.SecondaryAxis.X": "0.000000",
+   "IK_RightLeg.SecondaryAxis.Y": "0.000000",
+   "IK_RightLeg.SecondaryAxis.Z": "1.000000",
+   "IK_RightLeg.SecondaryAxisWeight": "1.000000",
+   "IK_RightLeg.PoleVector.X": "0.000000",
+   "IK_RightLeg.PoleVector.Y": "0.000000",
+   "IK_RightLeg.PoleVector.Z": "1.000000",
+   "IK_RightLeg.PoleVectorKind": "Location",
+   "IK_RightLeg.PoleVectorSpace": "None",
+   "IK_RightLeg.bEnableStretch": "False",
+   "IK_RightLeg.StretchStartRatio": "0.750000",
+   "IK_RightLeg.StretchMaximumRatio": "1.250000",
+   "IK_RightLeg.Weight": "1.000000",
+   "IK_RightLeg.BoneALength": "0.000000",
+   "IK_RightLeg.BoneBLength": "0.000000",
+   "IK_RightLeg.bPropagateToChildren": "True",
+   "IK_RightLeg.DebugSettings.bEnabled": "False",
+   "IK_RightLeg.DebugSettings.Scale": "10.000000",
+   "IK_RightLeg.DebugSettings.WorldOffset.Rotation": "(X=0.000000,Y=0.000000,Z=0.000000,W=1.000000)",
+   "IK_RightLeg.DebugSettings.WorldOffset.Translation.X": "0.000000",
+   "IK_RightLeg.DebugSettings.WorldOffset.Translation.Y": "0.000000",
+   "IK_RightLeg.DebugSettings.WorldOffset.Translation.Z": "0.000000",
+   "IK_RightLeg.DebugSettings.WorldOffset.Scale3D.X": "1.000000",
+   "IK_RightLeg.DebugSettings.WorldOffset.Scale3D.Y": "1.000000",
+   "IK_RightLeg.DebugSettings.WorldOffset.Scale3D.Z": "1.000000",
+   "IK_RightLeg.CachedBoneAIndex.Key.Type": "None",
+   "IK_RightLeg.CachedBoneAIndex.Key.Name": "None",
+   "IK_RightLeg.CachedBoneAIndex.Index": "65535",
+   "IK_RightLeg.CachedBoneAIndex.ContainerVersion": "-1",
+   "IK_RightLeg.CachedBoneBIndex.Key.Type": "None",
+   "IK_RightLeg.CachedBoneBIndex.Key.Name": "None",
+   "IK_RightLeg.CachedBoneBIndex.Index": "65535",
+   "IK_RightLeg.CachedBoneBIndex.ContainerVersion": "-1",
+   "IK_RightLeg.CachedEffectorBoneIndex.Key.Type": "None",
+   "IK_RightLeg.CachedEffectorBoneIndex.Key.Name": "None",
+   "IK_RightLeg.CachedEffectorBoneIndex.Index": "65535",
+   "IK_RightLeg.CachedEffectorBoneIndex.ContainerVersion": "-1",
+   "IK_RightLeg.CachedPoleVectorSpaceIndex.Key.Type": "None",
+   "IK_RightLeg.CachedPoleVectorSpaceIndex.Key.Name": "None",
+   "IK_RightLeg.CachedPoleVectorSpaceIndex.Index": "65535",
+   "IK_RightLeg.CachedPoleVectorSpaceIndex.ContainerVersion": "-1",
+   "GetTransform_ctrl_hand_l_ik.Item.Type": "Control",
+   "GetTransform_ctrl_hand_l_ik.Item.Name": "ctrl_hand_l_ik",
+   "GetTransform_ctrl_hand_l_ik.Space": "GlobalSpace",
+   "GetTransform_ctrl_hand_l_ik.bInitial": "False",
+   "GetTransform_ctrl_hand_l_ik.Transform.Rotation": "(X=0.000000,Y=0.000000,Z=0.000000,W=1.000000)",
+   "GetTransform_ctrl_hand_l_ik.Transform.Translation.X": "0.000000",
+   "GetTransform_ctrl_hand_l_ik.Transform.Translation.Y": "0.000000",
+   "GetTransform_ctrl_hand_l_ik.Transform.Translation.Z": "0.000000",
+   "GetTransform_ctrl_hand_l_ik.Transform.Scale3D.X": "1.000000",
+   "GetTransform_ctrl_hand_l_ik.Transform.Scale3D.Y": "1.000000",
+   "GetTransform_ctrl_hand_l_ik.Transform.Scale3D.Z": "1.000000",
+   "GetTransform_ctrl_hand_l_ik.CachedIndex.Key.Type": "None",
+   "GetTransform_ctrl_hand_l_ik.CachedIndex.Key.Name": "None",
+   "GetTransform_ctrl_hand_l_ik.CachedIndex.Index": "65535",
+   "GetTransform_ctrl_hand_l_ik.CachedIndex.ContainerVersion": "-1",
+   "GetTransform_ctrl_pole_elbow_l.Item.Type": "Control",
+   "GetTransform_ctrl_pole_elbow_l.Item.Name": "ctrl_pole_elbow_l",
+   "GetTransform_ctrl_pole_elbow_l.Space": "GlobalSpace",
+   "GetTransform_ctrl_pole_elbow_l.bInitial": "False",
+   "GetTransform_ctrl_pole_elbow_l.Transform.Rotation": "(X=0.000000,Y=0.000000,Z=0.000000,W=1.000000)",
+   "GetTransform_ctrl_pole_elbow_l.Transform.Translation.X": "0.000000",
+   "GetTransform_ctrl_pole_elbow_l.Transform.Translation.Y": "0.000000",
+   "GetTransform_ctrl_pole_elbow_l.Transform.Translation.Z": "0.000000",
+   "GetTransform_ctrl_pole_elbow_l.Transform.Scale3D.X": "1.000000",
+   "GetTransform_ctrl_pole_elbow_l.Transform.Scale3D.Y": "1.000000",
+   "GetTransform_ctrl_pole_elbow_l.Transform.Scale3D.Z": "1.000000",
+   "GetTransform_ctrl_pole_elbow_l.CachedIndex.Key.Type": "None",
+   "GetTransform_ctrl_pole_elbow_l.CachedIndex.Key.Name": "None",
+   "GetTransform_ctrl_pole_elbow_l.CachedIndex.Index": "65535",
+   "GetTransform_ctrl_pole_elbow_l.CachedIndex.ContainerVersion": "-1",
+   "IK_LeftArm.ExecutePin": "()",
+   "IK_LeftArm.BoneA": "LeftArm",
+   "IK_LeftArm.BoneB": "LeftForeArm",
+   "IK_LeftArm.EffectorBone": "LeftHand",
+   "IK_LeftArm.Effector.Rotation": "(X=0.000000,Y=0.000000,Z=0.000000,W=1.000000)",
+   "IK_LeftArm.Effector.Translation.X": "0.000000",
+   "IK_LeftArm.Effector.Translation.Y": "0.000000",
+   "IK_LeftArm.Effector.Translation.Z": "0.000000",
+   "IK_LeftArm.Effector.Scale3D.X": "1.000000",
+   "IK_LeftArm.Effector.Scale3D.Y": "1.000000",
+   "IK_LeftArm.Effector.Scale3D.Z": "1.000000",
+   "IK_LeftArm.PrimaryAxis.X": "0.000000",
+   "IK_LeftArm.PrimaryAxis.Y": "-1.000000",
+   "IK_LeftArm.PrimaryAxis.Z": "0.000000",
+   "IK_LeftArm.SecondaryAxis.X": "0.000000",
+   "IK_LeftArm.SecondaryAxis.Y": "0.000000",
+   "IK_LeftArm.SecondaryAxis.Z": "1.000000",
+   "IK_LeftArm.SecondaryAxisWeight": "1.000000",
+   "IK_LeftArm.PoleVector.X": "0.000000",
+   "IK_LeftArm.PoleVector.Y": "0.000000",
+   "IK_LeftArm.PoleVector.Z": "1.000000",
+   "IK_LeftArm.PoleVectorKind": "Location",
+   "IK_LeftArm.PoleVectorSpace": "None",
+   "IK_LeftArm.bEnableStretch": "False",
+   "IK_LeftArm.StretchStartRatio": "0.750000",
+   "IK_LeftArm.StretchMaximumRatio": "1.250000",
+   "IK_LeftArm.Weight": "1.000000",
+   "IK_LeftArm.BoneALength": "0.000000",
+   "IK_LeftArm.BoneBLength": "0.000000",
+   "IK_LeftArm.bPropagateToChildren": "True",
+   "IK_LeftArm.DebugSettings.bEnabled": "False",
+   "IK_LeftArm.DebugSettings.Scale": "10.000000",
+   "IK_LeftArm.DebugSettings.WorldOffset.Rotation": "(X=0.000000,Y=0.000000,Z=0.000000,W=1.000000)",
+   "IK_LeftArm.DebugSettings.WorldOffset.Translation.X": "0.000000",
+   "IK_LeftArm.DebugSettings.WorldOffset.Translation.Y": "0.000000",
+   "IK_LeftArm.DebugSettings.WorldOffset.Translation.Z": "0.000000",
+   "IK_LeftArm.DebugSettings.WorldOffset.Scale3D.X": "1.000000",
+   "IK_LeftArm.DebugSettings.WorldOffset.Scale3D.Y": "1.000000",
+   "IK_LeftArm.DebugSettings.WorldOffset.Scale3D.Z": "1.000000",
+   "IK_LeftArm.CachedBoneAIndex.Key.Type": "None",
+   "IK_LeftArm.CachedBoneAIndex.Key.Name": "None",
+   "IK_LeftArm.CachedBoneAIndex.Index": "65535",
+   "IK_LeftArm.CachedBoneAIndex.ContainerVersion": "-1",
+   "IK_LeftArm.CachedBoneBIndex.Key.Type": "None",
+   "IK_LeftArm.CachedBoneBIndex.Key.Name": "None",
+   "IK_LeftArm.CachedBoneBIndex.Index": "65535",
+   "IK_LeftArm.CachedBoneBIndex.ContainerVersion": "-1",
+   "IK_LeftArm.CachedEffectorBoneIndex.Key.Type": "None",
+   "IK_LeftArm.CachedEffectorBoneIndex.Key.Name": "None",
+   "IK_LeftArm.CachedEffectorBoneIndex.Index": "65535",
+   "IK_LeftArm.CachedEffectorBoneIndex.ContainerVersion": "-1",
+   "IK_LeftArm.CachedPoleVectorSpaceIndex.Key.Type": "None",
+   "IK_LeftArm.CachedPoleVectorSpaceIndex.Key.Name": "None",
+   "IK_LeftArm.CachedPoleVectorSpaceIndex.Index": "65535",
+   "IK_LeftArm.CachedPoleVectorSpaceIndex.ContainerVersion": "-1",
+   "GetTransform_ctrl_hand_r_ik.Item.Type": "Control",
+   "GetTransform_ctrl_hand_r_ik.Item.Name": "ctrl_hand_r_ik",
+   "GetTransform_ctrl_hand_r_ik.Space": "GlobalSpace",
+   "GetTransform_ctrl_hand_r_ik.bInitial": "False",
+   "GetTransform_ctrl_hand_r_ik.Transform.Rotation": "(X=0.000000,Y=0.000000,Z=0.000000,W=1.000000)",
+   "GetTransform_ctrl_hand_r_ik.Transform.Translation.X": "0.000000",
+   "GetTransform_ctrl_hand_r_ik.Transform.Translation.Y": "0.000000",
+   "GetTransform_ctrl_hand_r_ik.Transform.Translation.Z": "0.000000",
+   "GetTransform_ctrl_hand_r_ik.Transform.Scale3D.X": "1.000000",
+   "GetTransform_ctrl_hand_r_ik.Transform.Scale3D.Y": "1.000000",
+   "GetTransform_ctrl_hand_r_ik.Transform.Scale3D.Z": "1.000000",
+   "GetTransform_ctrl_hand_r_ik.CachedIndex.Key.Type": "None",
+   "GetTransform_ctrl_hand_r_ik.CachedIndex.Key.Name": "None",
+   "GetTransform_ctrl_hand_r_ik.CachedIndex.Index": "65535",
+   "GetTransform_ctrl_hand_r_ik.CachedIndex.ContainerVersion": "-1",
+   "GetTransform_ctrl_pole_elbow_r.Item.Type": "Control",
+   "GetTransform_ctrl_pole_elbow_r.Item.Name": "ctrl_pole_elbow_r",
+   "GetTransform_ctrl_pole_elbow_r.Space": "GlobalSpace",
+   "GetTransform_ctrl_pole_elbow_r.bInitial": "False",
+   "GetTransform_ctrl_pole_elbow_r.Transform.Rotation": "(X=0.000000,Y=0.000000,Z=0.000000,W=1.000000)",
+   "GetTransform_ctrl_pole_elbow_r.Transform.Translation.X": "0.000000",
+   "GetTransform_ctrl_pole_elbow_r.Transform.Translation.Y": "0.000000",
+   "GetTransform_ctrl_pole_elbow_r.Transform.Translation.Z": "0.000000",
+   "GetTransform_ctrl_pole_elbow_r.Transform.Scale3D.X": "1.000000",
+   "GetTransform_ctrl_pole_elbow_r.Transform.Scale3D.Y": "1.000000",
+   "GetTransform_ctrl_pole_elbow_r.Transform.Scale3D.Z": "1.000000",
+   "GetTransform_ctrl_pole_elbow_r.CachedIndex.Key.Type": "None",
+   "GetTransform_ctrl_pole_elbow_r.CachedIndex.Key.Name": "None",
+   "GetTransform_ctrl_pole_elbow_r.CachedIndex.Index": "65535",
+   "GetTransform_ctrl_pole_elbow_r.CachedIndex.ContainerVersion": "-1",
+   "IK_RightArm.ExecutePin": "()",
+   "IK_RightArm.BoneA": "RightArm",
+   "IK_RightArm.BoneB": "RightForeArm",
+   "IK_RightArm.EffectorBone": "RightHand",
+   "IK_RightArm.Effector.Rotation": "(X=0.000000,Y=0.000000,Z=0.000000,W=1.000000)",
+   "IK_RightArm.Effector.Translation.X": "0.000000",
+   "IK_RightArm.Effector.Translation.Y": "0.000000",
+   "IK_RightArm.Effector.Translation.Z": "0.000000",
+   "IK_RightArm.Effector.Scale3D.X": "1.000000",
+   "IK_RightArm.Effector.Scale3D.Y": "1.000000",
+   "IK_RightArm.Effector.Scale3D.Z": "1.000000",
+   "IK_RightArm.PrimaryAxis.X": "0.000000",
+   "IK_RightArm.PrimaryAxis.Y": "-1.000000",
+   "IK_RightArm.PrimaryAxis.Z": "0.000000",
+   "IK_RightArm.SecondaryAxis.X": "0.000000",
+   "IK_RightArm.SecondaryAxis.Y": "0.000000",
+   "IK_RightArm.SecondaryAxis.Z": "1.000000",
+   "IK_RightArm.SecondaryAxisWeight": "1.000000",
+   "IK_RightArm.PoleVector.X": "0.000000",
+   "IK_RightArm.PoleVector.Y": "0.000000",
+   "IK_RightArm.PoleVector.Z": "1.000000",
+   "IK_RightArm.PoleVectorKind": "Location",
+   "IK_RightArm.PoleVectorSpace": "None",
+   "IK_RightArm.bEnableStretch": "False",
+   "IK_RightArm.StretchStartRatio": "0.750000",
+   "IK_RightArm.StretchMaximumRatio": "1.250000",
+   "IK_RightArm.Weight": "1.000000",
+   "IK_RightArm.BoneALength": "0.000000",
+   "IK_RightArm.BoneBLength": "0.000000",
+   "IK_RightArm.bPropagateToChildren": "True",
+   "IK_RightArm.DebugSettings.bEnabled": "False",
+   "IK_RightArm.DebugSettings.Scale": "10.000000",
+   "IK_RightArm.DebugSettings.WorldOffset.Rotation": "(X=0.000000,Y=0.000000,Z=0.000000,W=1.000000)",
+   "IK_RightArm.DebugSettings.WorldOffset.Translation.X": "0.000000",
+   "IK_RightArm.DebugSettings.WorldOffset.Translation.Y": "0.000000",
+   "IK_RightArm.DebugSettings.WorldOffset.Translation.Z": "0.000000",
+   "IK_RightArm.DebugSettings.WorldOffset.Scale3D.X": "1.000000",
+   "IK_RightArm.DebugSettings.WorldOffset.Scale3D.Y": "1.000000",
+   "IK_RightArm.DebugSettings.WorldOffset.Scale3D.Z": "1.000000",
+   "IK_RightArm.CachedBoneAIndex.Key.Type": "None",
+   "IK_RightArm.CachedBoneAIndex.Key.Name": "None",
+   "IK_RightArm.CachedBoneAIndex.Index": "65535",
+   "IK_RightArm.CachedBoneAIndex.ContainerVersion": "-1",
+   "IK_RightArm.CachedBoneBIndex.Key.Type": "None",
+   "IK_RightArm.CachedBoneBIndex.Key.Name": "None",
+   "IK_RightArm.CachedBoneBIndex.Index": "65535",
+   "IK_RightArm.CachedBoneBIndex.ContainerVersion": "-1",
+   "IK_RightArm.CachedEffectorBoneIndex.Key.Type": "None",
+   "IK_RightArm.CachedEffectorBoneIndex.Key.Name": "None",
+   "IK_RightArm.CachedEffectorBoneIndex.Index": "65535",
+   "IK_RightArm.CachedEffectorBoneIndex.ContainerVersion": "-1",
+   "IK_RightArm.CachedPoleVectorSpaceIndex.Key.Type": "None",
+   "IK_RightArm.CachedPoleVectorSpaceIndex.Key.Name": "None",
+   "IK_RightArm.CachedPoleVectorSpaceIndex.Index": "65535",
+   "IK_RightArm.CachedPoleVectorSpaceIndex.ContainerVersion": "-1"
+  }
+ }
+}
