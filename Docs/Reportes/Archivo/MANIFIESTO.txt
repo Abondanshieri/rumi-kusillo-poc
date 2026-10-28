@@ -1,0 +1,4 @@
+Archivo (nada borrado) - origen -> destino
+__pycache__ -> Docs/Reportes/Archivo/__pycache__   (cache Python regenerable: test_mcp.cpython-312.pyc, ue_mcp.cpython-312.pyc)
+Revertir: mover la carpeta de vuelta a la raiz del proyecto (no es necesario; Python la regenera).
+Nota: estos .pyc estan en .gitignore (__pycache__/ y *.pyc); no aportan valor, se conservan solo por la regla de no borrar.

@@ -1,0 +1,99 @@
+Manifiesto de orden de carpetas - 2026-10-28
+Raiz: D:/Dev/Computacion_Grafica/Rumi 5.8 (rutas relativas). NADA fue borrado; todo es mover/renombrar.
+Content/ no se toco (salvo lo ya archivado: ver Docs/Avance/2026-10-28_rig-student-fix/evidencia/movimientos_archivo.txt).
+Contenido de scripts .py NO modificado (ue_mcp se importa por el directorio del propio script).
+Texto editado: Docs/Mensajes/F-M1_Mensaje_a_Jhasmani.md (2 rutas actualizadas a Docs/Hitos/).
+Revertir un movimiento: mover el DESTINO de vuelta al ORIGEN (ver script al final).
+
+== Movimientos ==
+Docs/F-M1_Inventario_Animacion.md -> Docs/Hitos/F-M1_Inventario_Animacion.md
+Docs/F-M2_Arquitectura_AnimBP.md -> Docs/Hitos/F-M2_Arquitectura_AnimBP.md
+Docs/Mensaje_Jhasmani_F-M1.md -> Docs/Mensajes/F-M1_Mensaje_a_Jhasmani.md
+Docs/Reporte_Docente_Avance.md -> Docs/Reportes/2026-09-14_Reporte_Docente_Avance.md
+guia-state-machine-rumi.md -> Docs/Guias/Guia_StateMachine_Rumi.md
+__pycache__ -> Docs/Reportes/Archivo/__pycache__
+ocr_pages.ps1 -> Tools/ocr_pages.ps1
+p_call.json -> Tools/payloads_mcp/p_call.json
+p_desc.json -> Tools/payloads_mcp/p_desc.json
+p_init.json -> Tools/payloads_mcp/p_init.json
+ue_mcp.py -> Tools/ue_scripts/ue_mcp.py
+apply_rig_optimization.py -> Tools/ue_scripts/fix_apply_rig_optimization.py
+build_cr_student_procedural.py -> Tools/ue_scripts/build_cr_student_procedural.py
+build_full_procedural_system.py -> Tools/ue_scripts/build_full_procedural_system.py
+check_and_nodes.py -> Tools/ue_scripts/diag_check_and_nodes.py
+check_collision_profile.py -> Tools/ue_scripts/diag_check_collision_profile.py
+check_cr_animgraph_node.py -> Tools/ue_scripts/diag_check_cr_animgraph_node.py
+check_cr_node.py -> Tools/ue_scripts/diag_check_cr_node.py
+check_current_live_rig.py -> Tools/ue_scripts/diag_check_current_live_rig.py
+check_div_zero.py -> Tools/ue_scripts/diag_check_div_zero.py
+check_event0.py -> Tools/ue_scripts/diag_check_event0.py
+check_hit_pins.py -> Tools/ue_scripts/diag_check_hit_pins.py
+check_init_anim.py -> Tools/ue_scripts/diag_check_init_anim.py
+check_make_vectors.py -> Tools/ue_scripts/diag_check_make_vectors.py
+check_makearray.py -> Tools/ue_scripts/diag_check_makearray.py
+check_node_props.py -> Tools/ue_scripts/diag_check_node_props.py
+check_reference_ik.py -> Tools/ue_scripts/diag_check_reference_ik.py
+check_select_nodes.py -> Tools/ue_scripts/diag_check_select_nodes.py
+check_subpins.py -> Tools/ue_scripts/diag_check_subpins.py
+check_trace_connections.py -> Tools/ue_scripts/diag_check_trace_connections.py
+compile_and_check.py -> Tools/ue_scripts/verify_compile_and_check.py
+find_all_cr_nodes.py -> Tools/ue_scripts/diag_find_all_cr_nodes.py
+find_all_divides.py -> Tools/ue_scripts/diag_find_all_divides.py
+fix_cr_rotations.py -> Tools/ue_scripts/fix_cr_rotations.py
+fix_cr_student_procedural.py -> Tools/ue_scripts/fix_cr_student_procedural.py
+fix_part1_control_rig.py -> Tools/ue_scripts/fix_part1_control_rig.py
+fix_part2_animbp.py -> Tools/ue_scripts/fix_part2_animbp.py
+inspect_add_hipsz.py -> Tools/ue_scripts/diag_inspect_add_hipsz.py
+inspect_animgraph.py -> Tools/ue_scripts/diag_inspect_animgraph.py
+inspect_bp_full.py -> Tools/ue_scripts/diag_inspect_bp_full.py
+inspect_branch2_math.py -> Tools/ue_scripts/diag_inspect_branch2_math.py
+inspect_cr_node_detail.py -> Tools/ue_scripts/diag_inspect_cr_node_detail.py
+inspect_cr_node_in_animbp.py -> Tools/ue_scripts/diag_inspect_cr_node_in_animbp.py
+inspect_extra_nodes.py -> Tools/ue_scripts/diag_inspect_extra_nodes.py
+inspect_foot_trace.py -> Tools/ue_scripts/diag_inspect_foot_trace.py
+inspect_full_branch2.py -> Tools/ue_scripts/diag_inspect_full_branch2.py
+inspect_hips_pins.py -> Tools/ue_scripts/diag_inspect_hips_pins.py
+inspect_ik.py -> Tools/ue_scripts/diag_inspect_ik.py
+inspect_ik_ctrls.py -> Tools/ue_scripts/diag_inspect_ik_ctrls.py
+inspect_ik_pelvis_detail.py -> Tools/ue_scripts/diag_inspect_ik_pelvis_detail.py
+inspect_pins.py -> Tools/ue_scripts/diag_inspect_pins.py
+inspect_procedural_rig.py -> Tools/ue_scripts/diag_inspect_procedural_rig.py
+inspect_ramp_hits.py -> Tools/ue_scripts/diag_inspect_ramp_hits.py
+list_cr_variables.py -> Tools/ue_scripts/diag_list_cr_variables.py
+read_animgraph_dsl.py -> Tools/ue_scripts/diag_read_animgraph_dsl.py
+save_cr.py -> Tools/ue_scripts/util_save_cr.py
+scratch_inspect_nodes.py -> Tools/ue_scripts/diag_scratch_inspect_nodes.py
+test_add_var.py -> Tools/ue_scripts/test_add_var.py
+test_connect_rot.py -> Tools/ue_scripts/test_connect_rot.py
+test_cr_nodes.py -> Tools/ue_scripts/test_cr_nodes.py
+test_hips_connect.py -> Tools/ue_scripts/test_hips_connect.py
+test_live_mul.py -> Tools/ue_scripts/test_live_mul.py
+test_live_mul_hips.py -> Tools/ue_scripts/test_live_mul_hips.py
+test_node_types.py -> Tools/ue_scripts/test_node_types.py
+test_quat_math.py -> Tools/ue_scripts/test_quat_math.py
+test_sub_connect.py -> Tools/ue_scripts/test_sub_connect.py
+verify_final_setup.py -> Tools/ue_scripts/verify_final_setup.py
+verify_pie_live.py -> Tools/ue_scripts/verify_pie_live.py
+
+== Verificacion de conteo (antes/despues) ==
+Archivos movidos segun este manifiesto: 69 antes = 69 despues (68 entradas: 67 archivos + 1 carpeta __pycache__ con 2 .pyc).
+Comprobado en disco 2026-10-28: 68/68 destinos existen, 0/68 origenes siguen presentes, Tools/ue_scripts = 58 archivos (57 .py + ue_mcp.py).
+Nada fue borrado: movimientos puros, mismo numero de archivos.
+
+== Ediciones de contenido posteriores al movimiento ==
+- 23 scripts de Tools/ue_scripts/: la linea obsoleta  sys.path.insert(0, r"D:\Dev\Computacion_Grafica\Rumi 5.8")  se reemplazo por
+  import os; sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))   (resuelve ue_mcp desde la carpeta del propio script).
+  Lista exacta: los .py de Tools/ue_scripts que contienen "abspath(__file__)" (grep). Parseo ast OK en los 58 .py; "import ue_mcp" OK.
+  Para revertir: restaurar la linea original en la linea 2 de esos archivos (inofensivo dejarla).
+- Docs/Mensajes/F-M1_Mensaje_a_Jhasmani.md: 2 rutas -> Docs/Hitos/.
+- Archivos NUEVOS (no son movimientos): .gitignore (raiz), Tools/ue_scripts/README.md, Docs/Reportes/inventario_2026-10-28.md,
+  Docs/Reportes/propuesta_estructura_content.md, este manifiesto.
+
+== Content/ (referencia cruzada, no tocado por este orden) ==
+Content/Characters/_Archive/Rumi_Unused/ contiene 26 .uasset archivados por el agente del rig (OTRA fuente, mismo dia).
+Su manifiesto: Docs/Avance/2026-10-28_rig-student-fix/evidencia/movimientos_archivo.txt (26 movidos; 6 con referencias y 2 bloqueados NO movidos).
+Comprobado en disco: 26 archivos en _Archive. Revertir: ver ese manifiesto.
+
+== Revertir todo (bash, desde la raiz) ==
+while IFS= read -r l; do o="${l%% -> *}"; d="${l##* -> }"; mkdir -p "$(dirname "$o")"; mv "$d" "$o"; done < <(sed -n "/^== Movimientos/,/^== Revertir/p" manifiesto_orden_2026-10-28.txt | grep " -> ")
+(Luego revertir las 2 rutas del mensaje a Docs/F-M1_... y Docs/F-M2_...)

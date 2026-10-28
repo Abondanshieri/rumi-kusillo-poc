@@ -1,0 +1,33 @@
+Manifiesto de movimientos - 2026-10-28 (movido en disco con autorizacion del usuario; NO se borro ningun asset)
+Verificacion previa: escaneo binario de .uasset/.umap, coincidencia exacta de ruta de paquete.
+RESULTADO: 26 movidos a Content/Characters/_Archive/Rumi_Unused/<subcarpeta original>/
+NO movidos por referencias exactas desde assets en uso (6): Falling_To_Landing__1_, Hard_Landing, Hanging, Throw, Hard_Landing_InPlace, Run_To_Stop_InPlace
+NO movidos por archivo bloqueado por el editor (2, estan cargados): Jump_modern/Jump_Polished_13, new_jump_2/fall_fast_3
+Para revertir: mover cada archivo de _Archive/Rumi_Unused/<sub>/ a Characters/Rumi/<sub>/
+
+Characters/_Archive/Rumi_Unused/Animations/Falling_To_Landing.uasset
+Characters/_Archive/Rumi_Unused/Animations/Falling_To_Landing_Anim.uasset
+Characters/_Archive/Rumi_Unused/Animations/SwingLoop_Realistic.uasset
+Characters/_Archive/Rumi_Unused/Animations_News/FallLoop_Fast.uasset
+Characters/_Archive/Rumi_Unused/Animations_News/FallLoop_Fast__1_.uasset
+Characters/_Archive/Rumi_Unused/Animations_News/FallLoop_LandPrep__3_.uasset
+Characters/_Archive/Rumi_Unused/Animations_News/FallLoop_Polished.uasset
+Characters/_Archive/Rumi_Unused/Animations_News/FallLoop_Polished__1_.uasset
+Characters/_Archive/Rumi_Unused/Animations_News/Jump_Polished__10_.uasset
+Characters/_Archive/Rumi_Unused/Animations_News/Jump_Polished__5_.uasset
+Characters/_Archive/Rumi_Unused/Animations_News/SoftLand_Polished.uasset
+Characters/_Archive/Rumi_Unused/Animations_V2/FallLoop_Fast__2_.uasset
+Characters/_Archive/Rumi_Unused/Animations_V2/FallLoop_LandPrep.uasset
+Characters/_Archive/Rumi_Unused/Animations_V2/FallLoop_Polished__2_.uasset
+Characters/_Archive/Rumi_Unused/Animations_V2/Jump_Polished__6_.uasset
+Characters/_Archive/Rumi_Unused/Animations_V2/SoftLand_Polished__1_.uasset
+Characters/_Archive/Rumi_Unused/Animations_V2/SoftLand_Polished__2_.uasset
+Characters/_Archive/Rumi_Unused/Jump_modern/FallLoop_LandPrep_6__1_.uasset
+Characters/_Archive/Rumi_Unused/Jump_modern/FallLoop_LandPrep_7.uasset
+Characters/_Archive/Rumi_Unused/New_jump/FallLoop_Fast__3_.uasset
+Characters/_Archive/Rumi_Unused/New_jump/FallLoop_LandPrep__1_.uasset
+Characters/_Archive/Rumi_Unused/New_jump/FallLoop_Polished__3_.uasset
+Characters/_Archive/Rumi_Unused/New_jump/Jump_Polished__7_.uasset
+Characters/_Archive/Rumi_Unused/new_jump_2/FallLoop_LandPrep__2_.uasset
+Characters/_Archive/Rumi_Unused/new_jump_2/Jump_Polished__9_.uasset
+Characters/_Archive/Rumi_Unused/new_jump_2/Student_Skeleton_Sequence.uasset
