@@ -1,0 +1,1 @@
+{"jsonrpc": "2.0", "method": "tools/call", "params": {"name": "call_tool", "arguments": {"toolset_name": "editor_toolset.toolsets.asset.AssetTools", "tool_name": "save_assets", "arguments": {"asset_paths": []}}}, "id": 2}
