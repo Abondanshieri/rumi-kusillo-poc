@@ -1,0 +1,67 @@
+{
+ "EdGraphNode_Comment_20": {
+  "texto": "INIT (referencias Character / MovementComponent / PlayerCharacter)",
+  "color": "<Struct 'LinearColor' (0x00000268D70671E0) {r: 0.150000, g: 0.150000, b: 0.150000, a: 0.500000}>",
+  "nodos": [
+   [
+    "K2Node_Event_1",
+    -582,
+    -528,
+    "Evento BlueprintInitializeAnimation"
+   ],
+   [
+    "K2Node_DynamicCast_0",
+    313,
+    -528,
+    "Cast To Character"
+   ],
+   [
+    "K2Node_CallFunction_1",
+    -112,
+    -432,
+    "GetOwningActor"
+   ],
+   [
+    "K2Node_VariableSet_0",
+    649,
+    -512,
+    "Set Character"
+   ],
+   [
+    "K2Node_VariableSet_1",
+    1276,
+    -512,
+    "Set MovementComponent"
+   ],
+   [
+    "K2Node_VariableGet_1",
+    896,
+    -364,
+    "Get CharacterMovement"
+   ],
+   [
+    "K2Node_VariableSet_10",
+    2172,
+    -436,
+    "Set PlayerCharacter"
+   ],
+   [
+    "K2Node_VariableGet_17",
+    1724,
+    -520,
+    "Get Character"
+   ],
+   [
+    "K2Node_CallFunction_22",
+    2172,
+    -560,
+    "Get Actor Location"
+   ]
+  ]
+ },
+ "EdGraphNode_Comment": {
+  "texto": "",
+  "color": "<Struct 'LinearColor' (0x00000268D70671E0) {r: 1.000000, g: 1.000000, b: 1.000000, a: 1.000000}>",
+  "nodos": []
+ }
+}

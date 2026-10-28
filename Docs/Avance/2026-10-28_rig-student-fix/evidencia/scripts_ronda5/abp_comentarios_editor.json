@@ -1,0 +1,114 @@
+{
+ "abp_comentarios": [
+  {
+   "graph": "AnimGraph",
+   "name": "EdGraphNode_Comment_14",
+   "texto": "LOCOMOTION",
+   "tam": [
+    727.0,
+    638.0
+   ],
+   "fuente": 18,
+   "nodos_dentro": 4
+  },
+  {
+   "graph": "AnimGraph",
+   "name": "EdGraphNode_Comment_16",
+   "texto": "POST-PROCESO + PROCEDURAL (Inertializacion, Control Rig)",
+   "tam": [
+    717.0,
+    206.0
+   ],
+   "fuente": 18,
+   "nodos_dentro": 2
+  },
+  {
+   "graph": "EventGraph",
+   "name": "EdGraphNode_Comment_1",
+   "texto": "Determine velocity vector and Speed",
+   "tam": [
+    1376.0,
+    272.0
+   ],
+   "fuente": 18,
+   "nodos_dentro": 0
+  },
+  {
+   "graph": "EventGraph",
+   "name": "EdGraphNode_Comment_2",
+   "texto": "Calculate direction using the delta between the velocity and the actor rotation. When the character is not strafing, clamp the value between - and + 45 degrees so that backwards animations do not play when turning around, but running into wall looks better.",
+   "tam": [
+    1744.0,
+    464.0
+   ],
+   "fuente": 18,
+   "nodos_dentro": 0
+  },
+  {
+   "graph": "EventGraph",
+   "name": "EdGraphNode_Comment_3",
+   "texto": "Set Should Move to true only if ground speed is above a small threshold (to prevent incredibly small velocities from triggering animations) and if there is currently acceleration (input) applied.",
+   "tam": [
+    1376.0,
+    464.0
+   ],
+   "fuente": 18,
+   "nodos_dentro": 0
+  },
+  {
+   "graph": "EventGraph",
+   "name": "EdGraphNode_Comment_4",
+   "texto": "Set Is Falling from the movement components falling state.",
+   "tam": [
+    1024.0,
+    256.0
+   ],
+   "fuente": 18,
+   "nodos_dentro": 0
+  },
+  {
+   "graph": "EventGraph",
+   "name": "EdGraphNode_Comment_20",
+   "texto": "INIT (referencias Character / MovementComponent / PlayerCharacter)",
+   "tam": [
+    3004.0,
+    305.0
+   ],
+   "fuente": 18,
+   "nodos_dentro": 9
+  },
+  {
+   "graph": "UpdateProceduralVariables",
+   "name": "EdGraphNode_Comment_22",
+   "texto": "LEAN (LeanPitch / LeanRoll)",
+   "tam": [
+    4982.0,
+    758.0
+   ],
+   "fuente": 44,
+   "nodos_dentro": 21
+  },
+  {
+   "graph": "UpdateProceduralVariables",
+   "name": "EdGraphNode_Comment_23",
+   "texto": "PIES + PELVIS (FootOffsetL / FootOffsetR / PelvisOffset)",
+   "tam": [
+    5172.0,
+    1043.0
+   ],
+   "fuente": 44,
+   "nodos_dentro": 30
+  },
+  {
+   "graph": "UpdateProceduralVariables",
+   "name": "EdGraphNode_Comment_24",
+   "texto": "ATERRIZAJE + MIRADA + TRAZAS DEBUG (LandCrouch / LookTarget / LookAlpha)",
+   "tam": [
+    3177.0,
+    2375.0
+   ],
+   "fuente": 44,
+   "nodos_dentro": 34
+  }
+ ]
+}

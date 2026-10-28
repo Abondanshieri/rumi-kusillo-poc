@@ -1,0 +1,732 @@
+{
+ "CR_Student_Procedural_fix": {
+  "nodos_antes": 50,
+  "nodos_despues": 50,
+  "conex_antes": 62,
+  "conex_despues": 62,
+  "perdidas": 0,
+  "nuevas": 0,
+  "nodos_movidos": {
+   "Mul_Hips_Offset_1": [
+    [
+     3900,
+     1000
+    ],
+    [
+     3900,
+     1800
+    ]
+   ],
+   "EdGraphNode_Comment_13": [
+    [
+     3840,
+     944
+    ],
+    [
+     3840,
+     1744
+    ]
+   ]
+  },
+  "solo_antes": [],
+  "solo_despues": []
+ },
+ "CR_Student_IK_fix": {
+  "nodos_antes": 20,
+  "nodos_despues": 20,
+  "conex_antes": 14,
+  "conex_despues": 14,
+  "perdidas": 0,
+  "nuevas": 0,
+  "nodos_movidos": {},
+  "solo_antes": [],
+  "solo_despues": []
+ },
+ "ABP": {
+  "AnimGraph": {
+   "nodos_antes": 7,
+   "nodos_despues": 7,
+   "conex_antes": 5,
+   "conex_despues": 5,
+   "perdidas": 0,
+   "nuevas": 0,
+   "n_nodos_movidos": 0,
+   "movidos": {},
+   "movidos_detalle": {}
+  },
+  "EventGraph": {
+   "nodos_antes": 88,
+   "nodos_despues": 88,
+   "conex_antes": 106,
+   "conex_despues": 106,
+   "perdidas": 0,
+   "nuevas": 0,
+   "n_nodos_movidos": 0,
+   "movidos": {},
+   "movidos_detalle": {}
+  },
+  "UpdateProceduralVariables": {
+   "nodos_antes": 85,
+   "nodos_despues": 85,
+   "conex_antes": 115,
+   "conex_despues": 115,
+   "perdidas": 0,
+   "nuevas": 0,
+   "n_nodos_movidos": 64,
+   "movidos": "(ver lista en json)",
+   "movidos_detalle": {
+    "K2Node_CallFunction_22": [
+     [
+      950,
+      600
+     ],
+     [
+      950,
+      720
+     ]
+    ],
+    "K2Node_CallFunction_23": [
+     [
+      1330,
+      600
+     ],
+     [
+      1330,
+      720
+     ]
+    ],
+    "K2Node_CallFunction_24": [
+     [
+      1330,
+      750
+     ],
+     [
+      1330,
+      870
+     ]
+    ],
+    "K2Node_CallFunction_25": [
+     [
+      1330,
+      900
+     ],
+     [
+      1330,
+      1020
+     ]
+    ],
+    "K2Node_PromotableOperator_11": [
+     [
+      1805,
+      1114
+     ],
+     [
+      1805,
+      1234
+     ]
+    ],
+    "K2Node_PromotableOperator_12": [
+     [
+      1805,
+      1558
+     ],
+     [
+      1805,
+      1918
+     ]
+    ],
+    "K2Node_CallFunction_26": [
+     [
+      2280,
+      1434
+     ],
+     [
+      2280,
+      1794
+     ]
+    ],
+    "K2Node_CallFunction_27": [
+     [
+      2850,
+      650
+     ],
+     [
+      2850,
+      770
+     ]
+    ],
+    "K2Node_PromotableOperator_13": [
+     [
+      3325,
+      772
+     ],
+     [
+      3325,
+      892
+     ]
+    ],
+    "K2Node_Select_1": [
+     [
+      3705,
+      772
+     ],
+     [
+      3705,
+      892
+     ]
+    ],
+    "K2Node_CallFunction_28": [
+     [
+      4085,
+      600
+     ],
+     [
+      4085,
+      720
+     ]
+    ],
+    "K2Node_VariableGet_9": [
+     [
+      4085,
+      750
+     ],
+     [
+      4085,
+      870
+     ]
+    ],
+    "K2Node_CallFunction_29": [
+     [
+      4465,
+      650
+     ],
+     [
+      4465,
+      770
+     ]
+    ],
+    "K2Node_VariableSet_5": [
+     [
+      4940,
+      600
+     ],
+     [
+      4940,
+      720
+     ]
+    ],
+    "K2Node_CallFunction_30": [
+     [
+      1330,
+      1100
+     ],
+     [
+      1330,
+      1220
+     ]
+    ],
+    "K2Node_PromotableOperator_14": [
+     [
+      1805,
+      2002
+     ],
+     [
+      1805,
+      2362
+     ]
+    ],
+    "K2Node_PromotableOperator_15": [
+     [
+      1805,
+      2322
+     ],
+     [
+      1805,
+      2682
+     ]
+    ],
+    "K2Node_CallFunction_31": [
+     [
+      2280,
+      2642
+     ],
+     [
+      2280,
+      3002
+     ]
+    ],
+    "K2Node_CallFunction_32": [
+     [
+      2850,
+      1182
+     ],
+     [
+      2850,
+      1302
+     ]
+    ],
+    "K2Node_PromotableOperator_16": [
+     [
+      3325,
+      1198
+     ],
+     [
+      3325,
+      1318
+     ]
+    ],
+    "K2Node_Select_2": [
+     [
+      3705,
+      1198
+     ],
+     [
+      3705,
+      1318
+     ]
+    ],
+    "K2Node_CallFunction_33": [
+     [
+      4085,
+      1100
+     ],
+     [
+      4085,
+      1220
+     ]
+    ],
+    "K2Node_VariableGet_10": [
+     [
+      4085,
+      1250
+     ],
+     [
+      4085,
+      1370
+     ]
+    ],
+    "K2Node_CallFunction_34": [
+     [
+      4465,
+      1150
+     ],
+     [
+      4465,
+      1270
+     ]
+    ],
+    "K2Node_VariableSet_6": [
+     [
+      4940,
+      1100
+     ],
+     [
+      4940,
+      1220
+     ]
+    ],
+    "K2Node_CommutativeAssociativeBinaryOperator_1": [
+     [
+      5415,
+      850
+     ],
+     [
+      5415,
+      970
+     ]
+    ],
+    "K2Node_VariableSet_7": [
+     [
+      5890,
+      850
+     ],
+     [
+      5890,
+      970
+     ]
+    ],
+    "K2Node_VariableGet_15": [
+     [
+      950,
+      1500
+     ],
+     [
+      950,
+      1860
+     ]
+    ],
+    "K2Node_VariableGet_16": [
+     [
+      950,
+      1600
+     ],
+     [
+      950,
+      1960
+     ]
+    ],
+    "K2Node_VariableGet_17": [
+     [
+      950,
+      1750
+     ],
+     [
+      950,
+      2110
+     ]
+    ],
+    "K2Node_PromotableOperator_18": [
+     [
+      1425,
+      1878
+     ],
+     [
+      1425,
+      2238
+     ]
+    ],
+    "K2Node_CommutativeAssociativeBinaryOperator_2": [
+     [
+      1805,
+      2642
+     ],
+     [
+      1805,
+      3002
+     ]
+    ],
+    "K2Node_PromotableOperator_19": [
+     [
+      1425,
+      2026
+     ],
+     [
+      1425,
+      2386
+     ]
+    ],
+    "K2Node_CallFunction_35": [
+     [
+      1805,
+      2790
+     ],
+     [
+      1805,
+      3150
+     ]
+    ],
+    "K2Node_PromotableOperator_20": [
+     [
+      1805,
+      2962
+     ],
+     [
+      1805,
+      3322
+     ]
+    ],
+    "K2Node_PromotableOperator_21": [
+     [
+      2185,
+      3282
+     ],
+     [
+      2185,
+      3642
+     ]
+    ],
+    "K2Node_PromotableOperator_22": [
+     [
+      2565,
+      1800
+     ],
+     [
+      2565,
+      2160
+     ]
+    ],
+    "K2Node_Select_3": [
+     [
+      2945,
+      1714
+     ],
+     [
+      2945,
+      2074
+     ]
+    ],
+    "K2Node_VariableGet_18": [
+     [
+      2945,
+      1886
+     ],
+     [
+      2945,
+      2246
+     ]
+    ],
+    "K2Node_CallFunction_36": [
+     [
+      3420,
+      1650
+     ],
+     [
+      3420,
+      2010
+     ]
+    ],
+    "K2Node_VariableSet_8": [
+     [
+      3895,
+      1650
+     ],
+     [
+      3895,
+      2010
+     ]
+    ],
+    "K2Node_VariableGet_19": [
+     [
+      950,
+      2200
+     ],
+     [
+      950,
+      2560
+     ]
+    ],
+    "K2Node_CallFunction_37": [
+     [
+      1330,
+      2150
+     ],
+     [
+      1330,
+      2510
+     ]
+    ],
+    "K2Node_CallFunction_38": [
+     [
+      1330,
+      2300
+     ],
+     [
+      1330,
+      2660
+     ]
+    ],
+    "K2Node_PromotableOperator_23": [
+     [
+      1805,
+      3282
+     ],
+     [
+      1805,
+      3642
+     ]
+    ],
+    "K2Node_PromotableOperator_24": [
+     [
+      2185,
+      3430
+     ],
+     [
+      2185,
+      3790
+     ]
+    ],
+    "K2Node_CallFunction_39": [
+     [
+      2185,
+      3578
+     ],
+     [
+      2185,
+      3938
+     ]
+    ],
+    "K2Node_PromotableOperator_25": [
+     [
+      2565,
+      3006
+     ],
+     [
+      2565,
+      3366
+     ]
+    ],
+    "K2Node_VariableSet_9": [
+     [
+      3040,
+      2200
+     ],
+     [
+      3040,
+      2560
+     ]
+    ],
+    "K2Node_VariableSet_10": [
+     [
+      3610,
+      2200
+     ],
+     [
+      3610,
+      2560
+     ]
+    ],
+    "K2Node_VariableGet_20": [
+     [
+      1710,
+      1434
+     ],
+     [
+      1710,
+      1794
+     ]
+    ],
+    "K2Node_MakeArray_0": [
+     [
+      1995,
+      1878
+     ],
+     [
+      1995,
+      2238
+     ]
+    ],
+    "K2Node_CallFunction_41": [
+     [
+      1710,
+      450
+     ],
+     [
+      1710,
+      570
+     ]
+    ],
+    "K2Node_CallFunction_46": [
+     [
+      1710,
+      622
+     ],
+     [
+      1710,
+      742
+     ]
+    ],
+    "K2Node_PromotableOperator_27": [
+     [
+      1995,
+      794
+     ],
+     [
+      1995,
+      914
+     ]
+    ],
+    "K2Node_CallFunction_47": [
+     [
+      1710,
+      942
+     ],
+     [
+      1710,
+      1062
+     ]
+    ],
+    "K2Node_CallFunction_48": [
+     [
+      1995,
+      1262
+     ],
+     [
+      1995,
+      1382
+     ]
+    ],
+    "K2Node_CallFunction_49": [
+     [
+      1995,
+      2150
+     ],
+     [
+      1995,
+      2510
+     ]
+    ],
+    "K2Node_CallFunction_50": [
+     [
+      1710,
+      1706
+     ],
+     [
+      1710,
+      2066
+     ]
+    ],
+    "K2Node_CallFunction_51": [
+     [
+      1995,
+      2470
+     ],
+     [
+      1995,
+      2830
+     ]
+    ],
+    "K2Node_CallFunction_52": [
+     [
+      1995,
+      3110
+     ],
+     [
+      1995,
+      3470
+     ]
+    ],
+    "K2Node_CallFunction_53": [
+     [
+      3230,
+      500
+     ],
+     [
+      3230,
+      620
+     ]
+    ],
+    "K2Node_CommutativeAssociativeBinaryOperator_5": [
+     [
+      3515,
+      624
+     ],
+     [
+      3515,
+      744
+     ]
+    ],
+    "K2Node_CommutativeAssociativeBinaryOperator_6": [
+     [
+      3515,
+      1050
+     ],
+     [
+      3515,
+      1170
+     ]
+    ]
+   }
+  },
+  "TestFunc": {
+   "nodos_antes": 2,
+   "nodos_despues": 2,
+   "conex_antes": 0,
+   "conex_despues": 0,
+   "perdidas": 0,
+   "nuevas": 0,
+   "n_nodos_movidos": 0,
+   "movidos": {},
+   "movidos_detalle": {}
+  }
+ }
+}

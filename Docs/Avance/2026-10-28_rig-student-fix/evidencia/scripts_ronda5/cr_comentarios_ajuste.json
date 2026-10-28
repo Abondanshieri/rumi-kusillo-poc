@@ -1,0 +1,326 @@
+{
+ "CR_Student_Procedural_fix": [
+  {
+   "nombre": "EdGraphNode_Comment_9",
+   "antes": [
+    "LEAN",
+    46,
+    [
+     -64.0,
+     -64.0
+    ],
+    [
+     1911.0,
+     1876.0
+    ]
+   ],
+   "ahora": [
+    "LEAN",
+    120,
+    [
+     -64.0,
+     -214.0
+    ],
+    [
+     1911.0,
+     2026.0
+    ]
+   ],
+   "ok": [
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "nombre": "EdGraphNode_Comment_10",
+   "antes": [
+    "CADERA",
+    46,
+    [
+     2240.0,
+     -64.0
+    ],
+    [
+     2250.0,
+     1213.0
+    ]
+   ],
+   "ahora": [
+    "CADERA",
+    120,
+    [
+     2240.0,
+     -214.0
+    ],
+    [
+     2250.0,
+     1363.0
+    ]
+   ],
+   "ok": [
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "nombre": "EdGraphNode_Comment_11",
+   "antes": [
+    "PIERNA IZQ",
+    46,
+    [
+     4848.0,
+     -64.0
+    ],
+    [
+     2250.0,
+     833.0
+    ]
+   ],
+   "ahora": [
+    "PIERNA IZQ",
+    120,
+    [
+     4848.0,
+     -214.0
+    ],
+    [
+     2250.0,
+     983.0
+    ]
+   ],
+   "ok": [
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "nombre": "EdGraphNode_Comment_12",
+   "antes": [
+    "PIERNA DER",
+    46,
+    [
+     7440.0,
+     -64.0
+    ],
+    [
+     2250.0,
+     833.0
+    ]
+   ],
+   "ahora": [
+    "PIERNA DER",
+    120,
+    [
+     7440.0,
+     -214.0
+    ],
+    [
+     2250.0,
+     983.0
+    ]
+   ],
+   "ok": [
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "nombre": "EdGraphNode_Comment_13",
+   "antes": [
+    "ORFANO",
+    46,
+    [
+     3840.0,
+     1744.0
+    ],
+    [
+     250.0,
+     213.0
+    ]
+   ],
+   "ahora": [
+    "ORFANO",
+    120,
+    [
+     3840.0,
+     1594.0
+    ],
+    [
+     560.0,
+     363.0
+    ]
+   ],
+   "ok": [
+    true,
+    true,
+    true
+   ]
+  }
+ ],
+ "CR_Student_IK_fix": [
+  {
+   "nombre": "EdGraphNode_Comment_0",
+   "antes": [
+    "CADERA",
+    46,
+    [
+     -64.0,
+     -64.0
+    ],
+    [
+     771.0,
+     617.0
+    ]
+   ],
+   "ahora": [
+    "CADERA",
+    90,
+    [
+     -64.0,
+     -184.0
+    ],
+    [
+     771.0,
+     737.0
+    ]
+   ],
+   "ok": [
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "nombre": "EdGraphNode_Comment_5",
+   "antes": [
+    "PIERNA IZQ",
+    46,
+    [
+     944.0,
+     -64.0
+    ],
+    [
+     700.0,
+     926.0
+    ]
+   ],
+   "ahora": [
+    "PIERNA IZQ",
+    90,
+    [
+     944.0,
+     -184.0
+    ],
+    [
+     700.0,
+     1046.0
+    ]
+   ],
+   "ok": [
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "nombre": "EdGraphNode_Comment_6",
+   "antes": [
+    "PIERNA DER",
+    46,
+    [
+     2048.0,
+     -64.0
+    ],
+    [
+     700.0,
+     926.0
+    ]
+   ],
+   "ahora": [
+    "PIERNA DER",
+    90,
+    [
+     2048.0,
+     -184.0
+    ],
+    [
+     700.0,
+     1046.0
+    ]
+   ],
+   "ok": [
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "nombre": "EdGraphNode_Comment_7",
+   "antes": [
+    "BRAZO IZQ",
+    46,
+    [
+     3136.0,
+     -64.0
+    ],
+    [
+     700.0,
+     926.0
+    ]
+   ],
+   "ahora": [
+    "BRAZO IZQ",
+    90,
+    [
+     3136.0,
+     -184.0
+    ],
+    [
+     700.0,
+     1046.0
+    ]
+   ],
+   "ok": [
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "nombre": "EdGraphNode_Comment_8",
+   "antes": [
+    "BRAZO DER",
+    46,
+    [
+     4240.0,
+     -64.0
+    ],
+    [
+     700.0,
+     926.0
+    ]
+   ],
+   "ahora": [
+    "BRAZO DER",
+    90,
+    [
+     4240.0,
+     -184.0
+    ],
+    [
+     700.0,
+     1046.0
+    ]
+   ],
+   "ok": [
+    true,
+    true,
+    true
+   ]
+  }
+ ]
+}

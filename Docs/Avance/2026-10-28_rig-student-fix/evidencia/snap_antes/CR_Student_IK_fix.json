@@ -1,0 +1,80 @@
+{
+ "nodes": {
+  "RigUnit_BeginExecution": [
+   -500,
+   0
+  ],
+  "GetTransform_ctrl_hips": [
+   0,
+   300
+  ],
+  "SetTransform_Hips": [
+   400,
+   0
+  ],
+  "GetTransform_ctrl_foot_l_ik": [
+   1000,
+   300
+  ],
+  "GetTransform_ctrl_pole_knee_l": [
+   1000,
+   650
+  ],
+  "IK_LeftLeg": [
+   1450,
+   0
+  ],
+  "GetTransform_ctrl_foot_r_ik": [
+   2100,
+   300
+  ],
+  "GetTransform_ctrl_pole_knee_r": [
+   2100,
+   650
+  ],
+  "IK_RightLeg": [
+   2550,
+   0
+  ],
+  "GetTransform_ctrl_hand_l_ik": [
+   3200,
+   300
+  ],
+  "GetTransform_ctrl_pole_elbow_l": [
+   3200,
+   650
+  ],
+  "IK_LeftArm": [
+   3650,
+   0
+  ],
+  "GetTransform_ctrl_hand_r_ik": [
+   4300,
+   300
+  ],
+  "GetTransform_ctrl_pole_elbow_r": [
+   4300,
+   650
+  ],
+  "IK_RightArm": [
+   4750,
+   0
+  ]
+ },
+ "edges": [
+  "GetTransform_ctrl_foot_l_ik.Transform <-> IK_LeftLeg.Effector",
+  "GetTransform_ctrl_foot_r_ik.Transform <-> IK_RightLeg.Effector",
+  "GetTransform_ctrl_hand_l_ik.Transform <-> IK_LeftArm.Effector",
+  "GetTransform_ctrl_hand_r_ik.Transform <-> IK_RightArm.Effector",
+  "GetTransform_ctrl_hips.Transform <-> SetTransform_Hips.Value",
+  "GetTransform_ctrl_pole_elbow_l.Transform.Translation <-> IK_LeftArm.PoleVector",
+  "GetTransform_ctrl_pole_elbow_r.Transform.Translation <-> IK_RightArm.PoleVector",
+  "GetTransform_ctrl_pole_knee_l.Transform.Translation <-> IK_LeftLeg.PoleVector",
+  "GetTransform_ctrl_pole_knee_r.Transform.Translation <-> IK_RightLeg.PoleVector",
+  "IK_LeftArm.ExecutePin <-> IK_RightArm.ExecutePin",
+  "IK_LeftArm.ExecutePin <-> IK_RightLeg.ExecutePin",
+  "IK_LeftLeg.ExecutePin <-> IK_RightLeg.ExecutePin",
+  "IK_LeftLeg.ExecutePin <-> SetTransform_Hips.ExecutePin",
+  "RigUnit_BeginExecution.ExecutePin <-> SetTransform_Hips.ExecutePin"
+ ]
+}

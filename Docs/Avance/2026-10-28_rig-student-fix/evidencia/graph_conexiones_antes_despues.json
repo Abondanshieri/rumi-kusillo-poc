@@ -1,0 +1,1070 @@
+{
+ "metodo": "Antes = snapshot tomado al inicio de esta ronda (antes de crear comentarios). Despues = snapshot tras comentar, compilar y guardar. Control Rig: pin<->pin incluyendo sub-pines (snap_cr_connections.py); ABP: pin de salida -> pin de entrada (snap_abp_connections.py). Los nodos Comment cuentan como nodos en RigVM.",
+ "grafos": {
+  "CR_Student_Procedural_fix": {
+   "nodos_antes": 45,
+   "nodos_despues": 50,
+   "nodos_nuevos(comentarios)": [
+    "EdGraphNode_Comment_10",
+    "EdGraphNode_Comment_11",
+    "EdGraphNode_Comment_12",
+    "EdGraphNode_Comment_13",
+    "EdGraphNode_Comment_9"
+   ],
+   "nodos_quitados": [],
+   "nodos_movidos": [],
+   "conexiones_antes": 62,
+   "conexiones_despues": 62,
+   "conexiones_perdidas": [],
+   "conexiones_nuevas": [],
+   "conexiones_despues_lista": [
+    "Add_HipsZ.A <-> Get_Hips.Transform.Translation.Z",
+    "Add_HipsZ.B <-> Add_PelvisLand.Result",
+    "Add_LeftFootZ.A <-> Get_LeftFoot.Transform.Translation.Z",
+    "Add_LeftFootZ.B <-> Clamp_LeftOffset.Result",
+    "Add_PelvisLand.A <-> VariableNode_2.Value",
+    "Add_PelvisLand.B <-> Mul_LandCrouch.Result",
+    "Add_PelvisLand.Result <-> Make_Hips_Offset.Translation.Z",
+    "Add_PelvisLand.Result <-> Mul_Hips_Offset.B.Translation.Z",
+    "Add_RightFootZ.A <-> Get_RightFoot.Transform.Translation.Z",
+    "Add_RightFootZ.B <-> Clamp_RightOffset.Result",
+    "Clamp_LeftOffset.Value <-> Sub_FootOffsetL.Result",
+    "Clamp_RightOffset.Value <-> Sub_FootOffsetR.Result",
+    "Get_Hips.Transform <-> Mul_Hips_Offset.A",
+    "Get_Hips.Transform.Rotation <-> Set_Hips.Value.Rotation",
+    "Get_Hips.Transform.Scale3D <-> Set_Hips.Value.Scale3D",
+    "Get_LeftFoot.Transform <-> Mul_LeftFoot_Offset.A",
+    "Get_LeftFoot.Transform.Rotation <-> TwoBoneIK_Left.Effector.Rotation",
+    "Get_LeftFoot.Transform.Scale3D <-> TwoBoneIK_Left.Effector.Scale3D",
+    "Get_Neck_Lean.Transform <-> Set_Neck_Lean.Value",
+    "Get_Neck_Lean.Transform.Rotation <-> Mul_Neck_Lean.A",
+    "Get_RightFoot.Transform <-> Mul_RightFoot_Offset.A",
+    "Get_RightFoot.Transform.Rotation <-> TwoBoneIK_Right.Effector.Rotation",
+    "Get_RightFoot.Transform.Scale3D <-> TwoBoneIK_Right.Effector.Scale3D",
+    "Get_Spine1.Transform <-> Set_Spine1.Value",
+    "Get_Spine1.Transform.Rotation <-> Mul_Spine1.A",
+    "Get_Spine2.Transform <-> Set_Spine2.Value",
+    "Get_Spine2.Transform.Rotation <-> Mul_Spine2.A",
+    "Make_Hips_Offset.Result <-> Mul_Hips_Offset.B",
+    "Make_LeftFoot_Offset.Result <-> Mul_LeftFoot_Offset.B",
+    "Make_LeftFoot_Offset.Translation.Z <-> Sub_FootOffsetL.Result",
+    "Make_RightFoot_Offset.Result <-> Mul_RightFoot_Offset.B",
+    "Make_RightFoot_Offset.Translation.Z <-> Sub_FootOffsetR.Result",
+    "Mul_Hips_Offset.Result <-> Set_Hips.Value",
+    "Mul_LandCrouch.A <-> VariableNode_3.Value",
+    "Mul_LeftFoot_Offset.Result <-> TwoBoneIK_Left.Effector",
+    "Mul_Neck_Lean.B <-> Quat_Neck.Result",
+    "Mul_Neck_Lean.Result <-> Set_Neck_Lean.Value.Rotation",
+    "Mul_Pitch_Neck.A <-> VariableNode_1.Value",
+    "Mul_Pitch_Neck.Result <-> Quat_Neck.Euler.X",
+    "Mul_Pitch_Spine2.A <-> VariableNode_1.Value",
+    "Mul_Pitch_Spine2.Result <-> Quat_Spine2.Euler.X",
+    "Mul_RightFoot_Offset.Result <-> TwoBoneIK_Right.Effector",
+    "Mul_Roll_Neck.A <-> VariableNode.Value",
+    "Mul_Roll_Neck.Result <-> Quat_Neck.Euler.Z",
+    "Mul_Roll_Spine2.A <-> VariableNode.Value",
+    "Mul_Roll_Spine2.Result <-> Quat_Spine2.Euler.Z",
+    "Mul_Spine1.B <-> Quat_Spine1.Result",
+    "Mul_Spine1.Result <-> Set_Spine1.Value.Rotation",
+    "Mul_Spine2.B <-> Quat_Spine2.Result",
+    "Mul_Spine2.Result <-> Set_Spine2.Value.Rotation",
+    "Quat_Spine1.Euler.X <-> VariableNode_1.Value",
+    "Quat_Spine1.Euler.Z <-> VariableNode.Value",
+    "RigUnit_BeginExecution.ExecutePin <-> Set_Spine1.ExecutePin",
+    "Set_Hips.ExecutePin <-> Set_Neck_Lean.ExecutePin",
+    "Set_Hips.ExecutePin <-> TwoBoneIK_Left.ExecutePin",
+    "Set_Neck_Lean.ExecutePin <-> Set_Spine2.ExecutePin",
+    "Set_Spine1.ExecutePin <-> Set_Spine2.ExecutePin",
+    "Sub_FootOffsetL.A <-> VariableNode_4.Value",
+    "Sub_FootOffsetL.B <-> VariableNode_2.Value",
+    "Sub_FootOffsetR.A <-> VariableNode_5.Value",
+    "Sub_FootOffsetR.B <-> VariableNode_2.Value",
+    "TwoBoneIK_Left.ExecutePin <-> TwoBoneIK_Right.ExecutePin"
+   ]
+  },
+  "CR_Student_IK_fix": {
+   "nodos_antes": 15,
+   "nodos_despues": 20,
+   "nodos_nuevos(comentarios)": [
+    "EdGraphNode_Comment_0",
+    "EdGraphNode_Comment_5",
+    "EdGraphNode_Comment_6",
+    "EdGraphNode_Comment_7",
+    "EdGraphNode_Comment_8"
+   ],
+   "nodos_quitados": [],
+   "nodos_movidos": [],
+   "conexiones_antes": 14,
+   "conexiones_despues": 14,
+   "conexiones_perdidas": [],
+   "conexiones_nuevas": [],
+   "conexiones_despues_lista": [
+    "GetTransform_ctrl_foot_l_ik.Transform <-> IK_LeftLeg.Effector",
+    "GetTransform_ctrl_foot_r_ik.Transform <-> IK_RightLeg.Effector",
+    "GetTransform_ctrl_hand_l_ik.Transform <-> IK_LeftArm.Effector",
+    "GetTransform_ctrl_hand_r_ik.Transform <-> IK_RightArm.Effector",
+    "GetTransform_ctrl_hips.Transform <-> SetTransform_Hips.Value",
+    "GetTransform_ctrl_pole_elbow_l.Transform.Translation <-> IK_LeftArm.PoleVector",
+    "GetTransform_ctrl_pole_elbow_r.Transform.Translation <-> IK_RightArm.PoleVector",
+    "GetTransform_ctrl_pole_knee_l.Transform.Translation <-> IK_LeftLeg.PoleVector",
+    "GetTransform_ctrl_pole_knee_r.Transform.Translation <-> IK_RightLeg.PoleVector",
+    "IK_LeftArm.ExecutePin <-> IK_RightArm.ExecutePin",
+    "IK_LeftArm.ExecutePin <-> IK_RightLeg.ExecutePin",
+    "IK_LeftLeg.ExecutePin <-> IK_RightLeg.ExecutePin",
+    "IK_LeftLeg.ExecutePin <-> SetTransform_Hips.ExecutePin",
+    "RigUnit_BeginExecution.ExecutePin <-> SetTransform_Hips.ExecutePin"
+   ]
+  },
+  "ABP_AnimGraph": {
+   "nodos_antes": 7,
+   "nodos_despues": 7,
+   "nodos_quitados": [],
+   "nodos_movidos": [],
+   "conexiones_antes": 5,
+   "conexiones_despues": 5,
+   "conexiones_perdidas": [],
+   "conexiones_nuevas": [],
+   "conexiones_despues_lista": [
+    [
+     "AnimGraphNode_ControlRig_1#out0",
+     "AnimGraphNode_Root_0.Result"
+    ],
+    [
+     "AnimGraphNode_Inertialization_0#out0",
+     "AnimGraphNode_ControlRig_1.Source"
+    ],
+    [
+     "AnimGraphNode_Slot_0#out0",
+     "AnimGraphNode_Inertialization_0.Source"
+    ],
+    [
+     "AnimGraphNode_StateMachine_0#out0",
+     "AnimGraphNode_Slot_0.Source"
+    ],
+    [
+     "AnimGraphNode_StateMachine_1#out0",
+     "AnimGraphNode_SaveCachedPose_0.Pose"
+    ]
+   ]
+  },
+  "ABP_EventGraph": {
+   "nodos_antes": 88,
+   "nodos_despues": 88,
+   "nodos_quitados": [],
+   "nodos_movidos": [],
+   "conexiones_antes": 106,
+   "conexiones_despues": 106,
+   "conexiones_perdidas": [],
+   "conexiones_nuevas": [],
+   "conexiones_despues_lista": [
+    [
+     "K2Node_CallFunction_1#out0",
+     "K2Node_DynamicCast_0.Object"
+    ],
+    [
+     "K2Node_CallFunction_1#out0",
+     "K2Node_DynamicCast_1.Object"
+    ],
+    [
+     "K2Node_CallFunction_10#out0",
+     "K2Node_CallFunction_14.bPickA"
+    ],
+    [
+     "K2Node_CallFunction_10#out0",
+     "K2Node_VariableSet_6.IsFalling"
+    ],
+    [
+     "K2Node_CallFunction_12#out2",
+     "K2Node_CallFunction_13.A"
+    ],
+    [
+     "K2Node_CallFunction_12#out2",
+     "K2Node_VariableSet_13.VerticalSpeed"
+    ],
+    [
+     "K2Node_CallFunction_13#out0",
+     "K2Node_CallFunction_14.A"
+    ],
+    [
+     "K2Node_CallFunction_14#out0",
+     "K2Node_VariableSet_7.PeakFallSpeed"
+    ],
+    [
+     "K2Node_CallFunction_2#out0",
+     "K2Node_VariableSet_14.FallSpeed"
+    ],
+    [
+     "K2Node_CallFunction_22#out0",
+     "K2Node_CallFunction_24.Start"
+    ],
+    [
+     "K2Node_CallFunction_22#out0",
+     "K2Node_PromotableOperator_10.A"
+    ],
+    [
+     "K2Node_CallFunction_23#out0",
+     "K2Node_PromotableOperator_10.B"
+    ],
+    [
+     "K2Node_CallFunction_24#out0",
+     "K2Node_VariableSet_18.execute"
+    ],
+    [
+     "K2Node_CallFunction_24#out1",
+     "K2Node_CallFunction_25.Hit"
+    ],
+    [
+     "K2Node_CallFunction_25#out0",
+     "K2Node_CallFunction_26.bPickA"
+    ],
+    [
+     "K2Node_CallFunction_25#out0",
+     "K2Node_CallFunction_29.bPickA"
+    ],
+    [
+     "K2Node_CallFunction_25#out0",
+     "K2Node_VariableSet_18.GroundHit"
+    ],
+    [
+     "K2Node_CallFunction_25#out3",
+     "K2Node_PromotableOperator_11.A"
+    ],
+    [
+     "K2Node_CallFunction_26#out0",
+     "K2Node_PromotableOperator_12.A"
+    ],
+    [
+     "K2Node_CallFunction_26#out0",
+     "K2Node_VariableSet_19.DistanceToGround"
+    ],
+    [
+     "K2Node_CallFunction_27#out0",
+     "K2Node_PromotableOperator_14.A"
+    ],
+    [
+     "K2Node_CallFunction_27#out0",
+     "K2Node_VariableSet_20.TimeToImpact"
+    ],
+    [
+     "K2Node_CallFunction_28#out0",
+     "K2Node_CallFunction_29.A"
+    ],
+    [
+     "K2Node_CallFunction_29#out0",
+     "K2Node_CallFunction_30.Target"
+    ],
+    [
+     "K2Node_CallFunction_3#out0",
+     "K2Node_CallFunction_5.BaseRotation"
+    ],
+    [
+     "K2Node_CallFunction_30#out0",
+     "K2Node_VariableSet_21.LandPrep"
+    ],
+    [
+     "K2Node_CallFunction_5#out0",
+     "K2Node_CallFunction_6.Value"
+    ],
+    [
+     "K2Node_CallFunction_5#out0",
+     "K2Node_CallFunction_8.A"
+    ],
+    [
+     "K2Node_CallFunction_6#out0",
+     "K2Node_CallFunction_8.B"
+    ],
+    [
+     "K2Node_CallFunction_7#out0",
+     "K2Node_VariableSet_3.GroundSpeed"
+    ],
+    [
+     "K2Node_CallFunction_8#out0",
+     "K2Node_VariableSet_4.Direction"
+    ],
+    [
+     "K2Node_CallFunction_9#out0",
+     "K2Node_PromotableOperator_2.A"
+    ],
+    [
+     "K2Node_CommutativeAssociativeBinaryOperator_0#out0",
+     "K2Node_VariableSet_5.ShouldMove"
+    ],
+    [
+     "K2Node_CommutativeAssociativeBinaryOperator_2#out0",
+     "K2Node_CallFunction_26.A"
+    ],
+    [
+     "K2Node_CommutativeAssociativeBinaryOperator_3#out0",
+     "K2Node_PromotableOperator_12.B"
+    ],
+    [
+     "K2Node_DynamicCast_0#out0",
+     "K2Node_VariableSet_0.execute"
+    ],
+    [
+     "K2Node_DynamicCast_0#out2",
+     "K2Node_VariableSet_0.Character"
+    ],
+    [
+     "K2Node_DynamicCast_1#out0",
+     "K2Node_VariableSet_10.execute"
+    ],
+    [
+     "K2Node_DynamicCast_1#out2",
+     "K2Node_VariableSet_10.PlayerCharacter"
+    ],
+    [
+     "K2Node_Event_0#out1",
+     "K2Node_VariableGet_0.execute"
+    ],
+    [
+     "K2Node_Event_0#out2",
+     "K2Node_CallFunction_0.DeltaTimeX"
+    ],
+    [
+     "K2Node_Event_0#out2",
+     "K2Node_CallFunction_30.DeltaTime"
+    ],
+    [
+     "K2Node_Event_1#out1",
+     "K2Node_DynamicCast_0.execute"
+    ],
+    [
+     "K2Node_ExecutionSequence_0#out0",
+     "K2Node_VariableSet_2.execute"
+    ],
+    [
+     "K2Node_ExecutionSequence_0#out1",
+     "K2Node_Knot_0.InputPin"
+    ],
+    [
+     "K2Node_ExecutionSequence_0#out2",
+     "K2Node_Knot_1.InputPin"
+    ],
+    [
+     "K2Node_ExecutionSequence_0#out3",
+     "K2Node_VariableSet_14.execute"
+    ],
+    [
+     "K2Node_ExecutionSequence_0#out4",
+     "K2Node_CallFunction_0.execute"
+    ],
+    [
+     "K2Node_IfThenElse_3#out0",
+     "K2Node_CallFunction_24.execute"
+    ],
+    [
+     "K2Node_IfThenElse_3#out1",
+     "K2Node_VariableSet_11.execute"
+    ],
+    [
+     "K2Node_Knot_0#out0",
+     "K2Node_VariableSet_5.execute"
+    ],
+    [
+     "K2Node_Knot_1#out0",
+     "K2Node_VariableSet_6.execute"
+    ],
+    [
+     "K2Node_MacroInstance_0#out0",
+     "K2Node_VariableSet_12.execute"
+    ],
+    [
+     "K2Node_PromotableOperator_0#out0",
+     "K2Node_CommutativeAssociativeBinaryOperator_0.A"
+    ],
+    [
+     "K2Node_PromotableOperator_10#out0",
+     "K2Node_CallFunction_24.End"
+    ],
+    [
+     "K2Node_PromotableOperator_11#out0",
+     "K2Node_CommutativeAssociativeBinaryOperator_2.A"
+    ],
+    [
+     "K2Node_PromotableOperator_12#out0",
+     "K2Node_CallFunction_27.B"
+    ],
+    [
+     "K2Node_PromotableOperator_13#out0",
+     "K2Node_CallFunction_27.bPickA"
+    ],
+    [
+     "K2Node_PromotableOperator_14#out0",
+     "K2Node_PromotableOperator_15.B"
+    ],
+    [
+     "K2Node_PromotableOperator_15#out0",
+     "K2Node_CallFunction_28.Value"
+    ],
+    [
+     "K2Node_PromotableOperator_2#out0",
+     "K2Node_CommutativeAssociativeBinaryOperator_0.B"
+    ],
+    [
+     "K2Node_PromotableOperator_3#out0",
+     "K2Node_CallFunction_2.Value"
+    ],
+    [
+     "K2Node_PromotableOperator_9#out0",
+     "K2Node_CallFunction_23.Z"
+    ],
+    [
+     "K2Node_VariableGet_0#out0",
+     "K2Node_ExecutionSequence_0.execute"
+    ],
+    [
+     "K2Node_VariableGet_1#out0",
+     "K2Node_VariableSet_1.MovementComponent"
+    ],
+    [
+     "K2Node_VariableGet_10#out0",
+     "K2Node_PromotableOperator_0.A"
+    ],
+    [
+     "K2Node_VariableGet_11#out0",
+     "K2Node_CallFunction_10.self"
+    ],
+    [
+     "K2Node_VariableGet_12#out0",
+     "K2Node_CallFunction_14.B"
+    ],
+    [
+     "K2Node_VariableGet_14#out0",
+     "K2Node_VariableSet_9.DistanceToFloor"
+    ],
+    [
+     "K2Node_VariableGet_15#out0",
+     "K2Node_IfThenElse_3.Condition"
+    ],
+    [
+     "K2Node_VariableGet_16#out0",
+     "K2Node_PromotableOperator_3.A"
+    ],
+    [
+     "K2Node_VariableGet_17#out0",
+     "K2Node_CallFunction_22.self"
+    ],
+    [
+     "K2Node_VariableGet_18#out0",
+     "K2Node_MacroInstance_0.InputObject"
+    ],
+    [
+     "K2Node_VariableGet_18#out0",
+     "K2Node_VariableGet_14.self"
+    ],
+    [
+     "K2Node_VariableGet_18#out0",
+     "K2Node_VariableGet_19.self"
+    ],
+    [
+     "K2Node_VariableGet_19#out0",
+     "K2Node_VariableSet_12.IsSwinging"
+    ],
+    [
+     "K2Node_VariableGet_2#out0",
+     "K2Node_VariableGet_4.self"
+    ],
+    [
+     "K2Node_VariableGet_20#out0",
+     "K2Node_PromotableOperator_11.B"
+    ],
+    [
+     "K2Node_VariableGet_20#out0",
+     "K2Node_PromotableOperator_9.A"
+    ],
+    [
+     "K2Node_VariableGet_21#out0",
+     "K2Node_CommutativeAssociativeBinaryOperator_3.A"
+    ],
+    [
+     "K2Node_VariableGet_22#out0",
+     "K2Node_PromotableOperator_13.A"
+    ],
+    [
+     "K2Node_VariableGet_23#out0",
+     "K2Node_CallFunction_30.Current"
+    ],
+    [
+     "K2Node_VariableGet_3#out0",
+     "K2Node_CallFunction_12.InVec"
+    ],
+    [
+     "K2Node_VariableGet_4#out0",
+     "K2Node_VariableSet_2.Velocity"
+    ],
+    [
+     "K2Node_VariableGet_5#out0",
+     "K2Node_CallFunction_3.self"
+    ],
+    [
+     "K2Node_VariableGet_6#out0",
+     "K2Node_CallFunction_5.Velocity"
+    ],
+    [
+     "K2Node_VariableGet_7#out0",
+     "K2Node_VariableGet_8.self"
+    ],
+    [
+     "K2Node_VariableGet_8#out0",
+     "K2Node_CallFunction_8.bPickA"
+    ],
+    [
+     "K2Node_VariableGet_9#out0",
+     "K2Node_CallFunction_9.self"
+    ],
+    [
+     "K2Node_VariableSet_0#out0",
+     "K2Node_VariableSet_1.execute"
+    ],
+    [
+     "K2Node_VariableSet_0#out1",
+     "K2Node_VariableGet_1.self"
+    ],
+    [
+     "K2Node_VariableSet_1#out0",
+     "K2Node_DynamicCast_1.execute"
+    ],
+    [
+     "K2Node_VariableSet_11#out0",
+     "K2Node_VariableSet_15.execute"
+    ],
+    [
+     "K2Node_VariableSet_12#out0",
+     "K2Node_VariableSet_9.execute"
+    ],
+    [
+     "K2Node_VariableSet_13#out0",
+     "K2Node_MacroInstance_0.exec"
+    ],
+    [
+     "K2Node_VariableSet_14#out0",
+     "K2Node_IfThenElse_3.execute"
+    ],
+    [
+     "K2Node_VariableSet_15#out0",
+     "K2Node_VariableSet_16.execute"
+    ],
+    [
+     "K2Node_VariableSet_16#out0",
+     "K2Node_VariableSet_17.execute"
+    ],
+    [
+     "K2Node_VariableSet_18#out0",
+     "K2Node_VariableSet_19.execute"
+    ],
+    [
+     "K2Node_VariableSet_19#out0",
+     "K2Node_VariableSet_20.execute"
+    ],
+    [
+     "K2Node_VariableSet_2#out0",
+     "K2Node_VariableSet_3.execute"
+    ],
+    [
+     "K2Node_VariableSet_2#out1",
+     "K2Node_CallFunction_7.A"
+    ],
+    [
+     "K2Node_VariableSet_20#out0",
+     "K2Node_VariableSet_21.execute"
+    ],
+    [
+     "K2Node_VariableSet_3#out0",
+     "K2Node_VariableSet_4.execute"
+    ],
+    [
+     "K2Node_VariableSet_6#out0",
+     "K2Node_VariableSet_7.execute"
+    ],
+    [
+     "K2Node_VariableSet_7#out0",
+     "K2Node_VariableSet_13.execute"
+    ]
+   ]
+  },
+  "ABP_UpdateProceduralVariables": {
+   "nodos_antes": 85,
+   "nodos_despues": 85,
+   "nodos_quitados": [],
+   "nodos_movidos": [],
+   "conexiones_antes": 115,
+   "conexiones_despues": 115,
+   "conexiones_perdidas": [],
+   "conexiones_nuevas": [],
+   "conexiones_despues_lista": [
+    [
+     "K2Node_CallFunction_0#out0",
+     "K2Node_CallFunction_1.Target"
+    ],
+    [
+     "K2Node_CallFunction_1#out0",
+     "K2Node_VariableSet_0.LeanPitch"
+    ],
+    [
+     "K2Node_CallFunction_12#out0",
+     "K2Node_CallFunction_13.InRot"
+    ],
+    [
+     "K2Node_CallFunction_13#out2",
+     "K2Node_PromotableOperator_6.A"
+    ],
+    [
+     "K2Node_CallFunction_13#out2",
+     "K2Node_VariableSet_4.PreviousYaw"
+    ],
+    [
+     "K2Node_CallFunction_14#out0",
+     "K2Node_CallFunction_15.Target"
+    ],
+    [
+     "K2Node_CallFunction_15#out0",
+     "K2Node_VariableSet_3.LeanRoll"
+    ],
+    [
+     "K2Node_CallFunction_22#out0",
+     "K2Node_CallFunction_23.self"
+    ],
+    [
+     "K2Node_CallFunction_22#out0",
+     "K2Node_CallFunction_30.self"
+    ],
+    [
+     "K2Node_CallFunction_23#out0",
+     "K2Node_CallFunction_47.InVec"
+    ],
+    [
+     "K2Node_CallFunction_23#out0",
+     "K2Node_PromotableOperator_11.A"
+    ],
+    [
+     "K2Node_CallFunction_23#out0",
+     "K2Node_PromotableOperator_12.A"
+    ],
+    [
+     "K2Node_CallFunction_24#out0",
+     "K2Node_PromotableOperator_11.B"
+    ],
+    [
+     "K2Node_CallFunction_24#out0",
+     "K2Node_PromotableOperator_14.B"
+    ],
+    [
+     "K2Node_CallFunction_25#out0",
+     "K2Node_PromotableOperator_12.B"
+    ],
+    [
+     "K2Node_CallFunction_25#out0",
+     "K2Node_PromotableOperator_15.B"
+    ],
+    [
+     "K2Node_CallFunction_26#out0",
+     "K2Node_VariableSet_5.execute"
+    ],
+    [
+     "K2Node_CallFunction_26#out1",
+     "K2Node_CallFunction_27.Hit"
+    ],
+    [
+     "K2Node_CallFunction_27#out0",
+     "K2Node_CommutativeAssociativeBinaryOperator_5.A"
+    ],
+    [
+     "K2Node_CallFunction_27#out3",
+     "K2Node_PromotableOperator_13.B"
+    ],
+    [
+     "K2Node_CallFunction_28#out0",
+     "K2Node_CallFunction_29.Target"
+    ],
+    [
+     "K2Node_CallFunction_29#out0",
+     "K2Node_CommutativeAssociativeBinaryOperator_1.A"
+    ],
+    [
+     "K2Node_CallFunction_29#out0",
+     "K2Node_VariableSet_5.FootOffsetL"
+    ],
+    [
+     "K2Node_CallFunction_30#out0",
+     "K2Node_CallFunction_50.InVec"
+    ],
+    [
+     "K2Node_CallFunction_30#out0",
+     "K2Node_PromotableOperator_14.A"
+    ],
+    [
+     "K2Node_CallFunction_30#out0",
+     "K2Node_PromotableOperator_15.A"
+    ],
+    [
+     "K2Node_CallFunction_31#out0",
+     "K2Node_VariableSet_6.execute"
+    ],
+    [
+     "K2Node_CallFunction_31#out1",
+     "K2Node_CallFunction_32.Hit"
+    ],
+    [
+     "K2Node_CallFunction_32#out0",
+     "K2Node_CommutativeAssociativeBinaryOperator_6.A"
+    ],
+    [
+     "K2Node_CallFunction_32#out3",
+     "K2Node_PromotableOperator_16.B"
+    ],
+    [
+     "K2Node_CallFunction_33#out0",
+     "K2Node_CallFunction_34.Target"
+    ],
+    [
+     "K2Node_CallFunction_34#out0",
+     "K2Node_CommutativeAssociativeBinaryOperator_1.B"
+    ],
+    [
+     "K2Node_CallFunction_34#out0",
+     "K2Node_VariableSet_6.FootOffsetR"
+    ],
+    [
+     "K2Node_CallFunction_35#out0",
+     "K2Node_PromotableOperator_22.A"
+    ],
+    [
+     "K2Node_CallFunction_36#out0",
+     "K2Node_VariableSet_8.LandCrouch"
+    ],
+    [
+     "K2Node_CallFunction_37#out0",
+     "K2Node_CallFunction_41.InVec"
+    ],
+    [
+     "K2Node_CallFunction_37#out0",
+     "K2Node_CallFunction_46.InVec"
+    ],
+    [
+     "K2Node_CallFunction_37#out0",
+     "K2Node_PromotableOperator_24.A"
+    ],
+    [
+     "K2Node_CallFunction_38#out0",
+     "K2Node_PromotableOperator_23.A"
+    ],
+    [
+     "K2Node_CallFunction_39#out0",
+     "K2Node_PromotableOperator_25.B"
+    ],
+    [
+     "K2Node_CallFunction_46#out2",
+     "K2Node_CallFunction_48.Z"
+    ],
+    [
+     "K2Node_CallFunction_46#out2",
+     "K2Node_CallFunction_51.Z"
+    ],
+    [
+     "K2Node_CallFunction_46#out2",
+     "K2Node_PromotableOperator_27.A"
+    ],
+    [
+     "K2Node_CallFunction_47#out0",
+     "K2Node_CallFunction_48.X"
+    ],
+    [
+     "K2Node_CallFunction_47#out0",
+     "K2Node_CallFunction_49.X"
+    ],
+    [
+     "K2Node_CallFunction_47#out1",
+     "K2Node_CallFunction_48.Y"
+    ],
+    [
+     "K2Node_CallFunction_47#out1",
+     "K2Node_CallFunction_49.Y"
+    ],
+    [
+     "K2Node_CallFunction_48#out0",
+     "K2Node_CallFunction_26.Start"
+    ],
+    [
+     "K2Node_CallFunction_49#out0",
+     "K2Node_CallFunction_26.End"
+    ],
+    [
+     "K2Node_CallFunction_50#out0",
+     "K2Node_CallFunction_51.X"
+    ],
+    [
+     "K2Node_CallFunction_50#out0",
+     "K2Node_CallFunction_52.X"
+    ],
+    [
+     "K2Node_CallFunction_50#out1",
+     "K2Node_CallFunction_51.Y"
+    ],
+    [
+     "K2Node_CallFunction_50#out1",
+     "K2Node_CallFunction_52.Y"
+    ],
+    [
+     "K2Node_CallFunction_51#out0",
+     "K2Node_CallFunction_31.Start"
+    ],
+    [
+     "K2Node_CallFunction_52#out0",
+     "K2Node_CallFunction_31.End"
+    ],
+    [
+     "K2Node_CallFunction_53#out0",
+     "K2Node_CommutativeAssociativeBinaryOperator_5.B"
+    ],
+    [
+     "K2Node_CallFunction_53#out0",
+     "K2Node_CommutativeAssociativeBinaryOperator_6.B"
+    ],
+    [
+     "K2Node_CommutativeAssociativeBinaryOperator_1#out0",
+     "K2Node_VariableSet_7.PelvisOffset"
+    ],
+    [
+     "K2Node_CommutativeAssociativeBinaryOperator_2#out0",
+     "K2Node_Select_3.Index"
+    ],
+    [
+     "K2Node_CommutativeAssociativeBinaryOperator_5#out0",
+     "K2Node_Select_1.Index"
+    ],
+    [
+     "K2Node_CommutativeAssociativeBinaryOperator_6#out0",
+     "K2Node_Select_2.Index"
+    ],
+    [
+     "K2Node_ExecutionSequence_0#out0",
+     "K2Node_VariableSet_0.execute"
+    ],
+    [
+     "K2Node_ExecutionSequence_0#out1",
+     "K2Node_VariableSet_3.execute"
+    ],
+    [
+     "K2Node_ExecutionSequence_0#out2",
+     "K2Node_CallFunction_26.execute"
+    ],
+    [
+     "K2Node_ExecutionSequence_0#out3",
+     "K2Node_VariableSet_8.execute"
+    ],
+    [
+     "K2Node_ExecutionSequence_0#out4",
+     "K2Node_VariableSet_9.execute"
+    ],
+    [
+     "K2Node_FunctionEntry_0#out0",
+     "K2Node_ExecutionSequence_0.execute"
+    ],
+    [
+     "K2Node_FunctionEntry_0#out1",
+     "K2Node_CallFunction_1.DeltaTime"
+    ],
+    [
+     "K2Node_FunctionEntry_0#out1",
+     "K2Node_CallFunction_15.DeltaTime"
+    ],
+    [
+     "K2Node_FunctionEntry_0#out1",
+     "K2Node_CallFunction_29.DeltaTime"
+    ],
+    [
+     "K2Node_FunctionEntry_0#out1",
+     "K2Node_CallFunction_34.DeltaTime"
+    ],
+    [
+     "K2Node_FunctionEntry_0#out1",
+     "K2Node_CallFunction_36.DeltaTime"
+    ],
+    [
+     "K2Node_FunctionEntry_0#out1",
+     "K2Node_PromotableOperator_7.B"
+    ],
+    [
+     "K2Node_MakeArray_0#out0",
+     "K2Node_CallFunction_26.ActorsToIgnore"
+    ],
+    [
+     "K2Node_MakeArray_0#out0",
+     "K2Node_CallFunction_31.ActorsToIgnore"
+    ],
+    [
+     "K2Node_PromotableOperator_0#out0",
+     "K2Node_PromotableOperator_1.A"
+    ],
+    [
+     "K2Node_PromotableOperator_1#out0",
+     "K2Node_CallFunction_0.Value"
+    ],
+    [
+     "K2Node_PromotableOperator_13#out0",
+     "K2Node_Select_1.Option 1"
+    ],
+    [
+     "K2Node_PromotableOperator_16#out0",
+     "K2Node_Select_2.Option 1"
+    ],
+    [
+     "K2Node_PromotableOperator_18#out0",
+     "K2Node_CommutativeAssociativeBinaryOperator_2.B"
+    ],
+    [
+     "K2Node_PromotableOperator_19#out0",
+     "K2Node_CallFunction_35.Value"
+    ],
+    [
+     "K2Node_PromotableOperator_20#out0",
+     "K2Node_PromotableOperator_21.B"
+    ],
+    [
+     "K2Node_PromotableOperator_21#out0",
+     "K2Node_PromotableOperator_22.B"
+    ],
+    [
+     "K2Node_PromotableOperator_22#out0",
+     "K2Node_Select_3.Option 1"
+    ],
+    [
+     "K2Node_PromotableOperator_23#out0",
+     "K2Node_PromotableOperator_24.B"
+    ],
+    [
+     "K2Node_PromotableOperator_24#out0",
+     "K2Node_PromotableOperator_25.A"
+    ],
+    [
+     "K2Node_PromotableOperator_25#out0",
+     "K2Node_VariableSet_9.LookTarget"
+    ],
+    [
+     "K2Node_PromotableOperator_27#out0",
+     "K2Node_CallFunction_49.Z"
+    ],
+    [
+     "K2Node_PromotableOperator_27#out0",
+     "K2Node_CallFunction_52.Z"
+    ],
+    [
+     "K2Node_PromotableOperator_6#out0",
+     "K2Node_PromotableOperator_7.A"
+    ],
+    [
+     "K2Node_PromotableOperator_7#out0",
+     "K2Node_PromotableOperator_8.A"
+    ],
+    [
+     "K2Node_PromotableOperator_8#out0",
+     "K2Node_CallFunction_14.Value"
+    ],
+    [
+     "K2Node_Select_1#out0",
+     "K2Node_CallFunction_28.Value"
+    ],
+    [
+     "K2Node_Select_2#out0",
+     "K2Node_CallFunction_33.Value"
+    ],
+    [
+     "K2Node_Select_3#out0",
+     "K2Node_CallFunction_36.Target"
+    ],
+    [
+     "K2Node_VariableGet_1#out0",
+     "K2Node_PromotableOperator_0.A"
+    ],
+    [
+     "K2Node_VariableGet_10#out0",
+     "K2Node_CallFunction_34.Current"
+    ],
+    [
+     "K2Node_VariableGet_15#out0",
+     "K2Node_CallFunction_53.A"
+    ],
+    [
+     "K2Node_VariableGet_15#out0",
+     "K2Node_CommutativeAssociativeBinaryOperator_2.A"
+    ],
+    [
+     "K2Node_VariableGet_16#out0",
+     "K2Node_PromotableOperator_18.A"
+    ],
+    [
+     "K2Node_VariableGet_16#out0",
+     "K2Node_PromotableOperator_20.A"
+    ],
+    [
+     "K2Node_VariableGet_17#out0",
+     "K2Node_PromotableOperator_19.A"
+    ],
+    [
+     "K2Node_VariableGet_18#out0",
+     "K2Node_CallFunction_36.Current"
+    ],
+    [
+     "K2Node_VariableGet_19#out0",
+     "K2Node_CallFunction_37.self"
+    ],
+    [
+     "K2Node_VariableGet_19#out0",
+     "K2Node_CallFunction_38.self"
+    ],
+    [
+     "K2Node_VariableGet_2#out0",
+     "K2Node_CallFunction_1.Current"
+    ],
+    [
+     "K2Node_VariableGet_20#out0",
+     "K2Node_MakeArray_0.[0]"
+    ],
+    [
+     "K2Node_VariableGet_6#out0",
+     "K2Node_CallFunction_12.self"
+    ],
+    [
+     "K2Node_VariableGet_7#out0",
+     "K2Node_PromotableOperator_6.B"
+    ],
+    [
+     "K2Node_VariableGet_8#out0",
+     "K2Node_CallFunction_15.Current"
+    ],
+    [
+     "K2Node_VariableGet_9#out0",
+     "K2Node_CallFunction_29.Current"
+    ],
+    [
+     "K2Node_VariableSet_3#out0",
+     "K2Node_VariableSet_4.execute"
+    ],
+    [
+     "K2Node_VariableSet_5#out0",
+     "K2Node_CallFunction_31.execute"
+    ],
+    [
+     "K2Node_VariableSet_6#out0",
+     "K2Node_VariableSet_7.execute"
+    ],
+    [
+     "K2Node_VariableSet_9#out0",
+     "K2Node_VariableSet_10.execute"
+    ]
+   ]
+  },
+  "ABP_TestFunc": {
+   "nodos_antes": 2,
+   "nodos_despues": 2,
+   "nodos_quitados": [],
+   "nodos_movidos": [],
+   "conexiones_antes": 0,
+   "conexiones_despues": 0,
+   "conexiones_perdidas": [],
+   "conexiones_nuevas": [],
+   "conexiones_despues_lista": []
+  }
+ }
+}

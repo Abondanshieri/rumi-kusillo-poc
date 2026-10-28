@@ -1,0 +1,20 @@
+A/B a fase IGUALADA: cada muestra del rig ON se empareja con la muestra del rig OFF (misma escena, mismo barrido en camara lenta) de menor distancia entre posiciones de tobillo L+R relativas a la cadera (cm; se quita el desplazamiento global en Z del rig, medido aparte). res = residuo del emparejamiento. Solo se aceptan pares con res <= 1.0 cm.
+escena cfg | pares | res med/max cm | flex rango OFF (cubierto) | |lat| OFF med/max | |lat| ON med/max | dFlex med/max | dRotPie(deg) L med/max | R med/max | dToeVec(deg) L / R med/max
+idle DIR |   4/6 | 0.00/0.00 | 11-17 | 0.71/0.90 | 2.62/3.17 | 0.00/0.00 | 0.00/0.00 | 0.00/0.00 | 0.00/0.00 / 0.00/0.00
+idle LOCX12 |   3/6 | 0.41/0.54 | 11-17 | 0.70/0.90 | 0.24/0.30 | 0.80/1.00 | 0.07/0.09 | 0.11/0.16 | 0.04/0.04 / 0.09/0.16
+walk DIR |  90/90 | 0.00/0.00 | 14-70 | 0.85/1.73 | 1.80/10.75 | 0.00/0.00 | 0.00/0.00 | 0.00/0.00 | 0.00/0.00 / 0.00/0.00
+walk LOCX12 |  90/90 | 0.00/0.24 | 14-70 | 0.85/1.73 | 0.63/1.24 | 0.00/0.60 | 0.00/1.35 | 0.00/0.83 | 0.00/1.31 / 0.00/0.82
+run  DIR |  90/90 | 0.40/0.76 | 10-144 | 1.04/3.65 | 1.61/17.67 | 0.50/1.70 | 0.56/1.98 | 0.49/2.19 | 0.46/1.95 / 0.42/2.04
+run  LOCX12 |  90/90 | 0.00/0.00 | 10-144 | 1.04/3.65 | 0.88/2.34 | 0.00/0.10 | 0.00/0.00 | 0.00/0.00 | 0.00/0.00 / 0.00/0.00
+jump DIR |  66/70 | 0.84/0.94 | 7-88 | 0.67/2.26 | 3.70/13.35 | 0.00/17.40 | 0.00/0.47 | 0.00/0.63 | 0.00/0.47 / 0.00/0.55
+jump LOCX12 |  66/70 | 0.84/0.94 | 7-88 | 0.67/2.26 | 0.51/1.74 | 0.00/17.40 | 0.00/0.47 | 0.00/0.64 | 0.00/0.47 / 0.00/0.55
+
+Cambio que el rig introduce en la rodilla respecto a la animacion original, a fase igualada (signed lat = kneeDevY respecto a linea cadera-tobillo, cm; |ON-OFF| por par y pierna)
+idle DIR: |ON-OFF| mediana 3.34  p90 4.07  max 4.07 cm; n=8; muestras ON con |lat|>1cm: 8
+idle LOCX12: |ON-OFF| mediana 0.46  p90 0.60  max 0.60 cm; n=6; muestras ON con |lat|>1cm: 0
+walk DIR: |ON-OFF| mediana 2.66  p90 6.35  max 12.43 cm; n=180; muestras ON con |lat|>1cm: 153
+walk LOCX12: |ON-OFF| mediana 0.22  p90 0.69  max 0.94 cm; n=180; muestras ON con |lat|>1cm: 28 ej [('Left', 69.8, -1.19, -1.65), ('Left', 68.8, -1.16, -1.69), ('Left', 67.7, -1.13, -1.73)]
+run  DIR: |ON-OFF| mediana 3.05  p90 8.57  max 16.40 cm; n=180; muestras ON con |lat|>1cm: 127
+run  LOCX12: |ON-OFF| mediana 1.24  p90 2.88  max 3.51 cm; n=180; muestras ON con |lat|>1cm: 80 ej [('Right', 114.3, 2.08, -1.27), ('Right', 107.8, 2.02, -1.22), ('Right', 101.3, 1.97, -1.14)]
+jump DIR: |ON-OFF| mediana 4.45  p90 5.97  max 14.76 cm; n=132; muestras ON con |lat|>1cm: 124
+jump LOCX12: |ON-OFF| mediana 0.21  p90 0.50  max 1.07 cm; n=132; muestras ON con |lat|>1cm: 9 ej [('Right', 49.0, 1.02, 0.44), ('Left', 86.1, -1.46, -1.54), ('Right', 88.0, 1.74, 1.4)]

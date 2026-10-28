@@ -1,0 +1,346 @@
+{
+ "rigs": {
+  "PR_fix": {
+   "nodos": 50,
+   "enlaces_pin_a_pin_con_subpines": 62,
+   "pines_recorridos": 626
+  },
+  "IK_fix": {
+   "nodos": 20,
+   "enlaces_pin_a_pin_con_subpines": 14,
+   "pines_recorridos": 501
+  },
+  "PR_orig": {
+   "nodos": 45,
+   "enlaces_pin_a_pin_con_subpines": 62,
+   "pines_recorridos": 606
+  },
+  "IK_orig": {
+   "nodos": 15,
+   "enlaces_pin_a_pin_con_subpines": 14,
+   "pines_recorridos": 501
+  }
+ },
+ "comparacion_vs_snap_antes_(11:53, previo a toda la Tarea D)": {
+  "PR_fix": {
+   "antes": 62,
+   "ahora": 62,
+   "perdidas": [],
+   "nuevas": []
+  },
+  "IK_fix": {
+   "antes": 14,
+   "ahora": 14,
+   "perdidas": [],
+   "nuevas": []
+  }
+ },
+ "nodos_movidos_vs_snap_antes": {
+  "PR_fix": {
+   "movidos": [
+    [
+     "Mul_Hips_Offset_1",
+     [
+      3900,
+      1000
+     ],
+     [
+      3900.0,
+      1800.0
+     ]
+    ]
+   ]
+  },
+  "IK_fix": {
+   "movidos": []
+  }
+ },
+ "abp_antes_(snap_ronda5_antes)_vs_despues": {
+  "AnimGraph": {
+   "nodos_antes": 7,
+   "nodos_despues": 7,
+   "aristas_antes": 5,
+   "aristas_despues": 5,
+   "perdidas": 0,
+   "nuevas": 0,
+   "posiciones_distintas": 0
+  },
+  "EventGraph": {
+   "nodos_antes": 88,
+   "nodos_despues": 88,
+   "aristas_antes": 106,
+   "aristas_despues": 106,
+   "perdidas": 0,
+   "nuevas": 0,
+   "posiciones_distintas": 0
+  },
+  "UpdateProceduralVariables": {
+   "nodos_antes": 85,
+   "nodos_despues": 85,
+   "aristas_antes": 115,
+   "aristas_despues": 115,
+   "perdidas": 0,
+   "nuevas": 0,
+   "posiciones_distintas": 0
+  },
+  "TestFunc": {
+   "nodos_antes": 2,
+   "nodos_despues": 2,
+   "aristas_antes": 0,
+   "aristas_despues": 0,
+   "perdidas": 0,
+   "nuevas": 0,
+   "posiciones_distintas": 0
+  }
+ },
+ "comentarios_rigs": {
+  "PR_fix": {
+   "EdGraphNode_Comment_9": {
+    "cls": "RigVMCommentNode",
+    "title": "LEAN",
+    "pos": [
+     -64.0,
+     -214.0
+    ],
+    "size": [
+     2031.0,
+     2026.0
+    ],
+    "text": "LEAN",
+    "font": 120,
+    "bubble": true
+   },
+   "EdGraphNode_Comment_10": {
+    "cls": "RigVMCommentNode",
+    "title": "CADERA",
+    "pos": [
+     2240.0,
+     -214.0
+    ],
+    "size": [
+     2370.0,
+     1363.0
+    ],
+    "text": "CADERA",
+    "font": 120,
+    "bubble": true
+   },
+   "EdGraphNode_Comment_11": {
+    "cls": "RigVMCommentNode",
+    "title": "PIERNA IZQ",
+    "pos": [
+     4848.0,
+     -214.0
+    ],
+    "size": [
+     2370.0,
+     983.0
+    ],
+    "text": "PIERNA IZQ",
+    "font": 120,
+    "bubble": true
+   },
+   "EdGraphNode_Comment_12": {
+    "cls": "RigVMCommentNode",
+    "title": "PIERNA DER",
+    "pos": [
+     7440.0,
+     -214.0
+    ],
+    "size": [
+     2370.0,
+     983.0
+    ],
+    "text": "PIERNA DER",
+    "font": 120,
+    "bubble": true
+   },
+   "EdGraphNode_Comment_13": {
+    "cls": "RigVMCommentNode",
+    "title": "ORFANO",
+    "pos": [
+     3840.0,
+     1594.0
+    ],
+    "size": [
+     700.0,
+     363.0
+    ],
+    "text": "ORFANO",
+    "font": 120,
+    "bubble": true
+   }
+  },
+  "IK_fix": {
+   "EdGraphNode_Comment_0": {
+    "cls": "RigVMCommentNode",
+    "title": "CADERA",
+    "pos": [
+     -64.0,
+     -184.0
+    ],
+    "size": [
+     771.0,
+     737.0
+    ],
+    "text": "CADERA",
+    "font": 90,
+    "bubble": true
+   },
+   "EdGraphNode_Comment_5": {
+    "cls": "RigVMCommentNode",
+    "title": "PIERNA IZQ",
+    "pos": [
+     944.0,
+     -184.0
+    ],
+    "size": [
+     900.0,
+     1046.0
+    ],
+    "text": "PIERNA IZQ",
+    "font": 90,
+    "bubble": true
+   },
+   "EdGraphNode_Comment_6": {
+    "cls": "RigVMCommentNode",
+    "title": "PIERNA DER",
+    "pos": [
+     2048.0,
+     -184.0
+    ],
+    "size": [
+     900.0,
+     1046.0
+    ],
+    "text": "PIERNA DER",
+    "font": 90,
+    "bubble": true
+   },
+   "EdGraphNode_Comment_7": {
+    "cls": "RigVMCommentNode",
+    "title": "BRAZO IZQ",
+    "pos": [
+     3136.0,
+     -184.0
+    ],
+    "size": [
+     900.0,
+     1046.0
+    ],
+    "text": "BRAZO IZQ",
+    "font": 90,
+    "bubble": true
+   },
+   "EdGraphNode_Comment_8": {
+    "cls": "RigVMCommentNode",
+    "title": "BRAZO DER",
+    "pos": [
+     4240.0,
+     -184.0
+    ],
+    "size": [
+     900.0,
+     1046.0
+    ],
+    "text": "BRAZO DER",
+    "font": 90,
+    "bubble": true
+   }
+  }
+ },
+ "renombrados": {
+  "Get_LeanRoll": "LeanRoll",
+  "Get_LeanPitch": "LeanPitch",
+  "Get_PelvisOffset": "PelvisOffset",
+  "Get_LandCrouch": "LandCrouch",
+  "Get_FootOffsetL": "FootOffsetL",
+  "Get_FootOffsetR": "FootOffsetR"
+ },
+ "pines_ik_vivo": {
+  "PR_fix/TwoBoneIK_Left [Basic IK]": {
+   "PrimaryAxis": "(X=0.000000,Y=-1.000000,Z=0.000000)",
+   "SecondaryAxis": "(X=0.000000,Y=0.000000,Z=1.000000)",
+   "SecondaryAxisWeight": "0.0",
+   "PoleVector": "(X=12.000000,Y=60.000000,Z=28.100000)",
+   "Weight": "1.0"
+  },
+  "PR_fix/TwoBoneIK_Right [Basic IK]": {
+   "PrimaryAxis": "(X=0.000000,Y=-1.000000,Z=0.000000)",
+   "SecondaryAxis": "(X=0.000000,Y=0.000000,Z=1.000000)",
+   "SecondaryAxisWeight": "0.0",
+   "PoleVector": "(X=-12.000000,Y=60.000000,Z=28.100000)",
+   "Weight": "1.0"
+  },
+  "IK_fix/IK_LeftLeg [Basic IK]": {
+   "PrimaryAxis": "(X=0.000000,Y=-1.000000,Z=0.000000)",
+   "SecondaryAxis": "(X=0.000000,Y=0.000000,Z=1.000000)",
+   "SecondaryAxisWeight": "1.000000",
+   "PoleVector": "(X=0.000000,Y=0.000000,Z=1.000000)",
+   "Weight": "1.000000"
+  },
+  "IK_fix/IK_RightLeg [Basic IK]": {
+   "PrimaryAxis": "(X=0.000000,Y=-1.000000,Z=0.000000)",
+   "SecondaryAxis": "(X=0.000000,Y=0.000000,Z=1.000000)",
+   "SecondaryAxisWeight": "1.000000",
+   "PoleVector": "(X=0.000000,Y=0.000000,Z=1.000000)",
+   "Weight": "1.000000"
+  },
+  "IK_fix/IK_LeftArm [Basic IK]": {
+   "PrimaryAxis": "(X=0.000000,Y=-1.000000,Z=0.000000)",
+   "SecondaryAxis": "(X=0.000000,Y=0.000000,Z=1.000000)",
+   "SecondaryAxisWeight": "1.000000",
+   "PoleVector": "(X=0.000000,Y=0.000000,Z=1.000000)",
+   "Weight": "1.000000"
+  },
+  "IK_fix/IK_RightArm [Basic IK]": {
+   "PrimaryAxis": "(X=0.000000,Y=-1.000000,Z=0.000000)",
+   "SecondaryAxis": "(X=0.000000,Y=0.000000,Z=1.000000)",
+   "SecondaryAxisWeight": "1.000000",
+   "PoleVector": "(X=0.000000,Y=0.000000,Z=1.000000)",
+   "Weight": "1.000000"
+  },
+  "PR_orig/TwoBoneIK_Left [Basic IK]": {
+   "PrimaryAxis": "(X=0.000000,Y=-1.000000,Z=0.000000)",
+   "SecondaryAxis": "(X=0.000000,Y=0.000000,Z=1.000000)",
+   "SecondaryAxisWeight": "1.000000",
+   "PoleVector": "(X=0.000000,Y=1.000000,Z=0.000000)",
+   "Weight": "1.0"
+  },
+  "PR_orig/TwoBoneIK_Right [Basic IK]": {
+   "PrimaryAxis": "(X=0.000000,Y=-1.000000,Z=0.000000)",
+   "SecondaryAxis": "(X=0.000000,Y=0.000000,Z=1.000000)",
+   "SecondaryAxisWeight": "1.000000",
+   "PoleVector": "(X=0.000000,Y=1.000000,Z=0.000000)",
+   "Weight": "1.0"
+  },
+  "IK_orig/IK_LeftLeg [Basic IK]": {
+   "PrimaryAxis": "(X=1.000000,Y=0.000000,Z=0.000000)",
+   "SecondaryAxis": "(X=0.000000,Y=1.000000,Z=0.000000)",
+   "SecondaryAxisWeight": "1.000000",
+   "PoleVector": "(X=0.000000,Y=0.000000,Z=1.000000)",
+   "Weight": "1.000000"
+  },
+  "IK_orig/IK_RightLeg [Basic IK]": {
+   "PrimaryAxis": "(X=1.000000,Y=0.000000,Z=0.000000)",
+   "SecondaryAxis": "(X=0.000000,Y=1.000000,Z=0.000000)",
+   "SecondaryAxisWeight": "1.000000",
+   "PoleVector": "(X=0.000000,Y=0.000000,Z=1.000000)",
+   "Weight": "1.000000"
+  },
+  "IK_orig/IK_LeftArm [Basic IK]": {
+   "PrimaryAxis": "(X=1.000000,Y=0.000000,Z=0.000000)",
+   "SecondaryAxis": "(X=0.000000,Y=1.000000,Z=0.000000)",
+   "SecondaryAxisWeight": "1.000000",
+   "PoleVector": "(X=0.000000,Y=0.000000,Z=1.000000)",
+   "Weight": "1.000000"
+  },
+  "IK_orig/IK_RightArm [Basic IK]": {
+   "PrimaryAxis": "(X=1.000000,Y=0.000000,Z=0.000000)",
+   "SecondaryAxis": "(X=0.000000,Y=1.000000,Z=0.000000)",
+   "SecondaryAxisWeight": "1.000000",
+   "PoleVector": "(X=0.000000,Y=0.000000,Z=1.000000)",
+   "Weight": "1.000000"
+  }
+ }
+}

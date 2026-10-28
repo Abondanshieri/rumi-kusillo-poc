@@ -1,0 +1,38 @@
+{
+ "AnimGraph": {
+  "nodos_antes": 7,
+  "nodos_despues": 7,
+  "aristas_antes": 5,
+  "aristas_despues": 5,
+  "perdidas": 0,
+  "nuevas": 0,
+  "posiciones_distintas": 0
+ },
+ "EventGraph": {
+  "nodos_antes": 88,
+  "nodos_despues": 88,
+  "aristas_antes": 106,
+  "aristas_despues": 106,
+  "perdidas": 0,
+  "nuevas": 0,
+  "posiciones_distintas": 0
+ },
+ "UpdateProceduralVariables": {
+  "nodos_antes": 85,
+  "nodos_despues": 85,
+  "aristas_antes": 115,
+  "aristas_despues": 115,
+  "perdidas": 0,
+  "nuevas": 0,
+  "posiciones_distintas": 0
+ },
+ "TestFunc": {
+  "nodos_antes": 2,
+  "nodos_despues": 2,
+  "aristas_antes": 0,
+  "aristas_despues": 0,
+  "perdidas": 0,
+  "nuevas": 0,
+  "posiciones_distintas": 0
+ }
+}

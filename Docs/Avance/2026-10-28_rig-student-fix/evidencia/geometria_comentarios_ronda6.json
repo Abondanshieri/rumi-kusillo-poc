@@ -1,0 +1,381 @@
+{
+ "ABP_fix/AnimGraph": {
+  "rects(name,x,y,w,h)": [
+   [
+    "EdGraphNode_Comment_14",
+    -752,
+    -512,
+    727,
+    638
+   ],
+   [
+    "EdGraphNode_Comment_16",
+    96,
+    -64,
+    717,
+    206
+   ]
+  ],
+  "overlaps": [],
+  "separations": [
+   {
+    "a": "EdGraphNode_Comment_14",
+    "b": "EdGraphNode_Comment_16",
+    "gap_x": 121,
+    "gap_y": -190
+   }
+  ]
+ },
+ "ABP_fix/EventGraph": {
+  "rects(name,x,y,w,h)": [
+   [
+    "EdGraphNode_Comment",
+    -480,
+    -592,
+    2256,
+    304
+   ],
+   [
+    "EdGraphNode_Comment_1",
+    208,
+    112,
+    1376,
+    272
+   ],
+   [
+    "EdGraphNode_Comment_2",
+    1984,
+    240,
+    1744,
+    464
+   ],
+   [
+    "EdGraphNode_Comment_3",
+    336,
+    448,
+    1376,
+    464
+   ],
+   [
+    "EdGraphNode_Comment_4",
+    -64,
+    1008,
+    1024,
+    256
+   ]
+  ],
+  "overlaps": [],
+  "separations": [
+   {
+    "a": "EdGraphNode_Comment",
+    "b": "EdGraphNode_Comment_1",
+    "gap_x": -1568,
+    "gap_y": 400
+   },
+   {
+    "a": "EdGraphNode_Comment",
+    "b": "EdGraphNode_Comment_2",
+    "gap_x": 208,
+    "gap_y": 528
+   },
+   {
+    "a": "EdGraphNode_Comment",
+    "b": "EdGraphNode_Comment_3",
+    "gap_x": -1440,
+    "gap_y": 736
+   },
+   {
+    "a": "EdGraphNode_Comment",
+    "b": "EdGraphNode_Comment_4",
+    "gap_x": -1440,
+    "gap_y": 1296
+   },
+   {
+    "a": "EdGraphNode_Comment_1",
+    "b": "EdGraphNode_Comment_2",
+    "gap_x": 400,
+    "gap_y": -144
+   },
+   {
+    "a": "EdGraphNode_Comment_1",
+    "b": "EdGraphNode_Comment_3",
+    "gap_x": -1248,
+    "gap_y": 64
+   },
+   {
+    "a": "EdGraphNode_Comment_1",
+    "b": "EdGraphNode_Comment_4",
+    "gap_x": -752,
+    "gap_y": 624
+   },
+   {
+    "a": "EdGraphNode_Comment_2",
+    "b": "EdGraphNode_Comment_3",
+    "gap_x": 272,
+    "gap_y": -256
+   },
+   {
+    "a": "EdGraphNode_Comment_2",
+    "b": "EdGraphNode_Comment_4",
+    "gap_x": 1024,
+    "gap_y": 304
+   },
+   {
+    "a": "EdGraphNode_Comment_3",
+    "b": "EdGraphNode_Comment_4",
+    "gap_x": -624,
+    "gap_y": 96
+   }
+  ]
+ },
+ "ABP_fix/UpdateProceduralVariables": {
+  "rects(name,x,y,w,h)": [
+   [
+    "EdGraphNode_Comment_22",
+    -64,
+    -352,
+    4982,
+    758
+   ],
+   [
+    "EdGraphNode_Comment_23",
+    896,
+    512,
+    5172,
+    1043
+   ],
+   [
+    "EdGraphNode_Comment_24",
+    896,
+    1744,
+    3177,
+    2375
+   ]
+  ],
+  "overlaps": [],
+  "separations": [
+   {
+    "a": "EdGraphNode_Comment_22",
+    "b": "EdGraphNode_Comment_23",
+    "gap_x": -4022,
+    "gap_y": 106
+   },
+   {
+    "a": "EdGraphNode_Comment_22",
+    "b": "EdGraphNode_Comment_24",
+    "gap_x": -4022,
+    "gap_y": 1338
+   },
+   {
+    "a": "EdGraphNode_Comment_23",
+    "b": "EdGraphNode_Comment_24",
+    "gap_x": -3177,
+    "gap_y": 189
+   }
+  ]
+ },
+ "CR_Student_Procedural_fix/RigVMModel": {
+  "rects(name,x,y,w,h)": [
+   [
+    "EdGraphNode_Comment_10",
+    2240.0,
+    -214.0,
+    2370.0,
+    1363.0
+   ],
+   [
+    "EdGraphNode_Comment_11",
+    4848.0,
+    -214.0,
+    2370.0,
+    983.0
+   ],
+   [
+    "EdGraphNode_Comment_12",
+    7440.0,
+    -214.0,
+    2370.0,
+    983.0
+   ],
+   [
+    "EdGraphNode_Comment_13",
+    3840.0,
+    1594.0,
+    700.0,
+    363.0
+   ],
+   [
+    "EdGraphNode_Comment_9",
+    -64.0,
+    -214.0,
+    2031.0,
+    2026.0
+   ]
+  ],
+  "overlaps": [],
+  "separations": [
+   {
+    "a": "EdGraphNode_Comment_10",
+    "b": "EdGraphNode_Comment_11",
+    "gap_x": 238.0,
+    "gap_y": -983.0
+   },
+   {
+    "a": "EdGraphNode_Comment_10",
+    "b": "EdGraphNode_Comment_12",
+    "gap_x": 2830.0,
+    "gap_y": -983.0
+   },
+   {
+    "a": "EdGraphNode_Comment_10",
+    "b": "EdGraphNode_Comment_13",
+    "gap_x": -770.0,
+    "gap_y": 445.0
+   },
+   {
+    "a": "EdGraphNode_Comment_10",
+    "b": "EdGraphNode_Comment_9",
+    "gap_x": 273.0,
+    "gap_y": -1363.0
+   },
+   {
+    "a": "EdGraphNode_Comment_11",
+    "b": "EdGraphNode_Comment_12",
+    "gap_x": 222.0,
+    "gap_y": -983.0
+   },
+   {
+    "a": "EdGraphNode_Comment_11",
+    "b": "EdGraphNode_Comment_13",
+    "gap_x": 308.0,
+    "gap_y": 825.0
+   },
+   {
+    "a": "EdGraphNode_Comment_11",
+    "b": "EdGraphNode_Comment_9",
+    "gap_x": 2881.0,
+    "gap_y": -983.0
+   },
+   {
+    "a": "EdGraphNode_Comment_12",
+    "b": "EdGraphNode_Comment_13",
+    "gap_x": 2900.0,
+    "gap_y": 825.0
+   },
+   {
+    "a": "EdGraphNode_Comment_12",
+    "b": "EdGraphNode_Comment_9",
+    "gap_x": 5473.0,
+    "gap_y": -983.0
+   },
+   {
+    "a": "EdGraphNode_Comment_13",
+    "b": "EdGraphNode_Comment_9",
+    "gap_x": 1873.0,
+    "gap_y": -218.0
+   }
+  ]
+ },
+ "CR_Student_IK_fix/RigVMModel": {
+  "rects(name,x,y,w,h)": [
+   [
+    "EdGraphNode_Comment",
+    -64.0,
+    -184.0,
+    771.0,
+    737.0
+   ],
+   [
+    "EdGraphNode_Comment_5",
+    944.0,
+    -184.0,
+    900.0,
+    1046.0
+   ],
+   [
+    "EdGraphNode_Comment_6",
+    2048.0,
+    -184.0,
+    900.0,
+    1046.0
+   ],
+   [
+    "EdGraphNode_Comment_7",
+    3136.0,
+    -184.0,
+    900.0,
+    1046.0
+   ],
+   [
+    "EdGraphNode_Comment_8",
+    4240.0,
+    -184.0,
+    900.0,
+    1046.0
+   ]
+  ],
+  "overlaps": [],
+  "separations": [
+   {
+    "a": "EdGraphNode_Comment",
+    "b": "EdGraphNode_Comment_5",
+    "gap_x": 237.0,
+    "gap_y": -737.0
+   },
+   {
+    "a": "EdGraphNode_Comment",
+    "b": "EdGraphNode_Comment_6",
+    "gap_x": 1341.0,
+    "gap_y": -737.0
+   },
+   {
+    "a": "EdGraphNode_Comment",
+    "b": "EdGraphNode_Comment_7",
+    "gap_x": 2429.0,
+    "gap_y": -737.0
+   },
+   {
+    "a": "EdGraphNode_Comment",
+    "b": "EdGraphNode_Comment_8",
+    "gap_x": 3533.0,
+    "gap_y": -737.0
+   },
+   {
+    "a": "EdGraphNode_Comment_5",
+    "b": "EdGraphNode_Comment_6",
+    "gap_x": 204.0,
+    "gap_y": -1046.0
+   },
+   {
+    "a": "EdGraphNode_Comment_5",
+    "b": "EdGraphNode_Comment_7",
+    "gap_x": 1292.0,
+    "gap_y": -1046.0
+   },
+   {
+    "a": "EdGraphNode_Comment_5",
+    "b": "EdGraphNode_Comment_8",
+    "gap_x": 2396.0,
+    "gap_y": -1046.0
+   },
+   {
+    "a": "EdGraphNode_Comment_6",
+    "b": "EdGraphNode_Comment_7",
+    "gap_x": 188.0,
+    "gap_y": -1046.0
+   },
+   {
+    "a": "EdGraphNode_Comment_6",
+    "b": "EdGraphNode_Comment_8",
+    "gap_x": 1292.0,
+    "gap_y": -1046.0
+   },
+   {
+    "a": "EdGraphNode_Comment_7",
+    "b": "EdGraphNode_Comment_8",
+    "gap_x": 204.0,
+    "gap_y": -1046.0
+   }
+  ]
+ }
+}

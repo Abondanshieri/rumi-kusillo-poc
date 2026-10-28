@@ -1,0 +1,134 @@
+{
+ "CR_Student_Procedural_fix/TwoBoneIK_Left": {
+  "PrimaryAxis": "(X=0.000000,Y=-1.000000,Z=0.000000)",
+  "SecondaryAxis": "(X=0.000000,Y=0.000000,Z=1.000000)",
+  "SecondaryAxisWeight": "0.0",
+  "PoleVector": "(X=12.000000,Y=60.000000,Z=28.100000)",
+  "PoleVectorKind": "Location",
+  "PoleVectorSpace": "None",
+  "Weight": "1.0",
+  "bPropagateToChildren": "True",
+  "CachedPoleVectorSpaceIndex": "(Key=(Type=None,Name=\"None\"),Index=65535,ContainerVersion=-1)"
+ },
+ "CR_Student_Procedural_fix/TwoBoneIK_Right": {
+  "PrimaryAxis": "(X=0.000000,Y=-1.000000,Z=0.000000)",
+  "SecondaryAxis": "(X=0.000000,Y=0.000000,Z=1.000000)",
+  "SecondaryAxisWeight": "0.0",
+  "PoleVector": "(X=-12.000000,Y=60.000000,Z=28.100000)",
+  "PoleVectorKind": "Location",
+  "PoleVectorSpace": "None",
+  "Weight": "1.0",
+  "bPropagateToChildren": "True",
+  "CachedPoleVectorSpaceIndex": "(Key=(Type=None,Name=\"None\"),Index=65535,ContainerVersion=-1)"
+ },
+ "CR_Student_IK_fix/IK_LeftLeg": {
+  "PrimaryAxis": "(X=0.000000,Y=-1.000000,Z=0.000000)",
+  "SecondaryAxis": "(X=0.000000,Y=0.000000,Z=1.000000)",
+  "SecondaryAxisWeight": "1.000000",
+  "PoleVector": "(X=0.000000,Y=0.000000,Z=1.000000)",
+  "PoleVectorKind": "Location",
+  "PoleVectorSpace": "None",
+  "Weight": "1.000000",
+  "bPropagateToChildren": "True",
+  "CachedPoleVectorSpaceIndex": "(Key=(Type=None,Name=\"None\"),Index=65535,ContainerVersion=-1)"
+ },
+ "CR_Student_IK_fix/IK_RightLeg": {
+  "PrimaryAxis": "(X=0.000000,Y=-1.000000,Z=0.000000)",
+  "SecondaryAxis": "(X=0.000000,Y=0.000000,Z=1.000000)",
+  "SecondaryAxisWeight": "1.000000",
+  "PoleVector": "(X=0.000000,Y=0.000000,Z=1.000000)",
+  "PoleVectorKind": "Location",
+  "PoleVectorSpace": "None",
+  "Weight": "1.000000",
+  "bPropagateToChildren": "True",
+  "CachedPoleVectorSpaceIndex": "(Key=(Type=None,Name=\"None\"),Index=65535,ContainerVersion=-1)"
+ },
+ "CR_Student_IK_fix/IK_LeftArm": {
+  "PrimaryAxis": "(X=0.000000,Y=-1.000000,Z=0.000000)",
+  "SecondaryAxis": "(X=0.000000,Y=0.000000,Z=1.000000)",
+  "SecondaryAxisWeight": "1.000000",
+  "PoleVector": "(X=0.000000,Y=0.000000,Z=1.000000)",
+  "PoleVectorKind": "Location",
+  "PoleVectorSpace": "None",
+  "Weight": "1.000000",
+  "bPropagateToChildren": "True",
+  "CachedPoleVectorSpaceIndex": "(Key=(Type=None,Name=\"None\"),Index=65535,ContainerVersion=-1)"
+ },
+ "CR_Student_IK_fix/IK_RightArm": {
+  "PrimaryAxis": "(X=0.000000,Y=-1.000000,Z=0.000000)",
+  "SecondaryAxis": "(X=0.000000,Y=0.000000,Z=1.000000)",
+  "SecondaryAxisWeight": "1.000000",
+  "PoleVector": "(X=0.000000,Y=0.000000,Z=1.000000)",
+  "PoleVectorKind": "Location",
+  "PoleVectorSpace": "None",
+  "Weight": "1.000000",
+  "bPropagateToChildren": "True",
+  "CachedPoleVectorSpaceIndex": "(Key=(Type=None,Name=\"None\"),Index=65535,ContainerVersion=-1)"
+ },
+ "CR_Student_Procedural/TwoBoneIK_Left": {
+  "PrimaryAxis": "(X=0.000000,Y=-1.000000,Z=0.000000)",
+  "SecondaryAxis": "(X=0.000000,Y=0.000000,Z=1.000000)",
+  "SecondaryAxisWeight": "1.000000",
+  "PoleVector": "(X=0.000000,Y=1.000000,Z=0.000000)",
+  "PoleVectorKind": "Direction",
+  "PoleVectorSpace": "None",
+  "Weight": "1.0",
+  "bPropagateToChildren": "True",
+  "CachedPoleVectorSpaceIndex": "(Key=(Type=None,Name=\"None\"),Index=65535,ContainerVersion=-1)"
+ },
+ "CR_Student_Procedural/TwoBoneIK_Right": {
+  "PrimaryAxis": "(X=0.000000,Y=-1.000000,Z=0.000000)",
+  "SecondaryAxis": "(X=0.000000,Y=0.000000,Z=1.000000)",
+  "SecondaryAxisWeight": "1.000000",
+  "PoleVector": "(X=0.000000,Y=1.000000,Z=0.000000)",
+  "PoleVectorKind": "Direction",
+  "PoleVectorSpace": "None",
+  "Weight": "1.0",
+  "bPropagateToChildren": "True",
+  "CachedPoleVectorSpaceIndex": "(Key=(Type=None,Name=\"None\"),Index=65535,ContainerVersion=-1)"
+ },
+ "CR_Student_IK/IK_LeftLeg": {
+  "PrimaryAxis": "(X=1.000000,Y=0.000000,Z=0.000000)",
+  "SecondaryAxis": "(X=0.000000,Y=1.000000,Z=0.000000)",
+  "SecondaryAxisWeight": "1.000000",
+  "PoleVector": "(X=0.000000,Y=0.000000,Z=1.000000)",
+  "PoleVectorKind": "Location",
+  "PoleVectorSpace": "None",
+  "Weight": "1.000000",
+  "bPropagateToChildren": "True",
+  "CachedPoleVectorSpaceIndex": "(Key=(Type=None,Name=\"None\"),Index=65535,ContainerVersion=-1)"
+ },
+ "CR_Student_IK/IK_RightLeg": {
+  "PrimaryAxis": "(X=1.000000,Y=0.000000,Z=0.000000)",
+  "SecondaryAxis": "(X=0.000000,Y=1.000000,Z=0.000000)",
+  "SecondaryAxisWeight": "1.000000",
+  "PoleVector": "(X=0.000000,Y=0.000000,Z=1.000000)",
+  "PoleVectorKind": "Location",
+  "PoleVectorSpace": "None",
+  "Weight": "1.000000",
+  "bPropagateToChildren": "True",
+  "CachedPoleVectorSpaceIndex": "(Key=(Type=None,Name=\"None\"),Index=65535,ContainerVersion=-1)"
+ },
+ "CR_Student_IK/IK_LeftArm": {
+  "PrimaryAxis": "(X=1.000000,Y=0.000000,Z=0.000000)",
+  "SecondaryAxis": "(X=0.000000,Y=1.000000,Z=0.000000)",
+  "SecondaryAxisWeight": "1.000000",
+  "PoleVector": "(X=0.000000,Y=0.000000,Z=1.000000)",
+  "PoleVectorKind": "Location",
+  "PoleVectorSpace": "None",
+  "Weight": "1.000000",
+  "bPropagateToChildren": "True",
+  "CachedPoleVectorSpaceIndex": "(Key=(Type=None,Name=\"None\"),Index=65535,ContainerVersion=-1)"
+ },
+ "CR_Student_IK/IK_RightArm": {
+  "PrimaryAxis": "(X=1.000000,Y=0.000000,Z=0.000000)",
+  "SecondaryAxis": "(X=0.000000,Y=1.000000,Z=0.000000)",
+  "SecondaryAxisWeight": "1.000000",
+  "PoleVector": "(X=0.000000,Y=0.000000,Z=1.000000)",
+  "PoleVectorKind": "Location",
+  "PoleVectorSpace": "None",
+  "Weight": "1.000000",
+  "bPropagateToChildren": "True",
+  "CachedPoleVectorSpaceIndex": "(Key=(Type=None,Name=\"None\"),Index=65535,ContainerVersion=-1)"
+ }
+}

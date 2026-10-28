@@ -1,0 +1,14 @@
+{
+ "PR_fix": {
+  "antes": 62,
+  "ahora": 62,
+  "perdidas": [],
+  "nuevas": []
+ },
+ "IK_fix": {
+  "antes": 14,
+  "ahora": 14,
+  "perdidas": [],
+  "nuevas": []
+ }
+}

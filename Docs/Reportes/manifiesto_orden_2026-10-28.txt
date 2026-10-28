@@ -1,7 +1,7 @@
 Manifiesto de orden de carpetas - 2026-10-28
 Raiz: D:/Dev/Computacion_Grafica/Rumi 5.8 (rutas relativas). NADA fue borrado; todo es mover/renombrar.
-Content/ no se toco (salvo lo ya archivado: ver Docs/Avance/2026-10-28_rig-student-fix/evidencia/movimientos_archivo.txt).
-Contenido de scripts .py NO modificado (ue_mcp se importa por el directorio del propio script).
+Content/: el orden de carpetas NO movio ni renombro assets; los unicos movimientos en Content/ son los 26 assets archivados antes en Content/Characters/_Archive/Rumi_Unused (ver Docs/Avance/2026-10-28_rig-student-fix/evidencia/movimientos_archivo.txt).
+Scripts .py: 23 de los 58 de Tools/ue_scripts se editaron SOLO en su linea sys.path.insert (ahora usa la carpeta del propio script); ver seccion 'ediciones posteriores' mas abajo. Se comprobo que parsean e importan, pero no se ejecutaron contra el editor.
 Texto editado: Docs/Mensajes/F-M1_Mensaje_a_Jhasmani.md (2 rutas actualizadas a Docs/Hitos/).
 Revertir un movimiento: mover el DESTINO de vuelta al ORIGEN (ver script al final).
 

@@ -1,0 +1,2240 @@
+{
+ "PR_fix": {
+  "nodes": {
+   "RigUnit_BeginExecution": {
+    "cls": "RigVMUnitNode",
+    "title": "Forwards Solve",
+    "pos": [
+     -450.0,
+     0.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "Get_LeanRoll": {
+    "cls": "RigVMVariableNode",
+    "title": "Get LeanRoll",
+    "pos": [
+     0.0,
+     700.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ],
+    "var": "LeanRoll"
+   },
+   "Get_LeanPitch": {
+    "cls": "RigVMVariableNode",
+    "title": "Get LeanPitch",
+    "pos": [
+     0.0,
+     1000.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ],
+    "var": "LeanPitch"
+   },
+   "Quat_Spine1": {
+    "cls": "RigVMUnitNode",
+    "title": "From Euler",
+    "pos": [
+     800.0,
+     0.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "Get_Spine1": {
+    "cls": "RigVMUnitNode",
+    "title": "Get Transform",
+    "pos": [
+     800.0,
+     300.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "Mul_Spine1": {
+    "cls": "RigVMUnitNode",
+    "title": "Multiply",
+    "pos": [
+     1200.0,
+     150.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "Set_Spine1": {
+    "cls": "RigVMUnitNode",
+    "title": "Set Transform",
+    "pos": [
+     1600.0,
+     150.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "Mul_Roll_Spine2": {
+    "cls": "RigVMUnitNode",
+    "title": "Multiply",
+    "pos": [
+     400.0,
+     600.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "Mul_Pitch_Spine2": {
+    "cls": "RigVMUnitNode",
+    "title": "Multiply",
+    "pos": [
+     400.0,
+     850.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "Quat_Spine2": {
+    "cls": "RigVMUnitNode",
+    "title": "From Euler",
+    "pos": [
+     800.0,
+     600.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "Get_Spine2": {
+    "cls": "RigVMUnitNode",
+    "title": "Get Transform",
+    "pos": [
+     800.0,
+     900.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "Mul_Spine2": {
+    "cls": "RigVMUnitNode",
+    "title": "Multiply",
+    "pos": [
+     1200.0,
+     750.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "Set_Spine2": {
+    "cls": "RigVMUnitNode",
+    "title": "Set Transform",
+    "pos": [
+     1600.0,
+     750.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "Mul_Roll_Neck": {
+    "cls": "RigVMUnitNode",
+    "title": "Multiply",
+    "pos": [
+     400.0,
+     1300.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "Mul_Pitch_Neck": {
+    "cls": "RigVMUnitNode",
+    "title": "Multiply",
+    "pos": [
+     400.0,
+     1550.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "Quat_Neck": {
+    "cls": "RigVMUnitNode",
+    "title": "From Euler",
+    "pos": [
+     800.0,
+     1300.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "Get_Neck_Lean": {
+    "cls": "RigVMUnitNode",
+    "title": "Get Transform",
+    "pos": [
+     800.0,
+     1600.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "Mul_Neck_Lean": {
+    "cls": "RigVMUnitNode",
+    "title": "Multiply",
+    "pos": [
+     1200.0,
+     1450.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "Set_Neck_Lean": {
+    "cls": "RigVMUnitNode",
+    "title": "Set Transform",
+    "pos": [
+     1600.0,
+     1450.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "Get_PelvisOffset": {
+    "cls": "RigVMVariableNode",
+    "title": "Get PelvisOffset",
+    "pos": [
+     2300.0,
+     0.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ],
+    "var": "PelvisOffset"
+   },
+   "Get_LandCrouch": {
+    "cls": "RigVMVariableNode",
+    "title": "Get LandCrouch",
+    "pos": [
+     2300.0,
+     400.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ],
+    "var": "LandCrouch"
+   },
+   "Mul_LandCrouch": {
+    "cls": "RigVMUnitNode",
+    "title": "Multiply",
+    "pos": [
+     2700.0,
+     400.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "Add_PelvisLand": {
+    "cls": "RigVMUnitNode",
+    "title": "Add",
+    "pos": [
+     3100.0,
+     100.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "Get_Hips": {
+    "cls": "RigVMUnitNode",
+    "title": "Get Transform",
+    "pos": [
+     3100.0,
+     700.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "Add_HipsZ": {
+    "cls": "RigVMUnitNode",
+    "title": "Add",
+    "pos": [
+     3500.0,
+     100.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "Set_Hips": {
+    "cls": "RigVMUnitNode",
+    "title": "Set Transform",
+    "pos": [
+     4300.0,
+     400.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "Get_FootOffsetL": {
+    "cls": "RigVMVariableNode",
+    "title": "Get FootOffsetL",
+    "pos": [
+     4900.0,
+     0.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ],
+    "var": "FootOffsetL"
+   },
+   "Sub_FootOffsetL": {
+    "cls": "RigVMUnitNode",
+    "title": "Subtract",
+    "pos": [
+     5300.0,
+     0.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "Get_LeftFoot": {
+    "cls": "RigVMUnitNode",
+    "title": "Get Transform",
+    "pos": [
+     5700.0,
+     400.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "Add_LeftFootZ": {
+    "cls": "RigVMUnitNode",
+    "title": "Add",
+    "pos": [
+     6100.0,
+     0.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "TwoBoneIK_Left": {
+    "cls": "RigVMUnitNode",
+    "title": "Basic IK",
+    "pos": [
+     6900.0,
+     300.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "Get_FootOffsetR": {
+    "cls": "RigVMVariableNode",
+    "title": "Get FootOffsetR",
+    "pos": [
+     7500.0,
+     0.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ],
+    "var": "FootOffsetR"
+   },
+   "Sub_FootOffsetR": {
+    "cls": "RigVMUnitNode",
+    "title": "Subtract",
+    "pos": [
+     7900.0,
+     0.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "Get_RightFoot": {
+    "cls": "RigVMUnitNode",
+    "title": "Get Transform",
+    "pos": [
+     8300.0,
+     400.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "Add_RightFootZ": {
+    "cls": "RigVMUnitNode",
+    "title": "Add",
+    "pos": [
+     8700.0,
+     0.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "TwoBoneIK_Right": {
+    "cls": "RigVMUnitNode",
+    "title": "Basic IK",
+    "pos": [
+     9500.0,
+     300.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "Mul_Hips_Offset": {
+    "cls": "RigVMUnitNode",
+    "title": "Multiply",
+    "pos": [
+     3900.0,
+     400.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "Clamp_LeftOffset": {
+    "cls": "RigVMUnitNode",
+    "title": "Clamp",
+    "pos": [
+     5700.0,
+     0.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "Clamp_RightOffset": {
+    "cls": "RigVMUnitNode",
+    "title": "Clamp",
+    "pos": [
+     8300.0,
+     0.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "Make_Hips_Offset": {
+    "cls": "RigVMUnitNode",
+    "title": "Make Transform",
+    "pos": [
+     3500.0,
+     700.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "ORFANO_Mul_Hips_Offset_1": {
+    "cls": "RigVMUnitNode",
+    "title": "Multiply",
+    "pos": [
+     3900.0,
+     1800.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "Make_LeftFoot_Offset": {
+    "cls": "RigVMUnitNode",
+    "title": "Make Transform",
+    "pos": [
+     6100.0,
+     400.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "Mul_LeftFoot_Offset": {
+    "cls": "RigVMUnitNode",
+    "title": "Multiply",
+    "pos": [
+     6500.0,
+     300.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "Make_RightFoot_Offset": {
+    "cls": "RigVMUnitNode",
+    "title": "Make Transform",
+    "pos": [
+     8700.0,
+     400.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "Mul_RightFoot_Offset": {
+    "cls": "RigVMUnitNode",
+    "title": "Multiply",
+    "pos": [
+     9100.0,
+     300.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "EdGraphNode_Comment_9": {
+    "cls": "RigVMCommentNode",
+    "title": "LEAN",
+    "pos": [
+     -64.0,
+     -64.0
+    ],
+    "size": [
+     1911.0,
+     1876.0
+    ],
+    "text": "LEAN",
+    "font": 46,
+    "bubble": true
+   },
+   "EdGraphNode_Comment_10": {
+    "cls": "RigVMCommentNode",
+    "title": "CADERA",
+    "pos": [
+     2240.0,
+     -64.0
+    ],
+    "size": [
+     2250.0,
+     1213.0
+    ],
+    "text": "CADERA",
+    "font": 46,
+    "bubble": true
+   },
+   "EdGraphNode_Comment_11": {
+    "cls": "RigVMCommentNode",
+    "title": "PIERNA IZQ",
+    "pos": [
+     4848.0,
+     -64.0
+    ],
+    "size": [
+     2250.0,
+     833.0
+    ],
+    "text": "PIERNA IZQ",
+    "font": 46,
+    "bubble": true
+   },
+   "EdGraphNode_Comment_12": {
+    "cls": "RigVMCommentNode",
+    "title": "PIERNA DER",
+    "pos": [
+     7440.0,
+     -64.0
+    ],
+    "size": [
+     2250.0,
+     833.0
+    ],
+    "text": "PIERNA DER",
+    "font": 46,
+    "bubble": true
+   },
+   "EdGraphNode_Comment_13": {
+    "cls": "RigVMCommentNode",
+    "title": "ORFANO",
+    "pos": [
+     3840.0,
+     1744.0
+    ],
+    "size": [
+     250.0,
+     213.0
+    ],
+    "text": "ORFANO",
+    "font": 46,
+    "bubble": true
+   }
+  },
+  "links": [
+   [
+    "RigUnit_BeginExecution.ExecutePin",
+    "Set_Spine1.ExecutePin"
+   ],
+   [
+    "Get_LeanRoll.Value",
+    "Mul_Roll_Spine2.A"
+   ],
+   [
+    "Get_LeanRoll.Value",
+    "Mul_Roll_Neck.A"
+   ],
+   [
+    "Get_LeanRoll.Value",
+    "Quat_Spine1.Euler.Z"
+   ],
+   [
+    "Get_LeanPitch.Value",
+    "Mul_Pitch_Spine2.A"
+   ],
+   [
+    "Get_LeanPitch.Value",
+    "Mul_Pitch_Neck.A"
+   ],
+   [
+    "Get_LeanPitch.Value",
+    "Quat_Spine1.Euler.X"
+   ],
+   [
+    "Quat_Spine1.Result",
+    "Mul_Spine1.B"
+   ],
+   [
+    "Get_Spine1.Transform",
+    "Set_Spine1.Value"
+   ],
+   [
+    "Get_Spine1.Transform.Rotation",
+    "Mul_Spine1.A"
+   ],
+   [
+    "Mul_Spine1.Result",
+    "Set_Spine1.Value.Rotation"
+   ],
+   [
+    "Set_Spine1.ExecutePin",
+    "Set_Spine2.ExecutePin"
+   ],
+   [
+    "Mul_Roll_Spine2.Result",
+    "Quat_Spine2.Euler.Z"
+   ],
+   [
+    "Mul_Pitch_Spine2.Result",
+    "Quat_Spine2.Euler.X"
+   ],
+   [
+    "Quat_Spine2.Result",
+    "Mul_Spine2.B"
+   ],
+   [
+    "Get_Spine2.Transform",
+    "Set_Spine2.Value"
+   ],
+   [
+    "Get_Spine2.Transform.Rotation",
+    "Mul_Spine2.A"
+   ],
+   [
+    "Mul_Spine2.Result",
+    "Set_Spine2.Value.Rotation"
+   ],
+   [
+    "Set_Spine2.ExecutePin",
+    "Set_Neck_Lean.ExecutePin"
+   ],
+   [
+    "Mul_Roll_Neck.Result",
+    "Quat_Neck.Euler.Z"
+   ],
+   [
+    "Mul_Pitch_Neck.Result",
+    "Quat_Neck.Euler.X"
+   ],
+   [
+    "Quat_Neck.Result",
+    "Mul_Neck_Lean.B"
+   ],
+   [
+    "Get_Neck_Lean.Transform",
+    "Set_Neck_Lean.Value"
+   ],
+   [
+    "Get_Neck_Lean.Transform.Rotation",
+    "Mul_Neck_Lean.A"
+   ],
+   [
+    "Mul_Neck_Lean.Result",
+    "Set_Neck_Lean.Value.Rotation"
+   ],
+   [
+    "Set_Neck_Lean.ExecutePin",
+    "Set_Hips.ExecutePin"
+   ],
+   [
+    "Get_PelvisOffset.Value",
+    "Add_PelvisLand.A"
+   ],
+   [
+    "Get_PelvisOffset.Value",
+    "Sub_FootOffsetL.B"
+   ],
+   [
+    "Get_PelvisOffset.Value",
+    "Sub_FootOffsetR.B"
+   ],
+   [
+    "Get_LandCrouch.Value",
+    "Mul_LandCrouch.A"
+   ],
+   [
+    "Mul_LandCrouch.Result",
+    "Add_PelvisLand.B"
+   ],
+   [
+    "Add_PelvisLand.Result",
+    "Add_HipsZ.B"
+   ],
+   [
+    "Add_PelvisLand.Result",
+    "Mul_Hips_Offset.B.Translation.Z"
+   ],
+   [
+    "Add_PelvisLand.Result",
+    "Make_Hips_Offset.Translation.Z"
+   ],
+   [
+    "Get_Hips.Transform",
+    "Mul_Hips_Offset.A"
+   ],
+   [
+    "Get_Hips.Transform.Rotation",
+    "Set_Hips.Value.Rotation"
+   ],
+   [
+    "Get_Hips.Transform.Translation.Z",
+    "Add_HipsZ.A"
+   ],
+   [
+    "Get_Hips.Transform.Scale3D",
+    "Set_Hips.Value.Scale3D"
+   ],
+   [
+    "Set_Hips.ExecutePin",
+    "TwoBoneIK_Left.ExecutePin"
+   ],
+   [
+    "Get_FootOffsetL.Value",
+    "Sub_FootOffsetL.A"
+   ],
+   [
+    "Sub_FootOffsetL.Result",
+    "Clamp_LeftOffset.Value"
+   ],
+   [
+    "Sub_FootOffsetL.Result",
+    "Make_LeftFoot_Offset.Translation.Z"
+   ],
+   [
+    "Get_LeftFoot.Transform",
+    "Mul_LeftFoot_Offset.A"
+   ],
+   [
+    "Get_LeftFoot.Transform.Rotation",
+    "TwoBoneIK_Left.Effector.Rotation"
+   ],
+   [
+    "Get_LeftFoot.Transform.Translation.Z",
+    "Add_LeftFootZ.A"
+   ],
+   [
+    "Get_LeftFoot.Transform.Scale3D",
+    "TwoBoneIK_Left.Effector.Scale3D"
+   ],
+   [
+    "TwoBoneIK_Left.ExecutePin",
+    "TwoBoneIK_Right.ExecutePin"
+   ],
+   [
+    "Get_FootOffsetR.Value",
+    "Sub_FootOffsetR.A"
+   ],
+   [
+    "Sub_FootOffsetR.Result",
+    "Clamp_RightOffset.Value"
+   ],
+   [
+    "Sub_FootOffsetR.Result",
+    "Make_RightFoot_Offset.Translation.Z"
+   ],
+   [
+    "Get_RightFoot.Transform",
+    "Mul_RightFoot_Offset.A"
+   ],
+   [
+    "Get_RightFoot.Transform.Rotation",
+    "TwoBoneIK_Right.Effector.Rotation"
+   ],
+   [
+    "Get_RightFoot.Transform.Translation.Z",
+    "Add_RightFootZ.A"
+   ],
+   [
+    "Get_RightFoot.Transform.Scale3D",
+    "TwoBoneIK_Right.Effector.Scale3D"
+   ],
+   [
+    "Mul_Hips_Offset.Result",
+    "Set_Hips.Value"
+   ],
+   [
+    "Clamp_LeftOffset.Result",
+    "Add_LeftFootZ.B"
+   ],
+   [
+    "Clamp_RightOffset.Result",
+    "Add_RightFootZ.B"
+   ],
+   [
+    "Make_Hips_Offset.Result",
+    "Mul_Hips_Offset.B"
+   ],
+   [
+    "Make_LeftFoot_Offset.Result",
+    "Mul_LeftFoot_Offset.B"
+   ],
+   [
+    "Mul_LeftFoot_Offset.Result",
+    "TwoBoneIK_Left.Effector"
+   ],
+   [
+    "Make_RightFoot_Offset.Result",
+    "Mul_RightFoot_Offset.B"
+   ],
+   [
+    "Mul_RightFoot_Offset.Result",
+    "TwoBoneIK_Right.Effector"
+   ]
+  ],
+  "npins": 626
+ },
+ "IK_fix": {
+  "nodes": {
+   "RigUnit_BeginExecution": {
+    "cls": "RigVMUnitNode",
+    "title": "Forwards Solve",
+    "pos": [
+     -500.0,
+     0.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "GetTransform_ctrl_hips": {
+    "cls": "RigVMUnitNode",
+    "title": "Get Transform",
+    "pos": [
+     0.0,
+     300.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "SetTransform_Hips": {
+    "cls": "RigVMUnitNode",
+    "title": "Set Transform",
+    "pos": [
+     400.0,
+     0.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "GetTransform_ctrl_foot_l_ik": {
+    "cls": "RigVMUnitNode",
+    "title": "Get Transform",
+    "pos": [
+     1000.0,
+     300.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "GetTransform_ctrl_pole_knee_l": {
+    "cls": "RigVMUnitNode",
+    "title": "Get Transform",
+    "pos": [
+     1000.0,
+     650.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "IK_LeftLeg": {
+    "cls": "RigVMUnitNode",
+    "title": "Basic IK",
+    "pos": [
+     1450.0,
+     0.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "GetTransform_ctrl_foot_r_ik": {
+    "cls": "RigVMUnitNode",
+    "title": "Get Transform",
+    "pos": [
+     2100.0,
+     300.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "GetTransform_ctrl_pole_knee_r": {
+    "cls": "RigVMUnitNode",
+    "title": "Get Transform",
+    "pos": [
+     2100.0,
+     650.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "IK_RightLeg": {
+    "cls": "RigVMUnitNode",
+    "title": "Basic IK",
+    "pos": [
+     2550.0,
+     0.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "GetTransform_ctrl_hand_l_ik": {
+    "cls": "RigVMUnitNode",
+    "title": "Get Transform",
+    "pos": [
+     3200.0,
+     300.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "GetTransform_ctrl_pole_elbow_l": {
+    "cls": "RigVMUnitNode",
+    "title": "Get Transform",
+    "pos": [
+     3200.0,
+     650.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "IK_LeftArm": {
+    "cls": "RigVMUnitNode",
+    "title": "Basic IK",
+    "pos": [
+     3650.0,
+     0.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "GetTransform_ctrl_hand_r_ik": {
+    "cls": "RigVMUnitNode",
+    "title": "Get Transform",
+    "pos": [
+     4300.0,
+     300.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "GetTransform_ctrl_pole_elbow_r": {
+    "cls": "RigVMUnitNode",
+    "title": "Get Transform",
+    "pos": [
+     4300.0,
+     650.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "IK_RightArm": {
+    "cls": "RigVMUnitNode",
+    "title": "Basic IK",
+    "pos": [
+     4750.0,
+     0.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "EdGraphNode_Comment_0": {
+    "cls": "RigVMCommentNode",
+    "title": "CADERA",
+    "pos": [
+     -64.0,
+     -64.0
+    ],
+    "size": [
+     771.0,
+     617.0
+    ],
+    "text": "CADERA",
+    "font": 46,
+    "bubble": true
+   },
+   "EdGraphNode_Comment_5": {
+    "cls": "RigVMCommentNode",
+    "title": "PIERNA IZQ",
+    "pos": [
+     944.0,
+     -64.0
+    ],
+    "size": [
+     700.0,
+     926.0
+    ],
+    "text": "PIERNA IZQ",
+    "font": 46,
+    "bubble": true
+   },
+   "EdGraphNode_Comment_6": {
+    "cls": "RigVMCommentNode",
+    "title": "PIERNA DER",
+    "pos": [
+     2048.0,
+     -64.0
+    ],
+    "size": [
+     700.0,
+     926.0
+    ],
+    "text": "PIERNA DER",
+    "font": 46,
+    "bubble": true
+   },
+   "EdGraphNode_Comment_7": {
+    "cls": "RigVMCommentNode",
+    "title": "BRAZO IZQ",
+    "pos": [
+     3136.0,
+     -64.0
+    ],
+    "size": [
+     700.0,
+     926.0
+    ],
+    "text": "BRAZO IZQ",
+    "font": 46,
+    "bubble": true
+   },
+   "EdGraphNode_Comment_8": {
+    "cls": "RigVMCommentNode",
+    "title": "BRAZO DER",
+    "pos": [
+     4240.0,
+     -64.0
+    ],
+    "size": [
+     700.0,
+     926.0
+    ],
+    "text": "BRAZO DER",
+    "font": 46,
+    "bubble": true
+   }
+  },
+  "links": [
+   [
+    "RigUnit_BeginExecution.ExecutePin",
+    "SetTransform_Hips.ExecutePin"
+   ],
+   [
+    "GetTransform_ctrl_hips.Transform",
+    "SetTransform_Hips.Value"
+   ],
+   [
+    "SetTransform_Hips.ExecutePin",
+    "IK_LeftLeg.ExecutePin"
+   ],
+   [
+    "GetTransform_ctrl_foot_l_ik.Transform",
+    "IK_LeftLeg.Effector"
+   ],
+   [
+    "GetTransform_ctrl_pole_knee_l.Transform.Translation",
+    "IK_LeftLeg.PoleVector"
+   ],
+   [
+    "IK_LeftLeg.ExecutePin",
+    "IK_RightLeg.ExecutePin"
+   ],
+   [
+    "GetTransform_ctrl_foot_r_ik.Transform",
+    "IK_RightLeg.Effector"
+   ],
+   [
+    "GetTransform_ctrl_pole_knee_r.Transform.Translation",
+    "IK_RightLeg.PoleVector"
+   ],
+   [
+    "IK_RightLeg.ExecutePin",
+    "IK_LeftArm.ExecutePin"
+   ],
+   [
+    "GetTransform_ctrl_hand_l_ik.Transform",
+    "IK_LeftArm.Effector"
+   ],
+   [
+    "GetTransform_ctrl_pole_elbow_l.Transform.Translation",
+    "IK_LeftArm.PoleVector"
+   ],
+   [
+    "IK_LeftArm.ExecutePin",
+    "IK_RightArm.ExecutePin"
+   ],
+   [
+    "GetTransform_ctrl_hand_r_ik.Transform",
+    "IK_RightArm.Effector"
+   ],
+   [
+    "GetTransform_ctrl_pole_elbow_r.Transform.Translation",
+    "IK_RightArm.PoleVector"
+   ]
+  ],
+  "npins": 501
+ },
+ "PR_orig": {
+  "nodes": {
+   "RigUnit_BeginExecution": {
+    "cls": "RigVMUnitNode",
+    "title": "Forwards Solve",
+    "pos": [
+     -592.0,
+     256.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "VariableNode": {
+    "cls": "RigVMVariableNode",
+    "title": "Get LeanRoll",
+    "pos": [
+     -1584.0,
+     1008.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ],
+    "var": "LeanRoll"
+   },
+   "VariableNode_1": {
+    "cls": "RigVMVariableNode",
+    "title": "Get LeanPitch",
+    "pos": [
+     -1568.0,
+     1376.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ],
+    "var": "LeanPitch"
+   },
+   "Quat_Spine1": {
+    "cls": "RigVMUnitNode",
+    "title": "From Euler",
+    "pos": [
+     -1072.0,
+     672.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "Get_Spine1": {
+    "cls": "RigVMUnitNode",
+    "title": "Get Transform",
+    "pos": [
+     -1040.0,
+     384.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "Mul_Spine1": {
+    "cls": "RigVMUnitNode",
+    "title": "Multiply",
+    "pos": [
+     -464.0,
+     512.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "Set_Spine1": {
+    "cls": "RigVMUnitNode",
+    "title": "Set Transform",
+    "pos": [
+     -224.0,
+     256.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "Mul_Roll_Spine2": {
+    "cls": "RigVMUnitNode",
+    "title": "Multiply",
+    "pos": [
+     -656.0,
+     1008.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "Mul_Pitch_Spine2": {
+    "cls": "RigVMUnitNode",
+    "title": "Multiply",
+    "pos": [
+     -656.0,
+     1172.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "Quat_Spine2": {
+    "cls": "RigVMUnitNode",
+    "title": "From Euler",
+    "pos": [
+     -288.0,
+     1056.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "Get_Spine2": {
+    "cls": "RigVMUnitNode",
+    "title": "Get Transform",
+    "pos": [
+     -272.0,
+     656.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "Mul_Spine2": {
+    "cls": "RigVMUnitNode",
+    "title": "Multiply",
+    "pos": [
+     80.0,
+     848.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "Set_Spine2": {
+    "cls": "RigVMUnitNode",
+    "title": "Set Transform",
+    "pos": [
+     320.0,
+     416.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "Mul_Roll_Neck": {
+    "cls": "RigVMUnitNode",
+    "title": "Multiply",
+    "pos": [
+     -656.0,
+     1360.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "Mul_Pitch_Neck": {
+    "cls": "RigVMUnitNode",
+    "title": "Multiply",
+    "pos": [
+     -656.0,
+     1536.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "Quat_Neck": {
+    "cls": "RigVMUnitNode",
+    "title": "From Euler",
+    "pos": [
+     -304.0,
+     1472.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "Get_Neck_Lean": {
+    "cls": "RigVMUnitNode",
+    "title": "Get Transform",
+    "pos": [
+     -256.0,
+     1216.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "Mul_Neck_Lean": {
+    "cls": "RigVMUnitNode",
+    "title": "Multiply",
+    "pos": [
+     432.0,
+     1184.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "Set_Neck_Lean": {
+    "cls": "RigVMUnitNode",
+    "title": "Set Transform",
+    "pos": [
+     800.0,
+     704.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "VariableNode_2": {
+    "cls": "RigVMVariableNode",
+    "title": "Get PelvisOffset",
+    "pos": [
+     624.0,
+     2464.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ],
+    "var": "PelvisOffset"
+   },
+   "VariableNode_3": {
+    "cls": "RigVMVariableNode",
+    "title": "Get LandCrouch",
+    "pos": [
+     448.0,
+     2160.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ],
+    "var": "LandCrouch"
+   },
+   "Mul_LandCrouch": {
+    "cls": "RigVMUnitNode",
+    "title": "Multiply",
+    "pos": [
+     736.0,
+     2128.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "Add_PelvisLand": {
+    "cls": "RigVMUnitNode",
+    "title": "Add",
+    "pos": [
+     1008.0,
+     1952.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "Get_Hips": {
+    "cls": "RigVMUnitNode",
+    "title": "Get Transform",
+    "pos": [
+     96.0,
+     1632.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "Add_HipsZ": {
+    "cls": "RigVMUnitNode",
+    "title": "Add",
+    "pos": [
+     1200.0,
+     1296.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "Set_Hips": {
+    "cls": "RigVMUnitNode",
+    "title": "Set Transform",
+    "pos": [
+     1376.0,
+     928.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "VariableNode_4": {
+    "cls": "RigVMVariableNode",
+    "title": "Get FootOffsetL",
+    "pos": [
+     1152.0,
+     2224.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ],
+    "var": "FootOffsetL"
+   },
+   "Sub_FootOffsetL": {
+    "cls": "RigVMUnitNode",
+    "title": "Subtract",
+    "pos": [
+     1440.0,
+     2288.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "Get_LeftFoot": {
+    "cls": "RigVMUnitNode",
+    "title": "Get Transform",
+    "pos": [
+     1504.0,
+     1376.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "Add_LeftFootZ": {
+    "cls": "RigVMUnitNode",
+    "title": "Add",
+    "pos": [
+     1792.0,
+     2064.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "TwoBoneIK_Left": {
+    "cls": "RigVMUnitNode",
+    "title": "Basic IK",
+    "pos": [
+     2016.0,
+     928.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "VariableNode_5": {
+    "cls": "RigVMVariableNode",
+    "title": "Get FootOffsetR",
+    "pos": [
+     1936.0,
+     2336.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ],
+    "var": "FootOffsetR"
+   },
+   "Sub_FootOffsetR": {
+    "cls": "RigVMUnitNode",
+    "title": "Subtract",
+    "pos": [
+     2192.0,
+     2384.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "Get_RightFoot": {
+    "cls": "RigVMUnitNode",
+    "title": "Get Transform",
+    "pos": [
+     2224.0,
+     1504.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "Add_RightFootZ": {
+    "cls": "RigVMUnitNode",
+    "title": "Add",
+    "pos": [
+     2560.0,
+     1776.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "TwoBoneIK_Right": {
+    "cls": "RigVMUnitNode",
+    "title": "Basic IK",
+    "pos": [
+     2720.0,
+     928.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "Mul_Hips_Offset": {
+    "cls": "RigVMUnitNode",
+    "title": "Multiply",
+    "pos": [
+     1312.0,
+     1488.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "Clamp_LeftOffset": {
+    "cls": "RigVMUnitNode",
+    "title": "Clamp",
+    "pos": [
+     1616.0,
+     2256.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "Clamp_RightOffset": {
+    "cls": "RigVMUnitNode",
+    "title": "Clamp",
+    "pos": [
+     2352.0,
+     1968.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "Make_Hips_Offset": {
+    "cls": "RigVMUnitNode",
+    "title": "Make Transform",
+    "pos": [
+     600.0,
+     850.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "Mul_Hips_Offset_1": {
+    "cls": "RigVMUnitNode",
+    "title": "Multiply",
+    "pos": [
+     800.0,
+     800.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "Make_LeftFoot_Offset": {
+    "cls": "RigVMUnitNode",
+    "title": "Make Transform",
+    "pos": [
+     600.0,
+     1150.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "Mul_LeftFoot_Offset": {
+    "cls": "RigVMUnitNode",
+    "title": "Multiply",
+    "pos": [
+     800.0,
+     1100.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "Make_RightFoot_Offset": {
+    "cls": "RigVMUnitNode",
+    "title": "Make Transform",
+    "pos": [
+     600.0,
+     1400.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "Mul_RightFoot_Offset": {
+    "cls": "RigVMUnitNode",
+    "title": "Multiply",
+    "pos": [
+     800.0,
+     1350.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "links": [
+   [
+    "RigUnit_BeginExecution.ExecutePin",
+    "Set_Spine1.ExecutePin"
+   ],
+   [
+    "VariableNode.Value",
+    "Quat_Spine1.Euler.X"
+   ],
+   [
+    "VariableNode.Value",
+    "Mul_Roll_Spine2.A"
+   ],
+   [
+    "VariableNode.Value",
+    "Mul_Roll_Neck.A"
+   ],
+   [
+    "VariableNode_1.Value",
+    "Quat_Spine1.Euler.Y"
+   ],
+   [
+    "VariableNode_1.Value",
+    "Mul_Pitch_Spine2.A"
+   ],
+   [
+    "VariableNode_1.Value",
+    "Mul_Pitch_Neck.A"
+   ],
+   [
+    "Quat_Spine1.Result",
+    "Mul_Spine1.B"
+   ],
+   [
+    "Get_Spine1.Transform",
+    "Set_Spine1.Value"
+   ],
+   [
+    "Get_Spine1.Transform.Rotation",
+    "Mul_Spine1.A"
+   ],
+   [
+    "Mul_Spine1.Result",
+    "Set_Spine1.Value.Rotation"
+   ],
+   [
+    "Set_Spine1.ExecutePin",
+    "Set_Spine2.ExecutePin"
+   ],
+   [
+    "Mul_Roll_Spine2.Result",
+    "Quat_Spine2.Euler.X"
+   ],
+   [
+    "Mul_Pitch_Spine2.Result",
+    "Quat_Spine2.Euler.Y"
+   ],
+   [
+    "Quat_Spine2.Result",
+    "Mul_Spine2.B"
+   ],
+   [
+    "Get_Spine2.Transform",
+    "Set_Spine2.Value"
+   ],
+   [
+    "Get_Spine2.Transform.Rotation",
+    "Mul_Spine2.A"
+   ],
+   [
+    "Mul_Spine2.Result",
+    "Set_Spine2.Value.Rotation"
+   ],
+   [
+    "Set_Spine2.ExecutePin",
+    "Set_Neck_Lean.ExecutePin"
+   ],
+   [
+    "Mul_Roll_Neck.Result",
+    "Quat_Neck.Euler.X"
+   ],
+   [
+    "Mul_Pitch_Neck.Result",
+    "Quat_Neck.Euler.Y"
+   ],
+   [
+    "Quat_Neck.Result",
+    "Mul_Neck_Lean.B"
+   ],
+   [
+    "Get_Neck_Lean.Transform",
+    "Set_Neck_Lean.Value"
+   ],
+   [
+    "Get_Neck_Lean.Transform.Rotation",
+    "Mul_Neck_Lean.A"
+   ],
+   [
+    "Mul_Neck_Lean.Result",
+    "Set_Neck_Lean.Value.Rotation"
+   ],
+   [
+    "Set_Neck_Lean.ExecutePin",
+    "Set_Hips.ExecutePin"
+   ],
+   [
+    "VariableNode_2.Value",
+    "Add_PelvisLand.A"
+   ],
+   [
+    "VariableNode_2.Value",
+    "Sub_FootOffsetL.B"
+   ],
+   [
+    "VariableNode_2.Value",
+    "Sub_FootOffsetR.B"
+   ],
+   [
+    "VariableNode_3.Value",
+    "Mul_LandCrouch.A"
+   ],
+   [
+    "Mul_LandCrouch.Result",
+    "Add_PelvisLand.B"
+   ],
+   [
+    "Add_PelvisLand.Result",
+    "Add_HipsZ.B"
+   ],
+   [
+    "Add_PelvisLand.Result",
+    "Mul_Hips_Offset.B.Translation.Z"
+   ],
+   [
+    "Add_PelvisLand.Result",
+    "Make_Hips_Offset.Translation.Z"
+   ],
+   [
+    "Get_Hips.Transform",
+    "Mul_Hips_Offset.A"
+   ],
+   [
+    "Get_Hips.Transform.Rotation",
+    "Set_Hips.Value.Rotation"
+   ],
+   [
+    "Get_Hips.Transform.Translation.Z",
+    "Add_HipsZ.A"
+   ],
+   [
+    "Get_Hips.Transform.Scale3D",
+    "Set_Hips.Value.Scale3D"
+   ],
+   [
+    "Set_Hips.ExecutePin",
+    "TwoBoneIK_Left.ExecutePin"
+   ],
+   [
+    "VariableNode_4.Value",
+    "Sub_FootOffsetL.A"
+   ],
+   [
+    "Sub_FootOffsetL.Result",
+    "Clamp_LeftOffset.Value"
+   ],
+   [
+    "Sub_FootOffsetL.Result",
+    "Make_LeftFoot_Offset.Translation.Z"
+   ],
+   [
+    "Get_LeftFoot.Transform",
+    "Mul_LeftFoot_Offset.A"
+   ],
+   [
+    "Get_LeftFoot.Transform.Rotation",
+    "TwoBoneIK_Left.Effector.Rotation"
+   ],
+   [
+    "Get_LeftFoot.Transform.Translation.Z",
+    "Add_LeftFootZ.A"
+   ],
+   [
+    "Get_LeftFoot.Transform.Scale3D",
+    "TwoBoneIK_Left.Effector.Scale3D"
+   ],
+   [
+    "TwoBoneIK_Left.ExecutePin",
+    "TwoBoneIK_Right.ExecutePin"
+   ],
+   [
+    "VariableNode_5.Value",
+    "Sub_FootOffsetR.A"
+   ],
+   [
+    "Sub_FootOffsetR.Result",
+    "Clamp_RightOffset.Value"
+   ],
+   [
+    "Sub_FootOffsetR.Result",
+    "Make_RightFoot_Offset.Translation.Z"
+   ],
+   [
+    "Get_RightFoot.Transform",
+    "Mul_RightFoot_Offset.A"
+   ],
+   [
+    "Get_RightFoot.Transform.Rotation",
+    "TwoBoneIK_Right.Effector.Rotation"
+   ],
+   [
+    "Get_RightFoot.Transform.Translation.Z",
+    "Add_RightFootZ.A"
+   ],
+   [
+    "Get_RightFoot.Transform.Scale3D",
+    "TwoBoneIK_Right.Effector.Scale3D"
+   ],
+   [
+    "Mul_Hips_Offset.Result",
+    "Set_Hips.Value"
+   ],
+   [
+    "Clamp_LeftOffset.Result",
+    "Add_LeftFootZ.B"
+   ],
+   [
+    "Clamp_RightOffset.Result",
+    "Add_RightFootZ.B"
+   ],
+   [
+    "Make_Hips_Offset.Result",
+    "Mul_Hips_Offset.B"
+   ],
+   [
+    "Make_LeftFoot_Offset.Result",
+    "Mul_LeftFoot_Offset.B"
+   ],
+   [
+    "Mul_LeftFoot_Offset.Result",
+    "TwoBoneIK_Left.Effector"
+   ],
+   [
+    "Make_RightFoot_Offset.Result",
+    "Mul_RightFoot_Offset.B"
+   ],
+   [
+    "Mul_RightFoot_Offset.Result",
+    "TwoBoneIK_Right.Effector"
+   ]
+  ],
+  "npins": 606
+ },
+ "IK_orig": {
+  "nodes": {
+   "RigUnit_BeginExecution": {
+    "cls": "RigVMUnitNode",
+    "title": "Forwards Solve",
+    "pos": [
+     -112.0,
+     0.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "GetTransform_ctrl_hips": {
+    "cls": "RigVMUnitNode",
+    "title": "Get Transform",
+    "pos": [
+     -160.0,
+     224.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "SetTransform_Hips": {
+    "cls": "RigVMUnitNode",
+    "title": "Set Transform",
+    "pos": [
+     160.0,
+     0.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "GetTransform_ctrl_foot_l_ik": {
+    "cls": "RigVMUnitNode",
+    "title": "Get Transform",
+    "pos": [
+     192.0,
+     304.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "GetTransform_ctrl_pole_knee_l": {
+    "cls": "RigVMUnitNode",
+    "title": "Get Transform",
+    "pos": [
+     208.0,
+     544.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "IK_LeftLeg": {
+    "cls": "RigVMUnitNode",
+    "title": "Basic IK",
+    "pos": [
+     592.0,
+     0.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "GetTransform_ctrl_foot_r_ik": {
+    "cls": "RigVMUnitNode",
+    "title": "Get Transform",
+    "pos": [
+     928.0,
+     272.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "GetTransform_ctrl_pole_knee_r": {
+    "cls": "RigVMUnitNode",
+    "title": "Get Transform",
+    "pos": [
+     944.0,
+     576.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "IK_RightLeg": {
+    "cls": "RigVMUnitNode",
+    "title": "Basic IK",
+    "pos": [
+     1280.0,
+     0.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "GetTransform_ctrl_hand_l_ik": {
+    "cls": "RigVMUnitNode",
+    "title": "Get Transform",
+    "pos": [
+     1696.0,
+     96.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "GetTransform_ctrl_pole_elbow_l": {
+    "cls": "RigVMUnitNode",
+    "title": "Get Transform",
+    "pos": [
+     1712.0,
+     336.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "IK_LeftArm": {
+    "cls": "RigVMUnitNode",
+    "title": "Basic IK",
+    "pos": [
+     2098.0,
+     -8.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "GetTransform_ctrl_hand_r_ik": {
+    "cls": "RigVMUnitNode",
+    "title": "Get Transform",
+    "pos": [
+     2512.0,
+     64.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "GetTransform_ctrl_pole_elbow_r": {
+    "cls": "RigVMUnitNode",
+    "title": "Get Transform",
+    "pos": [
+     2512.0,
+     288.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   },
+   "IK_RightArm": {
+    "cls": "RigVMUnitNode",
+    "title": "Basic IK",
+    "pos": [
+     2960.0,
+     -16.0
+    ],
+    "size": [
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "links": [
+   [
+    "RigUnit_BeginExecution.ExecutePin",
+    "SetTransform_Hips.ExecutePin"
+   ],
+   [
+    "GetTransform_ctrl_hips.Transform",
+    "SetTransform_Hips.Value"
+   ],
+   [
+    "SetTransform_Hips.ExecutePin",
+    "IK_LeftLeg.ExecutePin"
+   ],
+   [
+    "GetTransform_ctrl_foot_l_ik.Transform",
+    "IK_LeftLeg.Effector"
+   ],
+   [
+    "GetTransform_ctrl_pole_knee_l.Transform.Translation",
+    "IK_LeftLeg.PoleVector"
+   ],
+   [
+    "IK_LeftLeg.ExecutePin",
+    "IK_RightLeg.ExecutePin"
+   ],
+   [
+    "GetTransform_ctrl_foot_r_ik.Transform",
+    "IK_RightLeg.Effector"
+   ],
+   [
+    "GetTransform_ctrl_pole_knee_r.Transform.Translation",
+    "IK_RightLeg.PoleVector"
+   ],
+   [
+    "IK_RightLeg.ExecutePin",
+    "IK_LeftArm.ExecutePin"
+   ],
+   [
+    "GetTransform_ctrl_hand_l_ik.Transform",
+    "IK_LeftArm.Effector"
+   ],
+   [
+    "GetTransform_ctrl_pole_elbow_l.Transform.Translation",
+    "IK_LeftArm.PoleVector"
+   ],
+   [
+    "IK_LeftArm.ExecutePin",
+    "IK_RightArm.ExecutePin"
+   ],
+   [
+    "GetTransform_ctrl_hand_r_ik.Transform",
+    "IK_RightArm.Effector"
+   ],
+   [
+    "GetTransform_ctrl_pole_elbow_r.Transform.Translation",
+    "IK_RightArm.PoleVector"
+   ]
+  ],
+  "npins": 501
+ }
+}
